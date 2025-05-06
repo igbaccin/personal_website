@@ -1,59 +1,122 @@
-/* Color variables are from _quarto.yml */
+/* Base variables */
 :root {
-  --quarto-link-color: #B20086;
+  --accent: #B20086;       /* Replace with your exact accent color */
+  --text-primary: #FFFFFF; /* Text on dark backgrounds */
+  --bg-dark: #1a1a1a;      /* Dark navbar background */
 }
 
 /* Global smooth scroll */
-body {
+html {
   scroll-behavior: smooth;
 }
+body {
+  margin: 0;
+  padding-top: 4rem; /* Offset for fixed navbar height */
+  font-family: "Open Sans", sans-serif;
+}
 
-/* Hero banner */
+/* Container utility */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--bg-dark);
+  z-index: 1000;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+}
+.navbar a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+.btn-outline {
+  margin-left: auto;
+  border: 2px solid var(--text-primary);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: white !important;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem 0.25rem 0.5rem 0;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hero Banner */
 .hero {
+  position: relative;
   background-image: url("images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 6rem 2rem;
   text-align: center;
+  padding: 8rem 2rem;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
 .hero-content {
-  max-width: 600px;
-  margin: auto;
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.hero h1 {
+  font-family: "Lora", serif;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
 
-/* Button styling */
-.btn {
-  display: inline-block;
-  margin: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--quarto-link-color);
-  color: white !important;
-  text-decoration: none;
-  border-radius: 0.25rem;
-}
-
-/* Section spacing and alternating backgrounds */
+/* Sections */
 section {
   padding: 4rem 2rem;
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
 }
 section:nth-of-type(even) {
   background-color: #ffffff;
 }
 
-/* Section headings */
+/* Headings */
 h2, h3 {
+  font-family: "Lora", serif;
   margin-top: 0;
-  border-bottom: 2px solid var(--quarto-link-color);
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 0.25rem;
 }
 
-/* Anchor scroll offset for :target */
+/* Anchor offset for in-page links */
 :target::before {
   content: "";
   display: block;
   height: 4rem;
   margin-top: -4rem;
 }
+
