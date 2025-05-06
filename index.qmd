@@ -3,6 +3,7 @@ execute:
   echo: false
 ---
 
+::: {=html}
 <nav class="navbar">
   <div class="container">
     <a href="#home">Home</a>
@@ -12,49 +13,52 @@ execute:
     <a href="#contact" class="btn-outline">Get In Touch</a>
   </div>
 </nav>
+:::
 
+::: {=html}
 <section class="hero" id="home">
   <div class="hero-content">
     <h1>Welcome!</h1>
     <p>
-      Igor B. Martins is a senior lecturer in the Department of Economic History at Lund University.  
+      Igor B. Martins is a senior lecturer in the Department of Economic History at Lund University.<br/>
       Feel free to browse around!
     </p>
     <a href="#contact" class="btn">Contact me</a>
     <a href="files/CV_IgorMartins.pdf" class="btn-outline">Curriculum Vitae</a>
   </div>
 </section>
+:::
 
-<section id="about-me">
-  ## About me
+## About me {#about-me}
 
-  <div class="about-flex">
-    <img src="images/me.jpg" alt="Igor B. Martins" class="profile-pic"/>
-    <div class="about-text">
-      Igor B. Martins is a senior lecturer in the Department of Economic History at Lund University. <br/><br/>
-      His research focuses on resilience strategies, development economics, and the long-term effects of historical institutions.
-    </div>
+::: {=html}
+<div class="about-flex">
+  <img src="images/me.jpg" alt="Igor B. Martins" class="profile-pic"/>
+  <div class="about-text">
+    Igor B. Martins is a senior lecturer in the Department of Economic History at Lund University.<br/><br/>
+    His research focuses on resilience strategies, development economics, and the long-term effects of historical institutions.
   </div>
-</section>
+</div>
+:::
 
-<section id="selected-works">
-  ## Selected works
+## Selected works {#selected-works}
 
-  - **Resilience to shrinking as a catch-up strategy: a comparison 1987–2019**  
-    *Studies in Comparative International Development, 2023*
-  - **Legacies of Loss: The health outcomes of slaveholder compensation**  
-    *Explorations in Economic History, 2022*
-</section>
+- **Resilience to shrinking as a catch-up strategy: a comparison 1987–2019**  
+  *Studies in Comparative International Development, 2023*
+- **Legacies of Loss: The health outcomes of slaveholder compensation**  
+  *Explorations in Economic History, 2022*
 
-<section id="teaching">
-  ## Teaching
+## Teaching {#teaching}
 
-  - Course 1: Title  
-  - Course 2: Title
-</section>
+- Course 1: Title  
+- Course 2: Title
 
-<section id="contact">
-  ## Contact
+## Contact {#contact}
+
+- **Email**: im552@cam.ac.uk / igor.martins@ekh.lu.se  
+- **Phone**: +44 73 4201 4938  
+- **Address**: Faculty of History, West Road, Cambridge CB3 9AF
+
 
   - **Email**: im552@cam.ac.uk / igor.martins@ekh.lu.se  
   - **Phone**: +44 73 4201 4938  
