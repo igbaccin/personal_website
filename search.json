@@ -11,7 +11,7 @@
     "href": "index.html#about-me",
     "title": "Igor B. Martins",
     "section": "About me",
-    "text": "About me\nIgor B. Martins is a senior lecturer in the Department of Economic History at Lund University. …"
+    "text": "About me\n\n&lt;img src=\"images/me.jpg\" alt=\"Igor B. Martins\" class=\"profile-pic\"/&gt;\n&lt;div class=\"about-text\"&gt;\n  Igor B. Martins is a senior lecturer in the Department of Economic History at Lund University. …  \n  &lt;br/&gt;&lt;br/&gt;\n  His research focuses on resilience strategies, development economics, and the long‐term effects of historical institutions.\n&lt;/div&gt;"
   },
   {
     "objectID": "index.html#selected-works",
