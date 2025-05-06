@@ -27,7 +27,15 @@ execute:
 <!-- About Me Section -->
 <section id="about-me">
   ## About me
-  Igor B. Martins is a senior lecturer in the Department of Economic History at Lund University. …
+
+  <div class="about-flex">
+    <img src="images/me.jpg" alt="Igor B. Martins" class="profile-pic"/>
+    <div class="about-text">
+      Igor B. Martins is a senior lecturer in the Department of Economic History at Lund University. …  
+      <br/><br/>
+      His research focuses on resilience strategies, development economics, and the long‐term effects of historical institutions.
+    </div>
+  </div>
 </section>
 
 <!-- Selected Works Section -->
@@ -53,4 +61,3 @@ execute:
   - **Phone**: +44 73 4201 4938  
   - **Address**: Faculty of History, West Road, Cambridge CB3 9AF
 </section>
-
