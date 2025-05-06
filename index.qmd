@@ -2,6 +2,7 @@
 execute:
   echo: false
 ---
+
 <nav class="navbar">
   <div class="container">
     <a href="#home">Home</a>
