@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Igor B. Martins",
     "section": "",
-    "text": "Senior Lecturer, Dept of Economic History, Lund University\nContact me\nCurriculum Vitae"
+    "text": "&lt;a href=\"#home\"&gt;Home&lt;/a&gt;\n&lt;a href=\"#about-me\"&gt;About me&lt;/a&gt;\n&lt;a href=\"#selected-works\"&gt;Works&lt;/a&gt;\n&lt;a href=\"#teaching\"&gt;Teaching&lt;/a&gt;\n&lt;a href=\"#contact\" class=\"btn-outline\"&gt;Get In Touch&lt;/a&gt;"
   },
   {
     "objectID": "index.html#about-me",
