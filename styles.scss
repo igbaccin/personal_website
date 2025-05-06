@@ -142,8 +142,9 @@ h2, h3 {
 }
 .profile-pic {
   flex-shrink: 0;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  max-width: 35%;
+  height: auto;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -151,5 +152,6 @@ h2, h3 {
   flex: 1;
   line-height: 1.6;
 }
+
 
 
