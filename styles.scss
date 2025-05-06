@@ -1,14 +1,59 @@
-/* Replace these with your Wix palette hexes */
-$primary-bg:    #ffffff;  /* e.g. page background */
-$primary-text:  #333333;  /* main text */
-$accent:        #b20086;  /* your Wix accent color */
-
+/* Color variables are from _quarto.yml */
 :root {
-  --quarto-body-bg:    #{$primary-bg};
-  --quarto-body-color: #{$primary-text};
-  --quarto-link-color: #{$accent};
+  --quarto-link-color: #B20086;
 }
 
+/* Global smooth scroll */
 body {
   scroll-behavior: smooth;
+}
+
+/* Hero banner */
+.hero {
+  background-image: url("images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+.hero-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--quarto-link-color);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 0.25rem;
+}
+
+/* Section spacing and alternating backgrounds */
+section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+section:nth-of-type(even) {
+  background-color: #ffffff;
+}
+
+/* Section headings */
+h2, h3 {
+  margin-top: 0;
+  border-bottom: 2px solid var(--quarto-link-color);
+  padding-bottom: 0.25rem;
+}
+
+/* Anchor scroll offset for :target */
+:target::before {
+  content: "";
+  display: block;
+  height: 4rem;
+  margin-top: -4rem;
 }

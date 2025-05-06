@@ -1,51 +1,37 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Igor B. Martins",
+    "section": "",
+    "text": "Senior Lecturer, Dept of Economic History, Lund University\nContact me\nCurriculum Vitae"
+  },
+  {
     "objectID": "index.html#about-me",
     "href": "index.html#about-me",
     "title": "Igor B. Martins",
     "section": "About me",
-    "text": "About me\nIgor B. Martins is a senior lecturer in the Department of Economic History at Lund University. Feel free to browse around!"
+    "text": "About me\nIgor B. Martins is a senior lecturer in the Department of Economic History at Lund University. …"
   },
   {
     "objectID": "index.html#selected-works",
     "href": "index.html#selected-works",
     "title": "Igor B. Martins",
     "section": "Selected works",
-    "text": "Selected works\n\nResilience to shrinking as a catch-up strategy: a comparison 1987–2019\nStudies in Comparative International Development, 2023\nDevelopment economics has long focused on growth patterns … country is more likely to be successful in its catching-up process.\nCoauthored with Tobias Axelsson.\nLegacies of Loss: The health outcomes of slaveholder compensation in the British Cape Colony\nExplorations in Economic History, 2022\nCan wealth shocks have intergenerational health consequences? … effects of the shortfall were found for the third generation.\nCoauthored with Jeanne Cilliers and Johan Fourie."
-  },
-  {
-    "objectID": "index.html#work-in-progress",
-    "href": "index.html#work-in-progress",
-    "title": "Igor B. Martins",
-    "section": "Work in progress",
-    "text": "Work in progress\n\n(Add summaries of your ongoing research projects here.)"
+    "text": "Selected works\n\nResilience to shrinking as a catch-up strategy: a comparison 1987–2019\nStudies in Comparative International Development, 2023\n\nLegacies of Loss: The health outcomes of slaveholder compensation\nExplorations in Economic History, 2022"
   },
   {
     "objectID": "index.html#teaching",
     "href": "index.html#teaching",
     "title": "Igor B. Martins",
     "section": "Teaching",
-    "text": "Teaching\n\n(List courses, supervision, and teaching materials here.)"
-  },
-  {
-    "objectID": "index.html#academic-works",
-    "href": "index.html#academic-works",
-    "title": "Igor B. Martins",
-    "section": "Academic works",
-    "text": "Academic works\n\n(Add publications, chapters, reports, etc.)"
-  },
-  {
-    "objectID": "index.html#more",
-    "href": "index.html#more",
-    "title": "Igor B. Martins",
-    "section": "More",
-    "text": "More\n\nGrants\n\n(Describe your major grants and fellowships.)\n\n\n\nProfessional Memberships\n\n(List societies, editorial boards, etc.)"
+    "text": "Teaching\n\nCourse 1: Title\n\nCourse 2: Title"
   },
   {
     "objectID": "index.html#contact",
     "href": "index.html#contact",
     "title": "Igor B. Martins",
     "section": "Contact",
-    "text": "Contact\n\nEmail: im552@cam.ac.uk / igor.martins@ekh.lu.se\n\nPhone: +44 73 4201 4938\n\nPostal: Faculty of History, West Road, Cambridge CB3 9AF\n\n©2025 Igor B. Martins"
+    "text": "Contact\n\nEmail: im552@cam.ac.uk / igor.martins@ekh.lu.se\n\nPhone: +44 73 4201 4938\n\nAddress: Faculty of History, West Road, Cambridge CB3 9AF"
   }
 ]
