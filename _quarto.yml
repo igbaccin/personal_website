@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  title: "Igor B. Martins"
+  navbar:
+    left:
+      - text: Home
+        href: "#home"
+      - text: About me
+        href: "#about-me"
+      - text: Selected works
+        href: "#selected-works"
+      - text: Work in progress
+        href: "#work-in-progress"
+      - text: Teaching
+        href: "#teaching"
+      - text: Academic works
+        href: "#academic-works"
+      - text: More
+        href: "#more"
+
+format:
+  html:
+    theme:  
+      light: cosmo
+      dark: cosmo
+    code-fold: true
+    highlight-style: tango
+    css: styles.scss
+    toc: false
