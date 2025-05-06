@@ -1,0 +1,14 @@
+/* Replace these with your Wix palette hexes */
+$primary-bg:    #ffffff;  /* e.g. page background */
+$primary-text:  #333333;  /* main text */
+$accent:        #b20086;  /* your Wix accent color */
+
+:root {
+  --quarto-body-bg:    #{$primary-bg};
+  --quarto-body-color: #{$primary-text};
+  --quarto-link-color: #{$accent};
+}
+
+body {
+  scroll-behavior: smooth;
+}
