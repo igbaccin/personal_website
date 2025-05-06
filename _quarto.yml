@@ -7,25 +7,34 @@ website:
     left:
       - text: Home
         href: "#home"
-      - text: About me
+      - text: About
         href: "#about-me"
-      - text: Selected works
+      - text: Works
         href: "#selected-works"
-      - text: Work in progress
-        href: "#work-in-progress"
       - text: Teaching
         href: "#teaching"
-      - text: Academic works
-        href: "#academic-works"
-      - text: More
-        href: "#more"
+      - text: Contact
+        href: "#contact"
 
 format:
   html:
-    theme:  
-      light: cosmo
-      dark: cosmo
+    theme:
+      light:
+        primary:    "#B20086"
+        secondary:  "#333333"
+        background: "#F5F5F5"
+        body-font:  "Lora"
+        heading-font: "Montserrat"
+        mono-font:  "Source Code Pro"
+      dark:
+        primary:    "#B20086"
+        secondary:  "#EEEEEE"
+        background: "#222222"
+        body-font:  "Lora"
+        heading-font: "Montserrat"
+        mono-font:  "Source Code Pro"
     code-fold: true
     highlight-style: tango
     css: styles.scss
     toc: false
+
