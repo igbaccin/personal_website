@@ -3,7 +3,6 @@ execute:
   echo: false
 ---
 
-<!-- Navigation Bar -->
 <nav class="navbar">
   <div class="container">
     <a href="#home">Home</a>
@@ -14,49 +13,49 @@ execute:
   </div>
 </nav>
 
-<!-- Hero Banner -->
 <section class="hero" id="home">
   <div class="hero-content">
     <h1>Welcome!</h1>
-    <p>Igor B. Martins is a senior lecturer in the Department of Economic History at Lund University. Feel free to browse around!</p>
+    <p>
+      Igor B. Martins is a senior lecturer in the Department of Economic History at Lund University.  
+      Feel free to browse around!
+    </p>
     <a href="#contact" class="btn">Contact me</a>
     <a href="files/CV_IgorMartins.pdf" class="btn-outline">Curriculum Vitae</a>
   </div>
 </section>
 
-<!-- About Me Section -->
 <section id="about-me">
   ## About me
 
   <div class="about-flex">
     <img src="images/me.jpg" alt="Igor B. Martins" class="profile-pic"/>
     <div class="about-text">
-      Igor B. Martins is a senior lecturer in the Department of Economic History at Lund University. …  
-      <br/><br/>
-      His research focuses on resilience strategies, development economics, and the long‐term effects of historical institutions.
+      Igor B. Martins is a senior lecturer in the Department of Economic History at Lund University. <br/><br/>
+      His research focuses on resilience strategies, development economics, and the long-term effects of historical institutions.
     </div>
   </div>
 </section>
 
-<!-- Selected Works Section -->
 <section id="selected-works">
   ## Selected works
+
   - **Resilience to shrinking as a catch-up strategy: a comparison 1987–2019**  
     *Studies in Comparative International Development, 2023*
   - **Legacies of Loss: The health outcomes of slaveholder compensation**  
     *Explorations in Economic History, 2022*
 </section>
 
-<!-- Teaching Section -->
 <section id="teaching">
   ## Teaching
+
   - Course 1: Title  
   - Course 2: Title
 </section>
 
-<!-- Contact Section -->
 <section id="contact">
   ## Contact
+
   - **Email**: im552@cam.ac.uk / igor.martins@ekh.lu.se  
   - **Phone**: +44 73 4201 4938  
   - **Address**: Faculty of History, West Road, Cambridge CB3 9AF
