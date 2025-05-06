@@ -19,22 +19,15 @@ website:
 format:
   html:
     theme:
-      light:
-        primary:    "#B20086"
-        secondary:  "#333333"
-        background: "#F5F5F5"
-        body-font:  "Lora"
-        heading-font: "Montserrat"
-        mono-font:  "Source Code Pro"
-      dark:
-        primary:    "#B20086"
-        secondary:  "#EEEEEE"
-        background: "#222222"
-        body-font:  "Lora"
-        heading-font: "Montserrat"
-        mono-font:  "Source Code Pro"
+      light: cosmo
+      dark: cosmo
+    primary:    "#B20086"           # accent color
+    secondary:  "#333333"           # main text color
+    background: "#F5F5F5"           # page background
+    body-font:  "Lora"              # serif body
+    heading-font: "Montserrat"      # sans headings
+    mono-font:  "Source Code Pro"
     code-fold: true
     highlight-style: tango
     css: styles.scss
     toc: false
-
