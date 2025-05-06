@@ -1,3 +1,6 @@
+/* TEST: should put a thick red border on the entire page */
+body { outline: 10px solid red !important; }
+
 /*------------------------
   Variables
 ------------------------*/
