@@ -58,9 +58,3 @@ execute:
 - **Email**: im552@cam.ac.uk / igor.martins@ekh.lu.se  
 - **Phone**: +44 73 4201 4938  
 - **Address**: Faculty of History, West Road, Cambridge CB3 9AF
-
-
-  - **Email**: im552@cam.ac.uk / igor.martins@ekh.lu.se  
-  - **Phone**: +44 73 4201 4938  
-  - **Address**: Faculty of History, West Road, Cambridge CB3 9AF
-</section>
