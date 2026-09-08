@@ -38,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7ebbb3da88f287d26ea0e5afd4a80cb8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-18890e1a02a9ef05357a24edf1aa84d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -60,7 +60,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="site.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -83,6 +83,10 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./research.html"> 
 <span class="menu-text">Research</span></a>
@@ -112,19 +116,23 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+<!-- Keep Quarto's title processor from moving the custom page heading out of its layout. -->
+<header id="title-block-header" class="quarto-title-block" hidden=""></header>
 
 
 
 
-<header class="page-intro">
-  <p class="eyebrow">Teaching &amp; supervision</p>
-  <h1>Ideas take shape<br> in the classroom.</h1>
-  <p class="lead">I teach economic history, emerging economies, and the history of colonialism, alongside academic writing and research methods.</p>
-</header>
-
-<div class="teaching-layout page-columns page-full">
-  <section aria-label="Courses and supervision">
+<section class="page-banner teaching-banner" aria-labelledby="teaching-title">
+  <div class="page-shell">
+    <h1 id="teaching-title">Teaching</h1>
+    <p class="lead">I teach economic history, emerging economies, and the history of colonialism, alongside academic writing and research methods.</p>
+    <p class="teaching-recognition"><strong>Teacher of the Year, 2020.</strong><br>Lund University School of Economics and Management.</p>
+  </div>
+</section>
+<div class="page-shell">
+  <section class="teaching-content" aria-labelledby="courses-title">
+    <h2 id="courses-title">Courses &amp; supervision</h2>
     <article class="course"><h3>Colonialism and Economic Change</h3><p>Autumn 2026</p></article>
     <article class="course"><h3>Growth, Stagnation, and Inequality in Africa</h3><p>Autumn 2026</p></article>
     <article class="course"><h3>Development of Emerging Economies</h3><p>Autumn 2026</p></article>
@@ -133,12 +141,6 @@ ul.task-list li input[type="checkbox"] {
     <article class="course"><h3>BSc and MSc thesis supervision</h3><p>Throughout the year</p></article>
     <div class="teaching-contact"><p>For course descriptions, supervision enquiries, or letters of recommendation, please get in touch.</p><div class="text-links"><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se <span aria-hidden="true">↗</span></a></div></div>
   </section>
-  <aside class="teaching-aside" aria-labelledby="teaching-award">
-    <p class="eyebrow">Teaching recognition</p>
-    <h2 id="teaching-award">Teacher of the Year</h2>
-    <p>Lund University School of Economics and Management</p>
-    <p class="year">2020</p>
-  </aside>
 </div>
 
 
@@ -543,7 +545,6 @@ ul.task-list li input[type="checkbox"] {
   <div class="nav-footer">
     <div class="nav-footer-left">
 <div class="footer-identity">
-<img src="./images/lund-seal.png" width="48" height="48" alt="Lund University seal">
 <div>
 <strong>Igor B. Martins</strong><span>Department of Economic History<br>Lund University</span>
 </div>
