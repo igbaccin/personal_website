@@ -50,7 +50,7 @@ website:
 format:
   html:
     theme: [default, styles.scss]
-    css: site.css
+    css: site-v2.css
     lang: en
     toc: false
     anchor-sections: false
