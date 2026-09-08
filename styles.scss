@@ -225,7 +225,7 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
 .course-link:hover h3 { text-decoration: underline; text-underline-offset: .2em; }
 .syllabus-link { font-size: .85rem; text-decoration: underline; text-underline-offset: .3em; }
 @media (min-width: 768px) {
-  .social-links { grid-template-columns: repeat(5, auto); gap: 18px; max-width: 630px; }
+  .social-links { grid-template-columns: repeat(3, auto); gap: 14px 26px; max-width: 570px; }
 }
 
 /* Keep the teaching record compact and let the courses carry the introduction. */
@@ -244,3 +244,19 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
 .supervision-grid p { font-size: .9rem; margin: 0; line-height: 1.75; color: var(--muted); }
 
 @media (min-width: 768px) { .course-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } .course-card img { height: 210px; } }
+
+/* Funded projects, with project awards distinguished from individual roles. */
+.projects-content { padding: 38px 0 55px; }
+.projects-content h2 { font-size: 1.45rem; margin: 24px 0 19px; }
+.projects-content h2:first-child { margin-top: 0; }
+.project-entry { display: grid; grid-template-columns: 105px minmax(0,1fr) 170px; gap: 25px; padding: 24px 0; border-top: 1px solid var(--rule); }
+.project-entry h3 { font-size: 1.2rem; line-height: 1.45; margin: 0 0 9px; }
+.project-entry p { font-size: .87rem; line-height: 1.65; margin: 4px 0; }
+.project-years, .project-role, .project-funding span { color: var(--muted); }
+.project-funder { color: var(--ink); }
+.project-funding { text-align: right; }
+.project-funding strong { display: block; font-size: 1.05rem; font-weight: 500; white-space: nowrap; }
+.project-funding span { display: block; font-size: .75rem; margin-top: 5px; }
+.project-link { display: inline-block; margin-top: 8px; font-size: .83rem; }
+.projects-note { font-size: .8rem; color: var(--muted); margin: 14px 0 32px; }
+.projects-banner .project-link { margin-top: 18px; }

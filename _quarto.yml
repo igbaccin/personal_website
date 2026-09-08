@@ -4,6 +4,7 @@ project:
   render:
     - index.qmd
     - research.qmd
+    - projects.qmd
     - teaching.qmd
     - about.qmd
     - 404.qmd
@@ -31,6 +32,8 @@ website:
         text: Home
       - href: research.qmd
         text: Research
+      - href: projects.qmd
+        text: Projects
       - href: teaching.qmd
         text: Teaching
       - href: about.qmd
