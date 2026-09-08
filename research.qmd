@@ -8,7 +8,6 @@ description: "Publications and current research by Igor B. Martins on slavery, w
 <section class="page-banner research-banner" aria-labelledby="research-title">
   <div class="page-shell">
     <h1 id="research-title">Research</h1>
-    <p class="lead">My research examines the political economy of slavery and the historical development of inequality, alongside work on economic resilience and international scientific cooperation.</p>
   </div>
 </section>
 <div class="page-shell">
