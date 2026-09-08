@@ -261,3 +261,9 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
 .project-link { display: inline-block; margin-top: 8px; font-size: .83rem; }
 .projects-note { font-size: .8rem; color: var(--muted); margin: 14px 0 32px; }
 .projects-banner .project-link { margin-top: 18px; }
+
+/* Give the desktop research introduction the available page width. */
+@media (min-width: 768px) {
+  .landing-copy { max-width: none; }
+  .landing .intro { max-width: none; }
+}
