@@ -5,6 +5,7 @@ description: "Biography, affiliations, and contact details for Igor B. Martins, 
 ---
 
 ```{=html}
+<div class="page-shell">
 <section class="about-layout" aria-labelledby="about-title">
   <div class="about-photo">
     <img class="portrait" src="images/me.jpg" width="563" height="793" alt="Portrait of Igor B. Martins.">
@@ -31,4 +32,5 @@ description: "Biography, affiliations, and contact details for Igor B. Martins, 
     </div>
   </div>
 </section>
+</div>
 ```

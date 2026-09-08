@@ -10,7 +10,6 @@ project:
     - home.qmd
   resources:
     - images/
-    - fonts/
     - .nojekyll
 
 website:
@@ -20,14 +19,16 @@ website:
   favicon: images/hourglass.png
   search: false
   navbar:
-    background: white
-    foreground: dark
+    background: "#121619"
+    foreground: "#d7dce0"
     logo: images/hourglass.png
     logo-alt: "Igor B. Martins, home"
     title: "Igor B. Martins"
     collapse-below: md
     pinned: true
     right:
+      - href: index.qmd
+        text: Home
       - href: research.qmd
         text: Research
       - href: teaching.qmd
@@ -39,14 +40,14 @@ website:
   page-footer:
     border: false
     left: |
-      <div class="footer-identity"><img src="/images/lund-seal.png" width="48" height="48" alt="Lund University seal"><div><strong>Igor B. Martins</strong><span>Department of Economic History<br>Lund University</span></div></div>
+      <div class="footer-identity"><div><strong>Igor B. Martins</strong><span>Department of Economic History<br>Lund University</span></div></div>
     right: |
       <div class="footer-links"><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se</a><div><a href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en">Google Scholar ↗</a><a href="https://portal.research.lu.se/en/persons/igor-martins">Lund profile ↗</a></div></div>
 
 format:
   html:
     theme: [default, styles.scss]
-    css: fonts.css
+    css: site.css
     lang: en
     toc: false
     anchor-sections: false
@@ -54,6 +55,7 @@ format:
     link-external-newwindow: false
     link-external-icon: false
     fig-responsive: true
+    include-before-body: includes/title-placeholder.html
     include-after-body: includes/interactions.html
 
 execute:

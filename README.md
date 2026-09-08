@@ -12,16 +12,17 @@ Edit the relevant `.qmd` file in GitHub and commit the change to `main`. The **B
 
 | File | What to edit |
 | --- | --- |
-| `index.qmd` | Homepage introduction and the three selected papers |
+| `index.qmd` | Landing-page introduction, research and CV buttons, social profiles, and email |
 | `research.qmd` | Publications, manuscripts, work in progress, essays, and media |
 | `teaching.qmd` | Courses, teaching periods, supervision, and award |
 | `about.qmd` | Biography, professional links, and contact details |
 | `_quarto.yml` | Navigation, footer, CV link, and website address |
-| `styles.scss` | Typography, layout, spacing, and monochrome palette |
+| `styles.scss` | Typography, layout, spacing, and dark monochrome palette |
+| `site.css` | Background imagery and its dark overlays |
 
 The page content uses ordinary HTML inside Quarto documents. Text between tags can be edited directly. To add a publication, copy an existing `<article class="publication">…</article>` block in `research.qmd`, then update its title, year, authors, journal, and link. Update the count in the relevant section's summary if adding a manuscript, project, or essay. Use `&amp;` for an ampersand inside HTML text.
 
-The homepage's selected papers are curated separately. Updating the full research list does not change the three homepage selections.
+The homepage is a concise landing page. The complete publication list lives on the separate Research page, and Substack is linked directly from both pages.
 
 The CV links to the existing public Google Drive document. Replace that URL in `index.qmd`, `about.qmd`, and `_quarto.yml` if the document address changes.
 
@@ -64,8 +65,10 @@ The site includes a `/home.html` redirect to preserve the former Google Sites ho
 
 ## Design and content
 
-The palette is black, white, and cool grey. Architecture, archival photography, and the hourglass mark were supplied in the Desktop Website folder. The portrait was retained from this repository and is displayed in greyscale using CSS. The Lund University seal identifies the author's affiliation.
+The palette is charcoal, white, and cool grey, with a dark background throughout. Photographs form the backgrounds of the landing page and page headers. Architecture, archival photography, and the hourglass mark were supplied in the Desktop Website folder. The portrait was retained from this repository and is displayed in greyscale using CSS.
 
-The homepage uses a locally hosted copy of Instrument Serif. Its SIL Open Font License is included in `fonts/`. Body text uses system fonts. All imagery and fonts are served from the same static site.
+Headings use Georgia at restrained sizes; body text uses system fonts. Photography is served locally and configured in `site.css`. No external font service is used. The teaching award is ordinary text within the page header, so it stays in the reading flow at every screen size.
+
+The empty title placeholder in `includes/title-placeholder.html` keeps Quarto from moving the custom page headings outside their designed layouts.
 
 Content was migrated from https://www.ibmartins.com/ on 8 September 2026. Publication years and manuscript statuses follow that source. The obsolete placeholder PDF and background file have been removed; the real CV is linked from Google Drive.

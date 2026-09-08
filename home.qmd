@@ -6,5 +6,7 @@ include-in-header:
 ---
 
 ```{=html}
+<div class="page-shell">
 <section class="error-page"><h1>Igor B. Martins</h1><p><a href="index.html">Continue to the homepage →</a></p></section>
+</div>
 ```

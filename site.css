@@ -1,0 +1,30 @@
+/* Background photography is part of the page surface. */
+.landing::before,
+.research-banner::before,
+.teaching-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+.landing::before {
+  background-image: linear-gradient(90deg, rgba(12,16,19,.94) 0%, rgba(12,16,19,.86) 35%, rgba(12,16,19,.5) 65%, rgba(12,16,19,.22) 100%), linear-gradient(0deg, rgba(18,22,25,.7), transparent 45%), url("images/architecture.png");
+  background-position: center, center, center 58%;
+}
+.research-banner::before {
+  background-image: linear-gradient(90deg, rgba(18,22,25,.96), rgba(18,22,25,.82) 60%, rgba(18,22,25,.55)), url("images/archive.png");
+  background-position: center, center 47%;
+}
+.teaching-banner::before {
+  background-image: linear-gradient(90deg, rgba(18,22,25,.96), rgba(18,22,25,.88) 60%, rgba(18,22,25,.7)), url("images/study.png");
+  background-position: center, center 53%;
+}
+@media (max-width: 767px) {
+  .landing::before {
+    background-image: linear-gradient(90deg, rgba(12,16,19,.89), rgba(12,16,19,.74)), url("images/architecture.png");
+    background-position: center, 63% center;
+  }
+}
