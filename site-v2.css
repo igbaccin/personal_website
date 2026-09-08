@@ -32,3 +32,7 @@ html.has-research-nav { scroll-padding-top: calc(var(--research-header-height, 9
     background-position: center, 63% center;
   }
 }
+
+/* Scroll padding supplies the anchor offset without inserting a grid item. */
+html.has-research-nav #publications:target::before,
+html.has-research-nav details.research-group:target::before { content: none !important; display: none !important; }
