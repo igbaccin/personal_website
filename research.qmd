@@ -22,7 +22,7 @@ description: "Publications and current research by Igor B. Martins on slavery, w
 <details class="research-group" id="publications" open>
 <summary><span class="group-title">Publications</span><span class="group-meta">14 works</span></summary>
 <div class="research-body">
-  <div class="research-label"><p>Articles, chapters,<br>reports &amp; thesis</p><a class="paper-link" href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en">Google Scholar ↗</a></div>
+  <div class="research-label"><p>Articles, chapters, <br>reports &amp; thesis</p><a class="paper-link" href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en">Google Scholar ↗</a></div>
   <div class="publication-list">
 <article class="publication">
   <div class="publication-year">Forthcoming</div>
