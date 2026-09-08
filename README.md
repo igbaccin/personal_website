@@ -1,0 +1,71 @@
+# Igor B. Martins
+
+A minimal academic website built with Quarto and hosted on GitHub Pages.
+
+**Live site:** https://igbaccin.github.io/personal_website/
+
+Software and hosting use free services. Domain registration for `ibmartins.com` remains separate. No paid theme, font subscription, analytics service, database, or application server is required.
+
+## Updating the site
+
+Edit the relevant `.qmd` file in GitHub and commit the change to `main`. The **Build and publish website** workflow renders the site and updates the `gh-pages` branch. GitHub Pages then publishes it. Progress appears in the repository's Actions tab.
+
+| File | What to edit |
+| --- | --- |
+| `index.qmd` | Homepage introduction and the three selected papers |
+| `research.qmd` | Publications, manuscripts, work in progress, essays, and media |
+| `teaching.qmd` | Courses, teaching periods, supervision, and award |
+| `about.qmd` | Biography, professional links, and contact details |
+| `_quarto.yml` | Navigation, footer, CV link, and website address |
+| `styles.scss` | Typography, layout, spacing, and monochrome palette |
+
+The page content uses ordinary HTML inside Quarto documents. Text between tags can be edited directly. To add a publication, copy an existing `<article class="publication">…</article>` block in `research.qmd`, then update its title, year, authors, journal, and link. Update the count in the relevant section's summary if adding a manuscript, project, or essay. Use `&amp;` for an ampersand inside HTML text.
+
+The homepage's selected papers are curated separately. Updating the full research list does not change the three homepage selections.
+
+The CV links to the existing public Google Drive document. Replace that URL in `index.qmd`, `about.qmd`, and `_quarto.yml` if the document address changes.
+
+## Local preview
+
+Install [Quarto](https://quarto.org/docs/get-started/) and open a terminal in this folder:
+
+```sh
+quarto preview
+```
+
+To generate the complete static site:
+
+```sh
+quarto render
+```
+
+The generated files are written to `_site/`, which is excluded from the source repository. The publishing workflow uses Quarto 1.10.18 for reproducible builds. No R, Python, Node.js, or package installation is needed for this site's content.
+
+## Free hosting configuration
+
+The repository is public. In **Settings → Pages**, the source is **Deploy from a branch**, using the `gh-pages` branch and its root folder. The existing workflow publishes to that branch. Standard hosted Actions runners are free for public repositories; this workflow uses `ubuntu-latest`.
+
+## Connecting ibmartins.com when ready
+
+The current Google Site and domain records are unchanged by this repository. The new site can be reviewed at its GitHub Pages address first.
+
+When ready to move the domain:
+
+1. Verify `ibmartins.com` in the GitHub account's Pages settings using GitHub's DNS TXT challenge.
+2. Add `www.ibmartins.com` as this repository's custom domain under **Settings → Pages**.
+3. Add `cname: www.ibmartins.com` under the deployment action's `with:` settings in `.github/workflows/render.yml` so future publications preserve the domain.
+4. Change `site-url` in `_quarto.yml` to `https://www.ibmartins.com/`.
+5. At the domain registrar, point the `www` CNAME record to `igbaccin.github.io`. Configure the apex domain according to GitHub's current documentation, preserving any email records.
+6. Enable **Enforce HTTPS** once the certificate is available.
+
+[GitHub's custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+
+The site includes a `/home.html` redirect to preserve the former Google Sites homepage path. GitHub Pages also serves the `.html` pages at their extensionless paths, covering `/research`, `/teaching`, and `/about`.
+
+## Design and content
+
+The palette is black, white, and cool grey. Architecture, archival photography, and the hourglass mark were supplied in the Desktop Website folder. The portrait was retained from this repository and is displayed in greyscale using CSS. The Lund University seal identifies the author's affiliation.
+
+The homepage uses a locally hosted copy of Instrument Serif. Its SIL Open Font License is included in `fonts/`. Body text uses system fonts. All imagery and fonts are served from the same static site.
+
+Content was migrated from https://www.ibmartins.com/ on 8 September 2026. Publication years and manuscript statuses follow that source. The obsolete placeholder PDF and background file have been removed; the real CV is linked from Google Drive.

@@ -1,33 +1,60 @@
 project:
   type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - research.qmd
+    - teaching.qmd
+    - about.qmd
+    - 404.qmd
+    - home.qmd
+  resources:
+    - images/
+    - fonts/
+    - .nojekyll
 
 website:
   title: "Igor B. Martins"
+  description: "Igor B. Martins is an economic historian at Lund University. Research on slavery, wealth, inequality, and African economic history."
+  site-url: https://igbaccin.github.io/personal_website/
+  favicon: images/hourglass.png
+  search: false
   navbar:
-    left:
-      - text: Home
-        href: "#home"
-      - text: About
-        href: "#about-me"
-      - text: Works
-        href: "#selected-works"
-      - text: Teaching
-        href: "#teaching"
-      - text: Contact
-        href: "#contact"
+    background: white
+    foreground: dark
+    logo: images/hourglass.png
+    logo-alt: "Igor B. Martins, home"
+    title: "Igor B. Martins"
+    collapse-below: md
+    pinned: true
+    right:
+      - href: research.qmd
+        text: Research
+      - href: teaching.qmd
+        text: Teaching
+      - href: about.qmd
+        text: About
+      - href: https://drive.google.com/file/d/138yj--DkLmJGjyrtcie_lr8Pc01dBaHh/view
+        text: CV ↗
+  page-footer:
+    border: false
+    left: |
+      <div class="footer-identity"><img src="/images/lund-seal.png" width="48" height="48" alt="Lund University seal"><div><strong>Igor B. Martins</strong><span>Department of Economic History<br>Lund University</span></div></div>
+    right: |
+      <div class="footer-links"><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se</a><div><a href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en">Google Scholar ↗</a><a href="https://portal.research.lu.se/en/persons/igor-martins">Lund profile ↗</a></div></div>
 
 format:
   html:
-    theme:
-      light: cosmo
-      dark: cosmo
-    primary:    "#B20086"           # accent color
-    secondary:  "#333333"           # main text color
-    background: "#F5F5F5"           # page background
-    body-font:  "Lora"              # serif body
-    heading-font: "Montserrat"      # sans headings
-    mono-font:  "Source Code Pro"
-    code-fold: true
-    highlight-style: tango
-    css: styles.scss
+    theme: [default, styles.scss]
+    css: fonts.css
+    lang: en
     toc: false
+    anchor-sections: false
+    smooth-scroll: true
+    link-external-newwindow: false
+    link-external-icon: false
+    fig-responsive: true
+    include-after-body: includes/interactions.html
+
+execute:
+  echo: false

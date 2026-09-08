@@ -1,0 +1,34 @@
+---
+title: ""
+pagetitle: "About"
+description: "Biography, affiliations, and contact details for Igor B. Martins, economic historian at Lund University."
+---
+
+```{=html}
+<section class="about-layout" aria-labelledby="about-title">
+  <div class="about-photo">
+    <img class="portrait" src="images/me.jpg" width="563" height="793" alt="Portrait of Igor B. Martins.">
+    <div class="text-links"><a href="https://drive.google.com/file/d/138yj--DkLmJGjyrtcie_lr8Pc01dBaHh/view">Curriculum vitae <span aria-hidden="true">↗</span></a></div>
+  </div>
+  <div class="about-copy">
+    <p class="eyebrow">About</p>
+    <h1 id="about-title">Igor B. Martins</h1>
+    <p class="opening">I am an economic historian and researcher in the Department of Economic History at Lund University.</p>
+    <p>I hold an MSc and PhD in Economic History from Lund University and have previously worked as a postdoctoral researcher at Lund and the University of Cambridge.</p>
+    <p>My current work contributes to research projects on the political economy of the Cape Colony and the historical development of inequality in Africa. I also examine labour and labour-market integration in Ghana, resilience to economic contraction in developing countries, and the relationship between climate exposure, asset ownership, and inequality.</p>
+    <p>Alongside this research, I study changing patterns of international scientific cooperation and their implications for research policy and geopolitics. My consultancy work includes projects for STINT and the United Nations Development Programme.</p>
+    <div class="profile-links"><a href="https://portal.research.lu.se/en/persons/igor-martins">Lund University ↗</a><a href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en">Google Scholar ↗</a><a href="https://www.linkedin.com/in/ibmartins/">LinkedIn ↗</a><a href="https://www.researchgate.net/profile/Igor-Martins">ResearchGate ↗</a></div>
+  </div>
+</section>
+
+<section class="contact-block" id="contact" aria-labelledby="contact-title">
+  <div><h2 id="contact-title">Get in touch</h2></div>
+  <div>
+    <p><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se</a></p>
+    <div class="contact-columns">
+      <div><h3>Postal address</h3><p>Department of Economic History<br>Lund University<br>Box 7083<br>SE-220 07 Lund, Sweden</p></div>
+      <div><h3>Visiting address</h3><p>Room 2060, Alfa 1<br>Scheelevägen 15B<br>223 63 Lund, Sweden</p></div>
+    </div>
+  </div>
+</section>
+```

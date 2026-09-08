@@ -1,0 +1,8 @@
+---
+title: ""
+pagetitle: "Page not found"
+---
+
+```{=html}
+<section class="error-page"><p class="eyebrow">404</p><h1>Page not found.</h1><p>The page may have moved. You can find my research, teaching, and contact details through the navigation above.</p><div class="text-links"><a href="index.html">Return home →</a></div></section>
+```

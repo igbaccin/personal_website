@@ -1,0 +1,31 @@
+---
+title: ""
+pagetitle: "Teaching"
+description: "Teaching and supervision by Igor B. Martins at Lund University. Economic history, colonialism, emerging economies, and research methods."
+---
+
+```{=html}
+<header class="page-intro">
+  <p class="eyebrow">Teaching &amp; supervision</p>
+  <h1>Ideas take shape<br> in the classroom.</h1>
+  <p class="lead">I teach economic history, emerging economies, and the history of colonialism, alongside academic writing and research methods.</p>
+</header>
+
+<div class="teaching-layout">
+  <section aria-label="Courses and supervision">
+    <article class="course"><h3>Colonialism and Economic Change</h3><p>Autumn 2026</p></article>
+    <article class="course"><h3>Growth, Stagnation, and Inequality in Africa</h3><p>Autumn 2026</p></article>
+    <article class="course"><h3>Development of Emerging Economies</h3><p>Autumn 2026</p></article>
+    <article class="course"><h3>Development in a Historical Perspective</h3><p>Autumn 2026</p></article>
+    <article class="course"><h3>Field Work, Internship and Research Overview</h3><p>Spring 2026</p></article>
+    <article class="course"><h3>BSc and MSc thesis supervision</h3><p>Throughout the year</p></article>
+    <div class="teaching-contact"><p>For course descriptions, supervision enquiries, or letters of recommendation, please get in touch.</p><div class="text-links"><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se <span aria-hidden="true">↗</span></a></div></div>
+  </section>
+  <aside class="teaching-aside" aria-labelledby="teaching-award">
+    <p class="eyebrow">Teaching recognition</p>
+    <h2 id="teaching-award">Teacher of the Year</h2>
+    <p>Lund University School of Economics and Management</p>
+    <p class="year">2020</p>
+  </aside>
+</div>
+```
