@@ -20,7 +20,14 @@ description: "Biography, affiliations, and contact details for Igor B. Martins, 
     <p>I hold an MSc and PhD in Economic History from Lund University and have previously worked as a postdoctoral researcher at Lund and the University of Cambridge.</p>
     <p>My current work contributes to research projects on the political economy of the Cape Colony and the historical development of inequality in Africa. I also examine labour and labour-market integration in Ghana, resilience to economic contraction in developing countries, and the relationship between climate exposure, asset ownership, and inequality.</p>
     <p>Alongside this research, I study changing patterns of international scientific cooperation and their implications for research policy and geopolitics. My consultancy work includes projects for STINT and the United Nations Development Programme.</p>
-    
+<nav class="social-links" aria-label="Academic profiles, writing, and contact">
+        <a href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
+        <a href="https://portal.research.lu.se/en/persons/igor-martins">Lund University <span aria-hidden="true">↗</span></a>
+        <a href="https://www.researchgate.net/profile/Igor-Martins">ResearchGate <span aria-hidden="true">↗</span></a>
+        <a href="https://www.linkedin.com/in/ibmartins/">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="https://ibmartins.substack.com/">Substack <span aria-hidden="true">↗</span></a>
+        <a href="https://orcid.org/0000-0002-6141-9273">ORCID <span aria-hidden="true">↗</span></a>
+      </nav>
   </div>
 </section>
 
