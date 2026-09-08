@@ -74,3 +74,7 @@ The empty title placeholder in `includes/title-placeholder.html` keeps Quarto fr
 Content was migrated from https://www.ibmartins.com/ on 8 September 2026. Publication years and manuscript statuses follow that source. The obsolete placeholder PDF and background file have been removed; the real CV is linked from Google Drive.
 
 Desktop design is agreed with the site owner before a separate phone-layout pass. Course images link to the original Lund syllabus URLs; the course grid can be followed by a compact teaching history once the full record is supplied.
+
+The teaching record uses the owner’s May 2026 teaching account, without hours or private application details. Current courses have syllabus links and roles; earlier courses appear in a compact chronology. Development of Emerging Economies is historical, as confirmed by the owner. Course codes EKHB21 and UTVC21 were checked against Lund’s course catalogue.
+
+Only EOSE02 and UTVC21 are current teaching, as confirmed by the owner in September 2026. The remaining eight courses are listed under earlier teaching, with supervision and examination in a separate section.
