@@ -9,7 +9,6 @@ description: "Publications and current research by Igor B. Martins on slavery, w
   <div class="page-shell">
     <h1 id="research-title">Research</h1>
     <p class="lead">My research examines the political economy of slavery and the historical development of inequality, alongside work on economic resilience and international scientific cooperation.</p>
-    <div class="banner-links"><a href="https://ibmartins.substack.com/">Essays on Substack ↗</a></div>
   </div>
 </section>
 <div class="page-shell">
@@ -363,7 +362,7 @@ description: "Publications and current research by Igor B. Martins on slavery, w
     <p class="journal"><em>Frontiers in African Economic History Blog</em></p>
 
   </div>
-</article><div class="text-links"><a href="https://ibmartins.substack.com/">More writing on Substack ↗</a></div>
+</article>
 </div>
 </details>
 </div>

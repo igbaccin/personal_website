@@ -6,14 +6,16 @@ description: "Biography, affiliations, and contact details for Igor B. Martins, 
 
 ```{=html}
 <div class="page-shell">
-<section class="about-layout" aria-labelledby="about-title">
+<section class="about-heading" aria-labelledby="about-title">
+  <p class="eyebrow">About</p>
+  <h1 id="about-title">Igor B. Martins</h1>
+</section>
+<section class="about-layout" aria-label="Biography">
   <div class="about-photo">
     <img class="portrait" src="images/me.jpg" width="563" height="793" alt="Portrait of Igor B. Martins.">
     <div class="text-links"><a href="https://drive.google.com/file/d/138yj--DkLmJGjyrtcie_lr8Pc01dBaHh/view">Curriculum vitae <span aria-hidden="true">↗</span></a></div>
   </div>
   <div class="about-copy">
-    <p class="eyebrow">About</p>
-    <h1 id="about-title">Igor B. Martins</h1>
     <p class="opening">I am an economic historian and researcher in the Department of Economic History at Lund University.</p>
     <p>I hold an MSc and PhD in Economic History from Lund University and have previously worked as a postdoctoral researcher at Lund and the University of Cambridge.</p>
     <p>My current work contributes to research projects on the political economy of the Cape Colony and the historical development of inequality in Africa. I also examine labour and labour-market integration in Ghana, resilience to economic contraction in developing countries, and the relationship between climate exposure, asset ownership, and inequality.</p>

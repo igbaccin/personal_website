@@ -22,7 +22,7 @@ Edit the relevant `.qmd` file in GitHub and commit the change to `main`. The **B
 
 The page content uses ordinary HTML inside Quarto documents. Text between tags can be edited directly. To add a publication, copy an existing `<article class="publication">…</article>` block in `research.qmd`, then update its title, year, authors, journal, and link. Update the count in the relevant section's summary if adding a manuscript, project, or essay. Use `&amp;` for an ampersand inside HTML text.
 
-The homepage is a concise landing page. The complete publication list lives on the separate Research page, and Substack is linked directly from both pages.
+The homepage is a concise landing page. The complete publication list lives on the separate Research page, and Substack is linked directly from the landing page.
 
 The CV links to the existing public Google Drive document. Replace that URL in `index.qmd`, `about.qmd`, and `_quarto.yml` if the document address changes.
 
@@ -65,10 +65,12 @@ The site includes a `/home.html` redirect to preserve the former Google Sites ho
 
 ## Design and content
 
-The palette is charcoal, white, and cool grey, with a dark background throughout. Photographs form the backgrounds of the landing page and page headers. Architecture, archival photography, and the hourglass mark were supplied in the Desktop Website folder. The portrait was retained from this repository and is displayed in greyscale using CSS.
+The palette is charcoal, white, and cool grey, with a dark background throughout. Photographs form the backgrounds of the landing page and page headers. Architecture, archival photography, and the hourglass mark were supplied in the Desktop Website folder. The portrait was retained from this repository and is displayed in its original colour.
 
 Headings use Georgia at restrained sizes; body text uses system fonts. Photography is served locally and configured in `site.css`. No external font service is used. The teaching award is ordinary text within the page header, so it stays in the reading flow at every screen size.
 
 The empty title placeholder in `includes/title-placeholder.html` keeps Quarto from moving the custom page headings outside their designed layouts.
 
 Content was migrated from https://www.ibmartins.com/ on 8 September 2026. Publication years and manuscript statuses follow that source. The obsolete placeholder PDF and background file have been removed; the real CV is linked from Google Drive.
+
+Desktop design is agreed with the site owner before a separate phone-layout pass. Course images link to the original Lund syllabus URLs; the course grid can be followed by a compact teaching history once the full record is supplied.

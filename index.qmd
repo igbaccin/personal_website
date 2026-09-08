@@ -22,7 +22,6 @@ description: "Igor B. Martins, economic historian and researcher at Lund Univers
         <a href="https://www.researchgate.net/profile/Igor-Martins">ResearchGate <span aria-hidden="true">↗</span></a>
         <a href="https://www.linkedin.com/in/ibmartins/">LinkedIn <span aria-hidden="true">↗</span></a>
         <a href="https://ibmartins.substack.com/">Substack <span aria-hidden="true">↗</span></a>
-        <a href="mailto:igor.martins@ekh.lu.se">Email <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </div>

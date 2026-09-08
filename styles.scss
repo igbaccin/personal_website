@@ -87,9 +87,9 @@ h3 { font-size: 1.13rem; line-height: 1.5; margin: 0 0 8px; letter-spacing: 0; }
 .research-label h2 { font-size: 1.45rem; }
 .research-label p { font-size: .875rem; color: var(--muted); margin-top: 13px; line-height: 1.7; }
 .research-label a { font-size: .875rem; }
-.publication { display: grid; grid-template-columns: 85px minmax(0,1fr); gap: 19px; padding: 27px 0; border-bottom: 1px solid var(--rule); }
+.publication { display: grid; grid-template-columns: 85px minmax(0,1fr); gap: 19px; padding: 18px 0; border-bottom: 1px solid var(--rule); }
 .publication-year { font-size: .8rem; padding-top: 4px; color: var(--muted); font-variant-numeric: tabular-nums; }
-.publication h3 { font-size: 1.12rem; line-height: 1.55; margin-bottom: 9px; color: var(--ink); }
+.publication h3 { font-size: 1.12rem; line-height: 1.45; margin-bottom: 6px; color: var(--ink); }
 .publication h3 a { color: var(--ink); text-decoration: none; }
 .publication h3 a:hover { text-decoration: underline; }
 .publication p { margin: 0; font-size: .9rem; color: var(--muted); line-height: 1.75; }
@@ -117,11 +117,14 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
 .teaching-recognition strong { color: #eef1f3; font-weight: 600; }
 .teaching-contact { border-top: 1px solid var(--rule); margin-top: 9px; padding-top: 27px; }
 .teaching-contact p { font-size: 1rem; max-width: 650px; }
-.about-layout { display: grid; grid-template-columns: 235px minmax(0,1fr); gap: 68px; padding: 57px 0 47px; }
-.portrait { display: block; width: 100%; height: auto; filter: grayscale(1); }
+.about-heading { padding: 45px 0 28px; }
+.about-heading .eyebrow { margin-bottom: 12px; }
+.about-heading h1 { margin: 0; font-size: 2.2rem; }
+.about-layout { display: grid; grid-template-columns: 235px minmax(0,1fr); gap: 48px; padding: 0 0 40px; align-items: start; }
+.portrait { display: block; width: 100%; height: auto;  }
 .about-photo .text-links { margin-top: 20px; }
 .about-copy h1 { font-size: 2.2rem; }
-.about-copy p { margin-bottom: 22px; line-height: 1.85; font-size: 1rem; }
+.about-copy p { margin-bottom: 18px; line-height: 1.75; font-size: 1rem; }
 .about-copy .opening { font-size: 1.12rem; color: #edf0f2; }
 .contact-block { display: grid; grid-template-columns: 235px minmax(0,1fr); gap: 68px; padding: 37px 0 57px; border-top: 1px solid var(--rule); }
 .contact-block h2 { font-size: 1.55rem; }
@@ -210,4 +213,17 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
   .publication { break-inside: avoid; }
   .about-photo { max-width: 150px; }
   h1,h2,h3,p,a { color: #000 !important; }
+}
+
+/* Course imagery and syllabus links form one clear navigation target. */
+.teaching-content { max-width: none; }
+.course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); gap: 30px 27px; margin-bottom: 32px; }
+.course-card img { display: block; width: 100%; height: 155px; object-fit: cover; margin-bottom: 16px; }
+.course-card h3 { font-size: 1.13rem; line-height: 1.45; margin-bottom: 10px; }
+.course-card p { font-size: .82rem; color: var(--muted); margin: 8px 0 0; }
+.course-link { display: block; text-decoration: none; color: var(--ink); }
+.course-link:hover h3 { text-decoration: underline; text-underline-offset: .2em; }
+.syllabus-link { font-size: .85rem; text-decoration: underline; text-underline-offset: .3em; }
+@media (min-width: 768px) {
+  .social-links { grid-template-columns: repeat(5, auto); gap: 18px; max-width: 630px; }
 }

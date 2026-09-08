@@ -15,12 +15,54 @@ description: "Teaching and supervision by Igor B. Martins at Lund University. Ec
 <div class="page-shell">
   <section class="teaching-content" aria-labelledby="courses-title">
     <h2 id="courses-title">Courses &amp; supervision</h2>
-    <article class="course"><h3>Colonialism and Economic Change</h3><p>Autumn 2026</p></article>
-    <article class="course"><h3>Growth, Stagnation, and Inequality in Africa</h3><p>Autumn 2026</p></article>
-    <article class="course"><h3>Development of Emerging Economies</h3><p>Autumn 2026</p></article>
-    <article class="course"><h3>Development in a Historical Perspective</h3><p>Autumn 2026</p></article>
-    <article class="course"><h3>Field Work, Internship and Research Overview</h3><p>Spring 2026</p></article>
-    <article class="course"><h3>BSc and MSc thesis supervision</h3><p>Throughout the year</p></article>
+    <div class="course-grid">
+      <article class="course-card">
+        <a class="course-link" href="https://kursplaner.lu.se/pdf/kurs/en/EOSE02">
+          <img src="images/course-eose02.jpg" alt="" loading="lazy" width="600" height="320">
+          <h3>Colonialism and Economic Change</h3>
+          <span class="syllabus-link">Course syllabus <span aria-hidden="true">↗</span></span>
+        </a>
+        <p>Autumn 2026 <span aria-hidden="true">·</span> EOSE02</p>
+      </article>
+      <article class="course-card">
+        <a class="course-link" href="https://kursplaner.lu.se/pdf/kurs/en/EKHB21">
+          <img src="images/course-ekhb21.jpg" alt="" loading="lazy" width="600" height="320">
+          <h3>Growth, Stagnation, and Inequality in Africa</h3>
+          <span class="syllabus-link">Course syllabus <span aria-hidden="true">↗</span></span>
+        </a>
+        <p>Autumn 2026 <span aria-hidden="true">·</span> EKHB21</p>
+      </article>
+      <article class="course-card">
+        <a class="course-link" href="https://kursplaner.lu.se/pdf/kurs/en/EKHM61">
+          <img src="images/course-ekhm61.jpg" alt="" loading="lazy" width="600" height="320">
+          <h3>Development of Emerging Economies</h3>
+          <span class="syllabus-link">Course syllabus <span aria-hidden="true">↗</span></span>
+        </a>
+        <p>Autumn 2026 <span aria-hidden="true">·</span> EKHM61</p>
+      </article>
+      <article class="course-card">
+        <a class="course-link" href="https://kursplaner.lu.se/pdf/kurs/en/UTVC23">
+          <img src="images/course-utvc23.jpg" alt="" loading="lazy" width="600" height="320">
+          <h3>Development in a Historical Perspective</h3>
+          <span class="syllabus-link">Course syllabus <span aria-hidden="true">↗</span></span>
+        </a>
+        <p>Autumn 2026 <span aria-hidden="true">·</span> UTVC23</p>
+      </article>
+      <article class="course-card">
+        <a class="course-link" href="https://kursplaner.lu.se/pdf/kurs/en/EKHK17">
+          <img src="images/course-ekhk17.jpg" alt="" loading="lazy" width="600" height="320">
+          <h3>Field Work, Internship and Research Overview</h3>
+          <span class="syllabus-link">Course syllabus <span aria-hidden="true">↗</span></span>
+        </a>
+        <p>Spring 2026 <span aria-hidden="true">·</span> EKHK17</p>
+      </article>
+      <article class="course-card">
+        <img src="images/supervision.png" alt="Graduation caps held aloft." loading="lazy" width="937" height="469">
+        <h3>BSc and MSc thesis supervision</h3>
+        <a class="syllabus-link" href="mailto:igor.martins@ekh.lu.se">Discuss supervision <span aria-hidden="true">↗</span></a>
+        <p>Throughout the year</p>
+      </article>
+    </div>
     <div class="teaching-contact"><p>For course descriptions, supervision enquiries, or letters of recommendation, please get in touch.</p><div class="text-links"><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se <span aria-hidden="true">↗</span></a></div></div>
   </section>
 </div>

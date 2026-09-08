@@ -42,7 +42,7 @@ website:
     left: |
       <div class="footer-identity"><div><strong>Igor B. Martins</strong><span>Department of Economic History<br>Lund University</span></div></div>
     right: |
-      <div class="footer-links"><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se</a><div><a href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en">Google Scholar ↗</a><a href="https://portal.research.lu.se/en/persons/igor-martins">Lund profile ↗</a></div></div>
+      <div class="footer-links"><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se</a></div>
 
 format:
   html:
