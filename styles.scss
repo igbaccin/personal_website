@@ -260,8 +260,7 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
 .project-funding span { display: block; font-size: .75rem; margin-top: 5px; }
 .project-funding-multiple { display: grid; gap: 13px; }
 .project-funding-multiple div + div { padding-top: 12px; border-top: 1px solid var(--rule); }
-.project-funding-multiple p { margin: 0; padding-top: 12px; border-top: 1px solid var(--rule); }
-.project-funding-multiple b { display: block; font-size: .9rem; font-weight: 500; white-space: nowrap; }
+.project-funding-multiple .project-total strong { font-size: 1.15rem; }
 .project-link { display: inline-block; margin-top: 8px; font-size: .83rem; }
 .projects-note { font-size: .8rem; color: var(--muted); margin: 14px 0 32px; }
 .projects-banner .project-link { margin-top: 18px; }
@@ -333,9 +332,9 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
     border-top: 0;
   }
 
-  .project-funding-multiple p {
+  .project-funding-multiple .project-total {
     grid-column: 1 / -1;
-    padding-top: 12px;
-    border-top: 1px solid var(--rule);
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--rule);
   }
 }
