@@ -1,5 +1,8 @@
 /* Background photography is part of the page surface. */
 .research-banner h1 { margin-bottom: 0; }
+.section-nav { position: sticky; top: var(--research-header-height, 90px); z-index: 100; background: #121619; }
+html.has-research-nav { scroll-padding-top: calc(var(--research-header-height, 90px) + var(--research-nav-height, 76px) + 16px); }
+.section-nav a[aria-current="location"] { color: #fff; text-decoration: underline; }
 .landing::before,
 .research-banner::before,
 .teaching-banner::before {

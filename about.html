@@ -157,7 +157,37 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
-<script>document.addEventListener("DOMContentLoaded",function(){function reveal(){var id=decodeURIComponent(location.hash.slice(1));if(!id)return;var el=document.getElementById(id);if(el&&el.matches("details"))el.open=true;}reveal();window.addEventListener("hashchange",reveal);});</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const nav = document.querySelector(".section-nav");
+  if (!nav) return;
+  const root = document.documentElement;
+  const header = document.getElementById("quarto-header");
+  root.classList.add("has-research-nav");
+  function measure() {
+    root.style.setProperty("--research-header-height", (header ? header.getBoundingClientRect().height : 0) + "px");
+    root.style.setProperty("--research-nav-height", nav.getBoundingClientRect().height + "px");
+  }
+  measure();
+  const observer = new ResizeObserver(measure);
+  observer.observe(nav);
+  if (header) observer.observe(header);
+  function reveal() {
+    let id;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch (_) { return; }
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (el.matches("details")) el.open = true;
+    nav.querySelectorAll("a").forEach(function (link) {
+      if (link.hash === location.hash) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    });
+    requestAnimationFrame(function () { el.scrollIntoView({block: "start"}); });
+  }
+  reveal();
+  window.addEventListener("hashchange", reveal);
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {
