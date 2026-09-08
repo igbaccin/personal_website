@@ -11,6 +11,7 @@ project:
     - home.qmd
   resources:
     - images/
+    - files/
     - .nojekyll
 
 website:
@@ -38,8 +39,9 @@ website:
         text: Teaching
       - href: about.qmd
         text: About
-      - href: https://drive.google.com/file/d/138yj--DkLmJGjyrtcie_lr8Pc01dBaHh/view
+      - href: files/igor-b-martins-cv.pdf
         text: CV ↗
+        target: _blank
   page-footer:
     border: false
     left: |
