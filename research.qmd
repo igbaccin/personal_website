@@ -19,8 +19,10 @@ description: "Publications and current research by Igor B. Martins on slavery, w
   <a href="#essays-media">Essays &amp; media</a>
 </nav>
 
-<section class="research-body" id="publications" aria-labelledby="publications-title">
-  <div class="research-label"><h2 id="publications-title">Publications</h2><p>Articles, chapters,<br>reports &amp; thesis</p><a class="paper-link" href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en">Google Scholar ↗</a></div>
+<details class="research-group" id="publications" open>
+<summary><span class="group-title">Publications</span><span class="group-meta">14 works</span></summary>
+<div class="research-body">
+  <div class="research-label"><p>Articles, chapters,<br>reports &amp; thesis</p><a class="paper-link" href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en">Google Scholar ↗</a></div>
   <div class="publication-list">
 <article class="publication">
   <div class="publication-year">Forthcoming</div>
@@ -149,7 +151,8 @@ description: "Publications and current research by Igor B. Martins on slavery, w
   </div>
 </article>
 </div>
-</section>
+</div>
+</details>
 <div class="research-extra">
 <details class="research-group" id="under-review">
 <summary><span class="group-title">Under review</span><span class="group-meta">5 manuscripts</span></summary>
