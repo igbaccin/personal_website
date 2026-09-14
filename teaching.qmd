@@ -40,8 +40,20 @@ description: "Teaching and supervision by Igor B. Martins at Lund University. Ec
       <h2 id="earlier-teaching-title">Earlier teaching</h2>
       <p class="section-caption">Lund University</p>
       <article class="teaching-entry">
+        <p class="teaching-years">2024</p>
+        <div><h3>Development Theories</h3><p>Bachelor’s · UTVC23 · Lecturer</p></div>
+      </article>
+      <article class="teaching-entry">
         <p class="teaching-years">2023–2026</p>
         <div><h3>Growth, Stagnation, and Inequality in Africa</h3><p>Bachelor’s · EKHB21 · Lecturer &amp; course convener</p></div>
+      </article>
+      <article class="teaching-entry">
+        <p class="teaching-years">2022–2023</p>
+        <div><h3>Institutions, Economic Growth and Equity</h3><p>Master’s · EKHM84 · Lecturer</p></div>
+      </article>
+      <article class="teaching-entry">
+        <p class="teaching-years">2020</p>
+        <div><h3>Statistics and Data</h3><p>Bachelor’s · EOSE06 · Lecturer</p></div>
       </article>
       <article class="teaching-entry">
         <p class="teaching-years">2019–2026</p>
@@ -52,20 +64,8 @@ description: "Teaching and supervision by Igor B. Martins at Lund University. Ec
         <div><h3>Field Work, Internship and Research Overview</h3><p>Bachelor’s · EKHK17 · Lecturer &amp; course convener</p></div>
       </article>
       <article class="teaching-entry">
-        <p class="teaching-years">2024</p>
-        <div><h3>Development Theories</h3><p>Bachelor’s · UTVC23 · Lecturer</p></div>
-      </article>
-      <article class="teaching-entry">
         <p class="teaching-years">2019–2024</p>
         <div><h3>Development of Emerging Economies</h3><p>Master’s · EKHM61 · Lecturer</p></div>
-      </article>
-      <article class="teaching-entry">
-        <p class="teaching-years">2022–2023</p>
-        <div><h3>Institutions, Economic Growth and Equity</h3><p>Master’s · EKHM84 · Lecturer</p></div>
-      </article>
-      <article class="teaching-entry">
-        <p class="teaching-years">2020</p>
-        <div><h3>Statistics and Data</h3><p>Bachelor’s · EOSE06 · Lecturer</p></div>
       </article>
       <article class="teaching-entry">
         <p class="teaching-years">2019–2020</p>
