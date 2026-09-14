@@ -1,0 +1,283 @@
+% Editorial academic CV. Compile with pdfLaTeX; no bibliography file required.
+% The portrait is optional. Place IgorMartins_cropped.jpg or .png beside this file.
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[a4paper,left=21mm,right=21mm,top=23mm,bottom=19mm,headheight=21pt]{geometry}
+\usepackage{xcolor,graphicx,array,tabularx,titlesec,fancyhdr,needspace,enumitem}
+\usepackage[hidelinks,unicode]{hyperref}
+\definecolor{ink}{HTML}{121619}
+\definecolor{accent}{HTML}{425A6B}
+\definecolor{muted}{HTML}{596169}
+\definecolor{rulegrey}{HTML}{C6CBD0}
+\definecolor{paperband}{HTML}{EDF0F2}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\linespread{1.06}
+\raggedbottom
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\scriptsize\bfseries\color{accent}\MakeUppercase{Igor B. Martins}}
+\fancyhead[R]{\sffamily\scriptsize\color{muted}Academic curriculum vitae}
+\fancyfoot[L]{\sffamily\scriptsize\color{muted}Igor B. Martins}
+\fancyfoot[R]{\sffamily\scriptsize\color{muted}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{rulegrey}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+\titleformat{\section}{\sffamily\large\bfseries\color{ink}}{}{0pt}{\color{accent}\rule{4pt}{1.15em}\hspace{9pt}}[\vspace{3pt}{\color{rulegrey}\titlerule}]
+\titlespacing*{\section}{0pt}{18pt}{10pt}
+% Dates occupy a narrow column; the entry itself stays together across pages.
+\newcommand{\cventry}[6]{%
+  \par\addvspace{7pt}\noindent
+  \begin{tabularx}{\linewidth}{@{}p{20mm}@{\hspace{5mm}}X@{}}
+  \colorbox{paperband}{\makebox[17mm][c]{\sffamily\scriptsize\color{accent}\strut #1}} & \textbf{#2}%
+  \if\relax\detokenize{#3}\relax\else\newline #3\fi
+  \if\relax\detokenize{#4}\relax\else\enspace\textcolor{muted}{#4}\fi
+  \if\relax\detokenize{#5}\relax\else\newline #5\fi
+  \if\relax\detokenize{#6}\relax\else\newline {\small #6}\fi
+  \end{tabularx}\par}
+% Full-width bibliography entries with hanging indents, without bullets.
+\newcommand{\cvlistitem}[1]{\par\addvspace{5pt}\noindent
+  \textcolor{accent}{\raisebox{.45ex}{\rule{3.2pt}{3.2pt}}}\hspace{7pt}%
+  \begin{minipage}[t]{\dimexpr\linewidth-12pt\relax}\hangindent=1.15em\hangafter=1\relax #1\par\end{minipage}\par}
+\newcommand{\portrait}{%
+  \IfFileExists{IgorMartins_cropped.jpg}{\includegraphics[width=19mm]{IgorMartins_cropped.jpg}}{%
+  \IfFileExists{IgorMartins_cropped.png}{\includegraphics[width=19mm]{IgorMartins_cropped.png}}{}}}
+\newcommand{\refentry}[3]{%
+  \begin{minipage}[t]{\linewidth}\textbf{#1}\newline
+  #2\newline
+  {\small\href{mailto:#3}{#3}}\end{minipage}}
+\newcommand{\refcell}[3]{\textbf{#1}\newline
+  #2\newline
+  {\small\href{mailto:#3}{#3}}}
+\let\originalsection\section
+\renewcommand{\section}[1]{\par\Needspace{145pt}\originalsection{#1}}
+\begin{document}
+\thispagestyle{empty}
+\begin{tabularx}{\linewidth}{@{}Xr@{}}
+{\fontsize{29}{33}\selectfont\color{ink}Igor B. Martins}\newline
+\vspace{5pt}{\sffamily\color{muted}Researcher in Economic History, Lund University}
+& \raisebox{\dimexpr-\height+15pt\relax}{\portrait}
+\end{tabularx}
+\vspace{7pt}
+{\color{accent}\rule{\linewidth}{1.2pt}}
+\vspace{7pt}
+\noindent{\sffamily\small\color{ink}
+\href{mailto:igor.martins@ekh.lu.se}{igor.martins@ekh.lu.se}\enspace\textcolor{muted}{\textbar}\enspace
+\href{https://www.ibmartins.com}{www.ibmartins.com}\enspace\textcolor{muted}{\textbar}\enspace +46 (70) 655 8565\hfill
+\textcolor{muted}{Malm\"o, Sweden}}
+\vspace{6pt}
+\section{Academic Experience}
+\cventry{2024--}{Researcher}{Lund University}{Sweden}{}{}
+\cventry{2022--2023}{Postdoctoral Research Associate}{University of Cambridge}{United Kingdom}{}{}
+\cventry{2020--2023}{Postdoctoral Fellow}{Lund University}{Sweden}{}{}
+\cventry{2017--2018}{Visiting Researcher}{Stellenbosch University}{South Africa}{}{}
+
+
+\section{Education}
+\cventry{2016--2020}{Ph.D., Economic History}{Lund University}{Sweden}{}{}
+\cventry{2014--2016}{M.Sc., Economic History}{Lund University}{Sweden}{}{}
+\cventry{2008--2011}{B.Sc., Economics}{Funda\c{c}ão Getulio Vargas}{Brazil}{}{}
+
+
+\section{Published works}
+
+\cvlistitem{\textbf{Martins, I.} (forthcoming). Living Standards in Ghana, 1955--2005, in G. Austin, A. Britwum, L. Doumbia, A. Eckert, \& N.Y. Sapong (eds), \textit{Labour and Work in Ghana Since Independence}, London: Bloomsbury Academic.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.}, \& Green, E. (forthcoming). Från arbetskraft till kapital: Slaveriets ekonomiska logik i globalt perspektiv, \textit{Statsvetenskaplig tidskrift}.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.} (2026). Capital and Coercion: Slavery after the 1807 import ban in the Cape Colony, \textit{European Review of Economic History}, heag012.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.}, \& Green, E. (2025). Theoretical Foundations of the Economics of Slavery: Enslaved people as capital investments in the Atlantic world, \textit{Journal of Global History}, vol. 21, no. 1, pp.22--40.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.} (2025). Is the Business of Conquest the Conquest of Business?, \textit{The Case Centre}, 225-0045-1.}
+\smallskip
+\cvlistitem{Cilliers, J., Mariotti, M., \& \textbf{Martins, I.} (2024). Fertility Responses to Short-Term Economic Stress: Price volatility and wealth shocks in a pre-transitional settler colony, \textit{Explorations in Economic History}, 101620.}
+\smallskip
+\cvlistitem{Smythe, A., \textbf{Martins, I.}, \& Andersson, M. (2024). Inequality, Poverty, and Economic Shrinking: How can developing countries build greater resilience for more sustainable development patterns?, \textit{International Journal of Development Issues}, vol. 23, no. 1, pp.40--81.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.}, \& Schwaag Serger, S. (2023). An Age of Disentangled Research?, \textit{Issues in Science and Technology}, vol. 40, no. 1, pp.38--43.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.}, \& Schwaag Serger, S. (2023). \textit{Shifting Patterns in International Research Cooperation}, Stockholm: STINT.}
+\smallskip
+\cvlistitem{Axelsson, T., \& \textbf{Martins, I.} (2023). Resilience to Shrinking as a Catch-up Strategy: A comparison of Brazil and Indonesia, 1964--2019, \textit{Studies in Comparative International Development}, vol. 59, no. 3, pp.491--516.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.}, Cilliers, J., \& Fourie, J. (2022). Legacies of Loss: The health outcomes of slaveholder compensation in the British Cape Colony, \textit{Explorations in Economic History}, 101506.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.} (2020). Collateral Effect: Slavery and wealth in the Cape Colony, PhD thesis, Department of Economic History, Lund University.}
+\smallskip
+\cvlistitem{Palacio, A., \& \textbf{Martins, I.} (2019). What Caused Poverty Reduction in Brazil During the 2000s: Sectoral growth or public expenditures, \textit{OASIS. Observatorio de Analisis de los Sistemas Internacionales}, vol. 32, pp.1--25.}
+\smallskip
+\cvlistitem{Palacio, A., \& \textbf{Martins, I.} (2018). Poverty and Democracy: The Brazilian experience, in D. Rauhut \& N. Hatti (eds), \textit{Poverty, Politics and the Poverty of Politics}, New Delhi: B.R. Publishing Corporation, pp.193--210.}
+
+
+\section{Works under review}
+\cvlistitem{\textbf{Martins, I.} (2026). Art, Craft, and the Case for Artisanal Doctoral Supervision in the Humanities, \textit{Studies in Higher Education}. \underline{Revise \& Resubmit}.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.} (2026). Retrieval-Restricted Reasoning: A Proof of Concept for Adapting Language Models to Economic History, \textit{Historical Methods: A Journal of Quantitative and Interdisciplinary History}. \underline{Revise \& Resubmit}.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.} (2026). Slave Emancipation and Agricultural Output in the Cape Colony, \textit{Cliometrica}. \underline{Submitted}.}
+\smallskip
+\cvlistitem{Makuei, J., \& \textbf{Martins, I.} (2026). Democracy and Rural Inequality in Kenya, 1997--2010, \textit{African Affairs}. \underline{Submitted}.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.}, Grab, S., \& Green, E. (2026). Asset ownership turns climate exposure into inequality, \textit{Nature Communications}. \underline{Revise \& Resubmit}.}
+
+
+\section{Work in progress}
+\cvlistitem{\textbf{Martins, I.}, Schoots, J., \& Green, E. Held by the Elite: Monopoly Rights and Dynastic Persistence at the Cape Colony, 1680--1794.}
+\smallskip
+\cvlistitem{Smythe, A., \& \textbf{Martins, I.} Resilience and Growth Theory: A novel conceptualisation of convergence.}
+\smallskip
+\cvlistitem{Cilliers, J., \& \textbf{Martins, I.} Malthus at the Cape: Wealth, status, and mortality in a pre-industrial settler society.}
+\smallskip
+\cvlistitem{Cilliers, J., \& \textbf{Martins, I.} Forebearers: The forgotten women of the Cape Colony.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.}, \& Green, E. What Are Institutions Made Of? A social contract approach.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.}, Aboagye, P., \& Austin, G. The Ghanaian Divergence: Prices, incomes and living standards after independence.}
+
+
+\section{External funding}
+\cventry{2027--2029}{Handelsbanken Research Foundations}{Flying Blind: Tsetse Ecology, Colonial Response and Long-Run Health in Southeast Africa (P26-0357)}{Project researcher. Engaged at 30\% for three years.}{}{SEK 1{,}500{,}000 ($\approx$ EUR 138{,}500 / USD 163{,}000)}
+\cventry{2024--2027}{Vetenskapsr\r{a}det}{Causes and Consequences of Long-Term Inequality: Africa's Levels and Trends (2023-00809\_VR)}{Project researcher. Engaged at 20\% for two years.}{}{SEK 6{,}737{,}000 ($\approx$ EUR 623{,}623 / USD 735{,}688)}
+\cventry{2022--2026}{Handelsbanken Research Foundations}{Resilience to Economic Shrinking: The Role of Autonomous Financial Systems (P21-0044)}{Project researcher. Engaged at approx.\ 30\% for two years.}{}{SEK 1{,}725{,}000 ($\approx$ EUR 150{,}000 / USD 164{,}000)}
+\cventry{2022--2025}{Arts and Humanities Research Council (UK)}{Where have all the Workers Gone? Labour and Work in Ghana, 1951--2010 (AH/W010852/1)}{Postdoctoral Research Associate. Engaged at 100\% for one year.}{}{SEK 3{,}332{,}000 ($\approx$ EUR 308{,}438 / GBP 268{,}859)}
+\cventry{2021--2026}{Riksbankens Jubileumsfond}{The establishment, growth and legacy of a settler colony: Quantitative panel studies of the political economy of the Cape Colony (M20-0041)}{Project researcher. Engaged at 40\% for four years (2021--2024) and 20\% for two years (2025--2026).}{}{SEK 29{,}000{,}000 ($\approx$ EUR 2{,}520{,}000 / USD 2{,}760{,}000)}
+\cventry{2017--2018}{Erasmus Mundus Action 2 Programme (INSPIRE)}{Scholarship}{Stellenbosch University, South Africa}{Supported research training on the economic history of the Cape Colony.}{SEK 157{,}000}
+
+\newpage
+\medskip
+\noindent\textit{Pending PI applications (submitted 2025--2026)}
+\medskip
+
+\cventry{2026--}{Vetenskapsr\r{a}det (VR)}{TIES (Theory of Institutions as Embedded Social Contracts)}{Principal Investigator}{}{SEK 6{,}632{,}892}
+
+
+\section{Teaching experience}
+\cventry{2025--}{Development in a Historical Perspective - Economic, Social and Political Transformation}{Lund University}{Course convener}{}{}
+\cventry{2023--2026}{Growth, Stagnation, and Inequality in Africa}{Lund University}{Course convener}{}{}
+\cventry{2019--}{Colonialism and Economic Change in Africa, Asia and Latin America}{Lund University}{Lecturer}{}{}
+\cventry{2019--2026}{The Art of Writing and Reporting}{Lund University}{Course convener}{}{}
+\cventry{2019--2026}{Field Work/Internship and Research Overview}{Lund University}{Course convener}{}{}
+
+
+\section{Pedagogical qualifications}
+\cventry{2026--}{Teaching portfolio}{The Joint Faculties of Humanities and Theology}{Lund University, Sweden}{}{}
+\cventry{2025}{Course design in higher education}{The Joint Faculties of Humanities and Theology}{Lund University, Sweden}{}{}
+\cventry{2024}{Doctoral supervision}{The Joint Faculties of Humanities and Theology}{Lund University, Sweden}{}{}
+\cventry{2022}{Teaching and learning in higher education II}{The Joint Faculties of Humanities and Theology}{Lund University, Sweden}{}{}
+\cventry{2021}{Teaching and learning in higher education I}{The Joint Faculties of Humanities and Theology}{Lund University, Sweden}{}{}
+\cventry{2020}{How to teach with cases}{Lund University School of Economics and Management}{Lund University, Sweden}{}{}
+\cventry{2019}{How to write cases}{Lund University School of Economics and Management}{Lund University, Sweden}{}{}
+
+
+\section{Supervision}
+\cventry{2023--2026}{Doctoral}{Benjamin Chatterton, PhD in Economic History}{Lund University}{Co-supervisor}{Expected completion November 2026}
+\cventry{2021--}{Master's}{11 theses in Economic History}{Lund University}{}{}
+\cventry{2019--}{Bachelor's}{7 theses in Economic History}{Lund University}{}{}
+
+
+\section{Awards}
+\cventry{2020}{Teacher of the Year}{Lund University School of Economics and Management}{}{}{}
+
+
+\section{Media Outreach}
+\cvlistitem{\textbf{Martins, I.} (2026). Assessing students' academic writing when AI can produce a first draft, \textit{Times Higher Education}.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.} (2026). Portuguese Sources and the Shape of an Angolan Social Table, \textit{African Long-Term Inequality Trends (AFLIT)}.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.} (2026). Capital and Coercion: Why Slavery Persisted after Britain Banned the Trade, \textit{European Historical Economics Society}.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.} (2026). Theoretical Foundations of the Economics of Slavery: Enslaved people as capital investments in the Atlantic world, \textit{Frontiers in African Economic History Blog}.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.} (2025). Devo, não nego, pago com o meu escravo - Como pessoas escravizadas viravam garantia de crédito, \textit{The Conversation Brasil}.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.} (2025). What Is Economic History?, \textit{Tell Me About} [podcast].}
+\smallskip
+\cvlistitem{\textbf{Martins, I.} (2025). Students Learn Best When They're Not Handed a Map: 4 steps to structure discomfort in your case classroom, \textit{Inspiring Minds}.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.} (2025). The Pressure to Quantify Research Is Erasing Conceptual Depth, \textit{LSE Impact Blog}.}
+\smallskip
+\cvlistitem{Kim, H., Schwaag Serger, S., Mobrand, E., \& \textbf{Martins, I.} (2024). International Science Is Having a Messy Breakup, \textit{Research Professional News}.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.} (2023). Does a Negative Wealth Shock Affect Your Health? Evidence from an episode of `Expropriation with Partial Compensation' in nineteenth-century South Africa, \textit{Our Long Walk: Reflections on South Africa, from an Economic History Perspective}.}
+\smallskip
+\cvlistitem{\textbf{Martins, I.} (2023). Legacies of Loss: The health outcomes of slaveholder compensation in the British Cape Colony, \textit{Frontiers in African Economic History Blog}.}
+
+
+\section{Editorial and Review Experience}
+\cventry{2026--}{Peer-reviewer}{Studies in Higher Education}{}{}{}
+\cventry{2025}{Peer-reviewer}{International Journal of Development Issues}{}{}{}
+% \cventry{2025}{Peer-reviewer}{Humanities \& Social Science Communications}{}{}{}
+\cventry{2025}{Peer-reviewer}{Asia-Pacific Economic History Review}{}{}{}
+\cventry{2024}{Peer-reviewer}{Studies in Comparative International Development}{}{}{}
+\cventry{2023}{Peer-reviewer}{Technological Forecasting and Social Change}{}{}{}
+
+
+\section{Service}
+\cventry{2025--2026}{United Nations Development Programme}{}{}{Consultant}{Commissioned by the UNDP's Strategy, Policy and Capacities for Economic Management (SPACE) Unit of South Sudan as a consultant to the country's first Multidimensional Poverty Index (MPI) report.}
+\cventry{2023--}{Swedish Economic History Association}{}{}{Auditor}{The SEHA promotes the spread of knowledge about economic and social history, as well as historical and geographical research. The association organises lectures and conferences.}
+\cventry{2023--2025}{World Economic History Congress 2025}{Lund, Sweden}{}{Conference Manager}{Co-organised the 19th WEHC, a major international conference in economic history with over 1,200 participants. Contributed to programme coordination, hybrid participation logistics, volunteer management, statistical reporting, and post-conference analysis. Oversaw technical workflows, communication, and strategic structuring of the scientific and cultural programme.}
+\cventry{2023--2024}{The Swedish Foundation for International Cooperation in Research and Higher Education (STINT)}{}{}{Consultant}{STINT supports internationalisation in Swedish higher education by funding initiatives led by researchers, educators, and academic leaders.}
+\cventry{2022--2023}{Clare Hall}{}{Affiliated Postdoctoral Member}{}{Clare Hall is a constituent college of the University of Cambridge established to serve as an Institute of Advanced Studies.}
+\cventry{2021--2023}{Swedish Economic History Association}{}{}{Treasurer}{}
+\cventry{2019--2020}{Ekonomisk Doktorandrådet (EDR)}{Lund University}{}{President}{EDR functions as a platform for communication, driving the matters of doctoral students at LUSEM and ensuring the representation of doctoral students at faculty levels.}
+\cventry{2018--2020}{The Economic History Society}{University of Glasgow}{}{Student Ambassador}{EHS Student Ambassadors facilitate communication between the Economic History Society and students interested in economic and/or social history.}
+\cventry{2018--2019}{Ekonomisk Doktorandrådet (EDR)}{Lund University}{}{Vice-President}{}
+\cventry{2017--}{Laboratory for the Economics of Africa's Past}{Stellenbosch University}{}{Visiting Researcher}{The Laboratory for the Economics of Africa's Past is dedicated to the quantitative study of African economic and social history.}
+
+
+\section{Professional memberships}
+{\small Economic History Association, Economic History Society, Social Science History Association, African Economic History Network, Swedish Economic History Association\par}
+
+
+\section{Recent conferences, workshops and seminars}
+\begingroup\small
+
+\cventry{02/2026}{Trelleborgs Biblioteket}{Trelleborg, Sweden}{\textbf{Speaker}}{}{How did colonial institutions shape African democracy and development?}
+\cventry{07/2025}{World Economic History Congress}{Lund, Sweden}{\textbf{Organiser \& Panellist}}{}{The geography of development in Portuguese Africa: Lessons from Angola}
+\cventry{12/2024}{African Studies Association}{Chicago, USA}{\textbf{Panellist}}{}{Market Integration and the Development of Capitalism in Ghana, 1987--2005}
+\cventry{12/2023}{Utbildningsdepartementet}{Stockholm, Sweden}{\textbf{Panellist}}{}{Shifting patterns in international research collaboration}
+\cventry{09/2023}{Seminarium om förändrade mönster för internationella forskningssamarbeten}{Stockholm, Sweden}{\textbf{Panellist}}{}{Shifting patterns in international research collaboration}
+\cventry{09/2023}{Swedish Economic History meeting}{Lund, Sweden}{\textbf{Organizer \& Panellist}}{}{Resilience and Growth Theory: A novel conceptualisation of convergence}
+\cventry{03/2023}{African Economic History Seminar}{Cambridge, United Kingdom}{\textbf{Panellist}}{}{Raising capital to raise crops: Slave emancipation and agricultural output in the Cape Colony}
+
+
+
+
+\section{Selected earlier conferences (2017--2022)}
+\cventry{10/2022}{African Economic History Network annual meeting}{Tenerife, Spain}{\textbf{Panellist}}{}{}
+\cventry{07/2022}{World Economic History Congress}{Paris, France}{\textbf{Panellist}}{}{}
+\cventry{10/2021}{Swedish Economic History meeting}{Gothenburg, Sweden}{\textbf{Panellist}}{}{}
+\cventry{10/2019}{Swedish Economic History meeting}{Uppsala, Sweden}{\textbf{Panellist}}{}{}
+\cventry{01/2019}{Allied Social Sciences Association}{Atlanta, USA}{\textbf{Panellist}}{}{}
+\cventry{10/2018}{African Economic History Network annual meeting}{Bologna, Italy}{\textbf{Panellist}}{}{}
+\cventry{07/2018}{World Economic History Congress}{Boston, USA}{\textbf{Panellist}}{}{}
+\cventry{04/2018}{European Social Science History Conference}{Belfast, UK}{\textbf{Panellist}}{}{}
+\cventry{10/2017}{African Economic History Network annual meeting}{Stellenbosch, South Africa}{\textbf{Panellist}}{}{}
+
+
+\endgroup
+\section{Administrative reference}
+\refentry{Prof. Mats Olsson}{Lund University, Sweden}{mats.olsson@ekh.lu.se}
+
+\section{Academic references}
+\begin{tabularx}{\linewidth}{@{}X@{\hspace{10mm}}X@{}}
+\refcell{Prof. Erik Green}{Lund University, Sweden}{erik.green@ekh.lu.se} &
+\refcell{Prof. Gareth Austin}{University of Cambridge, UK}{gma31@cam.ac.uk} \\ \noalign{\vskip 6pt}
+\refcell{Prof. Anne McCants}{MIT, USA}{amccants@mit.edu} &
+\refcell{Prof. Jeanne Cilliers}{Linköping University, Sweden}{jeanne.cilliers@liu.se}
+\end{tabularx}
+
+
+\originalsection{Teaching references}
+\begin{tabularx}{\linewidth}{@{}X@{\hspace{10mm}}X@{}}
+\refcell{Dr. Tobias Axelsson}{Lund University, Sweden}{tobias.axelsson@ekh.lu.se} &
+\refcell{Assoc. Prof. Tobias Karlsson}{Lund University, Sweden}{tobias.karlsson@ekh.lu.se}
+\end{tabularx}
+
+
+
+\end{document}
