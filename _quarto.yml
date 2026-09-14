@@ -12,12 +12,13 @@ project:
   resources:
     - images/
     - files/
+    - CNAME
     - .nojekyll
 
 website:
   title: "Igor B. Martins"
   description: "Igor B. Martins is an economic historian at Lund University. Research on slavery, wealth, inequality, and African economic history."
-  site-url: https://igbaccin.github.io/personal_website/
+  site-url: https://ibmartins.com/
   favicon: images/hourglass.png
   search: false
   navbar:
