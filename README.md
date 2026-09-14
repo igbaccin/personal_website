@@ -1,80 +1,76 @@
-# Igor B. Martins
+# Igor B. Martins website
 
-A minimal academic website built with Quarto and hosted on GitHub Pages.
+This repository contains the source for [ibmartins.com](https://ibmartins.com/), an academic website built with Quarto and published through GitHub Pages.
 
-**Live site:** https://igbaccin.github.io/personal_website/
+## Project locations
 
-Software and hosting use free services. Domain registration for `ibmartins.com` remains separate. No paid theme, font subscription, analytics service, database, or application server is required.
+- Local project folder: `D:\Dropbox\Igor\Extras\website`
+- GitHub repository: <https://github.com/igbaccin/personal_website>
+- Live website: <https://ibmartins.com/>
+- Hosting: GitHub Pages
+- Domain and DNS: Porkbun
 
-## Updating the site
+The local folder and the GitHub repository contain the website inputs. GitHub Actions renders those inputs and publishes the generated site. Porkbun directs the domain to GitHub Pages.
 
-Edit the relevant `.qmd` file in GitHub and commit the change to `main`. The **Build and publish website** workflow renders the site and updates the `gh-pages` branch. GitHub Pages then publishes it. Progress appears in the repository's Actions tab.
+## Content map
 
-| File | What to edit |
+| File or folder | What it controls |
 | --- | --- |
-| `index.qmd` | Landing-page introduction, research and CV buttons, social profiles, and email |
+| `index.qmd` | Landing-page introduction, main links, academic profiles, and email |
 | `research.qmd` | Publications, manuscripts, work in progress, essays, and media |
-| `teaching.qmd` | Courses, teaching periods, supervision, and award |
-| `about.qmd` | Biography, professional links, and contact details |
-| `_quarto.yml` | Navigation, footer, CV link, and website address |
-| `styles.scss` | Typography, layout, spacing, and dark monochrome palette |
-| `site.css` | Background imagery and its dark overlays |
+| `projects.qmd` | Research projects and funding |
+| `teaching.qmd` | Courses, teaching history, supervision, and award |
+| `about.qmd` | Biography, affiliations, professional links, and contact details |
+| `_quarto.yml` | Navigation, footer, site address, CV link, and Quarto settings |
+| `styles.scss` and `site-v2.css` | Typography, layout, spacing, colours, and responsive design |
+| `images/` | Portraits, page photographs, and icons |
+| `files/` | Downloadable files, including the CV |
+| `.github/workflows/render.yml` | Automated build and publication workflow |
+| `CNAME` | Permanent custom-domain setting for GitHub Pages |
 
-The page content uses ordinary HTML inside Quarto documents. Text between tags can be edited directly. To add a publication, copy an existing `<article class="publication">…</article>` block in `research.qmd`, then update its title, year, authors, journal, and link. Update the count in the relevant section's summary if adding a manuscript, project, or essay. Use `&amp;` for an ampersand inside HTML text.
+Generated folders such as `_site/`, `.quarto/`, and `index_files/` are outputs. Edit the source files listed above.
 
-The homepage is a concise landing page. The complete publication list lives on the separate Research page, and Substack is linked directly from the landing page.
+## Updating the website with Codex
 
-The CV links to the existing public Google Drive document. Replace that URL in `index.qmd`, `about.qmd`, and `_quarto.yml` if the document address changes.
+Open a task attached to this Website project and describe the desired result. Codex can locate the relevant source file, make the change, validate the site, commit it, push it to GitHub, and verify the live deployment.
 
-## Local preview
+Useful prompts include:
 
-Install [Quarto](https://quarto.org/docs/get-started/) and open a terminal in this folder:
+- `Add this publication to Research and publish the update: [citation and link].`
+- `Replace my website CV with the attached PDF and verify every CV link.`
+- `Update my biography to say [new text], then publish it.`
+- `Change the homepage portrait to the attached image and check desktop and phone layouts.`
+- `Preview this change locally and do not publish it yet: [requested change].`
+- `Check whether the website, custom domain, and latest GitHub deployment are healthy.`
+
+Attachments supplied in a task should be copied into `images/` or `files/` when they belong on the website. The repository then becomes their durable source.
+
+## Publication workflow
+
+Changes pushed to `main` start the **Build and publish website** GitHub Actions workflow. It renders the Quarto source and updates the `gh-pages` branch. GitHub Pages publishes that branch at `ibmartins.com`.
+
+For a local preview, install [Quarto](https://quarto.org/docs/get-started/) and run:
 
 ```sh
 quarto preview
 ```
 
-To generate the complete static site:
+To render the complete site locally:
 
 ```sh
 quarto render
 ```
 
-The generated files are written to `_site/`, which is excluded from the source repository. The publishing workflow uses Quarto 1.10.18 for reproducible builds. No R, Python, Node.js, or package installation is needed for this site's content.
+No application server, database, paid theme, external font service, or analytics service is required.
 
-## Free hosting configuration
+## Domain configuration
 
-The repository is public. In **Settings → Pages**, the source is **Deploy from a branch**, using the `gh-pages` branch and its root folder. The existing workflow publishes to that branch. Standard hosted Actions runners are free for public repositories; this workflow uses `ubuntu-latest`.
+The apex domain points to GitHub Pages, and `www.ibmartins.com` points to `igbaccin.github.io`. The repository's `CNAME` file preserves `ibmartins.com` during publication. DNS changes belong in Porkbun and should only be needed when the hosting arrangement changes.
 
-## Connecting ibmartins.com when ready
+The `/home.html` redirect preserves the former Google Sites homepage path. GitHub Pages also serves the main pages at their `.html` URLs and extensionless paths.
 
-The current Google Site and domain records are unchanged by this repository. The new site can be reviewed at its GitHub Pages address first.
+## Content conventions
 
-When ready to move the domain:
+Publication entries use ordinary HTML inside the Quarto documents. To add an item, copy the nearest existing entry of the same type and update its title, year, authors, venue, status, and link. Keep section counts synchronized with their entries. Use `&amp;` for ampersands inside HTML text.
 
-1. Verify `ibmartins.com` in the GitHub account's Pages settings using GitHub's DNS TXT challenge.
-2. Add `www.ibmartins.com` as this repository's custom domain under **Settings → Pages**.
-3. Add `cname: www.ibmartins.com` under the deployment action's `with:` settings in `.github/workflows/render.yml` so future publications preserve the domain.
-4. Change `site-url` in `_quarto.yml` to `https://www.ibmartins.com/`.
-5. At the domain registrar, point the `www` CNAME record to `igbaccin.github.io`. Configure the apex domain according to GitHub's current documentation, preserving any email records.
-6. Enable **Enforce HTTPS** once the certificate is available.
-
-[GitHub's custom-domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
-
-The site includes a `/home.html` redirect to preserve the former Google Sites homepage path. GitHub Pages also serves the `.html` pages at their extensionless paths, covering `/research`, `/teaching`, and `/about`.
-
-## Design and content
-
-The palette is charcoal, white, and cool grey, with a dark background throughout. Photographs form the backgrounds of the landing page and page headers. Architecture, archival photography, and the hourglass mark were supplied in the Desktop Website folder. The portrait was retained from this repository and is displayed in its original colour.
-
-Headings use Georgia at restrained sizes; body text uses system fonts. Photography is served locally and configured in `site.css`. No external font service is used. The teaching award is ordinary text within the page header, so it stays in the reading flow at every screen size.
-
-The empty title placeholder in `includes/title-placeholder.html` keeps Quarto from moving the custom page headings outside their designed layouts.
-
-Content was migrated from https://www.ibmartins.com/ on 8 September 2026. Publication years and manuscript statuses follow that source. The obsolete placeholder PDF and background file have been removed; the real CV is linked from Google Drive.
-
-Desktop design is agreed with the site owner before a separate phone-layout pass. Course images link to the original Lund syllabus URLs; the course grid can be followed by a compact teaching history once the full record is supplied.
-
-The teaching record uses the owner’s May 2026 teaching account, without hours or private application details. Current courses have syllabus links and roles; earlier courses appear in a compact chronology. Development of Emerging Economies is historical, as confirmed by the owner. Course codes EKHB21 and UTVC21 were checked against Lund’s course catalogue.
-
-Only EOSE02 and UTVC21 are current teaching, as confirmed by the owner in September 2026. The remaining eight courses are listed under earlier teaching, with supervision and examination in a separate section.
+The complete publication list belongs on the Research page. The homepage remains concise. Current teaching and earlier teaching remain separate, and course links should point to the relevant Lund syllabus pages when available.
