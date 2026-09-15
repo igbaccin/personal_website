@@ -8,10 +8,10 @@ description: "Igor B. Martins, economic historian and researcher at Lund Univers
 <section class="landing" aria-labelledby="home-title">
   <div class="page-shell">
     <div class="landing-copy">
-      <p class="eyebrow">Economic history · Lund University</p>
+      <p class="eyebrow">African economic history</p>
       <h1 id="home-title">Igor B. Martins</h1>
-      <p class="affiliation">Researcher, Department of Economic History<br>Lund University School of Economics and Management</p>
-      <p class="intro">I study slavery, wealth, and inequality in historical perspective, with a particular focus on Africa.</p>
+      <p class="affiliation">Researcher at Lund University</p>
+      <p class="intro">I study how wealth and power shape who benefits from economic change, and why inequality can persist across generations.</p>
       <div class="landing-actions">
         <a class="primary-link" href="research.html">Research &amp; publications <span aria-hidden="true">→</span></a>
         <a class="secondary-link" href="files/igor-b-martins-cv.pdf" target="_blank" rel="noopener">Curriculum vitae <span aria-hidden="true">↗</span></a>

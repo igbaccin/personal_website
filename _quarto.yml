@@ -46,7 +46,7 @@ website:
   page-footer:
     border: false
     left: |
-      <div class="footer-identity"><div><strong>Igor B. Martins</strong><span>Department of Economic History<br>Lund University</span></div></div>
+      <div class="footer-identity"><div><strong>Igor B. Martins</strong><span>Malmö, Sweden</span></div></div>
     right: |
       <div class="footer-links"><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se</a></div>
 
