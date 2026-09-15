@@ -6,6 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
     link.setAttribute("title", "Opens a PDF in a new tab");
   });
 
+  document.querySelectorAll(".social-links a").forEach(function (link) {
+    link.setAttribute("target", "_blank");
+    link.setAttribute("rel", "noopener");
+    const label = link.textContent.replace(/↗/g, "").trim();
+    link.setAttribute("aria-label", label + ", opens in a new tab");
+    link.setAttribute("title", "Opens in a new tab");
+  });
+
   const nav = document.querySelector(".section-nav");
   if (!nav) return;
   const root = document.documentElement;
