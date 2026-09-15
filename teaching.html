@@ -105,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./files/igor-b-martins-cv.pdf" target="_blank"> 
-<span class="menu-text">CV (PDF, opens in new tab) ↗</span></a>
+<span class="menu-text">CV ↗</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -219,6 +219,12 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('a[target="_blank"][href$=".pdf"]').forEach(function (link) {
+    const label = link.textContent.replace(/↗/g, "").trim();
+    link.setAttribute("aria-label", label + ", PDF, opens in a new tab");
+    link.setAttribute("title", "Opens a PDF in a new tab");
+  });
+
   const nav = document.querySelector(".section-nav");
   if (!nav) return;
   const root = document.documentElement;

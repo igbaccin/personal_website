@@ -105,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./files/igor-b-martins-cv.pdf" target="_blank"> 
-<span class="menu-text">CV (PDF, opens in new tab) ↗</span></a>
+<span class="menu-text">CV ↗</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -144,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
       <p class="intro">I study slavery, wealth, and inequality in historical perspective, with a particular focus on Africa.</p>
       <div class="landing-actions">
         <a class="primary-link" href="research.html">Research &amp; publications <span aria-hidden="true">→</span></a>
-        <a class="secondary-link" href="files/igor-b-martins-cv.pdf" target="_blank" rel="noopener">Curriculum vitae (PDF, opens in new tab) <span aria-hidden="true">↗</span></a>
+        <a class="secondary-link" href="files/igor-b-martins-cv.pdf" target="_blank" rel="noopener">Curriculum vitae <span aria-hidden="true">↗</span></a>
       </div>
       <nav class="social-links" aria-label="Academic profiles, writing, and contact">
         <a href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
@@ -163,6 +163,12 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('a[target="_blank"][href$=".pdf"]').forEach(function (link) {
+    const label = link.textContent.replace(/↗/g, "").trim();
+    link.setAttribute("aria-label", label + ", PDF, opens in a new tab");
+    link.setAttribute("title", "Opens a PDF in a new tab");
+  });
+
   const nav = document.querySelector(".section-nav");
   if (!nav) return;
   const root = document.documentElement;
