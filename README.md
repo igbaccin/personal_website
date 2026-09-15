@@ -63,6 +63,15 @@ quarto render
 
 No application server, database, paid theme, external font service, or analytics service is required.
 
+## Accessibility review
+
+Before publishing a content update, check the following:
+
+- Give informative images concise alt text. Keep `alt=""` for decorative images and images whose nearby text already conveys their purpose.
+- Keep headings in order and use link text that describes the destination. Identify downloads and links that open a new tab.
+- Test the changed page with a keyboard, including the skip link, navigation menu, links, and expandable research sections.
+- Check the changed page on a narrow screen and preserve visible focus indicators, readable contrast, and reduced-motion support.
+
 ## Domain configuration
 
 The apex domain points to GitHub Pages, and `www.ibmartins.com` points to `igbaccin.github.io`. The repository's `CNAME` file preserves `ibmartins.com` during publication. DNS changes belong in Porkbun and should only be needed when the hosting arrangement changes.

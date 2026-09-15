@@ -35,6 +35,8 @@ body { background: var(--paper); -webkit-font-smoothing: antialiased; }
 a { text-underline-offset: .3em; text-decoration-thickness: 1px; }
 a:hover { color: #fff; }
 a:focus-visible, summary:focus-visible, button:focus-visible { outline: 2px solid #d7dce0; outline-offset: 5px; }
+.skip-link { position: fixed; z-index: 1100; top: 12px; left: 12px; padding: 10px 14px; background: #eef1f3; color: #121619; font-weight: 600; text-decoration: none; transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); outline: 3px solid #d7dce0; outline-offset: 3px; }
 p { color: var(--body); }
 img { max-width: 100%; }
 #quarto-content { display: block; min-height: 65vh; padding: 0; }
