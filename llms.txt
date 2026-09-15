@@ -1,0 +1,12 @@
+# Igor B. Martins
+
+> Igor B. Martins is an economic historian at Lund University researching inequality, slavery, wealth, labour markets, and economic resilience in Africa.
+
+## Pages
+
+- [home](https://ibmartins.com/home.llms.md)
+- [about](https://ibmartins.com/about.llms.md)
+- [projects](https://ibmartins.com/projects.llms.md)
+- [index](https://ibmartins.com/index.llms.md)
+- [research](https://ibmartins.com/research.llms.md)
+- [teaching](https://ibmartins.com/teaching.llms.md)
