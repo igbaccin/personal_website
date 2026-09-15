@@ -17,9 +17,14 @@ project:
 
 website:
   title: "Igor B. Martins"
-  description: "Igor B. Martins is an economic historian at Lund University. Research on slavery, wealth, inequality, and African economic history."
+  description: "Igor B. Martins is an economic historian at Lund University researching inequality, slavery, wealth, labour markets, and economic resilience in Africa."
   site-url: https://ibmartins.com/
   favicon: images/hourglass.png
+  image: images/me.jpg
+  image-alt: "Portrait of Igor B. Martins"
+  open-graph: true
+  twitter-card: true
+  llms-txt: true
   search: false
   navbar:
     background: "#121619"
@@ -61,6 +66,9 @@ format:
     link-external-newwindow: false
     link-external-icon: false
     fig-responsive: true
+    canonical-url: true
+    author-meta: "Igor B. Martins"
+    include-in-header: includes/structured-data.html
     include-before-body:
       - includes/skip-link.html
       - includes/title-placeholder.html

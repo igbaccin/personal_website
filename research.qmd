@@ -1,13 +1,14 @@
 ---
 title: ""
-pagetitle: "Research"
-description: "Publications and current research by Igor B. Martins on slavery, wealth, inequality, demography, and international scientific cooperation."
+pagetitle: "Research in African economic history"
+description: "Publications by Igor B. Martins on African economic history, slavery and emancipation, inequality, labour markets, climate, wealth, and economic resilience."
 ---
 
 ```{=html}
 <section class="page-banner research-banner" aria-labelledby="research-title">
   <div class="page-shell">
     <h1 id="research-title">Research</h1>
+    <p class="lead">With a primary focus on Africa, I examine the historical roots of inequality and the conditions that help households and countries withstand economic disruption. My work covers slavery and emancipation in the Cape Colony, labour markets and living standards in Ghana, climate and asset ownership, and economic resilience in developing countries.</p>
   </div>
 </section>
 <div class="page-shell">

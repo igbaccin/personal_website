@@ -1,14 +1,14 @@
 ---
 title: ""
-pagetitle: "Economic historian"
-description: "Igor B. Martins, economic historian and researcher at Lund University. Slavery, wealth, inequality, and African economic history."
+pagetitle: "African economic history and inequality"
+description: "Igor B. Martins is an economic historian at Lund University researching inequality, slavery, wealth, labour markets, and economic resilience in Africa."
+canonical-url: https://ibmartins.com/
 ---
 
 ```{=html}
 <section class="landing" aria-labelledby="home-title">
   <div class="page-shell">
     <div class="landing-copy">
-      <p class="eyebrow">African economic history</p>
       <h1 id="home-title">Igor B. Martins</h1>
       <p class="affiliation">Researcher at Lund University</p>
       <p class="intro">I study how wealth and power shape who benefits from economic change, and why inequality can persist across generations.</p>

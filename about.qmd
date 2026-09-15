@@ -1,7 +1,7 @@
 ---
 title: ""
 pagetitle: "About"
-description: "Biography, affiliations, and contact details for Igor B. Martins, economic historian at Lund University."
+description: "Igor B. Martins is an economic historian at Lund University studying inequality, slavery, labour markets, wealth, and economic development in Africa."
 ---
 
 ```{=html}

@@ -1,6 +1,6 @@
 ---
 title: ""
-pagetitle: "Teaching"
+pagetitle: "Economic history teaching"
 description: "Teaching and supervision by Igor B. Martins at Lund University. Economic history, colonialism, emerging economies, and research methods."
 ---
 

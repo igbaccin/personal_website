@@ -1,7 +1,7 @@
 ---
 title: ""
-pagetitle: "Projects"
-description: "Funded research projects involving Igor B. Martins, with funders, dates, project awards, and roles."
+pagetitle: "Projects in African economic history"
+description: "Research projects involving Igor B. Martins on long-term inequality in Africa, the Cape Colony, labour history, climate, and resilience to economic crises."
 ---
 
 ```{=html}
