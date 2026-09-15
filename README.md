@@ -4,7 +4,7 @@ This repository contains the source for [ibmartins.com](https://ibmartins.com/),
 
 ## Project locations
 
-- Local project folder: `D:\Dropbox\Igor\Extras\website`
+- Local project folder: this repository's checked-out directory
 - GitHub repository: <https://github.com/igbaccin/personal_website>
 - Live website: <https://ibmartins.com/>
 - Hosting: GitHub Pages

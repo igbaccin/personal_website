@@ -2,7 +2,7 @@
 
 Use this folder as the permanent home of the website project:
 
-`D:\Dropbox\Igor\Extras\website`
+The repository's checked-out directory
 
 The website's text, photographs, CV, design, and publishing instructions all live here. Git records every approved change and synchronizes the project with <https://github.com/igbaccin/personal_website>. GitHub Pages builds and serves the public site at <https://ibmartins.com/>.
 
