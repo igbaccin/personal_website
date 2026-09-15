@@ -147,12 +147,12 @@ ul.task-list li input[type="checkbox"] {
         <a class="secondary-link" href="files/igor-b-martins-cv.pdf" target="_blank" rel="noopener">Curriculum vitae <span aria-hidden="true">↗</span></a>
       </div>
       <nav class="social-links" aria-label="Academic profiles, writing, and contact">
-        <a href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
-        <a href="https://portal.research.lu.se/en/persons/igor-martins">Lund University <span aria-hidden="true">↗</span></a>
-        <a href="https://www.researchgate.net/profile/Igor-Martins">ResearchGate <span aria-hidden="true">↗</span></a>
-        <a href="https://www.linkedin.com/in/ibmartins/">LinkedIn <span aria-hidden="true">↗</span></a>
-        <a href="https://ibmartins.substack.com/">Substack <span aria-hidden="true">↗</span></a>
-        <a href="https://orcid.org/0000-0002-6141-9273">ORCID <span aria-hidden="true">↗</span></a>
+        <a href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
+        <a href="https://portal.research.lu.se/en/persons/igor-martins" target="_blank" rel="noopener">Lund University <span aria-hidden="true">↗</span></a>
+        <a href="https://www.researchgate.net/profile/Igor-Martins" target="_blank" rel="noopener">ResearchGate <span aria-hidden="true">↗</span></a>
+        <a href="https://www.linkedin.com/in/ibmartins/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="https://ibmartins.substack.com/" target="_blank" rel="noopener">Substack <span aria-hidden="true">↗</span></a>
+        <a href="https://orcid.org/0000-0002-6141-9273" target="_blank" rel="noopener">ORCID <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </div>
@@ -167,6 +167,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const label = link.textContent.replace(/↗/g, "").trim();
     link.setAttribute("aria-label", label + ", PDF, opens in a new tab");
     link.setAttribute("title", "Opens a PDF in a new tab");
+  });
+
+  document.querySelectorAll(".social-links a").forEach(function (link) {
+    link.setAttribute("target", "_blank");
+    link.setAttribute("rel", "noopener");
+    const label = link.textContent.replace(/↗/g, "").trim();
+    link.setAttribute("aria-label", label + ", opens in a new tab");
+    link.setAttribute("title", "Opens in a new tab");
   });
 
   const nav = document.querySelector(".section-nav");
