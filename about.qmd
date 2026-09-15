@@ -13,7 +13,7 @@ description: "Biography, affiliations, and contact details for Igor B. Martins, 
 <section class="about-layout" aria-label="Biography">
   <div class="about-photo">
     <img class="portrait" src="images/me.jpg" width="563" height="793" alt="Portrait of Igor B. Martins.">
-    <div class="text-links"><a href="files/igor-b-martins-cv.pdf" target="_blank" rel="noopener">Curriculum vitae (PDF, opens in new tab) <span aria-hidden="true">↗</span></a></div>
+    <div class="text-links"><a href="files/igor-b-martins-cv.pdf" target="_blank" rel="noopener">Curriculum vitae <span aria-hidden="true">↗</span></a></div>
   </div>
   <div class="about-copy">
     <p>I hold an MSc and PhD in Economic History from Lund University and have previously worked as a postdoctoral researcher at Lund and the University of Cambridge.</p>

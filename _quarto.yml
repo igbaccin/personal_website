@@ -41,7 +41,7 @@ website:
       - href: about.qmd
         text: About
       - href: files/igor-b-martins-cv.pdf
-        text: CV (PDF, opens in new tab) ↗
+        text: CV ↗
         target: _blank
   page-footer:
     border: false
