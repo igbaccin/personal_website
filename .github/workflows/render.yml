@@ -28,6 +28,9 @@ jobs:
       - name: Render site
         run: quarto render
 
+      - name: Add curated AI content index
+        run: cp llms-index.txt _site/llms.txt
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
