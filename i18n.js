@@ -213,7 +213,7 @@
       "newyear": "Gott nytt år. Nada melhor do que estudar ao som de fogos de artifício.",
       "lucia": "Glad Lucia. Trabalhando à luz de velas, como manda a tradição.",
       "midsummer": "Glad midsommar. A Suécia inteira está de folga hoje. Menos nós dois, pelo visto.",
-      "july": "É julho. A Suécia fechou para férias. Eu não."
+      "july": "É julho. A Suécia está de férias. Eu não."
     }
   };
   var SAMPLE_HOUR = { "tz-night": 3, "tz-early": 7, "tz-day": 14, "tz-evening": 20 };
