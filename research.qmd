@@ -82,7 +82,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2024</div>
   <div>
-    <h3><a href="https://www.emerald.com/insight/content/doi/10.1108/ijdi-06-2023-0168/full/html">Inequality, Poverty, and Economic Shrinking: How can developing countries build greater resilience for more sustainable development patterns?</a></h3>
+    <h3><a href="https://www.emerald.com/insight/content/doi/10.1108/ijdi-06-2023-0168/full/html">Inequality, poverty, and resilience to economic shrinking</a></h3>
     <p>A. Smythe, I. Martins, and M. Andersson</p>
     <p class="journal"><em>International Journal of Development Issues</em> · 23(1), 40–81</p>
 
@@ -102,7 +102,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
   <div>
     <h3><a href="https://www.stint.se/wp-content/uploads/2023/07/STINT_Shifting-patterns-1.pdf">Shifting patterns in international research cooperation</a></h3>
     <p>I. Martins and S. Schwaag Serger</p>
-    <p class="journal"><em>STINT</em> · 23(1), 1–48</p>
+    <p class="journal"><em>STINT</em> · Report</p>
 
   </div>
 </article>
@@ -136,9 +136,9 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2019</div>
   <div>
-    <h3><a href="https://revistas.uexternado.edu.co/index.php/oasis/article/view/6232/8773">What caused poverty reduction in Brazil during the 2000s: sectoral growth or public expenditures?</a></h3>
+    <h3><a href="https://revistas.uexternado.edu.co/index.php/oasis/article/view/6232/8773">What caused poverty reduction in Brazil during the 2000s: sectoral growth or public expenditures</a></h3>
     <p>A. Palacio and I. Martins</p>
-    <p class="journal"><em>OASIS. Observatorio de Análisis de los Sistemas Internacionales</em> · 32, 1–25</p>
+    <p class="journal"><em>OASIS. Observatorio de Análisis de los Sistemas Internacionales</em> · 31, 185–213</p>
 
   </div>
 </article>
@@ -279,7 +279,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3><a href="https://aflit.net/blog/using-portuguese-sources-to-build-an-angolan-social-table/">Portuguese Sources and the Shape of an Angolan Social Table</a></h3>
+    <h3><a href="https://aflit.net/blog/using-portuguese-sources-to-build-an-angolan-social-table/">Using Portuguese Sources to Build an Angolan Social Table</a></h3>
     <p>2026 · I. Martins</p>
     <p class="journal"><em>African Long-Term Inequality Trends (AFLIT)</em></p>
 
@@ -298,7 +298,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 
   <div>
     <h3><a href="https://www.aehnetwork.org/blog/theoretical-foundations-of-the-economics-of-slavery-enslaved-people-as-capital-investments-in-the-atlantic-world/">Theoretical Foundations of the Economics of Slavery: Enslaved People as Capital Investments in the Atlantic World</a></h3>
-    <p>2026 · I. Martins</p>
+    <p>2026 · I. Martins and E. Green</p>
     <p class="journal"><em>Frontiers in African Economic History Blog</em></p>
 
   </div>
@@ -306,7 +306,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3><a href="https://theconversation.com/devo-nao-nego-pago-com-o-meu-escravo-como-pessoas-escravizadas-viravam-garantia-de-credito-272231">Devo, não nego, pago com o meu escravo: Como pessoas escravizadas viravam garantia de crédito</a></h3>
+    <h3><a href="https://theconversation.com/devo-nao-nego-pago-com-o-meu-escravo-como-pessoas-escravizadas-viravam-garantia-de-credito-272231">Devo, não nego, pago com o meu escravo – Como pessoas escravizadas viravam garantia de crédito</a></h3>
     <p>2025 · I. Martins</p>
     <p class="journal"><em>The Conversation Brasil</em></p>
 
@@ -317,7 +317,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
   <div>
     <h3><a href="https://open.spotify.com/episode/0ECMyrOOI3TqKdnoJVfOod?si=FpdFgKVaQ-OdDsu_ojOvxw">What is economic history?</a></h3>
     <p>2025 · I. Martins</p>
-    <p class="journal"><em>Tell me about</em> · Podcast</p>
+    <p class="journal"><em>Tell Me About</em> · Podcast</p>
 
   </div>
 </article>
@@ -361,7 +361,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 
   <div>
     <h3><a href="https://www.aehnetwork.org/blog/legacies-of-loss-the-health-outcomes-of-slaveholder-compensation-in-the-british-cape-colony/">Legacies of Loss: The Health Outcomes of Slaveholder Compensation in the British Cape Colony</a></h3>
-    <p>2023 · I. Martins</p>
+    <p>2023 · I. Martins, J. Cilliers, and J. Fourie</p>
     <p class="journal"><em>Frontiers in African Economic History Blog</em></p>
 
   </div>
