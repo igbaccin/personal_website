@@ -33,6 +33,9 @@ jobs:
       - name: Insert latest Substack post
         run: python3 scripts/latest-post.py _site/index.html
 
+      - name: Add og:url tags
+        run: python3 scripts/og-url.py _site
+
       - name: Add curated AI content index
         run: cp llms-index.txt _site/llms.txt
 
