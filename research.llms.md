@@ -37,7 +37,7 @@ I. Martins
 
 *European Review of Economic History* · heag012
 
-2025
+2026
 
 ### [Theoretical Foundations of the Economics of Slavery: Enslaved People as Capital Investments in the Atlantic World](https://www.cambridge.org/core/journals/journal-of-global-history/article/theoretical-foundations-of-the-economics-of-slavery-enslaved-people-as-capital-investments-in-the-atlantic-world/9CC6E3AE72944B441DFC1E2EBB6F407F)
 
@@ -63,6 +63,14 @@ J. Cilliers, M. Mariotti, and I. Martins
 
 2024
 
+### [Resilience to shrinking as a catch-up strategy: a comparison of Brazil and Indonesia, 1964–2019](https://link.springer.com/article/10.1007/s12116-023-09392-1)
+
+T. Axelsson and I. Martins
+
+*Studies in Comparative International Development* · 59(3), 491–516
+
+2024
+
 ### [Inequality, poverty, and resilience to economic shrinking](https://www.emerald.com/insight/content/doi/10.1108/ijdi-06-2023-0168/full/html)
 
 A. Smythe, I. Martins, and M. Andersson
@@ -79,27 +87,19 @@ I. Martins and S. Schwaag Serger
 
 2023
 
-### [Shifting patterns in international research cooperation](https://www.stint.se/wp-content/uploads/2023/07/STINT_Shifting-patterns-1.pdf)
-
-I. Martins and S. Schwaag Serger
-
-*STINT* · Report
-
-2023
-
-### [Resilience to shrinking as a catch-up strategy: a comparison of Brazil and Indonesia, 1964–2019](https://link.springer.com/article/10.1007/s12116-023-09392-1)
-
-T. Axelsson and I. Martins
-
-*Studies in Comparative International Development* · 59(3), 491–516
-
-2022
-
 ### [Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony](https://www.sciencedirect.com/science/article/pii/S0014498322000778?via%3Dihub)
 
 I. Martins, J. Cilliers, and J. Fourie
 
 *Explorations in Economic History* · 101506
+
+2023
+
+### [Shifting patterns in international research cooperation](https://www.stint.se/wp-content/uploads/2023/07/STINT_Shifting-patterns-1.pdf)
+
+I. Martins and S. Schwaag Serger
+
+*STINT* · Report
 
 2020
 
@@ -153,17 +153,17 @@ J. Cilliers and I. Martins
 
 *The Economic History Review* · Submitted
 
-### Democracy and Rural Inequality in Kenya, 1997–2010
-
-J. Makuei and I. Martins
-
-*African Affairs* · Submitted
-
 ### Slave Emancipation and Agricultural Output in the Cape Colony
 
 I. Martins
 
 *Cliometrica* · Submitted
+
+### Democracy and Rural Inequality in Kenya, 1997–2010
+
+J. Makuei and I. Martins
+
+*African Affairs* · Submitted
 
 Work in progress5 manuscripts
 
