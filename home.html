@@ -83,13 +83,22 @@ ul.task-list li input[type="checkbox"] {
       "url": "https://ibmartins.com/",
       "mainEntityOfPage": "https://ibmartins.com/about.html",
       "image": "https://ibmartins.com/images/me.jpg",
-      "jobTitle": "Researcher in Economic History",
-      "description": "Economic historian at Lund University studying the origins and persistence of inequality, with a primary focus on Africa.",
-      "worksFor": {
-        "@type": "CollegeOrUniversity",
-        "name": "Lund University",
-        "url": "https://www.lunduniversity.lu.se/"
-      },
+      "jobTitle": ["Postdoctoral researcher", "Researcher in Economic History"],
+      "description": "Economic historian at Linköping University and Lund University studying the origins and persistence of inequality, with a primary focus on Africa.",
+      "worksFor": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Linköping University",
+          "department": { "@type": "Organization", "name": "Department of Management and Engineering" },
+          "url": "https://liu.se/en"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Lund University",
+          "department": { "@type": "Organization", "name": "Department of Economic History" },
+          "url": "https://www.lunduniversity.lu.se/"
+        }
+      ],
       "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": "Lund University",
@@ -122,7 +131,19 @@ ul.task-list li input[type="checkbox"] {
   ]
 }
 </script>
-<meta http-equiv="refresh" content="0; url=./index.html">
+<style>
+html.i18n-pending #quarto-header, html.i18n-pending #quarto-content, html.i18n-pending .nav-footer { visibility: hidden; }
+.hs-lang { display: flex; align-items: center; margin-left: 10px; }
+.hs-lang-group { display: flex; align-items: center; gap: 7px; }
+.hs-lang button { background: none; border: 0; padding: 4px 1px; font-size: .78rem; letter-spacing: .08em; color: #8f989f; cursor: pointer; }
+.hs-lang button:hover { color: #fff; }
+.hs-lang button[aria-pressed="true"] { color: #fff; text-decoration: underline; text-underline-offset: 7px; }
+.hs-lang span { color: #4d565d; font-size: .78rem; }
+@media (max-width: 767px) { .hs-lang { margin: 8px 0 4px; } }
+.hs-greeting { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 1.05rem; letter-spacing: 0; text-transform: none; color: #cfd5da; margin: 0 0 16px; }
+</style>
+<script src="i18n.js"></script>
+<meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=./index.html">
 
 
 <link rel="stylesheet" href="site-v2.css">
@@ -134,7 +155,8 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:image" content="https://ibmartins.com/images/me.jpg">
 <meta name="twitter:image:alt" content="Portrait of Igor B. Martins">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://ibmartins.com/home.html">
+<link rel="canonical" href="https://ibmartins.com/">
+<meta property="og:url" content="https://ibmartins.com/">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -201,6 +223,10 @@ ul.task-list li input[type="checkbox"] {
     const link = document.querySelector(".skip-link");
     const header = document.getElementById("quarto-header");
     if (link && header) header.before(link);
+    // Quarto rewrites links on the home page to absolute URLs; keep this one a same-page jump.
+    window.addEventListener("load", function () {
+      if (link) link.setAttribute("href", "#quarto-document-content");
+    });
   }());
 </script>
 <!-- Keep Quarto's title processor from moving the custom page heading out of its layout. -->

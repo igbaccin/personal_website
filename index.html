@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Igor B. Martins">
-<meta name="description" content="Igor B. Martins is an economic historian at Lund University researching inequality, slavery, wealth, labour markets, and economic resilience in Africa.">
+<meta name="description" content="Igor B. Martins is an economic historian at Linköping and Lund universities, researching inequality, slavery, wealth, labour, and resilience in Africa.">
 
 <title>African economic history and inequality – Igor B. Martins</title>
 <style>
@@ -84,13 +84,22 @@ ul.task-list li input[type="checkbox"] {
       "url": "https://ibmartins.com/",
       "mainEntityOfPage": "https://ibmartins.com/about.html",
       "image": "https://ibmartins.com/images/me.jpg",
-      "jobTitle": "Researcher in Economic History",
-      "description": "Economic historian at Lund University studying the origins and persistence of inequality, with a primary focus on Africa.",
-      "worksFor": {
-        "@type": "CollegeOrUniversity",
-        "name": "Lund University",
-        "url": "https://www.lunduniversity.lu.se/"
-      },
+      "jobTitle": ["Postdoctoral researcher", "Researcher in Economic History"],
+      "description": "Economic historian at Linköping University and Lund University studying the origins and persistence of inequality, with a primary focus on Africa.",
+      "worksFor": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Linköping University",
+          "department": { "@type": "Organization", "name": "Department of Management and Engineering" },
+          "url": "https://liu.se/en"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Lund University",
+          "department": { "@type": "Organization", "name": "Department of Economic History" },
+          "url": "https://www.lunduniversity.lu.se/"
+        }
+      ],
       "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": "Lund University",
@@ -123,20 +132,33 @@ ul.task-list li input[type="checkbox"] {
   ]
 }
 </script>
+<style>
+html.i18n-pending #quarto-header, html.i18n-pending #quarto-content, html.i18n-pending .nav-footer { visibility: hidden; }
+.hs-lang { display: flex; align-items: center; margin-left: 10px; }
+.hs-lang-group { display: flex; align-items: center; gap: 7px; }
+.hs-lang button { background: none; border: 0; padding: 4px 1px; font-size: .78rem; letter-spacing: .08em; color: #8f989f; cursor: pointer; }
+.hs-lang button:hover { color: #fff; }
+.hs-lang button[aria-pressed="true"] { color: #fff; text-decoration: underline; text-underline-offset: 7px; }
+.hs-lang span { color: #4d565d; font-size: .78rem; }
+@media (max-width: 767px) { .hs-lang { margin: 8px 0 4px; } }
+.hs-greeting { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 1.05rem; letter-spacing: 0; text-transform: none; color: #cfd5da; margin: 0 0 16px; }
+</style>
+<script src="i18n.js"></script>
 
 
 <link rel="stylesheet" href="site-v2.css">
 <meta property="og:title" content="African economic history and inequality">
-<meta property="og:description" content="Igor B. Martins is an economic historian at Lund University researching inequality, slavery, wealth, labour markets, and economic resilience in Africa.">
+<meta property="og:description" content="Igor B. Martins is an economic historian at Linköping and Lund universities, researching inequality, slavery, wealth, labour, and resilience in Africa.">
 <meta property="og:image" content="https://ibmartins.com/images/me.jpg">
 <meta property="og:site_name" content="Igor B. Martins">
 <meta property="og:image:alt" content="Portrait of Igor B. Martins">
 <meta name="twitter:title" content="African economic history and inequality">
-<meta name="twitter:description" content="Igor B. Martins is an economic historian at Lund University researching inequality, slavery, wealth, labour markets, and economic resilience in Africa.">
+<meta name="twitter:description" content="Igor B. Martins is an economic historian at Linköping and Lund universities, researching inequality, slavery, wealth, labour, and resilience in Africa.">
 <meta name="twitter:image" content="https://ibmartins.com/images/me.jpg">
 <meta name="twitter:image:alt" content="Portrait of Igor B. Martins">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://ibmartins.com/">
+<meta property="og:url" content="https://ibmartins.com/">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -203,6 +225,10 @@ ul.task-list li input[type="checkbox"] {
     const link = document.querySelector(".skip-link");
     const header = document.getElementById("quarto-header");
     if (link && header) header.before(link);
+    // Quarto rewrites links on the home page to absolute URLs; keep this one a same-page jump.
+    window.addEventListener("load", function () {
+      if (link) link.setAttribute("href", "#quarto-document-content");
+    });
   }());
 </script>
 <!-- Keep Quarto's title processor from moving the custom page heading out of its layout. -->
@@ -211,27 +237,42 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<style>
+.landing-copy > * { animation: hc-up .9s cubic-bezier(.2,.7,.2,1) both; }
+.landing-copy > :nth-child(2) { animation-delay: .1s; }
+.landing-copy > :nth-child(3) { animation-delay: .2s; }
+.landing-copy > :nth-child(4) { animation-delay: .3s; }
+.landing-copy > :nth-child(5) { animation-delay: .4s; }
+.landing-copy > :nth-child(6) { animation-delay: .5s; }
+.landing-copy > :nth-child(7) { animation-delay: .6s; }
+@keyframes hc-up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.landing .hs-greeting { margin-bottom: 14px; }
+.hc-antiplug { margin: 26px 0 0; max-width: 570px; font-size: .82rem; line-height: 1.7; color: #aab3ba; }
+.hc-antiplug a { color: #d7dce0; }
+</style>
 <section class="landing" aria-labelledby="home-title">
   <div class="page-shell">
     <div class="landing-copy">
+      <div class="hs-greeting" data-hs-greeting="" data-nosnippet="">Hello.</div>
       <h1 id="home-title">Igor B. Martins</h1>
-      <p class="affiliation">Researcher at Lund University</p>
-      <p class="intro">I study how wealth and power shape who benefits from economic change, and why inequality can persist across generations.</p>
+      <p class="affiliation" data-i18n-html="aff.two">Postdoctoral researcher, Department of Management and Engineering, Linköping University<br>Researcher, Department of Economic History, Lund University</p>
+      <p class="intro" data-i18n="intro">I study how wealth and power shape who benefits from economic change, and why inequality can persist across generations.</p>
       <div class="landing-actions">
-        <a class="primary-link" href="research.html">Research &amp; publications <span aria-hidden="true">→</span></a>
-        <a class="secondary-link" href="files/igor-b-martins-cv.pdf" target="_blank" rel="noopener">Curriculum vitae <span aria-hidden="true">↗</span></a>
+        <a class="primary-link" href="research.html"><span data-i18n="cta.research">Research &amp; publications</span> <span aria-hidden="true">→</span></a>
+        <a class="secondary-link" href="files/igor-b-martins-cv.pdf" target="_blank" rel="noopener"><span data-i18n="cta.cv">Curriculum vitae</span> <span aria-hidden="true">↗</span></a>
       </div>
-      <nav class="social-links" aria-label="Academic profiles, writing, and contact">
+      <nav class="social-links" aria-label="Academic profiles and contact">
         <a href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
         <a href="https://portal.research.lu.se/en/persons/igor-martins" target="_blank" rel="noopener">Lund University <span aria-hidden="true">↗</span></a>
         <a href="https://www.researchgate.net/profile/Igor-Martins" target="_blank" rel="noopener">ResearchGate <span aria-hidden="true">↗</span></a>
         <a href="https://www.linkedin.com/in/ibmartins/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
-        <a href="https://ibmartins.substack.com/" target="_blank" rel="noopener">Substack <span aria-hidden="true">↗</span></a>
         <a href="https://orcid.org/0000-0002-6141-9273" target="_blank" rel="noopener">ORCID <span aria-hidden="true">↗</span></a>
       </nav>
+      <div class="hc-antiplug" data-nosnippet="" data-i18n-html="antiplug">Remember <em>not</em> to subscribe to the worst influencer in Sweden. Apparently he has been writing <a data-latest-post="" href="https://ibmartins.substack.com/p/on-routines" target="_blank" rel="noopener">on routines</a>.</div>
     </div>
   </div>
 </section>
+<script>if (window.SiteI18n) window.SiteI18n.apply();</script>
 
 
 

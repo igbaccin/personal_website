@@ -6,7 +6,9 @@ With a primary focus on Africa, I examine the historical roots of inequality and
 
 [Publications](#publications) [Under review](#under-review) [Work in progress](#work-in-progress) [Essays & media](#essays-media)
 
-Publications14 works
+## Publications
+
+14 works
 
 Articles, chapters,\
 reports & thesis
@@ -125,7 +127,9 @@ A. Palacio and I. Martins
 
 *Poverty, Politics and the Poverty of Politics* · Edited by D. Rauhut and N. Hatti. New Delhi: B.R. Publishing Corporation, 193–210
 
-Under review6 manuscripts
+## Under review
+
+6 manuscripts
 
 ### The Case for Artisanal Doctoral Supervision
 
@@ -165,7 +169,9 @@ J. Makuei and I. Martins
 
 *African Affairs* · Submitted
 
-Work in progress5 manuscripts
+## Work in progress
+
+5 manuscripts
 
 ### Held by the Elite: Monopoly Rights and Dynastic Persistence at the Cape Colony, 1680–1794
 
@@ -187,7 +193,9 @@ I. Martins and E. Green
 
 I. Martins, P. Aboagye, and G. Austin
 
-Essays & media11 contributions
+## Essays & media
+
+11 contributions
 
 ### [Assessing students’ academic writing when AI can produce a first draft](https://www.timeshighereducation.com/campus/assessing-students-academic-writing-when-ai-can-produce-first-draft)
 
