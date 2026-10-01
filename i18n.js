@@ -168,7 +168,8 @@
       "christmas": "God jul. Why are you here? Did Santa not bring you any gifts?",
       "newyear": "Gott nytt år. Nothing better than studying to the sound of fireworks.",
       "lucia": "Glad Lucia. Working by candlelight, as tradition demands.",
-      "midsummer": "Glad midsommar. Why are we both working?"
+      "midsummer": "Glad midsommar. All of Sweden is off today. Except the two of us, apparently.",
+      "july": "It’s July. Sweden is closed. I am not."
     },
     sv: {
       "late": "Jobbar du sent? Samma här.",
@@ -189,7 +190,8 @@
       "christmas": "God jul. Varför är du här? Fick du inga julklappar av tomten?",
       "newyear": "Gott nytt år. Inget slår att plugga till ljudet av fyrverkerier.",
       "lucia": "Glad Lucia. Jobbar i levande ljus, som traditionen kräver.",
-      "midsummer": "Glad midsommar. Varför jobbar vi båda?"
+      "midsummer": "Glad midsommar. Hela Sverige är ledigt i dag. Utom vi två, tydligen.",
+      "july": "Det är juli. Sverige har stängt. Det har inte jag."
     },
     pt: {
       "late": "Trabalhando até tarde? Eu também.",
@@ -210,7 +212,8 @@
       "christmas": "God jul. Por que você está aqui? O Papai Noel não te trouxe presentes?",
       "newyear": "Gott nytt år. Nada melhor do que estudar ao som de fogos de artifício.",
       "lucia": "Glad Lucia. Trabalhando à luz de velas, como manda a tradição.",
-      "midsummer": "Glad midsommar. Por que nós dois estamos trabalhando?"
+      "midsummer": "Glad midsommar. A Suécia inteira está de folga hoje. Menos nós dois, pelo visto.",
+      "july": "É julho. A Suécia fechou para férias. Eu não."
     }
   };
   var SAMPLE_HOUR = { "tz-night": 3, "tz-early": 7, "tz-day": 14, "tz-evening": 20 };
@@ -242,6 +245,7 @@
     if (/(^|\.)linkedin\.com$|^lnkd\.in$/.test(ref)) return { id: "linkedin" };
     if (STUDENT_HOSTS.test(ref)) return { id: "student" };
     if (/(^|\.)(lu|liu)\.se$/.test(ref)) return { id: "colleague" };
+    if (mon === 7) return { id: "july" };
     if (swe !== h) return { id: swe < 5 ? "tz-night" : swe < 9 ? "tz-early" : swe < 18 ? "tz-day" : "tz-evening", hour: swe };
     if ((day === 0 || day === 6) && h >= 9 && h < 20) return { id: "weekend" };
     return { id: h < 5 ? "late" : h < 8 ? "early" : h < 12 ? "morning" : h < 18 ? "afternoon" : "evening" };
