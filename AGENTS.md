@@ -38,12 +38,9 @@ The site is written in English. Swedish and Portuguese are applied in the browse
 - Recurring words already have keys: `st.forthcoming`, `st.submitted`, `st.rr`, `st.preprint`, `st.report`, `st.phd`, `w.and`, `w.oxand`, `n.works`, `n.manuscripts`, `n.contributions`, `role.researcher`, `fund.award`, `proj.website`. A new publication or project normally needs no new keys.
 - Check changes with `?lang=sv` and `?lang=pt` added to a page address.
 - The home-page greeting lines are in `GREET` in `i18n.js`. Keep the persona of an always-working, tired academic, and refer to Sweden rather than a city.
-## Build steps after rendering
+## Build step after rendering
 
-GitHub Actions runs two scripts after `quarto render`; local builds skip them.
-
-- `scripts/latest-post.py` puts the newest Substack post into the home page's anti-plug link (`data-latest-post`). The workflow also runs daily for this; GitHub pauses scheduled workflows after 60 days without repository activity.
-- `scripts/og-url.py` adds an `og:url` tag matching each page's canonical address.
+After `quarto render`, GitHub Actions runs `scripts/og-url.py`, which adds an `og:url` tag matching each page's canonical address. Local builds skip it.
 
 ## Completion evidence
 

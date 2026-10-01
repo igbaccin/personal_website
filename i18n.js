@@ -49,7 +49,6 @@
 
       "course.convener": "Kursansvarig", "course.lecturer": "Föreläsare",
 
-      "antiplug": "Kom ihåg att <em>inte</em> prenumerera på Sveriges sämsta influencer. Tydligen har han skrivit något som heter {a1}{/a1}.",
 
       "res.title": "Forskning",
       "res.lead": "Med Afrika i fokus undersöker jag ojämlikhetens historiska rötter och de förhållanden som hjälper hushåll och länder att stå emot ekonomiska störningar. Min forskning handlar om slaveri och frigörelse i Kapkolonin, arbetsmarknader och levnadsstandard i Ghana, klimat och ägande samt ekonomisk motståndskraft i utvecklingsländer.",
@@ -109,7 +108,6 @@
 
       "course.convener": "Coordenador do curso", "course.lecturer": "Professor",
 
-      "antiplug": "Lembre-se de <em>não</em> assinar o pior influenciador da Suécia. Parece que ele andou escrevendo algo chamado {a1}{/a1}.",
 
       "res.title": "Pesquisa",
       "res.lead": "Com foco principal na África, investigo as raízes históricas da desigualdade e as condições que ajudam famílias e países a resistir a choques econômicos. Meu trabalho abrange a escravidão e a emancipação na Colônia do Cabo, mercados de trabalho e padrões de vida em Gana, clima e propriedade de ativos, e resiliência econômica em países em desenvolvimento.",
