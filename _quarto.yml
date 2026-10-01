@@ -14,10 +14,11 @@ project:
     - files/
     - CNAME
     - .nojekyll
+    - i18n.js
 
 website:
   title: "Igor B. Martins"
-  description: "Igor B. Martins is an economic historian at Lund University researching inequality, slavery, wealth, labour markets, and economic resilience in Africa."
+  description: "Igor B. Martins is an economic historian at Linköping and Lund universities, researching inequality, slavery, wealth, labour, and resilience in Africa."
   site-url: https://ibmartins.com/
   favicon: images/hourglass.png
   image: images/me.jpg
@@ -68,7 +69,9 @@ format:
     fig-responsive: true
     canonical-url: true
     author-meta: "Igor B. Martins"
-    include-in-header: includes/structured-data.html
+    include-in-header:
+      - includes/structured-data.html
+      - includes/i18n-head.html
     include-before-body:
       - includes/skip-link.html
       - includes/title-placeholder.html

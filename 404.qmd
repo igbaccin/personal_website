@@ -5,6 +5,6 @@ pagetitle: "Page not found"
 
 ```{=html}
 <div class="page-shell">
-<section class="error-page"><p class="eyebrow">404</p><h1>Page not found.</h1><p>The page may have moved. You can find my research, teaching, and contact details through the navigation above.</p><div class="text-links"><a href="index.html">Return home →</a></div></section>
+<section class="error-page"><p class="eyebrow">404</p><h1 data-i18n="e404.title">Page not found.</h1><p data-i18n="e404.body">The page may have moved. You can find my research, teaching, and contact details through the navigation above.</p><div class="text-links"><a href="index.html"><span data-i18n="e404.home">Return home</span> →</a></div></section>
 </div>
 ```
