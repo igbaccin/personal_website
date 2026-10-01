@@ -63,7 +63,7 @@ J. Cilliers, M. Mariotti, and I. Martins
 
 2024
 
-### [Inequality, Poverty, and Economic Shrinking: How can developing countries build greater resilience for more sustainable development patterns?](https://www.emerald.com/insight/content/doi/10.1108/ijdi-06-2023-0168/full/html)
+### [Inequality, poverty, and resilience to economic shrinking](https://www.emerald.com/insight/content/doi/10.1108/ijdi-06-2023-0168/full/html)
 
 A. Smythe, I. Martins, and M. Andersson
 
@@ -83,7 +83,7 @@ I. Martins and S. Schwaag Serger
 
 I. Martins and S. Schwaag Serger
 
-*STINT* · 23(1), 1–48
+*STINT* · Report
 
 2023
 
@@ -111,11 +111,11 @@ I. Martins
 
 2019
 
-### [What caused poverty reduction in Brazil during the 2000s: sectoral growth or public expenditures?](https://revistas.uexternado.edu.co/index.php/oasis/article/view/6232/8773)
+### [What caused poverty reduction in Brazil during the 2000s: sectoral growth or public expenditures](https://revistas.uexternado.edu.co/index.php/oasis/article/view/6232/8773)
 
 A. Palacio and I. Martins
 
-*OASIS. Observatorio de Análisis de los Sistemas Internacionales* · 32, 1–25
+*OASIS. Observatorio de Análisis de los Sistemas Internacionales* · 31, 185–213
 
 2018
 
@@ -195,7 +195,7 @@ Essays & media11 contributions
 
 *Times Higher Education*
 
-### [Portuguese Sources and the Shape of an Angolan Social Table](https://aflit.net/blog/using-portuguese-sources-to-build-an-angolan-social-table/)
+### [Using Portuguese Sources to Build an Angolan Social Table](https://aflit.net/blog/using-portuguese-sources-to-build-an-angolan-social-table/)
 
 2026 · I. Martins
 
@@ -209,11 +209,11 @@ Essays & media11 contributions
 
 ### [Theoretical Foundations of the Economics of Slavery: Enslaved People as Capital Investments in the Atlantic World](https://www.aehnetwork.org/blog/theoretical-foundations-of-the-economics-of-slavery-enslaved-people-as-capital-investments-in-the-atlantic-world/)
 
-2026 · I. Martins
+2026 · I. Martins and E. Green
 
 *Frontiers in African Economic History Blog*
 
-### [Devo, não nego, pago com o meu escravo: Como pessoas escravizadas viravam garantia de crédito](https://theconversation.com/devo-nao-nego-pago-com-o-meu-escravo-como-pessoas-escravizadas-viravam-garantia-de-credito-272231)
+### [Devo, não nego, pago com o meu escravo – Como pessoas escravizadas viravam garantia de crédito](https://theconversation.com/devo-nao-nego-pago-com-o-meu-escravo-como-pessoas-escravizadas-viravam-garantia-de-credito-272231)
 
 2025 · I. Martins
 
@@ -223,7 +223,7 @@ Essays & media11 contributions
 
 2025 · I. Martins
 
-*Tell me about* · Podcast
+*Tell Me About* · Podcast
 
 ### [Students Learn Best When They're Not Handed a Map: 4 Steps to Structure Discomfort in Your Case Classroom](https://hbsp.harvard.edu/inspiring-minds/students-learn-through-discomfort)
 
@@ -251,6 +251,6 @@ Essays & media11 contributions
 
 ### [Legacies of Loss: The Health Outcomes of Slaveholder Compensation in the British Cape Colony](https://www.aehnetwork.org/blog/legacies-of-loss-the-health-outcomes-of-slaveholder-compensation-in-the-british-cape-colony/)
 
-2023 · I. Martins
+2023 · I. Martins, J. Cilliers, and J. Fourie
 
 *Frontiers in African Economic History Blog*
