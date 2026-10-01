@@ -4,5 +4,9 @@
     const link = document.querySelector(".skip-link");
     const header = document.getElementById("quarto-header");
     if (link && header) header.before(link);
+    // Quarto rewrites links on the home page to absolute URLs; keep this one a same-page jump.
+    window.addEventListener("load", function () {
+      if (link) link.setAttribute("href", "#quarto-document-content");
+    });
   }());
 </script>
