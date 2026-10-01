@@ -32,7 +32,7 @@
       "footer.place": "Malmö, Sverige",
       "lang.label": "Språk",
 
-      "aff.two": "Postdoktor, Institutionen för ekonomisk och industriell utveckling, Linköpings universitet<br>Forskare, Ekonomisk-historiska institutionen, Lunds universitet",
+      "aff": "Postdoktor vid Linköpings universitet, även verksam vid Lunds universitet",
       "intro": "Jag studerar hur förmögenhet och makt avgör vem som gynnas av ekonomisk förändring, och varför ojämlikhet kan bestå över generationer.",
       "cta.research": "Forskning och publikationer",
       "cta.cv": "Curriculum vitae",
@@ -79,7 +79,7 @@
       "about.eyebrow": "Om mig",
       "about.p1": "Jag är ekonomisk historiker och studerar ojämlikhetens ursprung och varaktighet, med särskilt fokus på Afrika. Min forskning undersöker hur ägande, arbetsmarknader, tillgång till finansiering och politisk makt formar ekonomisk utveckling och påverkar hur väl människor och länder klarar perioder av kris och förändring.",
       "about.p2": "Jag bygger och analyserar stora dataset från historiska källor för att studera hur stora ekonomiska förändringar påverkar förmögenhet, arbete, hälsa och levnadsstandard. Genomgående frågar jag hur befintliga skillnader i förmögenhet och makt påverkar vem som bär kostnaderna för en kris, vem som gynnas av återhämtning och tillväxt, och om ojämlikheten förs vidare till nästa generation.",
-      "about.p3": "Jag är postdoktor vid Institutionen för ekonomisk och industriell utveckling vid Linköpings universitet och forskare vid Ekonomisk-historiska institutionen vid Lunds universitet. Jag har en masterexamen och en doktorsexamen i ekonomisk historia från Lunds universitet och har tidigare arbetat som postdoktoral forskare vid Lunds universitet och University of Cambridge. Min forskning bidrar till projekt finansierade av Vetenskapsrådet, Riksbankens Jubileumsfond, Handelsbankens forskningsstiftelser och brittiska Arts and Humanities Research Council. Jag har också utfört forsknings- och konsultuppdrag för STINT och FN:s utvecklingsprogram (UNDP).",
+      "about.p3": "Jag är postdoktor vid Institutionen för ekonomisk och industriell utveckling vid Linköpings universitet och även verksam vid Ekonomisk-historiska institutionen vid Lunds universitet. Jag har en masterexamen och en doktorsexamen i ekonomisk historia från Lunds universitet och har tidigare arbetat som postdoktoral forskare vid Lunds universitet och University of Cambridge. Min forskning bidrar till projekt finansierade av Vetenskapsrådet, Riksbankens Jubileumsfond, Handelsbankens forskningsstiftelser och brittiska Arts and Humanities Research Council. Jag har också utfört forsknings- och konsultuppdrag för STINT och FN:s utvecklingsprogram (UNDP).",
       "about.contact": "Kontakt", "about.postal": "Postadress", "about.visiting": "Besöksadress",
 
       "e404.title": "Sidan hittades inte.",
@@ -91,7 +91,7 @@
       "footer.place": "Malmö, Suécia",
       "lang.label": "Idioma",
 
-      "aff.two": "Pesquisador de pós-doutorado, Departamento de Gestão e Engenharia, Universidade de Linköping<br>Pesquisador, Departamento de História Econômica, Universidade de Lund",
+      "aff": "Pesquisador, Universidade de Linköping, também vinculado à Universidade de Lund",
       "intro": "Estudo como a riqueza e o poder determinam quem se beneficia das mudanças econômicas e por que a desigualdade pode persistir ao longo de gerações.",
       "cta.research": "Pesquisa e publicações",
       "cta.cv": "Currículo",
@@ -138,7 +138,7 @@
       "about.eyebrow": "Sobre",
       "about.p1": "Sou historiador econômico e estudo as origens e a persistência da desigualdade, com foco principal na África. Minha pesquisa examina como a propriedade, os mercados de trabalho, o acesso ao crédito e o poder político moldam o desenvolvimento econômico e influenciam a capacidade de pessoas e países de resistir a períodos de crise e mudança.",
       "about.p2": "Construo e analiso grandes bases de dados a partir de registros históricos para estudar como grandes mudanças econômicas afetam a riqueza, o trabalho, a saúde e os padrões de vida. Em toda essa pesquisa, pergunto como as diferenças existentes de riqueza e poder influenciam quem arca com os custos de uma crise, quem se beneficia da recuperação e do crescimento, e se a desigualdade passa para a próxima geração.",
-      "about.p3": "Sou pesquisador de pós-doutorado no Departamento de Gestão e Engenharia da Universidade de Linköping e pesquisador no Departamento de História Econômica da Universidade de Lund. Tenho mestrado e doutorado em História Econômica pela Universidade de Lund e trabalhei anteriormente como pesquisador de pós-doutorado em Lund e na Universidade de Cambridge. Meu trabalho contribui para projetos de pesquisa financiados pelo Conselho Sueco de Pesquisa, pela Riksbankens Jubileumsfond, pelas Fundações de Pesquisa do Handelsbanken e pelo Arts and Humanities Research Council do Reino Unido. Também realizei pesquisas e consultorias para a STINT e para o Programa das Nações Unidas para o Desenvolvimento (PNUD).",
+      "about.p3": "Sou pesquisador no Departamento de Gestão e Engenharia da Universidade de Linköping e também vinculado ao Departamento de História Econômica da Universidade de Lund. Tenho mestrado e doutorado em História Econômica pela Universidade de Lund e trabalhei anteriormente como pesquisador de pós-doutorado em Lund e na Universidade de Cambridge. Meu trabalho contribui para projetos de pesquisa financiados pelo Conselho Sueco de Pesquisa, pela Riksbankens Jubileumsfond, pelas Fundações de Pesquisa do Handelsbanken e pelo Arts and Humanities Research Council do Reino Unido. Também realizei pesquisas e consultorias para a STINT e para o Programa das Nações Unidas para o Desenvolvimento (PNUD).",
       "about.contact": "Contato", "about.postal": "Endereço postal", "about.visiting": "Endereço para visitas",
 
       "e404.title": "Página não encontrada.",
