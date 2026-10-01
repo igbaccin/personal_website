@@ -114,7 +114,7 @@
       "proj.title": "Projetos",
       "proj.lulink": "Todos os projetos na Universidade de Lund",
       "proj.current": "Projetos em andamento", "proj.upcoming": "Próximo projeto", "proj.earlier": "Projetos anteriores e financiamento de pesquisa",
-      "role.researcher": "Pesquisador do projeto", "role.postdoc": "Pesquisador de pós-doutorado", "role.visiting": "Pesquisador visitante", "role.plain": "Pesquisador",
+      "role.researcher": "Pesquisador do projeto", "role.postdoc": "Pesquisador", "role.visiting": "Pesquisador visitante", "role.plain": "Pesquisador",
       "geo.za": "África do Sul",
       "proj.website": "Site do projeto",
       "fund.award": "Valor do projeto", "fund.uk": "Financiamento britânico, equivalente em SEK", "fund.mobility": "Bolsa de mobilidade de pesquisa",
@@ -138,7 +138,7 @@
       "about.eyebrow": "Sobre",
       "about.p1": "Sou historiador econômico e estudo as origens e a persistência da desigualdade, com foco principal na África. Minha pesquisa examina como a propriedade, os mercados de trabalho, o acesso ao crédito e o poder político moldam o desenvolvimento econômico e influenciam a capacidade de pessoas e países de resistir a períodos de crise e mudança.",
       "about.p2": "Construo e analiso grandes bases de dados a partir de registros históricos para estudar como grandes mudanças econômicas afetam a riqueza, o trabalho, a saúde e os padrões de vida. Em toda essa pesquisa, pergunto como as diferenças existentes de riqueza e poder influenciam quem arca com os custos de uma crise, quem se beneficia da recuperação e do crescimento, e se a desigualdade passa para a próxima geração.",
-      "about.p3": "Sou pesquisador no Departamento de Gestão e Engenharia da Universidade de Linköping e também vinculado ao Departamento de História Econômica da Universidade de Lund. Tenho mestrado e doutorado em História Econômica pela Universidade de Lund e trabalhei anteriormente como pesquisador de pós-doutorado em Lund e na Universidade de Cambridge. Meu trabalho contribui para projetos de pesquisa financiados pelo Conselho Sueco de Pesquisa, pela Riksbankens Jubileumsfond, pelas Fundações de Pesquisa do Handelsbanken e pelo Arts and Humanities Research Council do Reino Unido. Também realizei pesquisas e consultorias para a STINT e para o Programa das Nações Unidas para o Desenvolvimento (PNUD).",
+      "about.p3": "Sou pesquisador no Departamento de Gestão e Engenharia da Universidade de Linköping e também vinculado ao Departamento de História Econômica da Universidade de Lund. Tenho mestrado e doutorado em História Econômica pela Universidade de Lund e trabalhei anteriormente como pesquisador em Lund e na Universidade de Cambridge. Meu trabalho contribui para projetos de pesquisa financiados pelo Conselho Sueco de Pesquisa, pela Riksbankens Jubileumsfond, pelas Fundações de Pesquisa do Handelsbanken e pelo Arts and Humanities Research Council do Reino Unido. Também realizei pesquisas e consultorias para a STINT e para o Programa das Nações Unidas para o Desenvolvimento (PNUD).",
       "about.contact": "Contato", "about.postal": "Endereço postal", "about.visiting": "Endereço para visitas",
 
       "e404.title": "Página não encontrada.",
