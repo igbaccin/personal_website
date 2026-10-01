@@ -29,6 +29,17 @@ Do not alter Porkbun DNS, GitHub Pages settings, or the custom domain unless the
 
 Copy durable user-provided website assets into `images/` or `files/`, use descriptive lowercase filenames, and update every relevant link. Check desktop and narrow-screen layout when a visual change may affect responsiveness.
 
+## Languages
+
+The site is written in English. Swedish and Portuguese are applied in the browser by `i18n.js`, which also adds the EN · SV · PT switcher to the navigation.
+
+- Mark new translatable text with `data-i18n="key"` (plain text) or `data-i18n-html="key"` (text containing links: in the dictionary, `{a1}…{/a1}` stands for the element's first link, `{a2}…{/a2}` for the second; an empty `{a1}{/a1}` keeps the link's own text). Add every new key to both the `sv` and `pt` dictionaries in `i18n.js`.
+- Never translate titles of publications, projects, courses, journals, or other proper names.
+- Recurring words already have keys: `st.forthcoming`, `st.submitted`, `st.rr`, `st.preprint`, `st.report`, `st.phd`, `w.and`, `w.oxand`, `n.works`, `n.manuscripts`, `n.contributions`, `role.researcher`, `fund.award`, `proj.website`. A new publication or project normally needs no new keys.
+- Check changes with `?lang=sv` and `?lang=pt` added to a page address.
+- The home-page greeting lines are in `GREET` in `i18n.js`. Keep the persona of an always-working, tired academic, and refer to Sweden rather than a city.
+- The anti-plug's Substack link (`data-latest-post` on the home page) is refreshed by `scripts/latest-post.py` in every GitHub Actions build; the workflow also runs daily. GitHub pauses scheduled workflows after 60 days without repository activity.
+
 ## Completion evidence
 
 Report the files changed, the commit identifier, the GitHub Actions result, and the live URL checked. If publication is blocked, leave the repository in a recoverable state and state the exact remaining step.
