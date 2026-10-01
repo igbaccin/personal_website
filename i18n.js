@@ -6,19 +6,13 @@
   var root = document.documentElement;
   var SUPPORTED = { en: 1, sv: 1, pt: 1 };
   var params = new URLSearchParams(location.search);
-  var preferred = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"]).map(function (l) { return String(l).slice(0, 2).toLowerCase(); });
-  var browser = preferred[0] || "en";
-  // Portuguese is offered to anyone whose browser lists it, or who has used it here before.
-  var offerPt = preferred.indexOf("pt") >= 0;
+  var browser = (navigator.language || "en").slice(0, 2).toLowerCase();
   var lang = (browser === "sv" || browser === "pt") ? browser : "en";
   try {
     var q = params.get("lang"), saved = localStorage.getItem("site-lang");
     if (SUPPORTED[q]) { lang = q; localStorage.setItem("site-lang", q); }
     else if (SUPPORTED[saved]) lang = saved;
-    if (lang === "pt") localStorage.setItem("site-pt", "1");
-    if (localStorage.getItem("site-pt") === "1") offerPt = true;
   } catch (e) {}
-  if (lang === "pt") offerPt = true;
   root.setAttribute("data-lang", lang);
   root.lang = lang;
   root.setAttribute("xml:lang", lang);
@@ -272,8 +266,7 @@
     var navs = document.querySelectorAll("#quarto-header .navbar-nav");
     var nav = navs[navs.length - 1];
     if (!nav) return;
-    var options = ["en", "sv"];
-    if (offerPt) options.push("pt");
+    var options = ["en", "sv", "pt"];
     var item = document.createElement("li");
     item.className = "nav-item hs-lang";
     switcher = document.createElement("div");
