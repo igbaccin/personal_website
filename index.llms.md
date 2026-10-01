@@ -4,8 +4,7 @@ Hello.
 
 # Igor B. Martins
 
-Postdoctoral researcher, Department of Management and Engineering, Linköping University\
-Researcher, Department of Economic History, Lund University
+Postdoctoral researcher at Linköping University, also affiliated with Lund University
 
 I study how wealth and power shape who benefits from economic change, and why inequality can persist across generations.
 
