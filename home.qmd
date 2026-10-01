@@ -1,8 +1,9 @@
 ---
 title: ""
 pagetitle: "Home"
+canonical-url: https://ibmartins.com/
 include-in-header:
-  text: '<meta http-equiv="refresh" content="0; url=./index.html">'
+  text: '<meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=./index.html">'
 ---
 
 ```{=html}
