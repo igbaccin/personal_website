@@ -151,7 +151,7 @@ I. Martins, S. Grab, and E. Green
 
 [Read preprint ↗](https://www.researchsquare.com/article/rs-9859396/v1)
 
-### Malthus at the Cape: Wealth, Status, and Mortality in a Pre-Industrial Settler Society
+### Wealth and Adult Mortality in a Pre-Industrial Settler Society: Evidence from Cape Probate Inventories
 
 J. Cilliers and I. Martins
 
