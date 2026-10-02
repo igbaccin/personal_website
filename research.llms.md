@@ -177,7 +177,7 @@ J. Makuei and I. Martins
 
 I. Martins, J. Schoots, and E. Green
 
-### Resilience and Growth Theory: A Novel Conceptualisation of Convergence
+### Catch-up and Resilience to Shrinking, 1890–2019
 
 A. Smythe and I. Martins
 
