@@ -229,7 +229,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3>Resilience and Growth Theory: A Novel Conceptualisation of Convergence</h3>
+    <h3>Catch-up and Resilience to Shrinking, 1890–2019</h3>
     <p>A. Smythe <span data-i18n="w.and">and</span> I. Martins</p>
 
 
