@@ -29,7 +29,7 @@
   var D = {
     sv: {
       "nav.home": "Hem", "nav.research": "Forskning", "nav.projects": "Projekt", "nav.teaching": "Undervisning", "nav.about": "Om mig",
-      "footer.place": "Malmö, Sverige",
+      "footer.role": "Ekonomisk historiker",
       "lang.label": "Språk",
 
       "aff": "Postdoktor vid Linköpings universitet, även verksam vid Lunds universitet",
@@ -88,7 +88,7 @@
     },
     pt: {
       "nav.home": "Início", "nav.research": "Pesquisa", "nav.projects": "Projetos", "nav.teaching": "Ensino", "nav.about": "Sobre",
-      "footer.place": "Malmö, Suécia",
+      "footer.role": "Historiador econômico",
       "lang.label": "Idioma",
 
       "aff": "Pesquisador, Universidade de Linköping, também vinculado à Universidade de Lund",
@@ -314,10 +314,6 @@
       if (!key) return;
       if (!ORIG.has(el)) ORIG.set(el, el.textContent);
       el.textContent = lookup(key) || ORIG.get(el);
-    });
-    each(".footer-identity span", function (el) {
-      if (!ORIG.has(el)) ORIG.set(el, el.textContent);
-      el.textContent = lookup("footer.place") || ORIG.get(el);
     });
     if (!switcher) buildSwitcher();
     if (switcher) {

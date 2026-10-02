@@ -52,9 +52,9 @@ website:
   page-footer:
     border: false
     left: |
-      <div class="footer-identity"><div><strong>Igor B. Martins</strong><span>Malmö, Sweden</span></div></div>
+      <div class="footer-identity"><div><strong>Igor B. Martins</strong><span data-i18n="footer.role">Economic historian</span></div></div>
     right: |
-      <div class="footer-links"><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se</a></div>
+      <div class="footer-links"><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se</a><a href="mailto:igor.martins@liu.se">igor.martins@liu.se</a></div>
 
 format:
   html:

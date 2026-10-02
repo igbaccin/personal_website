@@ -80,7 +80,7 @@ description: "Teaching and supervision by Igor B. Martins at Lund University. Ec
         <article><h3 data-i18n="teach.phd">Doctoral supervision</h3><p><a href="https://portal.research.lu.se/en/persons/benjamin-chatterton/">Benjamin Chatterton <span aria-hidden="true">↗</span></a><br><span data-i18n="teach.cosup">Co-supervisor</span></p></article>
       </div>
     </section>
-    <div class="teaching-contact"><p data-i18n="teach.contact">For course descriptions, supervision enquiries, or letters of recommendation, please get in touch.</p><div class="text-links"><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se <span aria-hidden="true">↗</span></a></div></div>
+    <div class="teaching-contact"><p data-i18n="teach.contact">For course descriptions, supervision enquiries, or letters of recommendation, please get in touch.</p><div class="text-links"><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se <span aria-hidden="true">↗</span></a><a href="mailto:igor.martins@liu.se">igor.martins@liu.se <span aria-hidden="true">↗</span></a></div></div>
   </section>
 </div>
 ```
