@@ -92,7 +92,7 @@
       "lang.label": "Idioma",
 
       "aff": "Pesquisador na Universidade de Linköping, também vinculado à Universidade de Lund",
-      "intro": "Sou historiador econômico e pesquiso as origens e a persistência da desigualdade, sobretudo na África. Uso fontes históricas para investigar como os mercados de trabalho influenciam a distribuição da riqueza e as condições de vida ao longo das gerações.",
+      "intro": "Sou historiador econômico e pesquiso as origens e a persistência da desigualdade, sobretudo na África. Uso fontes históricas para investigar como os mercados de trabalho influenciam a distribuição da riqueza e as condições de vida ao longo de gerações.",
       "cta.research": "Pesquisa e publicações",
       "cta.cv": "Currículo",
 
