@@ -188,7 +188,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3>Malthus at the Cape: Wealth, Status, and Mortality in a Pre-Industrial Settler Society</h3>
+    <h3>Wealth and Adult Mortality in a Pre-Industrial Settler Society: Evidence from Cape Probate Inventories</h3>
     <p>J. Cilliers <span data-i18n="w.and">and</span> I. Martins</p>
     <p class="journal"><em>The Economic History Review</em> · <span data-i18n="st.submitted">Submitted</span></p>
 
