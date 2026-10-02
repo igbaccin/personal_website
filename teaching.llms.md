@@ -93,4 +93,4 @@ Co-supervisor
 
 For course descriptions, supervision enquiries, or letters of recommendation, please get in touch.
 
-[igor.martins@ekh.lu.se ↗](mailto:igor.martins@ekh.lu.se)
+[igor.martins@ekh.lu.se ↗](mailto:igor.martins@ekh.lu.se)[igor.martins@liu.se ↗](mailto:igor.martins@liu.se)

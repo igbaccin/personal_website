@@ -20,6 +20,8 @@ I am a postdoctoral researcher in the Department of Management and Engineering a
 
 <igor.martins@ekh.lu.se>
 
+<igor.martins@liu.se>
+
 ### Postal address
 
 Department of Economic History\
