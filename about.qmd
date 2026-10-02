@@ -34,6 +34,7 @@ description: "Igor B. Martins is an economic historian at Linköping and Lund un
   <div><h2 id="contact-title" data-i18n="about.contact">Get in touch</h2></div>
   <div>
     <p><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se</a></p>
+    <p><a href="mailto:igor.martins@liu.se">igor.martins@liu.se</a></p>
     <div class="contact-columns">
       <div><h3 data-i18n="about.postal">Postal address</h3><p>Department of Economic History<br>Lund University<br>Box 7083<br>SE-220 07 Lund, Sweden</p></div>
       <div><h3 data-i18n="about.visiting">Visiting address</h3><p>Room 2060, Alfa 1<br>Scheelevägen 15B<br>223 63 Lund, Sweden</p></div>
