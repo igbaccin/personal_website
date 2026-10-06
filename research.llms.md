@@ -129,7 +129,7 @@ A. Palacio and I. Martins
 
 ## Under review
 
-6 manuscripts
+5 manuscripts
 
 ### The Case for Artisanal Doctoral Supervision
 
@@ -151,12 +151,6 @@ I. Martins, S. Grab, and E. Green
 
 [Read preprint ↗](https://www.researchsquare.com/article/rs-9859396/v1)
 
-### Wealth and Adult Mortality in a Pre-Industrial Settler Society: Evidence from Cape Probate Inventories
-
-J. Cilliers and I. Martins
-
-*The Economic History Review* · Submitted
-
 ### Slave Emancipation and Agricultural Output in the Cape Colony
 
 I. Martins
@@ -171,7 +165,11 @@ J. Makuei and I. Martins
 
 ## Work in progress
 
-5 manuscripts
+6 manuscripts
+
+### Wealth and Adult Mortality in a Pre-Industrial Settler Society: Evidence from Cape Probate Inventories
+
+J. Cilliers and I. Martins
 
 ### Held by the Elite: Monopoly Rights and Dynastic Persistence at the Cape Colony, 1680–1794
 
