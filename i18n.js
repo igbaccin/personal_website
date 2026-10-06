@@ -147,73 +147,29 @@
     }
   };
 
-  // The greeting: one line per visit, picked by situation, in the page language.
+  // The greeting: one English line per visit, picked by situation.
   var GREET = {
     en: {
-      "late": "Working late? Same.",
-      "early": "Up early? I never went to bed.",
-      "morning": "Good morning!",
-      "afternoon": "Good afternoon!",
-      "evening": "Good evening! Still at my desk.",
-      "weekend": "It’s the weekend. Close this tab and go outside. Me? I will keep working, thank you very much.",
-      "tz-night": "It’s {t} in Sweden. I’m still working.",
-      "tz-early": "It’s {t} in Sweden. First draft.",
-      "tz-day": "It’s {t} in Sweden. Deep in an archive.",
-      "tz-evening": "It’s {t} in Sweden. Dinner at the desk, again.",
-      "scholar": "Via Google Scholar? The papers are further down.",
-      "linkedin": "Wait. You came from LinkedIn? Everyone, we found the LinkedIn user!",
-      "substack": "From Substack? I told you not to engage!",
-      "colleague": "Hello, colleague.",
-      "student": "Hello, student. Shouldn’t you be studying? I should be writing.",
+      "late": ["Working late? Same.", "The archive closed hours ago. The tabs remain open.", "Even Reviewer 2 is asleep by now, presumably pleased with themselves."],
+      "early": ["Up early? I never went to bed.", "Good morning. The coffee is doing most of the thinking.", "An early start gives me more time to fall behind."],
+      "morning": ["Good morning!", "Today's plan is to finish yesterday's plan.", "You’re here to procrastinate. I built a whole website. We all have our methods."],
+      "afternoon": ["Good afternoon!", "If you’re avoiding a deadline, make yourself at home.", "The draft is nearly finished. It has been nearly finished for a while."],
+      "evening": ["Good evening! Still at my desk.", "This counts as reading. You may now feel productive.", "I have saved the file as final. A small act of optimism."],
+      "weekend": ["It’s the weekend. Close this tab and go outside. Me? I will keep working, thank you very much.", "My weekend plans include a document from 1834. It has yet to confirm.", "I took the weekend off. The footnotes came with me."],
+      "tz-night": ["It’s {t} in Sweden. I’m still working.", "It’s {t} in Sweden. The only thing being peer reviewed is my sleep schedule."],
+      "tz-early": ["It’s {t} in Sweden. First draft.", "It’s {t} in Sweden. The kettle and I are getting started."],
+      "tz-day": ["It’s {t} in Sweden. Deep in an archive.", "It’s {t} in Sweden. Someone's handwriting from 1820 is testing my patience.", "It’s {t} in Sweden. I am turning a very small question into a very large spreadsheet."],
+      "tz-evening": ["It’s {t} in Sweden. Dinner at the desk, again.", "It’s {t} in Sweden. I promised myself an early night. The draft has other plans."],
+      "scholar": ["Via Google Scholar? The papers are further down.", "From Google Scholar? Welcome. Refreshing the citation count is a communal activity now."],
+      "linkedin": ["Wait. You came from LinkedIn? Everyone, we found the LinkedIn user!", "From LinkedIn? I am delighted to announce that I am still revising the same paragraph."],
+      "substack": ["From Substack? I told you not to engage!", "From Substack? A quick read before getting back to work. We both know how this ends."],
+      "colleague": ["Hello, colleague.", "Hello, colleague. This visit counts as research dissemination. I'll put it in the report."],
+      "student": ["Hello, student. Shouldn’t you be studying? I should be writing.", "Hello, student. The deadline still applies, even if you found my website."],
       "christmas": "God jul. Why are you here? Did Santa not bring you any gifts?",
       "newyear": "Gott nytt år. Nothing better than studying to the sound of fireworks.",
       "lucia": "Glad Lucia. Working by candlelight, as tradition demands.",
       "midsummer": "Glad midsommar. All of Sweden is off today. Except the two of us, apparently.",
       "july": "It’s July. Sweden is closed. I am not."
-    },
-    sv: {
-      "late": "Jobbar du sent? Samma här.",
-      "early": "Uppe tidigt? Jag har inte gått och lagt mig än.",
-      "morning": "God morgon!",
-      "afternoon": "God eftermiddag!",
-      "evening": "God kväll! Sitter kvar vid skrivbordet.",
-      "weekend": "Det är helg. Stäng fliken och gå ut. Jag? Jag jobbar vidare, tack så mycket.",
-      "tz-night": "Klockan är {t} i Sverige. Jag jobbar fortfarande.",
-      "tz-early": "Klockan är {t} i Sverige. Första utkastet.",
-      "tz-day": "Klockan är {t} i Sverige. Mitt bland arkivhandlingarna.",
-      "tz-evening": "Klockan är {t} i Sverige. Middag vid skrivbordet, igen.",
-      "scholar": "Via Google Scholar? Publikationerna finns under Forskning.",
-      "linkedin": "Vänta, kom du hit via LinkedIn? Hörni, vi har hittat LinkedIn-användaren!",
-      "substack": "Från Substack? Jag sa ju att du skulle låta bli!",
-      "colleague": "Hej, kollega.",
-      "student": "Hej! Borde du inte plugga? Jag borde skriva.",
-      "christmas": "God jul. Varför är du här? Fick du inga julklappar av tomten?",
-      "newyear": "Gott nytt år. Inget slår att plugga till ljudet av fyrverkerier.",
-      "lucia": "Glad Lucia. Jobbar i levande ljus, som traditionen kräver.",
-      "midsummer": "Glad midsommar. Hela Sverige är ledigt i dag. Utom vi två, tydligen.",
-      "july": "Det är juli. Sverige har stängt. Det har inte jag."
-    },
-    pt: {
-      "late": "Trabalhando até tarde? Eu também.",
-      "early": "Acordou cedo? Eu nem dormi.",
-      "morning": "Bom dia!",
-      "afternoon": "Boa tarde!",
-      "evening": "Boa noite! Continuo na mesa de trabalho.",
-      "weekend": "É fim de semana. Feche a aba e vá aproveitar. Eu continuo por aqui, trabalhando.",
-      "tz-night": "{t} na Suécia. Ainda estou trabalhando.",
-      "tz-early": "{t} na Suécia. Primeiro rascunho.",
-      "tz-day": "{t} na Suécia. Entre papéis de arquivo.",
-      "tz-evening": "{t} na Suécia. Jantar na mesa de trabalho, de novo.",
-      "scholar": "Veio pelo Google Scholar? A lista de publicações está em Pesquisa.",
-      "linkedin": "Peraí. Você veio pelo LinkedIn? Gente, achamos o usuário do LinkedIn!",
-      "substack": "Veio do Substack? Eu avisei para não dar corda!",
-      "colleague": "Olá, colega.",
-      "student": "Oi! Você não devia estar estudando? Eu devia estar escrevendo.",
-      "christmas": "God jul. Por que você está aqui? O Papai Noel não te trouxe presentes?",
-      "newyear": "Gott nytt år. Nada melhor do que estudar ao som de fogos de artifício.",
-      "lucia": "Glad Lucia. Trabalhando à luz de velas, como manda a tradição.",
-      "midsummer": "Glad midsommar. A Suécia inteira está de folga hoje. Menos nós dois, pelo visto.",
-      "july": "É julho. A Suécia está de férias. Eu não."
     }
   };
   var SAMPLE_HOUR = { "tz-night": 3, "tz-early": 7, "tz-day": 14, "tz-evening": 20 };
@@ -224,6 +180,7 @@
   var listeners = [];
   var switcher = null;
   var greetSituation = null;
+  var greetVariant = null;
 
   function lookup(key) { return lang !== "en" && D[lang] ? D[lang][key] : null; }
   function t(key) { return lookup(key) || EN[key] || ""; }
@@ -260,8 +217,23 @@
   function renderGreeting() {
     var el = document.querySelector("[data-hs-greeting]");
     if (!el) return;
+    el.hidden = lang !== "en";
+    if (el.hidden) return;
     if (!greetSituation) greetSituation = situation();
-    var text = (GREET[lang] || GREET.en)[greetSituation.id];
+    var choices = GREET.en[greetSituation.id];
+    if (greetVariant === null) {
+      greetVariant = 0;
+      if (Array.isArray(choices)) {
+        // Keep the same joke when switching languages; avoid an immediate repeat.
+        var previous = -1, storageKey = "greeting-last-" + greetSituation.id;
+        try { previous = Number(sessionStorage.getItem(storageKey) || "-1"); } catch (e) {}
+        var options = choices.map(function (_, i) { return i; }).filter(function (i) { return i !== previous; });
+        greetVariant = options[Math.floor(Math.random() * options.length)];
+        try { sessionStorage.setItem(storageKey, String(greetVariant)); } catch (e) {}
+      }
+    }
+    var lines = GREET.en[greetSituation.id];
+    var text = Array.isArray(lines) ? lines[greetVariant] : lines;
     if (text.indexOf("{t}") >= 0) text = text.replace("{t}", clock(greetSituation.hour != null ? greetSituation.hour : SAMPLE_HOUR[greetSituation.id]));
     el.textContent = text;
   }
