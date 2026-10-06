@@ -165,7 +165,11 @@ J. Makuei and I. Martins
 
 ## Work in progress
 
-6 manuscripts
+7 manuscripts
+
+### Income Inequality in Late Colonial Angola, 1940–1970
+
+I. Martins
 
 ### Wealth and Adult Mortality in a Pre-Industrial Settler Society: Evidence from Cape Probate Inventories
 
