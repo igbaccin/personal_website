@@ -150,25 +150,25 @@
   // The greeting: one English line per visit, picked by situation.
   var GREET = {
     en: {
-      "late": "Working late? Same.",
-      "early": "Up early? I never went to bed.",
-      "morning": "Good morning!",
-      "afternoon": "Good afternoon!",
-      "evening": "Good evening! Still at my desk.",
-      "weekend": "It’s the weekend. Close this tab and go outside. Me? I will keep working, thank you very much.",
-      "tz-night": "It’s {t} in Sweden. I’m still working.",
-      "tz-early": "It’s {t} in Sweden. First draft.",
-      "tz-day": "It’s {t} in Sweden. Deep in an archive.",
-      "tz-evening": "It’s {t} in Sweden. Dinner at the desk, again.",
-      "scholar": "Via Google Scholar? The papers are further down.",
-      "linkedin": "Wait. You came from LinkedIn? Everyone, we found the LinkedIn user!",
-      "substack": "From Substack? I told you not to engage!",
-      "colleague": "Hello, colleague.",
-      "student": "Hello, student. Shouldn’t you be studying? I should be writing.",
-      "christmas": "God jul. Why are you here? Did Santa not bring you any gifts?",
-      "newyear": "Gott nytt år. Nothing better than studying to the sound of fireworks.",
-      "lucia": "Glad Lucia. Working by candlelight, as tradition demands.",
-      "midsummer": "Glad midsommar. All of Sweden is off today. Except the two of us, apparently.",
+      "late": ["Working late? Same.", "Can't sleep? This website will probably help!", "Up this late? I see the deadline has finally inspired you."],
+      "early": ["Good morning. The coffee is doing most of the thinking.", "An early start gives you more time to fall behind."],
+      "morning": ["Today's plan is to finish yesterday's plan.", "You’re here to procrastinate. I built a whole website. We all have our methods."],
+      "afternoon": ["If you’re avoiding a deadline, make yourself at home.", "The draft is almost ready. I would appreciate it if everyone stopped asking."],
+      "evening": ["Good evening! Still at my desk.", "This counts as reading. You may now feel productive.", "Good evening. Have you tried closing the laptop? I hear wonderful things."],
+      "weekend": ["It’s the weekend. Close this tab and go outside. Me? I will keep working, thank you very much.", "It’s the weekend. You should be resting. I should be taking my own advice."],
+      "weekend-saturday": "Visiting an academic website on a Saturday? I see your social life is also thriving.",
+      "tz-night": "It’s {t} in Sweden. If you’re wondering why I’m awake, so am I.",
+      "tz-early": "It’s {t} in Sweden. The kettle and I are getting started.",
+      "tz-day": ["It’s {t} in Sweden. Someone's handwriting from 1820 is testing my patience.", "It’s {t} in Sweden. I am turning a very small question into a very large spreadsheet."],
+      "tz-evening": ["It’s {t} in Sweden. Dinner at the desk, again.", "It’s {t} in Sweden. I promised myself an early night. The draft has other plans."],
+      "linkedin": ["Wait. You came from LinkedIn? Everyone, we found the LinkedIn user!", "From LinkedIn? I am delighted to announce that I am still revising the same paragraph."],
+      "substack": ["From Substack? I told you not to engage!", "From Substack? Was one academic oversharing insufficient?"],
+      "colleague": "Hello, colleague! This visit counts as research dissemination. I'll put it in the report.",
+      "student": ["Hello, student! Shouldn’t you be studying? I should be writing.", "Hello, student! The deadline still applies, even if you found my website."],
+      "christmas": "Merry Christmas. Why are you here? Did Santa not bring you any gifts?",
+      "newyear": "Happy New Year. Nothing better than studying to the sound of fireworks.",
+      "lucia": "Happy Saint Lucia’s Day. Working by candlelight, as tradition demands.",
+      "midsummer": "Happy Midsummer. All of Sweden is off today. Except the two of us, apparently.",
       "july": "It’s July. Sweden is closed. I am not."
     }
   };
@@ -180,6 +180,7 @@
   var listeners = [];
   var switcher = null;
   var greetSituation = null;
+  var greetText = null;
 
   function lookup(key) { return lang !== "en" && D[lang] ? D[lang][key] : null; }
   function t(key) { return lookup(key) || EN[key] || ""; }
@@ -197,13 +198,12 @@
     if (mon === 12 && date === 13) return { id: "lucia" };
     if (mon === 6 && day === 5 && date >= 19 && date <= 25) return { id: "midsummer" };
     if (/(^|\.)substack\.com$/.test(ref)) return { id: "substack" };
-    if (/^scholar\.google\./.test(ref)) return { id: "scholar" };
     if (/(^|\.)linkedin\.com$|^lnkd\.in$/.test(ref)) return { id: "linkedin" };
     if (STUDENT_HOSTS.test(ref)) return { id: "student" };
     if (/(^|\.)(lu|liu)\.se$/.test(ref)) return { id: "colleague" };
     if (mon === 7) return { id: "july" };
     if (swe !== h) return { id: swe < 5 ? "tz-night" : swe < 9 ? "tz-early" : swe < 18 ? "tz-day" : "tz-evening", hour: swe };
-    if ((day === 0 || day === 6) && h >= 9 && h < 20) return { id: "weekend" };
+    if ((day === 0 || day === 6) && h >= 9 && h < 20) return { id: "weekend", saturday: day === 6 };
     return { id: h < 5 ? "late" : h < 8 ? "early" : h < 12 ? "morning" : h < 18 ? "afternoon" : "evening" };
   }
 
@@ -219,9 +219,23 @@
     el.hidden = lang !== "en";
     if (el.hidden) return;
     if (!greetSituation) greetSituation = situation();
-    var text = GREET.en[greetSituation.id];
-    if (text.indexOf("{t}") >= 0) text = text.replace("{t}", clock(greetSituation.hour != null ? greetSituation.hour : SAMPLE_HOUR[greetSituation.id]));
-    el.textContent = text;
+    if (greetText === null) {
+      var lines = GREET.en[greetSituation.id];
+      var choices = Array.isArray(lines) ? lines : [lines];
+      if (greetSituation.saturday) choices = choices.concat(GREET.en["weekend-saturday"]);
+      if (choices.length > 1) {
+        // Avoid the previous opening in this tab, even when the weekend pool changes.
+        var storageKey = "greeting-last-" + greetSituation.id, previous = null;
+        try { previous = sessionStorage.getItem(storageKey); } catch (e) {}
+        choices = choices.filter(function (line) { return line !== previous; });
+        greetText = choices[Math.floor(Math.random() * choices.length)];
+        try { sessionStorage.setItem(storageKey, greetText); } catch (e) {}
+      } else {
+        greetText = choices[0];
+      }
+      if (greetText.indexOf("{t}") >= 0) greetText = greetText.replace("{t}", clock(greetSituation.hour != null ? greetSituation.hour : SAMPLE_HOUR[greetSituation.id]));
+    }
+    el.textContent = greetText;
   }
 
   function buildSwitcher() {
