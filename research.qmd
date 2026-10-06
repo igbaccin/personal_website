@@ -156,7 +156,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 </details>
 <div class="research-extra">
 <details class="research-group" id="under-review">
-<summary><h2 class="group-title" data-i18n="res.review">Under review</h2><span class="group-meta">6 <span data-i18n="n.manuscripts">manuscripts</span></span></summary>
+<summary><h2 class="group-title" data-i18n="res.review">Under review</h2><span class="group-meta">5 <span data-i18n="n.manuscripts">manuscripts</span></span></summary>
 <div class="group-content">
 <article class="publication">
 
@@ -188,15 +188,6 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3>Wealth and Adult Mortality in a Pre-Industrial Settler Society: Evidence from Cape Probate Inventories</h3>
-    <p>J. Cilliers <span data-i18n="w.and">and</span> I. Martins</p>
-    <p class="journal"><em>The Economic History Review</em> · <span data-i18n="st.submitted">Submitted</span></p>
-
-  </div>
-</article>
-<article class="publication">
-
-  <div>
     <h3>Slave Emancipation and Agricultural Output in the Cape Colony</h3>
     <p>I. Martins</p>
     <p class="journal"><em>Cliometrica</em> · <span data-i18n="st.submitted">Submitted</span></p>
@@ -215,8 +206,16 @@ description: "Publications by Igor B. Martins on African economic history, slave
 </div>
 </details>
 <details class="research-group" id="work-in-progress">
-<summary><h2 class="group-title" data-i18n="res.wip">Work in progress</h2><span class="group-meta">5 <span data-i18n="n.manuscripts">manuscripts</span></span></summary>
+<summary><h2 class="group-title" data-i18n="res.wip">Work in progress</h2><span class="group-meta">6 <span data-i18n="n.manuscripts">manuscripts</span></span></summary>
 <div class="group-content">
+<article class="publication">
+
+  <div>
+    <h3>Wealth and Adult Mortality in a Pre-Industrial Settler Society: Evidence from Cape Probate Inventories</h3>
+    <p>J. Cilliers <span data-i18n="w.and">and</span> I. Martins</p>
+
+  </div>
+</article>
 <article class="publication">
 
   <div>
