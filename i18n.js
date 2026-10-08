@@ -49,6 +49,7 @@
       "res.pub": "Publikationer", "res.review": "Under granskning", "res.wip": "Pågående arbeten", "res.essays": "Texter och mediemedverkan",
       "n.works": "publikationer", "n.manuscripts": "manus", "n.contributions": "bidrag",
       "res.label": "Artiklar, kapitel, <br>rapporter och avhandling",
+      "st.replication": "Replikationspaket",
       "st.forthcoming": "Kommande", "st.editedby": "Redigerad av", "inst.lu": "Lunds universitet", "st.phd": "Doktorsavhandling",
       "st.report": "Rapport", "st.rr": "Omarbetning begärd (R&R)", "st.submitted": "Inskickad", "st.preprint": "Läs preprint", "st.podcast": "Podd",
 
@@ -108,6 +109,7 @@
       "res.pub": "Publicações", "res.review": "Em avaliação", "res.wip": "Trabalhos em andamento", "res.essays": "Textos e participações na mídia",
       "n.works": "trabalhos", "n.manuscripts": "manuscritos", "n.contributions": "contribuições",
       "res.label": "Artigos, capítulos, <br>relatórios e tese",
+      "st.replication": "Pacote de replicação",
       "st.forthcoming": "Aceito para publicação", "st.editedby": "Organizado por", "inst.lu": "Universidade de Lund", "st.phd": "Tese de doutorado",
       "st.report": "Relatório", "st.rr": "Revisão solicitada (R&R)", "st.submitted": "Enviado", "st.preprint": "Ler preprint", "st.podcast": "Podcast",
 

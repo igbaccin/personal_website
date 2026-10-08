@@ -50,6 +50,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <p>I. Martins</p>
     <p class="journal"><em>European Review of Economic History</em> · heag012</p>
 
+    <a class="paper-link" href="https://www.icpsr.umich.edu/sites/icpsr/view/studies/237703"><span data-i18n="st.replication">Replication package</span> ↗</a>
   </div>
 </article>
 <article class="publication">
@@ -77,6 +78,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <p>J. Cilliers, M. Mariotti<span data-i18n="w.oxand">, and</span> I. Martins</p>
     <p class="journal"><em>Explorations in Economic History</em> · 101620</p>
 
+    <a class="paper-link" href="https://www.icpsr.umich.edu/sites/icpsr/view/studies/208362"><span data-i18n="st.replication">Replication package</span> ↗</a>
   </div>
 </article>
 <article class="publication">
@@ -113,6 +115,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <p>I. Martins, J. Cilliers<span data-i18n="w.oxand">, and</span> J. Fourie</p>
     <p class="journal"><em>Explorations in Economic History</em> · 101506</p>
 
+    <a class="paper-link" href="https://www.icpsr.umich.edu/sites/icpsr/view/studies/183526"><span data-i18n="st.replication">Replication package</span> ↗</a>
   </div>
 </article>
 <article class="publication">
@@ -174,6 +177,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <p>I. Martins</p>
     <p class="journal"><em>Historical Methods: A Journal of Quantitative and Interdisciplinary History</em> · <span data-i18n="st.rr">Revise and resubmit</span></p>
 
+    <a class="paper-link" href="https://www.icpsr.umich.edu/sites/icpsr/view/studies/246321"><span data-i18n="st.replication">Replication package</span> ↗</a>
   </div>
 </article>
 <article class="publication">
@@ -183,6 +187,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <p>I. Martins, S. Grab<span data-i18n="w.oxand">, and</span> E. Green</p>
     <p class="journal"><em>Nature Communications</em> · <span data-i18n="st.rr">Revise and resubmit</span></p>
     <a class="paper-link" href="https://www.researchsquare.com/article/rs-9859396/v1"><span data-i18n="st.preprint">Read preprint</span> ↗</a>
+    <a class="paper-link" href="https://www.icpsr.umich.edu/sites/icpsr/view/studies/248487"><span data-i18n="st.replication">Replication package</span> ↗</a>
   </div>
 </article>
 <article class="publication">
@@ -192,6 +197,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <p>I. Martins</p>
     <p class="journal"><em>Cliometrica</em> · <span data-i18n="st.submitted">Submitted</span></p>
 
+    <a class="paper-link" href="https://www.icpsr.umich.edu/sites/icpsr/view/studies/248667"><span data-i18n="st.replication">Replication package</span> ↗</a>
   </div>
 </article>
 <article class="publication">
