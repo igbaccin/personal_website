@@ -39,6 +39,8 @@ I. Martins
 
 *European Review of Economic History* · heag012
 
+[Replication package ↗](https://www.icpsr.umich.edu/sites/icpsr/view/studies/237703)
+
 2026
 
 ### [Theoretical Foundations of the Economics of Slavery: Enslaved People as Capital Investments in the Atlantic World](https://www.cambridge.org/core/journals/journal-of-global-history/article/theoretical-foundations-of-the-economics-of-slavery-enslaved-people-as-capital-investments-in-the-atlantic-world/9CC6E3AE72944B441DFC1E2EBB6F407F)
@@ -62,6 +64,8 @@ I. Martins
 J. Cilliers, M. Mariotti, and I. Martins
 
 *Explorations in Economic History* · 101620
+
+[Replication package ↗](https://www.icpsr.umich.edu/sites/icpsr/view/studies/208362)
 
 2024
 
@@ -94,6 +98,8 @@ I. Martins and S. Schwaag Serger
 I. Martins, J. Cilliers, and J. Fourie
 
 *Explorations in Economic History* · 101506
+
+[Replication package ↗](https://www.icpsr.umich.edu/sites/icpsr/view/studies/183526)
 
 2023
 
@@ -143,19 +149,23 @@ I. Martins
 
 *Historical Methods: A Journal of Quantitative and Interdisciplinary History* · Revise and resubmit
 
+[Replication package ↗](https://www.icpsr.umich.edu/sites/icpsr/view/studies/246321)
+
 ### [Asset ownership turns climate exposure into inequality](https://www.researchsquare.com/article/rs-9859396/v1)
 
 I. Martins, S. Grab, and E. Green
 
 *Nature Communications* · Revise and resubmit
 
-[Read preprint ↗](https://www.researchsquare.com/article/rs-9859396/v1)
+[Read preprint ↗](https://www.researchsquare.com/article/rs-9859396/v1) [Replication package ↗](https://www.icpsr.umich.edu/sites/icpsr/view/studies/248487)
 
 ### Slave Emancipation and Agricultural Output in the Cape Colony
 
 I. Martins
 
 *Cliometrica* · Submitted
+
+[Replication package ↗](https://www.icpsr.umich.edu/sites/icpsr/view/studies/248667)
 
 ### Democracy and Rural Inequality in Kenya, 1997–2010
 
