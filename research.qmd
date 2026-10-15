@@ -30,7 +30,9 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3>Living Standards in Ghana, 1955–2005</h3>
     <p>I. Martins</p>
     <p class="journal"><em>Labour and Work in Ghana Since Independence</em> · <span data-i18n="st.editedby">Edited by</span> Gareth Austin, Akua Britwum, Lamine Doumbia, Andreas Eckert<span data-i18n="w.oxand">, and</span> Nana Yaw Sapong. London: Bloomsbury Academic</p>
+    <p class="finding" data-i18n="find.ghana">Using consumption baskets matched to the diets of Ghana’s three ecological zones, I show that national baskets understate living standards in the northern savannah, and that the widening gap between regions in 1988–2005 came mainly from rural areas.</p>
 
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>This paper constructs regional welfare ratios for Ghana from 1955 to 2005, combining five rounds of the Ghana Living Standards Survey with archival wage and price data. Using Allen-type consumption baskets calibrated to the dietary patterns of Ghana’s three ecological zones, I show that national baskets systematically misrepresent regional living standards in countries with significant dietary heterogeneity. Under a national basket priced at regional levels, several northern regions appear unable to meet subsistence. When the basket composition is allowed to reflect zone-specific diets, welfare ratios improve substantially in the savannah regions, where local staples (millet, sorghum) are cheaper than the cassava and plantain that dominate the national basket. I further decompose regional welfare by urban and rural status, showing that both urban and rural areas are diverging across regions, but that rural divergence is far more severe. The aggregate widening of regional inequality in Ghana over 1988–2005 is driven primarily by the rural sector.</p></div></details>
   </div>
 </article>
 <article class="publication">
@@ -181,6 +183,8 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <p>I. Martins</p>
     <p class="journal"><em>Studies in Higher Education</em> · <span data-i18n="st.rr">Revise and resubmit</span></p>
 
+    <p class="finding" data-i18n="find.artisanal">Universities track doctoral students through study plans and progress reviews. I propose revisable plans and brief records of reasons, so that supervisors remain accountable and students can still change course when new evidence calls for it.</p>
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>Universities increasingly organise doctoral supervision through study plans and progress reviews. These instruments protect students by making promised support verifiable. They also establish an early account of the research against which later progress is judged. In humanities research, new evidence may unsettle that account, and a change that improves the thesis can then look like a failure to keep to the plan. This conceptual article brings together research on doctoral supervision and research on how universities assess academic work to develop a typology of supervision. It distinguishes structure, which makes support reliable, from judgement, which helps students decide what a discovery means for their thesis. Their combination produces nominal, unstructured, bureaucratic, and artisanal supervision. Bureaucratic supervision combines reliable support with weak judgement and suits reviews that measure progress against the plan. Artisanal supervision uses reliable structure to make room for justified changes to the thesis within the time a doctorate allows. The article argues that formal records capture intellectual judgement poorly and can steer supervision towards what they record. It proposes revisable plans and brief, protected records of reasons, so that universities can hold supervision to account while leaving room for discovery.</p></div></details>
   </div>
 </article>
 <article class="publication">
@@ -189,8 +193,10 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3>Retrieval-Restricted Reasoning: Supporting Scholarly Synthesis with Language Models</h3>
     <p>I. Martins</p>
     <p class="journal"><em>Historical Methods: A Journal of Quantitative and Interdisciplinary History</em> · <span data-i18n="st.rr">Revise and resubmit</span></p>
+    <p class="finding" data-i18n="find.rrr">I built a method that lets language models write literature reviews only from sources the researcher supplies; across 100 test reviews with 4,767 citations, 99 contained none of the five measured citation errors.</p>
 
     <a class="paper-link" href="https://www.icpsr.umich.edu/sites/icpsr/view/studies/246321"><span data-i18n="st.replication">Replication package</span> ↗</a>
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>Large language models can synthesize scholarship quickly, while the relation between their prose and the underlying sources often remains difficult to verify. This paper introduces Retrieval-Restricted Reasoning (RRR), an architecture for model-assisted synthesis over a researcher-defined corpus. RRR admits page-level evidence, binds it to stable identifiers before composition, renders citations from those records, and records a refusal when the collection cannot sustain the question. I evaluate the architecture through repeated runs on a contested economic-history literature. Across 100 full-RRR runs, the reviews contained 4,767 parsed citations. Ninety-nine reviews were free of the five measured error classes. One review contained a single citation identity that did not resolve to the declared collection; the audit found no invalid page, citation-format, or quotation error. A corpus-only instruction reduced boundary crossing substantially, and page-based comparison conditions showed that traceability arose through a layered contract of retrieval, evidence binding, rendering, writer intervention, and final checking. Model and workflow comparisons further separated writing capability from the preservation of a checkable source path. RRR supports historical synthesis by keeping claims connected to inspectable scholarship while leaving the researcher to judge the corpus and the historical interpretations built from it.</p></div></details>
   </div>
 </article>
 <article class="publication">
@@ -220,6 +226,8 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <p>J. Makuei <span data-i18n="w.and">and</span> I. Martins</p>
     <p class="journal"><em>African Affairs</em> · <span data-i18n="st.submitted">Submitted</span></p>
 
+    <p class="finding" data-i18n="find.kenya">Across 31 Kenyan constituencies from 1997 to 2010, rural households gained better access to fertiliser, roads and markets after the first democratic transfer of power, while the gap in household wealth between constituencies barely changed.</p>
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>Democratic transitions can expand access to rural infrastructure and productive inputs. It remains unclear whether they can reduce entrenched inequalities in household wealth. We examine this issue in the context of Kenya’s first inter-party transfer of presidential power. We combine electoral outcomes in 31 constituencies with five rounds of rural household surveys from 1997 to 2010. Fertiliser use and road and market access improved over time. In contrast, the spatial distribution of household assets was far more stable: constituencies that were initially advantaged stayed so. Moreover, we find no subsequent economic or public programme benefits for constituencies that elected Mwai Kibaki as president in 2007. Kenya illustrates a key challenge facing Africa’s new democracies. While access can improve over a decade, entrenched inequality can persist.</p></div></details>
   </div>
 </article>
 </div>
@@ -246,10 +254,12 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3>Held by the Elite: Monopoly Rights and Dynastic Persistence at the Cape Colony, 1680–1794</h3>
+    <h3>Held by the Elite: Monopoly Rights and Family Fortunes at the Cape of Good Hope, 1680–1794</h3>
     <p>I. Martins, J. Schoots<span data-i18n="w.oxand">, and</span> E. Green</p>
 
 
+    <p class="finding" data-i18n="find.pachten">The Dutch East India Company auctioned the right to sell alcohol at the Cape every year. The settlers who won these rights already owned enslaved people more often than others, and those who ran them as a business accumulated more, while their families lasted no longer than other settler families.</p>
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>Many accounts of early modern elites hold that the privileges states sold made their holders rich and their families lasting. We test this for the alcohol retail rights (\textit{pachten}) that the Dutch East India Company auctioned each year at the Cape of Good Hope, 1680–1794, following every holder through auction records, an annual household census and a genealogical register, against settlers who never held a \textit{pacht}. A core of established operators kept their lots, paying at least as much as outsiders. Future holders already owned enslaved people more often than other settlers, and Cape-born ones had married into \textit{pachter} families three and a half times as often as other Cape-born men. Operators who held intensively from the start accumulated enslaved people, and one-year holders show no measurable change. \textit{Pachter} families lasted no longer than comparable settler families and married among themselves no more often. Sold every year at open auction, the privilege consolidated the position of slaveholding households and rewarded those who ran it as a business, without founding a lasting elite.</p></div></details>
   </div>
 </article>
 <article class="publication">
@@ -259,6 +269,8 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <p>A. Smythe <span data-i18n="w.and">and</span> I. Martins</p>
 
 
+    <p class="finding" data-i18n="find.catchup">Across 105 countries since 1955, productivity and inputs often moved in opposite directions, and a country’s earlier record of growing and shrinking helps predict its later expansion.</p>
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>Growth depends on both gains in expansion and losses in contraction. We present a production-focused account of long-term economic growth and shrinking. We disaggregate shifts in the production function from movements along the production function, to provide a reconciliation of traditional growth accounting and the growing-and-shrinking framework. This synthesis exposes production patterns hidden behind overall growth. We find shifts in productivity and changes in input levels frequently move in opposite directions for a sample of 105 countries over the period 1955–2019. To illustrate the role of outside factors, we contrast production responses to an increase versus decrease in the global prices of a country’s exports. A decline in prices is followed by a backward movement along the production function, primarily through a lasting fall in capital services per capita. We examine whether decadal production histories contain clues for future catch-up. Patterns in 10-year production histories that originated between 1964 and 1989 select countries with significantly greater expansionary gains in the 1990s and 2000s. The earlier record of growing and shrinking also improves predictions of later expansion beyond the information contained in standard growth accounting.</p></div></details>
   </div>
 </article>
 <article class="publication">
