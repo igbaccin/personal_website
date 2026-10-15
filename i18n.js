@@ -36,6 +36,7 @@
       "intro": "Jag undersöker hur förmögenhet och makt påverkar vem som gynnas av ekonomiska förändringar och varför ojämlikhet kan bestå från en generation till nästa.",
       "cta.research": "Forskning och publikationer",
       "cta.cv": "Curriculum vitae",
+      "home.latest": "Senaste",
 
       "w.and": "och", "w.oxand": " och",
 
@@ -45,7 +46,6 @@
 
 
       "res.title": "Forskning",
-      "res.lead": "Jag forskar om ojämlikhetens historiska rötter och om vad som begränsar följderna av ekonomiska kriser, främst i Afrika. Mina studier rör slaveriet och dess avskaffande i Kapkolonin, arbetsmarknader och levnadsstandard i Ghana, klimat och ägande samt ekonomisk motståndskraft i utvecklingsländer.",
       "res.pub": "Publikationer", "res.review": "Under granskning", "res.wip": "Pågående arbeten", "res.essays": "Texter och mediemedverkan",
       "n.works": "publikationer", "n.manuscripts": "manus", "n.contributions": "bidrag",
       "res.label": "Artiklar, kapitel, <br>rapporter och avhandling",
@@ -82,6 +82,12 @@
       "about.p2": "Jag sammanställer och analyserar stora mängder data från historiska källor för att undersöka hur ekonomiska förändringar påverkar förmögenhet, arbete, hälsa och levnadsstandard. Jag vill förstå hur skillnader i förmögenhet och makt påverkar vem som bär kostnaderna för en kris och vem som gynnas av återhämtning och tillväxt. Jag undersöker också om ojämlikheten består i nästa generation.",
       "about.p3": "Jag är postdoktor vid Institutionen för ekonomisk och industriell utveckling vid Linköpings universitet och knuten till Ekonomisk-historiska institutionen vid Lunds universitet. Jag har en masterexamen och en doktorsexamen i ekonomisk historia från Lunds universitet och har tidigare varit postdoktor i Lund och vid University of Cambridge. Jag arbetar i forskningsprojekt som finansieras av Vetenskapsrådet, Riksbankens Jubileumsfond, Handelsbankens forskningsstiftelser och brittiska Arts and Humanities Research Council. Jag har också genomfört forsknings- och konsultuppdrag för STINT och FN:s utvecklingsprogram (UNDP).",
       "about.contact": "Kontakt", "about.postal": "Postadress", "about.visiting": "Besöksadress",
+      "about.roles": "Uppdrag och förtroendeuppdrag",
+      "svc.consultant": "Konsult", "svc.confmgr": "Konferensansvarig", "svc.reviewer": "Granskare av vetenskapliga artiklar",
+      "svc.affiliate": "Anknuten postdoktor", "svc.seha": "Kassör, därefter revisor",
+      "svc.undp": "FN:s utvecklingsprogram (UNDP), för Sydsudans första rapport om multidimensionell fattigdom",
+      "svc.stint": "STINT, Stiftelsen för internationalisering av högre utbildning och forskning",
+      "svc.others": " och andra tidskrifter",
 
       "e404.title": "Sidan hittades inte.",
       "e404.body": "Sidan kan ha flyttats. Använd menyn ovan för att hitta min forskning, undervisning och mina kontaktuppgifter.",
@@ -93,9 +99,10 @@
       "lang.label": "Idioma",
 
       "aff": "Pesquisador na Universidade de Linköping, também vinculado à Universidade de Lund",
-      "intro": "Sou historiador econômico e pesquiso as origens e a persistência da desigualdade, sobretudo na África. Uso fontes históricas para investigar como os mercados de trabalho influenciam a distribuição da riqueza e as condições de vida ao longo de gerações.",
+      "intro": "Estudo como a riqueza e o poder determinam quem se beneficia das mudanças econômicas e por que a desigualdade pode persistir ao longo das gerações.",
       "cta.research": "Pesquisa e publicações",
       "cta.cv": "Currículo",
+      "home.latest": "Mais recente",
 
       "w.and": "e", "w.oxand": " e",
 
@@ -105,7 +112,6 @@
 
 
       "res.title": "Pesquisa",
-      "res.lead": "Investigo as origens e a persistência da desigualdade, sobretudo na África, e como a distribuição da riqueza e o acesso ao trabalho influenciam as condições de vida e a capacidade de enfrentar crises econômicas. A partir de fontes históricas, estudo a escravidão e a abolição na Colônia do Cabo, os mercados de trabalho e as condições de vida em Gana, a relação entre clima e patrimônio e a resiliência econômica dos países em desenvolvimento.",
       "res.pub": "Publicações", "res.review": "Em avaliação", "res.wip": "Trabalhos em andamento", "res.essays": "Textos e participações na mídia",
       "n.works": "trabalhos", "n.manuscripts": "manuscritos", "n.contributions": "contribuições",
       "res.label": "Artigos, capítulos, <br>relatórios e tese",
@@ -142,6 +148,12 @@
       "about.p2": "Reúno e analiso um amplo conjunto de registros históricos para estudar como as mudanças econômicas afetam a riqueza, o trabalho, a saúde e as condições de vida. Investigo como as diferenças de riqueza e poder influenciam a distribuição dos custos das crises e dos benefícios da recuperação e do crescimento. Também procuro entender como essas desigualdades persistem ao longo das gerações.",
       "about.p3": "Sou pesquisador de pós-doutorado no Departamento de Gestão e Engenharia da Universidade de Linköping e mantenho vínculo com o Departamento de História Econômica da Universidade de Lund. Tenho mestrado e doutorado em História Econômica pela Universidade de Lund e já fui pesquisador de pós-doutorado em Lund e na Universidade de Cambridge. Participo de projetos financiados pelo Conselho Sueco de Pesquisa, pela Riksbankens Jubileumsfond, pelas Fundações de Pesquisa do Handelsbanken e pelo Arts and Humanities Research Council do Reino Unido. Também desenvolvi pesquisas e prestei consultoria para a STINT e para o Programa das Nações Unidas para o Desenvolvimento (PNUD).",
       "about.contact": "Contato", "about.postal": "Correspondência", "about.visiting": "Endereço para visitas",
+      "about.roles": "Cargos e atividades acadêmicas",
+      "svc.consultant": "Consultor", "svc.confmgr": "Coordenador da conferência", "svc.reviewer": "Parecerista",
+      "svc.affiliate": "Membro associado de pós-doutorado", "svc.seha": "Tesoureiro e depois auditor",
+      "svc.undp": "Programa das Nações Unidas para o Desenvolvimento (PNUD), para o primeiro relatório do Índice de Pobreza Multidimensional do Sudão do Sul",
+      "svc.stint": "STINT, Fundação Sueca para a Cooperação Internacional em Pesquisa e Ensino Superior",
+      "svc.others": " e outras revistas",
 
       "e404.title": "Página não encontrada.",
       "e404.body": "Esta página pode ter mudado de endereço. Use o menu acima para acessar minhas pesquisas, os cursos que ministro e meus contatos.",

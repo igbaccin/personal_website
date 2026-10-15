@@ -1,6 +1,6 @@
 ---
 title: ""
-pagetitle: "African economic history and inequality"
+pagetitle: "Igor B. Martins"
 description: "Igor B. Martins is an economic historian at Linköping and Lund universities, researching inequality, slavery, wealth, labour, and resilience in Africa."
 canonical-url: https://ibmartins.com/
 ---
@@ -28,6 +28,7 @@ canonical-url: https://ibmartins.com/
         <a class="primary-link" href="research.html"><span data-i18n="cta.research">Research &amp; publications</span> <span aria-hidden="true">→</span></a>
         <a class="secondary-link" href="files/igor-b-martins-cv.pdf" target="_blank" rel="noopener"><span data-i18n="cta.cv">Curriculum vitae</span> <span aria-hidden="true">↗</span></a>
       </div>
+      <p class="latest"><span class="latest-label" data-i18n="home.latest">Latest</span><a href="https://doi.org/10.1093/ereh/heag012">Capital and Coercion: Slavery after the 1807 Import Ban in the Cape Colony</a><span class="latest-venue"><em>European Review of Economic History</em>, 2026</span></p>
       <nav class="social-links" aria-label="Academic profiles, writing, and contact">
         <a href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
         <a href="https://portal.research.lu.se/en/persons/igor-martins" target="_blank" rel="noopener">Lund University <span aria-hidden="true">↗</span></a>
