@@ -261,13 +261,13 @@ I. Martins
 
 *Cliometrica* · Submitted
 
-Large mixed farms in Stellenbosch that lost more uncompensated slave wealth at emancipation produced markedly less wine and grain afterwards, consistent with the loss of enslaved people as collateral for credit.
+After emancipation, Stellenbosch farms whose compensation fell further short of their slaves’ assessed value lost more wine and grain output, especially large mixed producers, consistent with the loss of slave property used in lending.
 
 [Replication package ↗](https://www.icpsr.umich.edu/sites/icpsr/view/studies/248667)
 
 Abstract
 
-Slave emancipation reorganised labour and removed a legally protected form of wealth that had supported collateralised credit. Using a household-level panel of farmers in Stellenbosch, Cape Colony (1824–1844), this study links annual tax censuses to slave valuation and compensation records to measure uncompensated slave wealth after the Slavery Abolition Act. The compensation scheme created a farm-level gap between locally assessed slave values and cash awards, providing a measure of balance-sheet exposure to abolition. Farmer and year fixed effects compare the same farms over time after conditioning on labour availability, household size, and livestock. Output losses were concentrated among large mixed producers, the farmers most likely to have combined enslaved labour with slave-backed credit. Among these farms, an interquartile-range increase in uncompensated value per enslaved person is associated with losses equal to 20 percent of pre-emancipation wine output and 31 percent of pre-emancipation grain output after full emancipation. The findings show that emancipation’s productive consequences reflected labour reorganisation and the destruction of a property right that had supported credit and agricultural production.
+Slave emancipation reorganised labour and removed a legally protected form of wealth that had supported collateralised credit. Using a panel of farmers in Stellenbosch, Cape Colony, from 1824 to 1844, this study links annual tax censuses to slave valuations and compensation awards. The compensation gap is the difference between the local valuation and the cash award. It measures the portion of assessed slave value that compensation did not replace. The estimates compare each farm’s output before and after emancipation and ask whether output changed more on farms with larger compensation gaps, after accounting for changes shared by all farms and for recorded labour, household size, and livestock. After emancipation, grain and wine output declined more on farms with larger compensation gaps, especially among large mixed producers. Among these farms, every additional £10 in the compensation gap per enslaved person is associated with losses equal to 12 percent of earlier wine output and 20 percent of earlier grain output. This pattern, together with historical evidence on the use of slave property in lending, is consistent with a balance sheet channel operating alongside labour reorganisation.
 
 ### Democracy and Rural Inequality in Kenya, 1997–2010
 
