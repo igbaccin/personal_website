@@ -20,7 +20,7 @@ website:
   title: "Igor B. Martins"
   description: "Igor B. Martins is an economic historian at Linköping and Lund universities, researching inequality, slavery, wealth, labour, and resilience in Africa."
   site-url: https://ibmartins.com/
-  favicon: images/hourglass.png
+  favicon: images/mark-icon.png
   image: images/social-card.jpg
   image-alt: "Igor B. Martins, economic historian at Linköping University and Lund University"
   open-graph: true
@@ -30,7 +30,7 @@ website:
   navbar:
     background: "#121619"
     foreground: "#d7dce0"
-    logo: images/hourglass.png
+    logo: images/mark.svg
     logo-alt: "Igor B. Martins, home"
     title: "Igor B. Martins"
     collapse-below: md
