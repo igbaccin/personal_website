@@ -8,21 +8,21 @@ project:
     - teaching.qmd
     - about.qmd
     - 404.qmd
-    - home.qmd
   resources:
     - images/
     - files/
     - CNAME
     - .nojekyll
     - i18n.js
+    - home.html
 
 website:
   title: "Igor B. Martins"
   description: "Igor B. Martins is an economic historian at Linköping and Lund universities, researching inequality, slavery, wealth, labour, and resilience in Africa."
   site-url: https://ibmartins.com/
   favicon: images/hourglass.png
-  image: images/me.jpg
-  image-alt: "Portrait of Igor B. Martins"
+  image: images/social-card.jpg
+  image-alt: "Igor B. Martins, economic historian at Linköping University and Lund University"
   open-graph: true
   twitter-card: true
   llms-txt: true

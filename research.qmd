@@ -8,7 +8,6 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <section class="page-banner research-banner" aria-labelledby="research-title">
   <div class="page-shell">
     <h1 id="research-title" data-i18n="res.title">Research</h1>
-    <p class="lead" data-i18n="res.lead">With a primary focus on Africa, I examine the historical roots of inequality and the conditions that help households and countries withstand economic disruption. My work covers slavery and emancipation in the Cape Colony, labour markets and living standards in Ghana, climate and asset ownership, and economic resilience in developing countries.</p>
   </div>
 </section>
 <div class="page-shell">
@@ -46,7 +45,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2026</div>
   <div>
-    <h3><a href="https://academic.oup.com/ereh/advance-article/doi/10.1093/ereh/heag012/8660369">Capital and Coercion: Slavery after the 1807 Import Ban in the Cape Colony</a></h3>
+    <h3><a href="https://doi.org/10.1093/ereh/heag012">Capital and Coercion: Slavery after the 1807 Import Ban in the Cape Colony</a></h3>
     <p>I. Martins</p>
     <p class="journal"><em>European Review of Economic History</em> · heag012</p>
 
@@ -56,7 +55,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2026</div>
   <div>
-    <h3><a href="https://www.cambridge.org/core/journals/journal-of-global-history/article/theoretical-foundations-of-the-economics-of-slavery-enslaved-people-as-capital-investments-in-the-atlantic-world/9CC6E3AE72944B441DFC1E2EBB6F407F">Theoretical Foundations of the Economics of Slavery: Enslaved People as Capital Investments in the Atlantic World</a></h3>
+    <h3><a href="https://doi.org/10.1017/S1740022825100296">Theoretical Foundations of the Economics of Slavery: Enslaved People as Capital Investments in the Atlantic World</a></h3>
     <p>I. Martins <span data-i18n="w.and">and</span> E. Green</p>
     <p class="journal"><em>Journal of Global History</em> · 21(1), 22–40</p>
 
@@ -74,7 +73,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2024</div>
   <div>
-    <h3><a href="https://www.sciencedirect.com/science/article/pii/S0014498324000469?via%3Dihub">Fertility responses to short-term economic stress: Price volatility and wealth shocks in a pre-transitional settler colony</a></h3>
+    <h3><a href="https://doi.org/10.1016/j.eeh.2024.101620">Fertility responses to short-term economic stress: Price volatility and wealth shocks in a pre-transitional settler colony</a></h3>
     <p>J. Cilliers, M. Mariotti<span data-i18n="w.oxand">, and</span> I. Martins</p>
     <p class="journal"><em>Explorations in Economic History</em> · 101620</p>
 
@@ -84,7 +83,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2024</div>
   <div>
-    <h3><a href="https://link.springer.com/article/10.1007/s12116-023-09392-1">Resilience to shrinking as a catch-up strategy: a comparison of Brazil and Indonesia, 1964–2019</a></h3>
+    <h3><a href="https://doi.org/10.1007/s12116-023-09392-1">Resilience to shrinking as a catch-up strategy: a comparison of Brazil and Indonesia, 1964–2019</a></h3>
     <p>T. Axelsson <span data-i18n="w.and">and</span> I. Martins</p>
     <p class="journal"><em>Studies in Comparative International Development</em> · 59(3), 491–516</p>
 
@@ -93,7 +92,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2024</div>
   <div>
-    <h3><a href="https://www.emerald.com/insight/content/doi/10.1108/ijdi-06-2023-0168/full/html">Inequality, poverty, and resilience to economic shrinking</a></h3>
+    <h3><a href="https://doi.org/10.1108/IJDI-06-2023-0168">Inequality, poverty, and resilience to economic shrinking</a></h3>
     <p>A. Smythe, I. Martins<span data-i18n="w.oxand">, and</span> M. Andersson</p>
     <p class="journal"><em>International Journal of Development Issues</em> · 23(1), 40–81</p>
 
@@ -102,7 +101,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2023</div>
   <div>
-    <h3><a href="https://issues.org/disentangled-research-china-us-europe-schwaag-serger-martins/">An age of disentangled research?</a></h3>
+    <h3><a href="https://doi.org/10.58875/WBCQ3772">An age of disentangled research?</a></h3>
     <p>I. Martins <span data-i18n="w.and">and</span> S. Schwaag Serger</p>
     <p class="journal"><em>Issues in Science and Technology</em> · 40(1), 38–43</p>
 
@@ -111,7 +110,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2023</div>
   <div>
-    <h3><a href="https://www.sciencedirect.com/science/article/pii/S0014498322000778?via%3Dihub">Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony</a></h3>
+    <h3><a href="https://doi.org/10.1016/j.eeh.2022.101506">Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony</a></h3>
     <p>I. Martins, J. Cilliers<span data-i18n="w.oxand">, and</span> J. Fourie</p>
     <p class="journal"><em>Explorations in Economic History</em> · 101506</p>
 
