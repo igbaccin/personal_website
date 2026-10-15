@@ -48,8 +48,10 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3><a href="https://doi.org/10.1093/ereh/heag012">Capital and Coercion: Slavery after the 1807 Import Ban in the Cape Colony</a></h3>
     <p>I. Martins</p>
     <p class="journal"><em>European Review of Economic History</em> · heag012</p>
+    <p class="finding" data-i18n="find.capcoer">After Britain banned slave imports in 1807, wealthier households in Stellenbosch and Graaff-Reinet kept accumulating enslaved people, holding them as capital assets in a colony where capital was scarce.</p>
 
     <a class="paper-link" href="https://www.icpsr.umich.edu/sites/icpsr/view/studies/237703"><span data-i18n="st.replication">Replication package</span> ↗</a>
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>The 1807 Slave Trade Act banned slave imports across the British Empire, triggering a sharp supply shock. Using newly digitised tax censuses from the Cape Colony, this article examines slave accumulation patterns in Stellenbosch and Graaff-Reinet following the supply shock. Despite stark ecological and institutional differences, both districts show similar post-abolition trajectories. This challenges models linking coercion to land–labour ratios, supervision costs, or frontier openness. Testing five frameworks, the paper finds the strongest support for the view of slaves as capital assets. Wealthier households continued accumulating slaves, suggesting slavery persisted not only as labour but as an asset strategy amid capital scarcity.</p></div></details>
   </div>
 </article>
 <article class="publication">
@@ -58,7 +60,9 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3><a href="https://doi.org/10.1017/S1740022825100296">Theoretical Foundations of the Economics of Slavery: Enslaved People as Capital Investments in the Atlantic World</a></h3>
     <p>I. Martins <span data-i18n="w.and">and</span> E. Green</p>
     <p class="journal"><em>Journal of Global History</em> · 21(1), 22–40</p>
+    <p class="finding" data-i18n="find.theory">Comparing the United States, Brazil and the Cape Colony, we show that enslavers held enslaved people as both labour and capital investment, and that this investment role is key to explaining why slavery persisted.</p>
 
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>Despite the prevalence of slavery in world history, our understanding of its persistence remains limited. Most previous studies focus primarily on slavery as a labour contract, indistinguishable from other coercive arrangements such as serfdom. More recent literature on slavery in the United States shows that enslaved people also played an important role as financial instruments. In this article, we extend the investigation by comparing slavery in the United States with that in Brazil and the Cape Colony. We show that despite significant geographic, demographic, and economic differences, slavery was not merely a labour arrangement in the three cases but a unique institution that gave enslavers complete rights over mobile property. Slavery provided access to both labour and capital, with the capital investment dimension being key to understanding its persistence. We argue that understanding slavery’s persistence requires recognizing enslaved people as both sources of labour and capital investment.</p></div></details>
   </div>
 </article>
 <article class="publication">
@@ -76,8 +80,10 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3><a href="https://doi.org/10.1016/j.eeh.2024.101620">Fertility responses to short-term economic stress: Price volatility and wealth shocks in a pre-transitional settler colony</a></h3>
     <p>J. Cilliers, M. Mariotti<span data-i18n="w.oxand">, and</span> I. Martins</p>
     <p class="journal"><em>Explorations in Economic History</em> · 101620</p>
+    <p class="finding" data-i18n="find.fertility">Cape settler households that lost slave wealth at emancipation in 1834 appear to have postponed births, while price volatility had no clear effect on conceptions.</p>
 
     <a class="paper-link" href="https://www.icpsr.umich.edu/sites/icpsr/view/studies/208362"><span data-i18n="st.replication">Replication package</span> ↗</a>
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>This paper examines the effects of short-term economic stress, captured by general price volatility and a negative wealth shock on short-run fertility behavior in the rural pre-transitional society of the Cape Colony. First, we link complete birth histories of settler women from the South African Families database to consumer price index data to examine the effect of price volatility on conceptions. Next, we link the same birth histories to slave owner and slave emancipation data to examine the effect of a negative wealth shock on conception. Upon slave emancipation in 1834, former slave owners received on average only between 40 and 50 % of the market value of their slaves as compensation, resulting in a substantial reduction in their wealth. Relying on event history models that look simultaneously at stopping and spacing, we do not find strong evidence in support of fertility control in response to general price volatility. We do find greater variance in birth interval lengths for former slaveholding households during and immediately after emancipation, suggesting that a negative wealth shock is associated with increased fertility limitation through postponement in this context.</p></div></details>
   </div>
 </article>
 <article class="publication">
@@ -86,7 +92,9 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3><a href="https://doi.org/10.1007/s12116-023-09392-1">Resilience to shrinking as a catch-up strategy: a comparison of Brazil and Indonesia, 1964–2019</a></h3>
     <p>T. Axelsson <span data-i18n="w.and">and</span> I. Martins</p>
     <p class="journal"><em>Studies in Comparative International Development</em> · 59(3), 491–516</p>
+    <p class="finding" data-i18n="find.brazil">We argue that differences in structural transformation, autonomy and inclusion explain why Indonesia has weathered economic shrinking better than Brazil since 1964.</p>
 
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>Development economics has long focused on growth patterns to explain countries’ ability to catch up and forge ahead. We argue, however, that resilience to economic shrinking matters more. Using the examples of Brazil and Indonesia, we propose that a framework consisting of social capabilities—namely structural transformation, autonomy, and inclusion—can explain why Indonesia is more resilient to economic shrinking than Brazil and why the country is more likely to be successful in its catching-up process.</p></div></details>
   </div>
 </article>
 <article class="publication">
@@ -95,7 +103,9 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3><a href="https://doi.org/10.1108/IJDI-06-2023-0168">Inequality, poverty, and resilience to economic shrinking</a></h3>
     <p>A. Smythe, I. Martins<span data-i18n="w.oxand">, and</span> M. Andersson</p>
     <p class="journal"><em>International Journal of Development Issues</em> · 23(1), 40–81</p>
+    <p class="finding" data-i18n="find.poverty">Across 23 developing countries over 42 years, falling poverty is associated with fewer episodes of economic shrinking, while changes in income inequality show no such relationship.</p>
 
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p><strong>Purpose.</strong> With the recognition that generating economic growth is not the same as sustaining it, the challenge to catch-up and growth literature is discerning between these processes. Recent research suggests that the decline in the frequency of “shrinking” episodes is more important for long-term development than higher growth rates. By using a framework centred around social capabilities, this study aims to investigate the effects of income inequality and poverty on economic shrinking frequency, as opposed to previous literature that has exclusively had a growth focus. The aim is to investigate how and why some societies might be more resilient to economic shrinking.</p><p><strong>Design/methodology/approach.</strong> The research is a quantitative study, and the authors build a longitudinal data set including 23 developing countries throughout 42 years to test the paper’s purpose. This study uses country and period fixed-effects specifications as well as cross-sectional graphical representations to investigate the relationship between proxies of economic inclusivity and the frequency of shrinking episodes.</p><p><strong>Findings.</strong> The authors demonstrate that while inclusive societies are more resilient to shrinking overall, it is changes in poverty levels, but not changes in income inequality, that appear to be correlated with economic shrinking frequency. Inequality, while still an important element to explain countries’ growth potential as an initial condition, does not seem to make the sample more resilient to shrinking. The authors conclude that the mechanisms in which poverty and inequality are correlated with the catch-up process must run through different channels. Ultimately, processes that explain growth may intersect but not always overlap with the ones that explain resilience to shrinking.</p><p><strong>Originality/value.</strong> The need for inclusive growth in long-term development has been championed for decades, yet inclusion has seldom been explored from the shrinking perspective. Though poverty reduction is already an important mainstream political objective, this paper differentiates itself by providing an alternate viewpoint of why this is important. Income inequality could have more of an economic growth limiting effect, while poverty reduction could be required to build resilience to economic shrinking. Developing countries will need both growth and resilience to shrinking, to catch-up with higher-income economies, which policymakers might need to balance carefully.</p></div></details>
   </div>
 </article>
 <article class="publication">
@@ -104,7 +114,9 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3><a href="https://doi.org/10.58875/WBCQ3772">An age of disentangled research?</a></h3>
     <p>I. Martins <span data-i18n="w.and">and</span> S. Schwaag Serger</p>
     <p class="journal"><em>Issues in Science and Technology</em> · 40(1), 38–43</p>
+    <p class="finding" data-i18n="find.disentangled">Coauthorship between Chinese and US researchers has begun to decline, and we ask what growing political constraints mean for international science.</p>
 
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>This article examines the emerging decline in international research collaboration, especially between China and the United States, and asks whether we are entering a new era of globally fragmented science. While US–China coauthorship is decreasing, European trends are more uneven. Drawing on bibliometric data and institutional analysis, the authors argue that growing political constraints and institutional caution are shifting global scientific cooperation into a more divided, uncertain phase, raising urgent questions about the future of science as a public good.</p></div></details>
   </div>
 </article>
 <article class="publication">
@@ -113,8 +125,10 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3><a href="https://doi.org/10.1016/j.eeh.2022.101506">Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony</a></h3>
     <p>I. Martins, J. Cilliers<span data-i18n="w.oxand">, and</span> J. Fourie</p>
     <p class="journal"><em>Explorations in Economic History</em> · 101506</p>
+    <p class="finding" data-i18n="find.legacies">Slaveholders who lost more wealth through the partial compensation of 1834 lived slightly shorter lives, an effect concentrated among older owners; their children and grandchildren were unaffected.</p>
 
     <a class="paper-link" href="https://www.icpsr.umich.edu/sites/icpsr/view/studies/183526"><span data-i18n="st.replication">Replication package</span> ↗</a>
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>Can wealth shocks have intergenerational health consequences? We use the partial compensation slaveholders received after the 1834 slave emancipation in the British Cape Colony to measure the intergenerational effects of a wealth loss on longevity. We find that a greater loss of slave wealth shortened the lifespans of the generation of slaveholders that experienced the shock albeit these effects are usually small and mostly confined to older cohorts of slaveholders who likely exploited slaves both as labor and capital inputs. The lifespans of those of the second generation who survived infancy were unaffected by the shortfalls and no effects of the shortfall were found for the third generation.</p></div></details>
   </div>
 </article>
 <article class="publication">
