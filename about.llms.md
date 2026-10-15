@@ -16,6 +16,50 @@ I am a postdoctoral researcher in the Department of Management and Engineering a
 
 [Google Scholar ↗](https://scholar.google.com/citations?user=VRHCkE0AAAAJ&hl=en) [Lund University ↗](https://portal.research.lu.se/en/persons/igor-martins) [ResearchGate ↗](https://www.researchgate.net/profile/Igor-Martins) [LinkedIn ↗](https://www.linkedin.com/in/ibmartins/) [Substack ↗](https://ibmartins.substack.com/) [ORCID ↗](https://orcid.org/0000-0002-6141-9273)
 
+## Roles and service
+
+2025–2026
+
+### Consultant
+
+United Nations Development Programme, for South Sudan’s first Multidimensional Poverty Index report
+
+2023–2025
+
+### Conference manager
+
+19th World Economic History Congress, Lund
+
+2023–2024
+
+### Consultant
+
+STINT, the Swedish Foundation for International Cooperation in Research and Higher Education
+
+Since 2023
+
+### Peer reviewer
+
+*Studies in Comparative International Development*, *Studies in Higher Education*, *Technological Forecasting and Social Change*, and other journals
+
+2022–2023
+
+### Affiliated postdoctoral member
+
+Clare Hall, University of Cambridge
+
+Since 2021
+
+### Treasurer, then auditor
+
+Swedish Economic History Association
+
+Since 2017
+
+### Visiting researcher
+
+Laboratory for the Economics of Africa’s Past, Stellenbosch University
+
 ## Get in touch
 
 <igor.martins@ekh.lu.se>

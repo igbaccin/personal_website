@@ -1,6 +1,5 @@
 /* Background photography is part of the page surface. */
 .research-banner h1 { margin-bottom: 0; }
-.research-banner .lead { margin-top: 16px; }
 .section-nav { position: sticky; top: var(--research-header-height, 90px); z-index: 100; background: #121619; }
 html.has-research-nav { scroll-padding-top: calc(var(--research-header-height, 90px) + var(--research-nav-height, 76px) + 16px); }
 .section-nav a[aria-current="location"] { color: #fff; text-decoration: underline; }
@@ -16,20 +15,20 @@ html.has-research-nav { scroll-padding-top: calc(var(--research-header-height, 9
   pointer-events: none;
 }
 .landing::before {
-  background-image: linear-gradient(90deg, rgba(12,16,19,.94) 0%, rgba(12,16,19,.86) 35%, rgba(12,16,19,.5) 65%, rgba(12,16,19,.22) 100%), linear-gradient(0deg, rgba(18,22,25,.7), transparent 45%), url("images/architecture.png");
+  background-image: linear-gradient(90deg, rgba(12,16,19,.94) 0%, rgba(12,16,19,.86) 35%, rgba(12,16,19,.5) 65%, rgba(12,16,19,.22) 100%), linear-gradient(0deg, rgba(18,22,25,.7), transparent 45%), url("images/architecture.jpg");
   background-position: center, center, center 58%;
 }
 .research-banner::before {
-  background-image: linear-gradient(90deg, rgba(18,22,25,.96), rgba(18,22,25,.82) 60%, rgba(18,22,25,.55)), url("images/archive.png");
+  background-image: linear-gradient(90deg, rgba(18,22,25,.96), rgba(18,22,25,.82) 60%, rgba(18,22,25,.55)), url("images/archive.jpg");
   background-position: center, center 47%;
 }
 .teaching-banner::before {
-  background-image: linear-gradient(90deg, rgba(18,22,25,.96), rgba(18,22,25,.88) 60%, rgba(18,22,25,.7)), url("images/study.png");
+  background-image: linear-gradient(90deg, rgba(18,22,25,.96), rgba(18,22,25,.88) 60%, rgba(18,22,25,.7)), url("images/study.jpg");
   background-position: center, center 53%;
 }
 @media (max-width: 767px) {
   .landing::before {
-    background-image: linear-gradient(90deg, rgba(12,16,19,.89), rgba(12,16,19,.74)), url("images/architecture.png");
+    background-image: linear-gradient(90deg, rgba(12,16,19,.89), rgba(12,16,19,.74)), url("images/architecture.jpg");
     background-position: center, 63% center;
   }
 }
