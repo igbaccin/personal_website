@@ -41,7 +41,9 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3>Från arbetskraft till kapital: Slaveriets ekonomiska logik i globalt perspektiv</h3>
     <p>I. Martins <span data-i18n="w.and">and</span> E. Green</p>
     <p class="journal"><em>Statsvetenskaplig tidskrift</em></p>
+    <p class="finding" data-i18n="find.labourcapital">Enslaved people could serve as collateral as early as classical Athens and Rome, and in nineteenth-century Brazil and the Cape Colony courts and foreclosure made slave-backed lending routine, so emancipation also wiped out collateral that creditors relied on.</p>
 
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>Slavery is usually analysed as an extreme form of labour coercion. This article treats it instead as a property regime over persons that simultaneously organises labour and creates alienable assets that can be valued, transferred, and pledged. I distinguish feasible collateralisation from systemic collateralisation: the former requires enforceable remedies, the latter requires routinised instruments and repeatable enforcement channels that make slave property legible to third parties. Evidence from classical Athens and Rome shows that enslaved people could serve as collateral without modern registries, separating feasibility from systemic use. Comparative case studies of nineteenth-century Brazil and the Cape Colony trace when slave-backed lending became routine, highlighting the roles of creditor remedies, foreclosure, courts, and market liquidity. The findings reframe the slavery and capitalism debate and interpret emancipation as a shock to collateral and creditor protection, not only to labour relations.</p></div></details>
   </div>
 </article>
 <article class="publication">
@@ -139,6 +141,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3><a href="https://www.stint.se/wp-content/uploads/2023/07/STINT_Shifting-patterns-1.pdf">Shifting patterns in international research cooperation</a></h3>
     <p>I. Martins <span data-i18n="w.and">and</span> S. Schwaag Serger</p>
     <p class="journal"><em>STINT</em> · <span data-i18n="st.report">Report</span></p>
+    <p class="finding" data-i18n="find.stint">Chinese-based scholars now publish more than their US-based colleagues in nearly every science and medical field, and coauthorship between the two countries fell during the COVID-19 pandemic while collaboration with Latin America, Africa and Europe held steady.</p>
 
   </div>
 </article>
@@ -148,7 +151,9 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3><a href="https://portal.research.lu.se/en/publications/collateral-effect-slavery-and-wealth-in-the-cape-colony">Collateral Effect: Slavery and Wealth in the Cape Colony</a></h3>
     <p>I. Martins</p>
     <p class="journal"><em data-i18n="inst.lu">Lund University</em> · <span data-i18n="st.phd">PhD thesis</span></p>
+    <p class="finding" data-i18n="find.thesis">Without secure title to land or organised credit, Cape slaveholders used enslaved people as financial assets to raise capital, which helps explain how slavery worked and persisted in the colony.</p>
 
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>This thesis reassesses the framework we have come to accept around the dynamics of slavery in a series of papers which, together, shed new light on the economics of coercion. Employing a range of newly digitized historical databases covering the economic life and genealogical history of the British Cape Colony through the 18th and 19th centuries, it explores the determinants of labor coercion in light of two significant institutional shocks: the Slave Trade Act 1807, when the transshipment of slaves became illegal, and the Slave Abolition Act 1833 when the possession of slaves was outlawed. Slaveholding households are analyzed from a longitudinal perspective, such that the interdependencies of slave ownership, agricultural output, and related capital are considered simultaneously. It concludes that scenarios with weak property rights to land and lack of organized means for the provision of credit rendered slaves a suitable financial instrument allowing slaveholders to exploit the enslaved as means to raise capital beyond the agricultural labor. It magnifies the importance of slavery in the colony and provides economic historians with another tool to further interpret the profitability and the efficiency of the slave system. Understanding the proprietary relationship between masters and slaves and, consequently, their exploitation beyond agricultural work is key to explaining the dynamics of slavery in its entirety.</p></div></details>
   </div>
 </article>
 <article class="publication">
@@ -157,7 +162,9 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3><a href="https://revistas.uexternado.edu.co/index.php/oasis/article/view/6232/8773">What caused poverty reduction in Brazil during the 2000s: sectoral growth or public expenditures</a></h3>
     <p>A. Palacio <span data-i18n="w.and">and</span> I. Martins</p>
     <p class="journal"><em>OASIS. Observatorio de Análisis de los Sistemas Internacionales</em> · 31, 185–213</p>
+    <p class="finding" data-i18n="find.brazilpoverty">Growth in services, led by public administration, did more than agriculture to reduce poverty in Brazil in the 2000s, and state and municipal spending on human capital did more than federal cash transfers.</p>
 
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>We ask what caused poverty to decline in Brazil during the first decade of the 21st century. Our contribution lies in the introduction of a structural change perspective to assess the evolution of poverty by considering the sectoral impact of growth and the social policies at the federal, state and municipal level. By structural change we mean the recomposition of output and employment over time. We run a first difference model to estimate the effects of mean income per capita by sector and of disaggregated public expenditures, without any attempts to infer causality. We confirm previous findings in the literature that the service sector rather than agriculture contributes the most to the sustained poverty reduction. Strikingly, the public administration is the leading sub-sector. We also find that state and municipal expenditures in human capital contribute more to poverty reduction than federal expenditures associated with conditional cash transfer programs; investment in infrastructure does not seem to contribute to poverty reduction. In short, we conclude that the payoffs of decentralized policies associated with human capital can be seen in the short run and therefore raise the bar for politicians to maintain and care for these policies. Furthermore, the public service sector, which is one of the main employers in today’s economy, must find ways to innovate and improve productivity if poverty reduction is to be sustainable in the long run.</p></div></details>
   </div>
 </article>
 <article class="publication">
@@ -205,14 +212,16 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3><a href="https://www.researchsquare.com/article/rs-9859396/v1">Asset ownership turns climate exposure into inequality</a></h3>
     <p>I. Martins, S. Grab<span data-i18n="w.oxand">, and</span> E. Green</p>
     <p class="journal"><em>Nature Communications</em> · <span data-i18n="st.rr">Revise and resubmit</span></p>
+    <p class="finding" data-i18n="find.climate">Linking weather to 25,000 household tax records, we show that wealthier households more often owned the commodities that seasonal weather favoured, and years when weather raised returns to those commodities were years of wider inequality in movable assets.</p>
     <a class="paper-link" href="https://www.researchsquare.com/article/rs-9859396/v1"><span data-i18n="st.preprint">Read preprint</span> ↗</a>
     <a class="paper-link" href="https://www.icpsr.umich.edu/sites/icpsr/view/studies/248487"><span data-i18n="st.replication">Replication package</span> ↗</a>
+    <details class="abstract"><summary data-i18n="st.abstract">Abstract</summary><div class="abstract-text" lang="en"><p>As climate change alters weather risk, wealth is often treated as a buffer after shocks occur. We show that wealth can shape the economic shock before it arrives by determining which assets households own. In a pre-industrial agrarian society, we link weather to 25,000 household tax records and commodity prices. Households held different production bundles, and the same seasonal weather could raise returns to one bundle while lowering returns to another. Wealthier households more often owned the commodities favoured by observed weather variation, and prices did not systematically offset these differences. These portfolio differences predict next-year changes in movable assets. Years in which weather raised returns to commodities disproportionately owned by wealthier households were years of wider movable-asset inequality. Wealth determined whether weather became loss or gain.</p></div></details>
   </div>
 </article>
 <article class="publication">
 
   <div>
-    <h3>Slave Emancipation and Farm Output in the Cape Colony</h3>
+    <h3>Slave Emancipation and Agricultural Output in the Cape Colony</h3>
     <p>I. Martins</p>
     <p class="journal"><em>Cliometrica</em> · <span data-i18n="st.submitted">Submitted</span></p>
     <p class="finding" data-i18n="find.emancipation">Large mixed farms in Stellenbosch that lost more uncompensated slave wealth at emancipation produced markedly less wine and grain afterwards, consistent with the loss of enslaved people as collateral for credit.</p>
