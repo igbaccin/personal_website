@@ -363,14 +363,17 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
 .landing .latest .latest-venue { display: block; margin-top: 2px; font-size: .84rem; }
 @media (max-width: 767px) { .landing .latest { margin: -4px 0 22px; } }
 
-/* A one-line finding and an optional abstract under the main publications. */
-.publication .finding { margin-top: 8px; max-width: 720px; font-size: .92rem; line-height: 1.7; color: var(--body); }
-.publication details.abstract { margin: 10px 0 0; }
-.publication details.abstract summary { display: inline-block; cursor: pointer; list-style: none; font-size: .82rem; color: var(--muted); }
-.publication details.abstract summary::-webkit-details-marker { display: none; }
-.publication details.abstract summary::after { content: " +"; }
-.publication details.abstract[open] summary::after { content: " −"; }
-.publication details.abstract summary:hover { color: #fff; }
-.publication .abstract-text { max-width: 720px; margin-top: 8px; padding-left: 14px; border-left: 1px solid var(--rule); }
+/* Authors and venue share one line, followed by a one-line finding; the abstract opens from a toggle on the venue line. */
+.publication { padding: 16px 0; }
+.publication > div > p:not(.finding) { display: inline; }
+.publication > div > p + p.journal::before { content: " · "; color: var(--muted); }
+.publication .finding { margin-top: 6px; font-size: .88rem; line-height: 1.6; color: var(--body); }
+.publication .paper-link { margin-top: 8px; }
+.abstract-toggle { background: none; border: 0; padding: 0; margin-left: 6px; font: inherit; font-size: .8rem; font-style: normal; color: var(--muted); cursor: pointer; }
+.abstract-toggle::after { content: " +"; }
+.abstract-toggle[aria-expanded="true"]::after { content: " −"; }
+.abstract-toggle:hover { color: #fff; }
+.publication .abstract-text { max-width: 760px; margin-top: 10px; padding-left: 14px; border-left: 1px solid var(--rule); }
+.publication .abstract-text[hidden] { display: none; }
 .publication .abstract-text p { margin: 0 0 8px; font-size: .85rem; line-height: 1.7; color: var(--muted); }
 .publication .abstract-text strong { color: #c4cbd1; font-weight: 600; }
