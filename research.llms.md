@@ -213,7 +213,7 @@ I built a method that lets language models write literature reviews only from so
 
 Large language models can synthesize scholarship quickly, while the relation between their prose and the underlying sources often remains difficult to verify. This paper introduces Retrieval-Restricted Reasoning (RRR), an architecture for model-assisted synthesis over a researcher-defined corpus. RRR admits page-level evidence, binds it to stable identifiers before composition, renders citations from those records, and records a refusal when the collection cannot sustain the question. I evaluate the architecture through repeated runs on a contested economic-history literature. Across 100 full-RRR runs, the reviews contained 4,767 parsed citations. Ninety-nine reviews were free of the five measured error classes. One review contained a single citation identity that did not resolve to the declared collection; the audit found no invalid page, citation-format, or quotation error. A corpus-only instruction reduced boundary crossing substantially, and page-based comparison conditions showed that traceability arose through a layered contract of retrieval, evidence binding, rendering, writer intervention, and final checking. Model and workflow comparisons further separated writing capability from the preservation of a checkable source path. RRR supports historical synthesis by keeping claims connected to inspectable scholarship while leaving the researcher to judge the corpus and the historical interpretations built from it.
 
-### [Asset ownership turns climate exposure into inequality](https://www.researchsquare.com/article/rs-9859396/v1)
+### [Weather as a vector of inequality](https://www.researchsquare.com/article/rs-9859396/v1)
 
 I. Martins, S. Grab, and E. Green
 

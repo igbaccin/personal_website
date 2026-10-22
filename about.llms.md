@@ -62,9 +62,9 @@ Laboratory for the Economics of Africa’s Past, Stellenbosch University
 
 ## Get in touch
 
-<igor.martins@ekh.lu.se>
-
 <igor.martins@liu.se>
+
+<igor.martins@ekh.lu.se>
 
 ### Postal address
 
