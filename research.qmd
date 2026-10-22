@@ -211,7 +211,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3><a href="https://www.researchsquare.com/article/rs-9859396/v1">Asset ownership turns climate exposure into inequality</a></h3>
+    <h3><a href="https://www.researchsquare.com/article/rs-9859396/v1">Weather as a vector of inequality</a></h3>
     <p>I. Martins, S. Grab<span data-i18n="w.oxand">, and</span> E. Green</p>
     <p class="journal"><em>Nature Communications</em> · <span data-i18n="st.rr">Revise and resubmit</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-15" data-i18n="st.abstract">Abstract</button></p>
     <p class="finding" data-i18n="find.climate">Linking weather to 25,000 household tax records, we show that wealthier households more often owned the commodities that seasonal weather favoured, and years when weather raised returns to those commodities were years of wider inequality in movable assets.</p>
