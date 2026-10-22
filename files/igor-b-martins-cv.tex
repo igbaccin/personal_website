@@ -6,6 +6,7 @@
 \usepackage{lmodern}
 \usepackage[a4paper,left=21mm,right=21mm,top=23mm,bottom=19mm,headheight=21pt]{geometry}
 \usepackage{xcolor,graphicx,array,tabularx,titlesec,fancyhdr,needspace,enumitem}
+\usepackage{tikz}
 \usepackage[hidelinks,unicode]{hyperref}
 \definecolor{ink}{HTML}{121619}
 \definecolor{accent}{HTML}{425A6B}
@@ -45,6 +46,18 @@
 \newcommand{\portrait}{%
   \IfFileExists{IgorMartins_cropped.jpg}{\includegraphics[width=19mm]{IgorMartins_cropped.jpg}}{%
   \IfFileExists{IgorMartins_cropped.png}{\includegraphics[width=19mm]{IgorMartins_cropped.png}}{}}}
+% The site's hourglass mark (images/mark.svg), redrawn in the accent colour.
+\newcommand{\cvmark}[1]{%
+  \begin{tikzpicture}[x=#1/64,y=-#1/64,line cap=round]
+  \draw[accent,line width=2.8*#1/64]
+    (18,8)--(46,8) (18,56)--(46,56)
+    (20,8) .. controls (20,22) and (30,26) .. (32,32) .. controls (30,38) and (20,42) .. (20,56)
+    (44,8) .. controls (44,22) and (34,26) .. (32,32) .. controls (34,38) and (44,42) .. (44,56);
+  \fill[accent] (26,13) circle (2) (36,12) circle (2) (31,17) circle (2) (40,15) circle (2)
+    (24,19) circle (2) (34,22) circle (2) (29,25) circle (2) (37,19) circle (2);
+  \fill[accent] (22.5,50) rectangle ++(3,4) (26.5,47) rectangle ++(3,7) (30.5,43) rectangle ++(3,11)
+    (34.5,47) rectangle ++(3,7) (38.5,50) rectangle ++(3,4);
+  \end{tikzpicture}}
 \newcommand{\refentry}[3]{%
   \begin{minipage}[t]{\linewidth}\textbf{#1}\newline
   #2\newline
@@ -59,7 +72,7 @@
 \begin{tabularx}{\linewidth}{@{}Xr@{}}
 {\fontsize{29}{33}\selectfont\color{ink}Igor B. Martins}\newline
 {\sffamily\color{muted}Postdoctoral Researcher at Linköping University, also affiliated with Lund University}\vspace{5pt}
-& \raisebox{\dimexpr-\height+15pt\relax}{\portrait}
+& \raisebox{\dimexpr-\height-1pt\relax}{\cvmark{14mm}}
 \end{tabularx}
 \vspace{7pt}
 {\color{accent}\rule{\linewidth}{1.2pt}}
