@@ -217,7 +217,7 @@
       "morning": ["Today's plan is to finish yesterday's plan.", "You’re here to procrastinate. I built a whole website. We all have our methods.", "Mornings are for writing. Allegedly.", "Welcome. I’m in a meeting about meetings."],
       "afternoon": ["If you’re avoiding a deadline, make yourself at home.", "The draft is almost ready. I would appreciate it if everyone stopped asking.", "Afternoon slump? You’ve come to the right website.", "Writing, deleting, writing again. A normal afternoon.", "You’re procrastinating. I respect that."],
       "evening": ["Good evening! Still at my desk.", "This counts as reading. You may now feel productive.", "Good evening. Have you tried closing the laptop? I hear wonderful things.", "Good evening. Today’s progress: one footnote."],
-      "weekend": ["It’s the weekend. Close this tab and go outside. Me? I will keep working, thank you very much.", "It’s the weekend. You should be resting. I should be taking my own advice.", "It’s the weekend. Close this tab. Go outside.", "Weekend reading on an academic website? Bold."],
+      "weekend": ["It’s the weekend. You should be resting. I should be taking my own advice.", "It’s the weekend. Close this tab. Go outside.", "Weekend reading on an academic website? Bold."],
       "weekend-saturday": "Visiting an academic website on a Saturday? I see your social life is also thriving.",
       "weekend-sunday": "Sunday. Even reviewers rest. Allegedly.",
       "monday": "Monday. Fresh week, same draft.",
