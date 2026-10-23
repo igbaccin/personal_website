@@ -112,7 +112,9 @@
 
       "e404.title": "Sidan hittades inte.",
       "e404.body": "Sidan kan ha flyttats. Använd menyn ovan för att hitta min forskning, undervisning och mina kontaktuppgifter.",
-      "e404.home": "Till startsidan"
+      "e404.home": "Till startsidan",
+      "e404.time": "Tiden har runnit ut för den här sidan.",
+      "hg.turn": "Vänd timglaset"
     },
     pt: {
       "nav.home": "Início", "nav.research": "Pesquisa", "nav.projects": "Projetos", "nav.teaching": "Ensino", "nav.about": "Sobre mim",
@@ -199,7 +201,9 @@
 
       "e404.title": "Página não encontrada.",
       "e404.body": "Esta página pode ter mudado de endereço. Use o menu acima para acessar minhas pesquisas, os cursos que ministro e meus contatos.",
-      "e404.home": "Voltar ao início"
+      "e404.home": "Voltar ao início",
+      "e404.time": "O tempo desta página se esgotou.",
+      "hg.turn": "Virar a ampulheta"
     }
   };
 

@@ -76,6 +76,21 @@ h3 { font-size: 1.13rem; line-height: 1.5; margin: 0 0 8px; letter-spacing: 0; }
 .social-links a { font-size: .875rem; color: #e2e7eb; text-decoration: none; padding: 3px 0; }
 .social-links a:hover { color: #fff; text-decoration: underline; }
 .social-links a span { color: #a9b3bc; margin-left: 4px; }
+/* The hourglass mark in motion (hourglass.js). */
+.hg-bar { transform-box: fill-box; transform-origin: 50% 100%; }
+.hg-live > img { display: none !important; }
+.hg-logo { display: inline-block; color: #eef1f3; }
+.landing .page-shell { position: relative; }
+.hg-hero { position: absolute; right: 0; bottom: 4px; width: 150px; height: 150px; padding: 0; border: 0; background: none; color: #eef1f3; opacity: .9; cursor: pointer; }
+.hg-hero:hover { opacity: 1; }
+.hg-hero:disabled { cursor: default; }
+.hg-hero:focus-visible { outline: 2px solid #d7dce0; outline-offset: 8px; }
+.hg-hero .hg-svg { display: block; width: 100%; height: 100%; transition: transform .62s cubic-bezier(.5,0,.3,1); }
+.hg-hero.is-turning .hg-svg { transform: rotate(180deg); }
+.hg-hero.no-turn .hg-svg { transition: none; }
+.hg-404 { display: flex; align-items: center; gap: 18px; margin: 0 0 28px; color: #d7dce0; }
+.hg-404 .hg-svg { width: 88px; height: 88px; flex: none; }
+.hg-404 p { margin: 0; font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: #cfd5da; }
 .page-banner { position: relative; isolation: isolate; padding: 53px 0 47px; background-color: #171c20; border-bottom: 1px solid #ffffff13; }
 .page-banner .lead { max-width: 730px; font-size: 1.06rem; line-height: 1.85; font-weight: 400; margin: 0; }
 .page-banner .eyebrow { margin-bottom: 16px; }
@@ -146,6 +161,17 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
 .footer-links > div { display: flex; justify-content: flex-end; gap: 22px; margin-top: 13px; }
 .footer-links > div a { color: var(--muted); }
 .error-page { padding: 80px 0 100px; max-width: 670px; }
+@media (max-width: 1099px) {
+  .hg-hero { width: 110px; height: 110px; }
+}
+@media (max-width: 900px) {
+  .hg-hero { width: 72px; height: 72px; }
+}
+@media (max-width: 767px) {
+  .hg-hero { top: -4px; bottom: auto; width: 52px; height: 52px; }
+  .landing .hs-greeting { padding-right: 64px; }
+  .hg-404 .hg-svg { width: 64px; height: 64px; }
+}
 @media (max-width: 950px) {
   .research-body { grid-template-columns: 140px minmax(0,1fr); gap: 30px; }
   .about-layout, .contact-block { grid-template-columns: 210px minmax(0,1fr); gap: 40px; }
@@ -209,7 +235,7 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
 @media print {
   :root { color-scheme: light; --ink: #000; --body: #222; --muted: #444; --rule: #bbb; --paper: #fff; }
   body, .landing, .page-banner { background: #fff !important; }
-  #quarto-header, .nav-footer, .section-nav, .landing::before, .page-banner::before { display: none !important; }
+  #quarto-header, .nav-footer, .section-nav, .landing::before, .page-banner::before, .hg-hero, .hg-404 { display: none !important; }
   .page-shell { width: 100%; }
   .landing, .page-banner, .research-body, .about-layout, .contact-block { display: block; padding: 20px 0; }
   .publication { break-inside: avoid; }

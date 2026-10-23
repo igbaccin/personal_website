@@ -38,6 +38,7 @@ canonical-url: https://ibmartins.com/
         <a href="https://orcid.org/0000-0002-6141-9273" target="_blank" rel="noopener">ORCID <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
+    <button class="hg-hero" type="button" data-hg-hero hidden><span class="visually-hidden" data-i18n="hg.turn">Turn the hourglass</span></button>
   </div>
 </section>
 <script>if (window.SiteI18n) window.SiteI18n.apply();</script>
