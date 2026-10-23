@@ -207,26 +207,38 @@
     }
   };
 
-  // The greeting: one English line per visit, picked by situation.
+  // The greeting: one English line per visit, picked by situation. The pools a
+  // situation lists as extra (Saturdays, Sundays, Mondays, Friday afternoons, dark
+  // winter afternoons, phones, returning visitors) join its main pool.
   var GREET = {
     en: {
-      "late": ["Working late? Same.", "Can't sleep? This website will probably help!", "Up this late? I see the deadline has finally inspired you."],
-      "early": ["Good morning. The coffee is doing most of the thinking.", "An early start gives you more time to fall behind."],
-      "morning": ["Today's plan is to finish yesterday's plan.", "You’re here to procrastinate. I built a whole website. We all have our methods."],
-      "afternoon": ["If you’re avoiding a deadline, make yourself at home.", "The draft is almost ready. I would appreciate it if everyone stopped asking."],
-      "evening": ["Good evening! Still at my desk.", "This counts as reading. You may now feel productive.", "Good evening. Have you tried closing the laptop? I hear wonderful things."],
-      "weekend": ["It’s the weekend. Close this tab and go outside. Me? I will keep working, thank you very much.", "It’s the weekend. You should be resting. I should be taking my own advice."],
+      "late": ["Working late? Same.", "Can't sleep? This website will probably help!", "Up this late? I see the deadline has finally inspired you.", "Still up? The footnotes won’t write themselves.", "Insomnia or a deadline? Either way, welcome.", "It’s late. Prime time for typos."],
+      "early": ["Good morning. The coffee is doing most of the thinking.", "An early start gives you more time to fall behind.", "Good morning. The deadline is closer than yesterday.", "Morning. Today I write. In theory."],
+      "morning": ["Today's plan is to finish yesterday's plan.", "You’re here to procrastinate. I built a whole website. We all have our methods.", "Mornings are for writing. Allegedly.", "Welcome. I’m in a meeting about meetings."],
+      "afternoon": ["If you’re avoiding a deadline, make yourself at home.", "The draft is almost ready. I would appreciate it if everyone stopped asking.", "Afternoon slump? You’ve come to the right website.", "Writing, deleting, writing again. A normal afternoon.", "You’re procrastinating. I respect that."],
+      "evening": ["Good evening! Still at my desk.", "This counts as reading. You may now feel productive.", "Good evening. Have you tried closing the laptop? I hear wonderful things.", "Good evening. Today’s progress: one footnote."],
+      "weekend": ["It’s the weekend. Close this tab and go outside. Me? I will keep working, thank you very much.", "It’s the weekend. You should be resting. I should be taking my own advice.", "It’s the weekend. Close this tab. Go outside.", "Weekend reading on an academic website? Bold."],
       "weekend-saturday": "Visiting an academic website on a Saturday? I see your social life is also thriving.",
+      "weekend-sunday": "Sunday. Even reviewers rest. Allegedly.",
+      "monday": "Monday. Fresh week, same draft.",
+      "friday-afternoon": "Friday afternoon. Perfect time to start something new.",
+      "dark": ["Dark already? Welcome to a Swedish afternoon.", "Sunset at three. Productivity followed."],
+      "phone": "Reading this on a phone? In a meeting, I assume.",
+      "returning": ["Welcome back. Still revising the same paragraph.", "Back so soon? Flattered and slightly worried.", "Welcome back. The paper is still under review."],
       "tz-night": "It’s {t} in Sweden. If you’re wondering why I’m awake, so am I.",
       "tz-early": "It’s {t} in Sweden. The kettle and I are getting started.",
       "tz-day": ["It’s {t} in Sweden. Someone's handwriting from 1820 is testing my patience.", "It’s {t} in Sweden. I am turning a very small question into a very large spreadsheet."],
       "tz-evening": ["It’s {t} in Sweden. Dinner at the desk, again.", "It’s {t} in Sweden. I promised myself an early night. The draft has other plans."],
-      "linkedin": ["Wait. You came from LinkedIn? Everyone, we found the LinkedIn user!", "From LinkedIn? I am delighted to announce that I am still revising the same paragraph."],
+      "linkedin": ["Wait. You came from LinkedIn? Everyone, we found the LinkedIn user!", "From LinkedIn? I am delighted to announce that I am still revising the same paragraph.", "From LinkedIn? I’m thrilled to announce nothing."],
       "substack": ["From Substack? I told you not to engage!", "From Substack? Was one academic oversharing insufficient?"],
-      "colleague": "Hello, colleague! This visit counts as research dissemination. I'll put it in the report.",
-      "student": ["Hello, student! Shouldn’t you be studying? I should be writing.", "Hello, student! The deadline still applies, even if you found my website."],
+      "scholar": ["From Google Scholar? A citation would be lovely.", "Scholar sent you? Cite responsibly. And often."],
+      "colleague": ["Hello, colleague! This visit counts as research dissemination. I'll put it in the report.", "Hello, colleague. Shouldn’t you be writing?"],
+      "student": ["Hello, student! Shouldn’t you be studying? I should be writing.", "Hello, student! The deadline still applies, even if you found my website.", "Hello, student. The answer is in the readings.", "Hello, student. Yes, it will be on the exam."],
       "christmas": "Merry Christmas. Why are you here? Did Santa not bring you any gifts?",
       "newyear": "Happy New Year. Nothing better than studying to the sound of fireworks.",
+      "aprilfools": "My paper was accepted without revisions. April Fools’.",
+      "nationalday": "Sweden’s National Day. Celebrating with census records.",
+      "nobel": "Nobel Day. Phone nearby. Just in case.",
       "lucia": "Happy Saint Lucia’s Day. Working by candlelight, as tradition demands.",
       "midsummer": "Happy Midsummer. All of Sweden is off today. Except the two of us, apparently.",
       "july": "It’s July. Sweden is closed. I am not."
@@ -246,9 +258,24 @@
   function t(key) { return lookup(key) || EN[key] || ""; }
   function each(selector, fn) { Array.prototype.forEach.call(document.querySelectorAll(selector), fn); }
 
+  // Visits are counted once per browser session and never leave the browser.
+  function visits() {
+    var n = 1;
+    try {
+      n = parseInt(localStorage.getItem("greeting-visits"), 10) || 0;
+      if (!sessionStorage.getItem("greeting-counted")) {
+        n += 1;
+        localStorage.setItem("greeting-visits", String(n));
+        sessionStorage.setItem("greeting-counted", "1");
+      }
+    } catch (e) {}
+    return n;
+  }
+
   function situation() {
     var forced = params.get("greet");
-    if (forced && GREET.en[forced]) return { id: forced };
+    if (forced && GREET.en[forced]) return { id: forced, extra: [] };
+    var returning = visits() > 1;
     var now = new Date(), h = now.getHours(), day = now.getDay(), mon = now.getMonth() + 1, date = now.getDate();
     var ref = "";
     try { ref = new URL(document.referrer).hostname; } catch (e) {}
@@ -256,15 +283,29 @@
     if (mon === 12 && date >= 24 && date <= 26) return { id: "christmas" };
     if ((mon === 12 && date === 31) || (mon === 1 && date === 1)) return { id: "newyear" };
     if (mon === 12 && date === 13) return { id: "lucia" };
+    if (mon === 12 && date === 10) return { id: "nobel" };
+    if (mon === 4 && date === 1) return { id: "aprilfools" };
+    if (mon === 6 && date === 6) return { id: "nationalday" };
     if (mon === 6 && day === 5 && date >= 19 && date <= 25) return { id: "midsummer" };
     if (/(^|\.)substack\.com$/.test(ref)) return { id: "substack" };
     if (/(^|\.)linkedin\.com$|^lnkd\.in$/.test(ref)) return { id: "linkedin" };
+    if (/^scholar\.google\./.test(ref)) return { id: "scholar" };
     if (STUDENT_HOSTS.test(ref)) return { id: "student" };
     if (/(^|\.)(lu|liu)\.se$/.test(ref)) return { id: "colleague" };
     if (mon === 7) return { id: "july" };
-    if (swe !== h) return { id: swe < 5 ? "tz-night" : swe < 9 ? "tz-early" : swe < 18 ? "tz-day" : "tz-evening", hour: swe };
-    if ((day === 0 || day === 6) && h >= 9 && h < 20) return { id: "weekend", saturday: day === 6 };
-    return { id: h < 5 ? "late" : h < 8 ? "early" : h < 12 ? "morning" : h < 18 ? "afternoon" : "evening" };
+    var extra = returning ? ["returning"] : [];
+    if (swe !== h) return { id: swe < 5 ? "tz-night" : swe < 9 ? "tz-early" : swe < 18 ? "tz-day" : "tz-evening", hour: swe, extra: extra };
+    if ((day === 0 || day === 6) && h >= 9 && h < 20) {
+      extra.push(day === 6 ? "weekend-saturday" : "weekend-sunday");
+      return { id: "weekend", extra: extra };
+    }
+    var id = h < 5 ? "late" : h < 8 ? "early" : h < 12 ? "morning" : h < 18 ? "afternoon" : "evening";
+    if (day === 1 && h >= 5 && h < 18) extra.push("monday");
+    if (day === 5 && id === "afternoon") extra.push("friday-afternoon");
+    if ((mon >= 11 || mon === 1) && h >= 15 && h < 18) extra.push("dark");
+    var phone = window.matchMedia && window.matchMedia("(pointer: coarse)").matches && window.innerWidth < 768;
+    if (phone && day >= 1 && day <= 5 && (id === "morning" || id === "afternoon")) extra.push("phone");
+    return { id: id, extra: extra };
   }
 
   function clock(h) {
@@ -280,16 +321,23 @@
     if (el.hidden) return;
     if (!greetSituation) greetSituation = situation();
     if (greetText === null) {
-      var lines = GREET.en[greetSituation.id];
-      var choices = Array.isArray(lines) ? lines : [lines];
-      if (greetSituation.saturday) choices = choices.concat(GREET.en["weekend-saturday"]);
+      var choices = [].concat(GREET.en[greetSituation.id]);
+      (greetSituation.extra || []).forEach(function (key) { choices = choices.concat(GREET.en[key]); });
       if (choices.length > 1) {
-        // Avoid the previous opening in this tab, even when the weekend pool changes.
-        var storageKey = "greeting-last-" + greetSituation.id, previous = null;
-        try { previous = sessionStorage.getItem(storageKey); } catch (e) {}
-        choices = choices.filter(function (line) { return line !== previous; });
-        greetText = choices[Math.floor(Math.random() * choices.length)];
-        try { sessionStorage.setItem(storageKey, greetText); } catch (e) {}
+        // Each browser sees every line in a pool before any repeats, and a new
+        // round never opens with the line that closed the last one.
+        var storageKey = "greeting-seen-" + greetSituation.id, seen = [];
+        try { seen = JSON.parse(localStorage.getItem(storageKey)) || []; } catch (e) {}
+        if (!Array.isArray(seen)) seen = [];
+        var fresh = choices.filter(function (line) { return seen.indexOf(line) < 0; });
+        if (!fresh.length) {
+          var last = seen[seen.length - 1];
+          seen = [];
+          fresh = choices.filter(function (line) { return line !== last; });
+        }
+        greetText = fresh[Math.floor(Math.random() * fresh.length)];
+        seen.push(greetText);
+        try { localStorage.setItem(storageKey, JSON.stringify(seen.slice(-60))); } catch (e) {}
       } else {
         greetText = choices[0];
       }
