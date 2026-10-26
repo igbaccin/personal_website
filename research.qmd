@@ -27,7 +27,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year" data-i18n="st.forthcoming">Forthcoming</div>
   <div>
-    <h3>Living Standards in Ghana, 1955–2005</h3>
+    <h3>Living standards in Ghana, 1955–2005</h3>
     <p>I. Martins</p>
     <p class="journal"><em>Labour and Work in Ghana Since Independence</em> · <span data-i18n="st.editedby">Edited by</span> Gareth Austin, Akua Britwum, Lamine Doumbia, Andreas Eckert<span data-i18n="w.oxand">, and</span> Nana Yaw Sapong. London: Bloomsbury Academic <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-1" data-i18n="st.abstract">Abstract</button></p>
     <p class="finding" data-i18n="find.ghana">Using consumption baskets matched to the diets of Ghana’s three ecological zones, I show that national baskets understate living standards in the northern savannah, and that the widening gap between regions in 1988–2005 came mainly from rural areas.</p>
@@ -49,7 +49,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2026</div>
   <div>
-    <h3><a href="https://doi.org/10.1093/ereh/heag012">Capital and Coercion: Slavery after the 1807 Import Ban in the Cape Colony</a></h3>
+    <h3><a href="https://doi.org/10.1093/ereh/heag012">Capital and coercion: Slavery after the 1807 import ban in the Cape Colony</a></h3>
     <p>I. Martins</p>
     <p class="journal"><em>European Review of Economic History</em> · heag012 <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-3" data-i18n="st.abstract">Abstract</button></p>
     <p class="finding" data-i18n="find.capcoer">After Britain banned slave imports in 1807, wealthier households in Stellenbosch and Graaff-Reinet kept accumulating enslaved people, holding them as capital assets in a colony where capital was scarce.</p>
@@ -61,7 +61,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2026</div>
   <div>
-    <h3><a href="https://doi.org/10.1017/S1740022825100296">Theoretical Foundations of the Economics of Slavery: Enslaved People as Capital Investments in the Atlantic World</a></h3>
+    <h3><a href="https://doi.org/10.1017/S1740022825100296">Theoretical foundations of the economics of slavery: Enslaved people as capital investments in the Atlantic world</a></h3>
     <p>I. Martins <span data-i18n="w.and">and</span> E. Green</p>
     <p class="journal"><em>Journal of Global History</em> · 21(1), 22–40 <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-4" data-i18n="st.abstract">Abstract</button></p>
     <p class="finding" data-i18n="find.theory">Comparing the United States, Brazil and the Cape Colony, we show that enslavers held enslaved people as both labour and capital investment, and that this investment role is key to explaining why slavery persisted.</p>
@@ -95,7 +95,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2024</div>
   <div>
-    <h3><a href="https://doi.org/10.1007/s12116-023-09392-1">Resilience to shrinking as a catch-up strategy: a comparison of Brazil and Indonesia, 1964–2019</a></h3>
+    <h3><a href="https://doi.org/10.1007/s12116-023-09392-1">Resilience to shrinking as a catch-up strategy: A comparison of Brazil and Indonesia, 1964–2019</a></h3>
     <p>T. Axelsson <span data-i18n="w.and">and</span> I. Martins</p>
     <p class="journal"><em>Studies in Comparative International Development</em> · 59(3), 491–516 <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-7" data-i18n="st.abstract">Abstract</button></p>
     <p class="finding" data-i18n="find.brazil">We argue that differences in structural transformation, autonomy and inclusion explain why Indonesia has weathered economic shrinking better than Brazil since 1964.</p>
@@ -150,7 +150,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2020</div>
   <div>
-    <h3><a href="https://portal.research.lu.se/en/publications/collateral-effect-slavery-and-wealth-in-the-cape-colony">Collateral Effect: Slavery and Wealth in the Cape Colony</a></h3>
+    <h3><a href="https://portal.research.lu.se/en/publications/collateral-effect-slavery-and-wealth-in-the-cape-colony">Collateral effect: Slavery and wealth in the Cape Colony</a></h3>
     <p>I. Martins</p>
     <p class="journal"><em data-i18n="inst.lu">Lund University</em> · <span data-i18n="st.phd">PhD thesis</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-11" data-i18n="st.abstract">Abstract</button></p>
     <p class="finding" data-i18n="find.thesis">Without secure title to land or organised credit, Cape slaveholders used enslaved people as financial assets to raise capital, which helps explain how slavery worked and persisted in the colony.</p>
@@ -161,7 +161,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2019</div>
   <div>
-    <h3><a href="https://revistas.uexternado.edu.co/index.php/oasis/article/view/6232/8773">What caused poverty reduction in Brazil during the 2000s: sectoral growth or public expenditures</a></h3>
+    <h3><a href="https://revistas.uexternado.edu.co/index.php/oasis/article/view/6232/8773">What caused poverty reduction in Brazil during the 2000s: Sectoral growth or public expenditures</a></h3>
     <p>A. Palacio <span data-i18n="w.and">and</span> I. Martins</p>
     <p class="journal"><em>OASIS. Observatorio de Análisis de los Sistemas Internacionales</em> · 31, 185–213 <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-12" data-i18n="st.abstract">Abstract</button></p>
     <p class="finding" data-i18n="find.brazilpoverty">Growth in services, led by public administration, did more than agriculture to reduce poverty in Brazil in the 2000s, and state and municipal spending on human capital did more than federal cash transfers.</p>
@@ -172,7 +172,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year">2018</div>
   <div>
-    <h3><a href="https://www.amazon.com/Poverty-Politics/dp/9387587126">Poverty and Democracy: the Brazilian experience</a></h3>
+    <h3><a href="https://www.amazon.com/Poverty-Politics/dp/9387587126">Poverty and democracy: The Brazilian experience</a></h3>
     <p>A. Palacio <span data-i18n="w.and">and</span> I. Martins</p>
     <p class="journal"><em>Poverty, Politics and the Poverty of Politics</em> · <span data-i18n="st.editedby">Edited by</span> D. Rauhut <span data-i18n="w.and">and</span> N. Hatti. New Delhi: B.R. Publishing Corporation, 193–210</p>
 
@@ -188,7 +188,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3>The Case for Artisanal Doctoral Supervision</h3>
+    <h3>The case for artisanal doctoral supervision</h3>
     <p>I. Martins</p>
     <p class="journal"><em>Studies in Higher Education</em> · <span data-i18n="st.rr">Revise and resubmit</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-13" data-i18n="st.abstract">Abstract</button></p>
 
@@ -199,7 +199,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3>Retrieval-Restricted Reasoning: Supporting Scholarly Synthesis with Language Models</h3>
+    <h3>Retrieval-restricted reasoning: Supporting scholarly synthesis with language models</h3>
     <p>I. Martins</p>
     <p class="journal"><em>Historical Methods: A Journal of Quantitative and Interdisciplinary History</em> · <span data-i18n="st.rr">Revise and resubmit</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-14" data-i18n="st.abstract">Abstract</button></p>
     <p class="finding" data-i18n="find.rrr">I built a method that lets language models write literature reviews only from sources the researcher supplies; across 100 test reviews with 4,767 citations, 99 contained none of the five measured citation errors.</p>
@@ -223,7 +223,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3>Slave Emancipation and Agricultural Output in the Cape Colony</h3>
+    <h3>Slave emancipation and agricultural output in the Cape Colony</h3>
     <p>I. Martins</p>
     <p class="journal"><em>Cliometrica</em> · <span data-i18n="st.submitted">Submitted</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-16" data-i18n="st.abstract">Abstract</button></p>
     <p class="finding" data-i18n="find.emancipation">After emancipation, Stellenbosch farms whose compensation fell further short of their slaves’ assessed value lost more wine and grain output, especially large mixed producers, consistent with the loss of slave property used in lending.</p>
@@ -235,7 +235,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3>Democracy and Rural Inequality in Kenya, 1997–2010</h3>
+    <h3>Democracy and rural inequality in Kenya, 1997–2010</h3>
     <p>J. Makuei <span data-i18n="w.and">and</span> I. Martins</p>
     <p class="journal"><em>African Affairs</em> · <span data-i18n="st.submitted">Submitted</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-17" data-i18n="st.abstract">Abstract</button></p>
 
@@ -251,7 +251,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3>Income Inequality in Late Colonial Angola, 1940–1970</h3>
+    <h3>Income inequality in late colonial Angola, 1940–1970</h3>
     <p>I. Martins</p>
 
   </div>
@@ -259,7 +259,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3>Wealth and Adult Mortality in a Pre-Industrial Settler Society: Evidence from Cape Probate Inventories</h3>
+    <h3>Wealth and adult mortality in a pre-industrial settler society: Evidence from Cape probate inventories</h3>
     <p>J. Cilliers <span data-i18n="w.and">and</span> I. Martins</p>
 
   </div>
@@ -267,7 +267,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3>Held by the Elite: Monopoly Rights and Family Fortunes at the Cape of Good Hope, 1680–1794</h3>
+    <h3>Held by the elite: Monopoly rights and family fortunes at the Cape of Good Hope, 1680–1794</h3>
     <p>I. Martins, J. Schoots<span data-i18n="w.oxand">, and</span> E. Green <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-18" data-i18n="st.abstract">Abstract</button></p>
 
 
@@ -278,7 +278,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3>Catch-up and Resilience to Shrinking, 1890–2019</h3>
+    <h3>Catch-up and resilience to shrinking, 1890–2019</h3>
     <p>A. Smythe <span data-i18n="w.and">and</span> I. Martins <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-19" data-i18n="st.abstract">Abstract</button></p>
 
 
@@ -307,7 +307,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3>The Ghanaian Divergence: Prices, Incomes and Living Standards after Independence</h3>
+    <h3>The Ghanaian divergence: Prices, incomes and living standards after independence</h3>
     <p>I. Martins, P. Aboagye<span data-i18n="w.oxand">, and</span> G. Austin</p>
 
 
@@ -330,7 +330,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3><a href="https://aflit.net/blog/using-portuguese-sources-to-build-an-angolan-social-table/">Using Portuguese Sources to Build an Angolan Social Table</a></h3>
+    <h3><a href="https://aflit.net/blog/using-portuguese-sources-to-build-an-angolan-social-table/">Using Portuguese sources to build an Angolan social table</a></h3>
     <p>2026 · I. Martins</p>
     <p class="journal"><em>African Long-Term Inequality Trends (AFLIT)</em></p>
 
@@ -339,7 +339,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3><a href="https://ehes.org/2026/04/27/capital-and-coercion-why-slavery-persisted-after-britain-banned-the-trade/">Capital and Coercion: Why Slavery Persisted after Britain Banned the Trade</a></h3>
+    <h3><a href="https://ehes.org/2026/04/27/capital-and-coercion-why-slavery-persisted-after-britain-banned-the-trade/">Capital and coercion: Why slavery persisted after Britain banned the trade</a></h3>
     <p>2026 · I. Martins</p>
     <p class="journal"><em>European Historical Economics Society</em></p>
 
@@ -348,7 +348,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3><a href="https://www.aehnetwork.org/blog/theoretical-foundations-of-the-economics-of-slavery-enslaved-people-as-capital-investments-in-the-atlantic-world/">Theoretical Foundations of the Economics of Slavery: Enslaved People as Capital Investments in the Atlantic World</a></h3>
+    <h3><a href="https://www.aehnetwork.org/blog/theoretical-foundations-of-the-economics-of-slavery-enslaved-people-as-capital-investments-in-the-atlantic-world/">Theoretical foundations of the economics of slavery: Enslaved people as capital investments in the Atlantic world</a></h3>
     <p>2026 · I. Martins <span data-i18n="w.and">and</span> E. Green</p>
     <p class="journal"><em>Frontiers in African Economic History Blog</em></p>
 
@@ -375,7 +375,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3><a href="https://hbsp.harvard.edu/inspiring-minds/students-learn-through-discomfort">Students Learn Best When They&#x27;re Not Handed a Map: 4 Steps to Structure Discomfort in Your Case Classroom</a></h3>
+    <h3><a href="https://hbsp.harvard.edu/inspiring-minds/students-learn-through-discomfort">Students learn best when they&#x27;re not handed a map: 4 steps to structure discomfort in your case classroom</a></h3>
     <p>2025 · I. Martins</p>
     <p class="journal"><em>Inspiring Minds</em></p>
 
@@ -384,7 +384,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3><a href="https://blogs.lse.ac.uk/impactofsocialsciences/2025/06/11/the-pressure-to-quantify-research-is-erasing-conceptual-depth/">The Pressure to Quantify Research Is Erasing Conceptual Depth</a></h3>
+    <h3><a href="https://blogs.lse.ac.uk/impactofsocialsciences/2025/06/11/the-pressure-to-quantify-research-is-erasing-conceptual-depth/">The pressure to quantify research is erasing conceptual depth</a></h3>
     <p>2025 · I. Martins</p>
     <p class="journal"><em>LSE Impact Blog</em></p>
 
@@ -393,7 +393,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3><a href="https://www.researchprofessionalnews.com/rr-news-europe-views-of-europe-2024-3-international-science-is-having-a-messy-breakup/">International Science Is Having a Messy Breakup</a></h3>
+    <h3><a href="https://www.researchprofessionalnews.com/rr-news-europe-views-of-europe-2024-3-international-science-is-having-a-messy-breakup/">International science is having a messy breakup</a></h3>
     <p>2024 · H. Kim, S. Schwaag Serger, E. Mobrand<span data-i18n="w.oxand">, and</span> I. Martins</p>
     <p class="journal"><em>Research Professional News</em></p>
 
@@ -402,7 +402,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3><a href="https://www.ourlongwalk.com/p/guest-post-does-a-negative-wealth?utm_source=post-email-title&amp;publication_id=1000230&amp;post_id=103414119&amp;isFreemail=true&amp;utm_medium=email">Does a Negative Wealth Shock Affect Your Health? Evidence from an Episode of ‘Expropriation with Partial Compensation’ in Nineteenth-Century South Africa</a></h3>
+    <h3><a href="https://www.ourlongwalk.com/p/guest-post-does-a-negative-wealth?utm_source=post-email-title&amp;publication_id=1000230&amp;post_id=103414119&amp;isFreemail=true&amp;utm_medium=email">Does a negative wealth shock affect your health? Evidence from an episode of ‘expropriation with partial compensation’ in nineteenth-century South Africa</a></h3>
     <p>2023 · I. Martins</p>
     <p class="journal"><em>Our Long Walk</em></p>
 
@@ -411,7 +411,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3><a href="https://www.aehnetwork.org/blog/legacies-of-loss-the-health-outcomes-of-slaveholder-compensation-in-the-british-cape-colony/">Legacies of Loss: The Health Outcomes of Slaveholder Compensation in the British Cape Colony</a></h3>
+    <h3><a href="https://www.aehnetwork.org/blog/legacies-of-loss-the-health-outcomes-of-slaveholder-compensation-in-the-british-cape-colony/">Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony</a></h3>
     <p>2023 · I. Martins, J. Cilliers<span data-i18n="w.oxand">, and</span> J. Fourie</p>
     <p class="journal"><em>Frontiers in African Economic History Blog</em></p>
 

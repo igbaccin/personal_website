@@ -11,10 +11,11 @@
   // Grains of the mark (images/mark.svg), nearest the neck first, and its bars.
   var MARK_GRAINS = [[29, 25], [34, 22], [37, 19], [24, 19], [31, 17], [40, 15], [26, 13], [36, 12]];
   var BARS = [[22.5, 50, 4], [26.5, 47, 7], [30.5, 43, 11], [34.5, 47, 7], [38.5, 50, 4]];
-  // The live hourglass carries a ninth grain, and the grains settle below in
-  // five columns that fill from the centre outwards, touching like the bars.
+  // The live hourglass carries a ninth grain. The grains settle into the five
+  // columns of the mark's distribution, stacked 1, 2, 3, 2, 1 high and filled
+  // from the centre outwards, so the finished pile is the bar chart.
   var GRAINS = MARK_GRAINS.concat([[31, 11]]);
-  var SLOTS = [[32, 52], [28, 52], [36, 52], [32, 48.1], [24, 52], [40, 52], [28, 48.1], [36, 48.1], [32, 44.2]];
+  var SLOTS = [[32, 52], [32, 48], [32, 44], [28, 52], [36, 52], [28, 48], [36, 48], [24, 52], [40, 52]];
   var NECK_Y = 31.6, SLIDE_MS = 380, GAP_MS = 190, GRAVITY = 150;
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
