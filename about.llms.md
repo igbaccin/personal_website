@@ -68,13 +68,13 @@ Laboratory for the Economics of Africa’s Past, Stellenbosch University
 
 ### Postal address
 
-Department of Economic History\
-Lund University\
-Box 7083\
-SE-220 07 Lund, Sweden
+Department of Management and Engineering (IEI)\
+Economics (NEK)\
+Linköping University\
+SE-581 83 Linköping, Sweden
 
 ### Visiting address
 
-Room 2060, Alfa 1\
-Scheelevägen 15B\
-223 63 Lund, Sweden
+Campus Valla, A-huset\
+Entrance 19C, Room 219:207\
+Linköping, Sweden
