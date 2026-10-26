@@ -21,7 +21,7 @@ description: "Igor B. Martins is an economic historian at Linköping and Lund un
     <p data-i18n="about.p3">I am a postdoctoral researcher in the Department of Management and Engineering at Linköping University and am also affiliated with the Department of Economic History at Lund University. I hold an MSc and PhD in Economic History from Lund University and have previously worked as a postdoctoral researcher at Lund and the University of Cambridge. My work contributes to research projects supported by the Swedish Research Council, Riksbankens Jubileumsfond, Handelsbanken Research Foundations, and the UK Arts and Humanities Research Council. I have also carried out research and consultancy for STINT and the United Nations Development Programme.</p>
 <nav class="social-links" aria-label="Academic profiles, writing, and contact">
         <a href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
-        <a href="https://portal.research.lu.se/en/persons/igor-martins" target="_blank" rel="noopener">Lund University <span aria-hidden="true">↗</span></a>
+        <a href="https://liu.se/en/employee/igoma71" target="_blank" rel="noopener">Research portal <span aria-hidden="true">↗</span></a>
         <a href="https://www.researchgate.net/profile/Igor-Martins" target="_blank" rel="noopener">ResearchGate <span aria-hidden="true">↗</span></a>
         <a href="https://www.linkedin.com/in/ibmartins/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
         <a href="https://ibmartins.substack.com/" target="_blank" rel="noopener">Substack <span aria-hidden="true">↗</span></a>
