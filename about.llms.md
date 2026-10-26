@@ -14,7 +14,7 @@ I build and analyse large datasets from historical records to study how major ec
 
 I am a postdoctoral researcher in the Department of Management and Engineering at Linköping University and am also affiliated with the Department of Economic History at Lund University. I hold an MSc and PhD in Economic History from Lund University and have previously worked as a postdoctoral researcher at Lund and the University of Cambridge. My work contributes to research projects supported by the Swedish Research Council, Riksbankens Jubileumsfond, Handelsbanken Research Foundations, and the UK Arts and Humanities Research Council. I have also carried out research and consultancy for STINT and the United Nations Development Programme.
 
-[Google Scholar ↗](https://scholar.google.com/citations?user=VRHCkE0AAAAJ&hl=en) [Lund University ↗](https://portal.research.lu.se/en/persons/igor-martins) [ResearchGate ↗](https://www.researchgate.net/profile/Igor-Martins) [LinkedIn ↗](https://www.linkedin.com/in/ibmartins/) [Substack ↗](https://ibmartins.substack.com/) [ORCID ↗](https://orcid.org/0000-0002-6141-9273)
+[Google Scholar ↗](https://scholar.google.com/citations?user=VRHCkE0AAAAJ&hl=en) [Research portal ↗](https://liu.se/en/employee/igoma71) [ResearchGate ↗](https://www.researchgate.net/profile/Igor-Martins) [LinkedIn ↗](https://www.linkedin.com/in/ibmartins/) [Substack ↗](https://ibmartins.substack.com/) [ORCID ↗](https://orcid.org/0000-0002-6141-9273)
 
 ## Roles and service
 
