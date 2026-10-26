@@ -15,7 +15,7 @@ reports & thesis
 
 Forthcoming
 
-### Living Standards in Ghana, 1955–2005
+### Living standards in Ghana, 1955–2005
 
 I. Martins
 
@@ -39,7 +39,7 @@ Slavery is usually analysed as an extreme form of labour coercion. This article 
 
 2026
 
-### [Capital and Coercion: Slavery after the 1807 Import Ban in the Cape Colony](https://doi.org/10.1093/ereh/heag012)
+### [Capital and coercion: Slavery after the 1807 import ban in the Cape Colony](https://doi.org/10.1093/ereh/heag012)
 
 I. Martins
 
@@ -53,7 +53,7 @@ The 1807 Slave Trade Act banned slave imports across the British Empire, trigger
 
 2026
 
-### [Theoretical Foundations of the Economics of Slavery: Enslaved People as Capital Investments in the Atlantic World](https://doi.org/10.1017/S1740022825100296)
+### [Theoretical foundations of the economics of slavery: Enslaved people as capital investments in the Atlantic world](https://doi.org/10.1017/S1740022825100296)
 
 I. Martins and E. Green
 
@@ -91,7 +91,7 @@ This paper examines the effects of short-term economic stress, captured by gener
 
 2024
 
-### [Resilience to shrinking as a catch-up strategy: a comparison of Brazil and Indonesia, 1964–2019](https://doi.org/10.1007/s12116-023-09392-1)
+### [Resilience to shrinking as a catch-up strategy: A comparison of Brazil and Indonesia, 1964–2019](https://doi.org/10.1007/s12116-023-09392-1)
 
 T. Axelsson and I. Martins
 
@@ -157,7 +157,7 @@ Chinese-based scholars now publish more than their US-based colleagues in nearly
 
 2020
 
-### [Collateral Effect: Slavery and Wealth in the Cape Colony](https://portal.research.lu.se/en/publications/collateral-effect-slavery-and-wealth-in-the-cape-colony)
+### [Collateral effect: Slavery and wealth in the Cape Colony](https://portal.research.lu.se/en/publications/collateral-effect-slavery-and-wealth-in-the-cape-colony)
 
 I. Martins
 
@@ -169,7 +169,7 @@ This thesis reassesses the framework we have come to accept around the dynamics 
 
 2019
 
-### [What caused poverty reduction in Brazil during the 2000s: sectoral growth or public expenditures](https://revistas.uexternado.edu.co/index.php/oasis/article/view/6232/8773)
+### [What caused poverty reduction in Brazil during the 2000s: Sectoral growth or public expenditures](https://revistas.uexternado.edu.co/index.php/oasis/article/view/6232/8773)
 
 A. Palacio and I. Martins
 
@@ -181,7 +181,7 @@ We ask what caused poverty to decline in Brazil during the first decade of the 2
 
 2018
 
-### [Poverty and Democracy: the Brazilian experience](https://www.amazon.com/Poverty-Politics/dp/9387587126)
+### [Poverty and democracy: The Brazilian experience](https://www.amazon.com/Poverty-Politics/dp/9387587126)
 
 A. Palacio and I. Martins
 
@@ -191,7 +191,7 @@ A. Palacio and I. Martins
 
 5 manuscripts
 
-### The Case for Artisanal Doctoral Supervision
+### The case for artisanal doctoral supervision
 
 I. Martins
 
@@ -201,7 +201,7 @@ Universities track doctoral students through study plans and progress reviews. I
 
 Universities increasingly organise doctoral supervision through study plans and progress reviews. These instruments protect students by making promised support verifiable. They also establish an early account of the research against which later progress is judged. In humanities research, new evidence may unsettle that account, and a change that improves the thesis can then look like a failure to keep to the plan. This conceptual article brings together research on doctoral supervision and research on how universities assess academic work to develop a typology of supervision. It distinguishes structure, which makes support reliable, from judgement, which helps students decide what a discovery means for their thesis. Their combination produces nominal, unstructured, bureaucratic, and artisanal supervision. Bureaucratic supervision combines reliable support with weak judgement and suits reviews that measure progress against the plan. Artisanal supervision uses reliable structure to make room for justified changes to the thesis within the time a doctorate allows. The article argues that formal records capture intellectual judgement poorly and can steer supervision towards what they record. It proposes revisable plans and brief, protected records of reasons, so that universities can hold supervision to account while leaving room for discovery.
 
-### Retrieval-Restricted Reasoning: Supporting Scholarly Synthesis with Language Models
+### Retrieval-restricted reasoning: Supporting scholarly synthesis with language models
 
 I. Martins
 
@@ -225,7 +225,7 @@ Linking weather to 25,000 household tax records, we show that wealthier househol
 
 As climate change alters weather risk, wealth is often treated as a buffer after shocks occur. We show that wealth can shape the economic shock before it arrives by determining which assets households own. In a pre-industrial agrarian society, we link weather to 25,000 household tax records and commodity prices. Households held different production bundles, and the same seasonal weather could raise returns to one bundle while lowering returns to another. Wealthier households more often owned the commodities favoured by observed weather variation, and prices did not systematically offset these differences. These portfolio differences predict next-year changes in movable assets. Years in which weather raised returns to commodities disproportionately owned by wealthier households were years of wider movable-asset inequality. Wealth determined whether weather became loss or gain.
 
-### Slave Emancipation and Agricultural Output in the Cape Colony
+### Slave emancipation and agricultural output in the Cape Colony
 
 I. Martins
 
@@ -237,7 +237,7 @@ After emancipation, Stellenbosch farms whose compensation fell further short of 
 
 Slave emancipation reorganised labour and removed a legally protected form of wealth that had supported collateralised credit. Using a panel of farmers in Stellenbosch, Cape Colony, from 1824 to 1844, this study links annual tax censuses to slave valuations and compensation awards. The compensation gap is the difference between the local valuation and the cash award. It measures the portion of assessed slave value that compensation did not replace. The estimates compare each farm’s output before and after emancipation and ask whether output changed more on farms with larger compensation gaps, after accounting for changes shared by all farms and for recorded labour, household size, and livestock. After emancipation, grain and wine output declined more on farms with larger compensation gaps, especially among large mixed producers. Among these farms, every additional £10 in the compensation gap per enslaved person is associated with losses equal to 12 percent of earlier wine output and 20 percent of earlier grain output. This pattern, together with historical evidence on the use of slave property in lending, is consistent with a balance sheet channel operating alongside labour reorganisation.
 
-### Democracy and Rural Inequality in Kenya, 1997–2010
+### Democracy and rural inequality in Kenya, 1997–2010
 
 J. Makuei and I. Martins
 
@@ -251,15 +251,15 @@ Democratic transitions can expand access to rural infrastructure and productive 
 
 7 manuscripts
 
-### Income Inequality in Late Colonial Angola, 1940–1970
+### Income inequality in late colonial Angola, 1940–1970
 
 I. Martins
 
-### Wealth and Adult Mortality in a Pre-Industrial Settler Society: Evidence from Cape Probate Inventories
+### Wealth and adult mortality in a pre-industrial settler society: Evidence from Cape probate inventories
 
 J. Cilliers and I. Martins
 
-### Held by the Elite: Monopoly Rights and Family Fortunes at the Cape of Good Hope, 1680–1794
+### Held by the elite: Monopoly rights and family fortunes at the Cape of Good Hope, 1680–1794
 
 I. Martins, J. Schoots, and E. Green Abstract
 
@@ -267,7 +267,7 @@ The Dutch East India Company auctioned the right to sell alcohol at the Cape eve
 
 Many accounts of early modern elites hold that the privileges states sold made their holders rich and their families lasting. We test this for the alcohol retail rights (\textit{pachten}) that the Dutch East India Company auctioned each year at the Cape of Good Hope, 1680–1794, following every holder through auction records, an annual household census and a genealogical register, against settlers who never held a \textit{pacht}. A core of established operators kept their lots, paying at least as much as outsiders. Future holders already owned enslaved people more often than other settlers, and Cape-born ones had married into \textit{pachter} families three and a half times as often as other Cape-born men. Operators who held intensively from the start accumulated enslaved people, and one-year holders show no measurable change. \textit{Pachter} families lasted no longer than comparable settler families and married among themselves no more often. Sold every year at open auction, the privilege consolidated the position of slaveholding households and rewarded those who ran it as a business, without founding a lasting elite.
 
-### Catch-up and Resilience to Shrinking, 1890–2019
+### Catch-up and resilience to shrinking, 1890–2019
 
 A. Smythe and I. Martins Abstract
 
@@ -283,7 +283,7 @@ J. Cilliers and I. Martins
 
 I. Martins and E. Green
 
-### The Ghanaian Divergence: Prices, Incomes and Living Standards after Independence
+### The Ghanaian divergence: Prices, incomes and living standards after independence
 
 I. Martins, P. Aboagye, and G. Austin
 
@@ -297,19 +297,19 @@ I. Martins, P. Aboagye, and G. Austin
 
 *Times Higher Education*
 
-### [Using Portuguese Sources to Build an Angolan Social Table](https://aflit.net/blog/using-portuguese-sources-to-build-an-angolan-social-table/)
+### [Using Portuguese sources to build an Angolan social table](https://aflit.net/blog/using-portuguese-sources-to-build-an-angolan-social-table/)
 
 2026 · I. Martins
 
 *African Long-Term Inequality Trends (AFLIT)*
 
-### [Capital and Coercion: Why Slavery Persisted after Britain Banned the Trade](https://ehes.org/2026/04/27/capital-and-coercion-why-slavery-persisted-after-britain-banned-the-trade/)
+### [Capital and coercion: Why slavery persisted after Britain banned the trade](https://ehes.org/2026/04/27/capital-and-coercion-why-slavery-persisted-after-britain-banned-the-trade/)
 
 2026 · I. Martins
 
 *European Historical Economics Society*
 
-### [Theoretical Foundations of the Economics of Slavery: Enslaved People as Capital Investments in the Atlantic World](https://www.aehnetwork.org/blog/theoretical-foundations-of-the-economics-of-slavery-enslaved-people-as-capital-investments-in-the-atlantic-world/)
+### [Theoretical foundations of the economics of slavery: Enslaved people as capital investments in the Atlantic world](https://www.aehnetwork.org/blog/theoretical-foundations-of-the-economics-of-slavery-enslaved-people-as-capital-investments-in-the-atlantic-world/)
 
 2026 · I. Martins and E. Green
 
@@ -327,31 +327,31 @@ I. Martins, P. Aboagye, and G. Austin
 
 *Tell Me About* · Podcast
 
-### [Students Learn Best When They're Not Handed a Map: 4 Steps to Structure Discomfort in Your Case Classroom](https://hbsp.harvard.edu/inspiring-minds/students-learn-through-discomfort)
+### [Students learn best when they're not handed a map: 4 steps to structure discomfort in your case classroom](https://hbsp.harvard.edu/inspiring-minds/students-learn-through-discomfort)
 
 2025 · I. Martins
 
 *Inspiring Minds*
 
-### [The Pressure to Quantify Research Is Erasing Conceptual Depth](https://blogs.lse.ac.uk/impactofsocialsciences/2025/06/11/the-pressure-to-quantify-research-is-erasing-conceptual-depth/)
+### [The pressure to quantify research is erasing conceptual depth](https://blogs.lse.ac.uk/impactofsocialsciences/2025/06/11/the-pressure-to-quantify-research-is-erasing-conceptual-depth/)
 
 2025 · I. Martins
 
 *LSE Impact Blog*
 
-### [International Science Is Having a Messy Breakup](https://www.researchprofessionalnews.com/rr-news-europe-views-of-europe-2024-3-international-science-is-having-a-messy-breakup/)
+### [International science is having a messy breakup](https://www.researchprofessionalnews.com/rr-news-europe-views-of-europe-2024-3-international-science-is-having-a-messy-breakup/)
 
 2024 · H. Kim, S. Schwaag Serger, E. Mobrand, and I. Martins
 
 *Research Professional News*
 
-### [Does a Negative Wealth Shock Affect Your Health? Evidence from an Episode of ‘Expropriation with Partial Compensation’ in Nineteenth-Century South Africa](https://www.ourlongwalk.com/p/guest-post-does-a-negative-wealth?utm_source=post-email-title&publication_id=1000230&post_id=103414119&isFreemail=true&utm_medium=email)
+### [Does a negative wealth shock affect your health? Evidence from an episode of ‘expropriation with partial compensation’ in nineteenth-century South Africa](https://www.ourlongwalk.com/p/guest-post-does-a-negative-wealth?utm_source=post-email-title&publication_id=1000230&post_id=103414119&isFreemail=true&utm_medium=email)
 
 2023 · I. Martins
 
 *Our Long Walk*
 
-### [Legacies of Loss: The Health Outcomes of Slaveholder Compensation in the British Cape Colony](https://www.aehnetwork.org/blog/legacies-of-loss-the-health-outcomes-of-slaveholder-compensation-in-the-british-cape-colony/)
+### [Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony](https://www.aehnetwork.org/blog/legacies-of-loss-the-health-outcomes-of-slaveholder-compensation-in-the-british-cape-colony/)
 
 2023 · I. Martins, J. Cilliers, and J. Fourie
 

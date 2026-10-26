@@ -11,10 +11,14 @@
   // Grains of the mark (images/mark.svg), nearest the neck first, and its bars.
   var MARK_GRAINS = [[29, 25], [34, 22], [37, 19], [24, 19], [31, 17], [40, 15], [26, 13], [36, 12]];
   var BARS = [[22.5, 50, 4], [26.5, 47, 7], [30.5, 43, 11], [34.5, 47, 7], [38.5, 50, 4]];
-  // The live hourglass carries a ninth grain, and the grains settle below in
-  // five columns that fill from the centre outwards, touching like the bars.
+  // The live hourglass carries a ninth grain. Each grain lands on one of the
+  // five bars of the mark, centre first, and melts into it: three grains make
+  // the middle bar, two each shoulder, one each edge, so the finished pile is
+  // the bar chart of the mark.
   var GRAINS = MARK_GRAINS.concat([[31, 11]]);
-  var SLOTS = [[32, 52], [28, 52], [36, 52], [32, 48.1], [24, 52], [40, 52], [28, 48.1], [36, 48.1], [32, 44.2]];
+  var BAR_OF = [2, 1, 3, 2, 0, 4, 1, 3, 2];
+  var BAR_GRAINS = [1, 2, 3, 2, 1];
+  var MELT_MS = 260;
   var NECK_Y = 31.6, SLIDE_MS = 380, GAP_MS = 190, GRAVITY = 150;
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -56,13 +60,19 @@
     this.layer = document.createElementNS(NS, "g");
     this.layer.setAttribute("fill", "currentColor");
     svg.appendChild(this.layer);
+    this.bars = BARS.map(function (b) {
+      var r = document.createElementNS(NS, "rect");
+      r.setAttribute("x", b[0]); r.setAttribute("width", "3");
+      self.layer.appendChild(r);
+      return { el: r, x: b[0], base: b[1] + b[2], full: b[2], count: 0, shown: 0 };
+    });
     this.grains = GRAINS.map(function (g) {
       var c = document.createElementNS(NS, "circle");
       c.setAttribute("r", "2");
       self.layer.appendChild(c);
       return { x: g[0], y: g[1], hx: g[0], hy: g[1], state: "rest", c: c, slot: -1, vy: 0, t0: 0, fx: 0, fy: 0, ctrl: null, landedAt: -1e9 };
     });
-    this.taken = SLOTS.map(function () { return false; });
+    this.taken = BAR_OF.map(function () { return false; });
     this.angle = 0; this.target = 0; this.vel = 0; this.mode = "idle";
     this.tilt = 0; this.tiltTarget = 0;
     this.nextRelease = Infinity;
@@ -70,11 +80,21 @@
     this.render(0);
   }
 
+  // Where a falling grain is heading: the top of its bar as it will stand once
+  // this grain has joined it.
+  Sim.prototype.landing = function (slot) {
+    var bar = this.bars[BAR_OF[slot]];
+    return [bar.x + 1.5, bar.base - bar.full * (bar.count + 1) / BAR_GRAINS[BAR_OF[slot]]];
+  };
+
   Sim.prototype.settled = function () {
     var self = this;
     this.grains.forEach(function (g, i) {
-      g.state = "landed"; g.slot = i; g.x = SLOTS[i][0]; g.y = SLOTS[i][1]; self.taken[i] = true;
+      g.state = "landed"; g.slot = i; g.landedAt = -1e9; self.taken[i] = true;
+      var p = self.landing(i); g.x = p[0]; g.y = p[1];
+      self.bars[BAR_OF[i]].count += 1;
     });
+    this.bars.forEach(function (b) { b.shown = b.count; });
     this.render(0);
   };
 
@@ -99,18 +119,20 @@
   };
 
   Sim.prototype.freeSlot = function () {
-    for (var i = 0; i < SLOTS.length; i++) if (!this.taken[i]) { this.taken[i] = true; return i; }
-    return SLOTS.length - 1;
+    for (var i = 0; i < BAR_OF.length; i++) if (!this.taken[i]) { this.taken[i] = true; return i; }
+    return BAR_OF.length - 1;
   };
 
   // After an odd number of half turns the picture is the mirror image of the
-  // frame at rest, so the grains are mirrored and the angle reset: nothing
-  // visible changes. Grains above the neck now rest there; grains below fall.
+  // frame at rest, so everything is mirrored and the angle reset: nothing
+  // visible changes. The bars, now at the top, break back into grains that
+  // rest there; any grain caught above the neck falls.
   Sim.prototype.settleTurn = function () {
     var self = this, turns = Math.round(this.angle / 180);
     this.angle = 0; this.target = 0; this.vel = 0;
     if (turns % 2 === 0) return;
-    this.taken = SLOTS.map(function () { return false; });
+    this.taken = BAR_OF.map(function () { return false; });
+    this.bars.forEach(function (b) { b.count = 0; b.shown = 0; });
     this.grains.forEach(function (g) {
       g.x = 64 - g.x; g.y = 64 - g.y;
       if (g.y < 32) { g.state = "rest"; g.hx = g.x; g.hy = g.y; g.slot = -1; }
@@ -176,13 +198,23 @@
           busy = true;
         }
         if (g.state === "fall") {
-          var s = SLOTS[g.slot];
+          var s = self.landing(g.slot);
           g.vy += GRAVITY * dt; g.y += g.vy * dt;
           var span = s[1] - g.fy, frac = span > 0.01 ? clamp((g.y - g.fy) / span, 0, 1) : 1;
           g.x = g.fx + (s[0] - g.fx) * (1 - (1 - frac) * (1 - frac));
-          if (g.y >= s[1]) { g.x = s[0]; g.y = s[1]; g.state = "landed"; g.landedAt = now; }
+          if (g.y >= s[1]) {
+            g.x = s[0]; g.y = s[1]; g.state = "landed"; g.landedAt = now;
+            self.bars[BAR_OF[g.slot]].count += 1;
+          }
           busy = true;
-        } else if (g.state === "landed" && now - g.landedAt < 200) {
+        } else if (g.state === "landed" && now - g.landedAt < MELT_MS) {
+          busy = true;
+        }
+      });
+      this.bars.forEach(function (b) {
+        if (b.shown !== b.count) {
+          b.shown += (b.count - b.shown) * Math.min(1, dt * 10);
+          if (Math.abs(b.count - b.shown) < 0.02) b.shown = b.count;
           busy = true;
         }
       });
@@ -193,9 +225,18 @@
 
   Sim.prototype.render = function (now) {
     this.grains.forEach(function (g) {
-      var r = 2;
-      if (g.state === "landed") r += 0.6 * Math.max(0, 1 - (now - g.landedAt) / 180);
-      g.c.setAttribute("cx", g.x.toFixed(2)); g.c.setAttribute("cy", g.y.toFixed(2)); g.c.setAttribute("r", r.toFixed(2));
+      var r = 2, o = 1;
+      if (g.state === "landed") {
+        // The grain melts into its bar as the bar rises to take it.
+        var u = clamp((now - g.landedAt) / MELT_MS, 0, 1);
+        r = 2 * (1 - u); o = 1 - u;
+      }
+      g.c.setAttribute("cx", g.x.toFixed(2)); g.c.setAttribute("cy", g.y.toFixed(2));
+      g.c.setAttribute("r", r.toFixed(2)); g.c.setAttribute("opacity", o.toFixed(2));
+    });
+    this.bars.forEach(function (b, i) {
+      var h = b.full * b.shown / BAR_GRAINS[i];
+      b.el.setAttribute("y", (b.base - h).toFixed(2)); b.el.setAttribute("height", Math.max(0, h).toFixed(2));
     });
     this.svg.style.transform = "rotate(" + (this.angle + this.tilt).toFixed(2) + "deg)";
   };
