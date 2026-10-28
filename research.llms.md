@@ -6,7 +6,7 @@
 
 ## Publications
 
-16 works
+15 works
 
 Articles, chapters,\
 reports & thesis
@@ -38,18 +38,6 @@ I built a method that lets language models write literature reviews only from so
 [Replication package ↗](https://www.icpsr.umich.edu/sites/icpsr/view/studies/246321)
 
 Large language models can synthesize scholarship quickly, while the relation between their prose and the underlying sources often remains difficult to verify. This paper introduces Retrieval-Restricted Reasoning (RRR), an architecture for model-assisted synthesis over a researcher-defined corpus. RRR admits page-level evidence, binds it to stable identifiers before composition, renders citations from those records, and records a refusal when the collection cannot sustain the question. I evaluate the architecture through repeated runs on a contested economic-history literature. Across 100 full-RRR runs, the reviews contained 4,767 parsed citations. Ninety-nine reviews were free of the five measured error classes. One review contained a single citation identity that did not resolve to the declared collection; the audit found no invalid page, citation-format, or quotation error. A corpus-only instruction reduced boundary crossing substantially, and page-based comparison conditions showed that traceability arose through a layered contract of retrieval, evidence binding, rendering, writer intervention, and final checking. Model and workflow comparisons further separated writing capability from the preservation of a checkable source path. RRR supports historical synthesis by keeping claims connected to inspectable scholarship while leaving the researcher to judge the corpus and the historical interpretations built from it.
-
-Forthcoming
-
-### Living standards in Ghana, 1955–2005
-
-I. Martins
-
-*Labour and Work in Ghana Since Independence* · Edited by Gareth Austin, Akua Britwum, Lamine Doumbia, Andreas Eckert, and Nana Yaw Sapong. London: Bloomsbury Academic Abstract
-
-Using consumption baskets matched to the diets of Ghana’s three ecological zones, I show that national baskets understate living standards in the northern savannah, and that the widening gap between regions in 1988–2005 came mainly from rural areas.
-
-This paper constructs regional welfare ratios for Ghana from 1955 to 2005, combining five rounds of the Ghana Living Standards Survey with archival wage and price data. Using Allen-type consumption baskets calibrated to the dietary patterns of Ghana’s three ecological zones, I show that national baskets systematically misrepresent regional living standards in countries with significant dietary heterogeneity. Under a national basket priced at regional levels, several northern regions appear unable to meet subsistence. When the basket composition is allowed to reflect zone-specific diets, welfare ratios improve substantially in the savannah regions, where local staples (millet, sorghum) are cheaper than the cassava and plantain that dominate the national basket. I further decompose regional welfare by urban and rural status, showing that both urban and rural areas are diverging across regions, but that rural divergence is far more severe. The aggregate widening of regional inequality in Ghana over 1988–2005 is driven primarily by the rural sector.
 
 Forthcoming
 
@@ -215,7 +203,7 @@ A. Palacio and I. Martins
 
 ## Under review
 
-3 manuscripts
+4 manuscripts
 
 ### [Weather as a vector of inequality](https://www.researchsquare.com/article/rs-9859396/v1)
 
@@ -238,6 +226,16 @@ J. Makuei and I. Martins
 Across 31 Kenyan constituencies from 1997 to 2010, rural households gained better access to fertiliser, roads and markets after the first democratic transfer of power, while the gap in household wealth between constituencies barely changed.
 
 Democratic transitions can expand access to rural infrastructure and productive inputs. It remains unclear whether they can reduce entrenched inequalities in household wealth. We examine this issue in the context of Kenya’s first inter-party transfer of presidential power. We combine electoral outcomes in 31 constituencies with five rounds of rural household surveys from 1997 to 2010. Fertiliser use and road and market access improved over time. In contrast, the spatial distribution of household assets was far more stable: constituencies that were initially advantaged stayed so. Moreover, we find no subsequent economic or public programme benefits for constituencies that elected Mwai Kibaki as president in 2007. Kenya illustrates a key challenge facing Africa’s new democracies. While access can improve over a decade, entrenched inequality can persist.
+
+### Living standards in Ghana, 1955–2005
+
+I. Martins
+
+*Labour and Work in Ghana Since Independence* · Edited by Gareth Austin, Akua Britwum, Lamine Doumbia, Andreas Eckert, and Nana Yaw Sapong. London: Bloomsbury Academic · Revise and resubmit Abstract
+
+Using consumption baskets matched to the diets of Ghana’s three ecological zones, I show that national baskets understate living standards in the northern savannah, and that the widening gap between regions in 1988–2005 came mainly from rural areas.
+
+This paper constructs regional welfare ratios for Ghana from 1955 to 2005, combining five rounds of the Ghana Living Standards Survey with archival wage and price data. Using Allen-type consumption baskets calibrated to the dietary patterns of Ghana’s three ecological zones, I show that national baskets systematically misrepresent regional living standards in countries with significant dietary heterogeneity. Under a national basket priced at regional levels, several northern regions appear unable to meet subsistence. When the basket composition is allowed to reflect zone-specific diets, welfare ratios improve substantially in the savannah regions, where local staples (millet, sorghum) are cheaper than the cassava and plantain that dominate the national basket. I further decompose regional welfare by urban and rural status, showing that both urban and rural areas are diverging across regions, but that rural divergence is far more severe. The aggregate widening of regional inequality in Ghana over 1988–2005 is driven primarily by the rural sector.
 
 ### Slave emancipation and agricultural output in the Cape Colony
 
