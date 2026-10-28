@@ -71,7 +71,7 @@
       "find.poverty": "I 23 utvecklingsländer under 42 år hänger minskad fattigdom samman med färre perioder av ekonomisk krympning, medan förändringar i inkomstojämlikhet saknar ett sådant samband.",
       "find.disentangled": "Sampubliceringen mellan kinesiska och amerikanska forskare har börjat minska, och vi frågar vad ökande politiska begränsningar betyder för internationell forskning.",
       "find.legacies": "Slavägare som förlorade mer förmögenhet genom den partiella kompensationen 1834 levde något kortare, främst de äldre, medan deras barn och barnbarn inte påverkades.",
-      "st.forthcoming": "Kommande", "st.editedby": "Redigerad av", "inst.lu": "Lunds universitet", "st.phd": "Doktorsavhandling",
+      "st.forthcoming": "Kommande", "st.accepted": "Accepterad", "st.editedby": "Redigerad av", "inst.lu": "Lunds universitet", "st.phd": "Doktorsavhandling",
       "st.report": "Rapport", "st.rr": "Omarbetning begärd (R&R)", "st.submitted": "Inskickad", "st.preprint": "Läs preprint", "st.podcast": "Podd",
 
       "proj.title": "Projekt",
@@ -160,7 +160,7 @@
       "find.poverty": "Em 23 países em desenvolvimento ao longo de 42 anos, a redução da pobreza está associada a menos episódios de retração econômica, enquanto as mudanças na desigualdade de renda não mostram essa relação.",
       "find.disentangled": "A coautoria entre pesquisadores chineses e norte-americanos começou a diminuir, e perguntamos o que as crescentes restrições políticas significam para a ciência internacional.",
       "find.legacies": "Os senhores que perderam mais riqueza com a compensação parcial de 1834 viveram um pouco menos, sobretudo os mais velhos, enquanto seus filhos e netos não foram afetados.",
-      "st.forthcoming": "Aceito para publicação", "st.editedby": "Organizado por", "inst.lu": "Universidade de Lund", "st.phd": "Tese de doutorado",
+      "st.forthcoming": "A ser publicado", "st.accepted": "Aceito", "st.editedby": "Organizado por", "inst.lu": "Universidade de Lund", "st.phd": "Tese de doutorado",
       "st.report": "Relatório", "st.rr": "Revisão solicitada (R&R)", "st.submitted": "Enviado", "st.preprint": "Ler preprint", "st.podcast": "Podcast",
 
       "proj.title": "Projetos",
