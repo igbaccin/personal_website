@@ -6,12 +6,38 @@
 
 ## Publications
 
-14 works
+16 works
 
 Articles, chapters,\
 reports & thesis
 
 [Google Scholar ↗](https://scholar.google.com/citations?user=VRHCkE0AAAAJ&hl=en)
+
+Accepted
+
+### The case for artisanal doctoral supervision
+
+I. Martins
+
+*Studies in Higher Education* Abstract
+
+Universities track doctoral students through study plans and progress reviews. I propose revisable plans and brief records of reasons, so that supervisors remain accountable and students can still change course when new evidence calls for it.
+
+Universities increasingly organise doctoral supervision through study plans and progress reviews. These instruments protect students by making promised support verifiable. They also establish an early account of the research against which later progress is judged. In humanities research, new evidence may unsettle that account, and a change that improves the thesis can then look like a failure to keep to the plan. This conceptual article brings together research on doctoral supervision and research on how universities assess academic work to develop a typology of supervision. It distinguishes structure, which makes support reliable, from judgement, which helps students decide what a discovery means for their thesis. Their combination produces nominal, unstructured, bureaucratic, and artisanal supervision. Bureaucratic supervision combines reliable support with weak judgement and suits reviews that measure progress against the plan. Artisanal supervision uses reliable structure to make room for justified changes to the thesis within the time a doctorate allows. The article argues that formal records capture intellectual judgement poorly and can steer supervision towards what they record. It proposes revisable plans and brief, protected records of reasons, so that universities can hold supervision to account while leaving room for discovery.
+
+Accepted
+
+### Retrieval-restricted reasoning: Supporting scholarly synthesis with language models
+
+I. Martins
+
+*Historical Methods: A Journal of Quantitative and Interdisciplinary History* Abstract
+
+I built a method that lets language models write literature reviews only from sources the researcher supplies; across 100 test reviews with 4,767 citations, 99 contained none of the five measured citation errors.
+
+[Replication package ↗](https://www.icpsr.umich.edu/sites/icpsr/view/studies/246321)
+
+Large language models can synthesize scholarship quickly, while the relation between their prose and the underlying sources often remains difficult to verify. This paper introduces Retrieval-Restricted Reasoning (RRR), an architecture for model-assisted synthesis over a researcher-defined corpus. RRR admits page-level evidence, binds it to stable identifiers before composition, renders citations from those records, and records a refusal when the collection cannot sustain the question. I evaluate the architecture through repeated runs on a contested economic-history literature. Across 100 full-RRR runs, the reviews contained 4,767 parsed citations. Ninety-nine reviews were free of the five measured error classes. One review contained a single citation identity that did not resolve to the declared collection; the audit found no invalid page, citation-format, or quotation error. A corpus-only instruction reduced boundary crossing substantially, and page-based comparison conditions showed that traceability arose through a layered contract of retrieval, evidence binding, rendering, writer intervention, and final checking. Model and workflow comparisons further separated writing capability from the preservation of a checkable source path. RRR supports historical synthesis by keeping claims connected to inspectable scholarship while leaving the researcher to judge the corpus and the historical interpretations built from it.
 
 Forthcoming
 
@@ -189,29 +215,7 @@ A. Palacio and I. Martins
 
 ## Under review
 
-5 manuscripts
-
-### The case for artisanal doctoral supervision
-
-I. Martins
-
-*Studies in Higher Education* · Revise and resubmit Abstract
-
-Universities track doctoral students through study plans and progress reviews. I propose revisable plans and brief records of reasons, so that supervisors remain accountable and students can still change course when new evidence calls for it.
-
-Universities increasingly organise doctoral supervision through study plans and progress reviews. These instruments protect students by making promised support verifiable. They also establish an early account of the research against which later progress is judged. In humanities research, new evidence may unsettle that account, and a change that improves the thesis can then look like a failure to keep to the plan. This conceptual article brings together research on doctoral supervision and research on how universities assess academic work to develop a typology of supervision. It distinguishes structure, which makes support reliable, from judgement, which helps students decide what a discovery means for their thesis. Their combination produces nominal, unstructured, bureaucratic, and artisanal supervision. Bureaucratic supervision combines reliable support with weak judgement and suits reviews that measure progress against the plan. Artisanal supervision uses reliable structure to make room for justified changes to the thesis within the time a doctorate allows. The article argues that formal records capture intellectual judgement poorly and can steer supervision towards what they record. It proposes revisable plans and brief, protected records of reasons, so that universities can hold supervision to account while leaving room for discovery.
-
-### Retrieval-restricted reasoning: Supporting scholarly synthesis with language models
-
-I. Martins
-
-*Historical Methods: A Journal of Quantitative and Interdisciplinary History* · Revise and resubmit Abstract
-
-I built a method that lets language models write literature reviews only from sources the researcher supplies; across 100 test reviews with 4,767 citations, 99 contained none of the five measured citation errors.
-
-[Replication package ↗](https://www.icpsr.umich.edu/sites/icpsr/view/studies/246321)
-
-Large language models can synthesize scholarship quickly, while the relation between their prose and the underlying sources often remains difficult to verify. This paper introduces Retrieval-Restricted Reasoning (RRR), an architecture for model-assisted synthesis over a researcher-defined corpus. RRR admits page-level evidence, binds it to stable identifiers before composition, renders citations from those records, and records a refusal when the collection cannot sustain the question. I evaluate the architecture through repeated runs on a contested economic-history literature. Across 100 full-RRR runs, the reviews contained 4,767 parsed citations. Ninety-nine reviews were free of the five measured error classes. One review contained a single citation identity that did not resolve to the declared collection; the audit found no invalid page, citation-format, or quotation error. A corpus-only instruction reduced boundary crossing substantially, and page-based comparison conditions showed that traceability arose through a layered contract of retrieval, evidence binding, rendering, writer intervention, and final checking. Model and workflow comparisons further separated writing capability from the preservation of a checkable source path. RRR supports historical synthesis by keeping claims connected to inspectable scholarship while leaving the researcher to judge the corpus and the historical interpretations built from it.
+3 manuscripts
 
 ### [Weather as a vector of inequality](https://www.researchsquare.com/article/rs-9859396/v1)
 
@@ -225,6 +229,16 @@ Linking weather to 25,000 household tax records, we show that wealthier househol
 
 As climate change alters weather risk, wealth is often treated as a buffer after shocks occur. We show that wealth can shape the economic shock before it arrives by determining which assets households own. In a pre-industrial agrarian society, we link weather to 25,000 household tax records and commodity prices. Households held different production bundles, and the same seasonal weather could raise returns to one bundle while lowering returns to another. Wealthier households more often owned the commodities favoured by observed weather variation, and prices did not systematically offset these differences. These portfolio differences predict next-year changes in movable assets. Years in which weather raised returns to commodities disproportionately owned by wealthier households were years of wider movable-asset inequality. Wealth determined whether weather became loss or gain.
 
+### Democracy and rural inequality in Kenya, 1997–2010
+
+J. Makuei and I. Martins
+
+*African Affairs* · Revise and resubmit Abstract
+
+Across 31 Kenyan constituencies from 1997 to 2010, rural households gained better access to fertiliser, roads and markets after the first democratic transfer of power, while the gap in household wealth between constituencies barely changed.
+
+Democratic transitions can expand access to rural infrastructure and productive inputs. It remains unclear whether they can reduce entrenched inequalities in household wealth. We examine this issue in the context of Kenya’s first inter-party transfer of presidential power. We combine electoral outcomes in 31 constituencies with five rounds of rural household surveys from 1997 to 2010. Fertiliser use and road and market access improved over time. In contrast, the spatial distribution of household assets was far more stable: constituencies that were initially advantaged stayed so. Moreover, we find no subsequent economic or public programme benefits for constituencies that elected Mwai Kibaki as president in 2007. Kenya illustrates a key challenge facing Africa’s new democracies. While access can improve over a decade, entrenched inequality can persist.
+
 ### Slave emancipation and agricultural output in the Cape Colony
 
 I. Martins
@@ -236,16 +250,6 @@ After emancipation, Stellenbosch farms whose compensation fell further short of 
 [Replication package ↗](https://www.icpsr.umich.edu/sites/icpsr/view/studies/248667)
 
 Slave emancipation reorganised labour and removed a legally protected form of wealth that had supported collateralised credit. Using a panel of farmers in Stellenbosch, Cape Colony, from 1824 to 1844, this study links annual tax censuses to slave valuations and compensation awards. The compensation gap is the difference between the local valuation and the cash award. It measures the portion of assessed slave value that compensation did not replace. The estimates compare each farm’s output before and after emancipation and ask whether output changed more on farms with larger compensation gaps, after accounting for changes shared by all farms and for recorded labour, household size, and livestock. After emancipation, grain and wine output declined more on farms with larger compensation gaps, especially among large mixed producers. Among these farms, every additional £10 in the compensation gap per enslaved person is associated with losses equal to 12 percent of earlier wine output and 20 percent of earlier grain output. This pattern, together with historical evidence on the use of slave property in lending, is consistent with a balance sheet channel operating alongside labour reorganisation.
-
-### Democracy and rural inequality in Kenya, 1997–2010
-
-J. Makuei and I. Martins
-
-*African Affairs* · Submitted Abstract
-
-Across 31 Kenyan constituencies from 1997 to 2010, rural households gained better access to fertiliser, roads and markets after the first democratic transfer of power, while the gap in household wealth between constituencies barely changed.
-
-Democratic transitions can expand access to rural infrastructure and productive inputs. It remains unclear whether they can reduce entrenched inequalities in household wealth. We examine this issue in the context of Kenya’s first inter-party transfer of presidential power. We combine electoral outcomes in 31 constituencies with five rounds of rural household surveys from 1997 to 2010. Fertiliser use and road and market access improved over time. In contrast, the spatial distribution of household assets was far more stable: constituencies that were initially advantaged stayed so. Moreover, we find no subsequent economic or public programme benefits for constituencies that elected Mwai Kibaki as president in 2007. Kenya illustrates a key challenge facing Africa’s new democracies. While access can improve over a decade, entrenched inequality can persist.
 
 ## Work in progress
 
