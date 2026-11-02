@@ -195,7 +195,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 </details>
 <div class="research-extra">
 <details class="research-group" id="under-review">
-<summary><h2 class="group-title" data-i18n="res.review">Under review</h2><span class="group-meta">4 <span data-i18n="n.manuscripts">manuscripts</span></span></summary>
+<summary><h2 class="group-title" data-i18n="res.review">Under review</h2><span class="group-meta">5 <span data-i18n="n.manuscripts">manuscripts</span></span></summary>
 <div class="group-content">
 <article class="publication">
 
@@ -243,10 +243,22 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <div class="abstract-text" id="abstract-16" lang="en" hidden><p>Slave emancipation reorganised labour and removed a legally protected form of wealth that had supported collateralised credit. Using a panel of farmers in Stellenbosch, Cape Colony, from 1824 to 1844, this study links annual tax censuses to slave valuations and compensation awards. The compensation gap is the difference between the local valuation and the cash award. It measures the portion of assessed slave value that compensation did not replace. The estimates compare each farm’s output before and after emancipation and ask whether output changed more on farms with larger compensation gaps, after accounting for changes shared by all farms and for recorded labour, household size, and livestock. After emancipation, grain and wine output declined more on farms with larger compensation gaps, especially among large mixed producers. Among these farms, every additional £10 in the compensation gap per enslaved person is associated with losses equal to 12 percent of earlier wine output and 20 percent of earlier grain output. This pattern, together with historical evidence on the use of slave property in lending, is consistent with a balance sheet channel operating alongside labour reorganisation.</p></div>
   </div>
 </article>
+<article class="publication">
+
+  <div>
+    <h3>Held by the elite: Monopoly rights and family fortunes at the Cape of Good Hope, 1680–1794</h3>
+    <p>I. Martins, J. Schoots<span data-i18n="w.oxand">, and</span> E. Green</p>
+    <p class="journal"><em>Journal of Economic History</em> · <span data-i18n="st.submitted">Submitted</span> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-18" data-i18n="st.abstract">Abstract</button></p>
+
+
+    <p class="finding" data-i18n="find.pachten">The Dutch East India Company auctioned the right to sell alcohol at the Cape every year. The settlers who won these rights already owned enslaved people more often than others, and those who ran them as a business accumulated more, while their families lasted no longer than other settler families.</p>
+    <div class="abstract-text" id="abstract-18" lang="en" hidden><p>Many accounts of early modern elites hold that the privileges states sold made their holders rich and their families lasting. We test this for the alcohol retail rights (\textit{pachten}) that the Dutch East India Company auctioned each year at the Cape of Good Hope, 1680–1794, following every holder through auction records, an annual household census and a genealogical register, against settlers who never held a \textit{pacht}. A core of established operators kept their lots, paying at least as much as outsiders. Future holders already owned enslaved people more often than other settlers, and Cape-born ones had married into \textit{pachter} families three and a half times as often as other Cape-born men. Operators who held intensively from the start accumulated enslaved people, and one-year holders show no measurable change. \textit{Pachter} families lasted no longer than comparable settler families and married among themselves no more often. Sold every year at open auction, the privilege consolidated the position of slaveholding households and rewarded those who ran it as a business, without founding a lasting elite.</p></div>
+  </div>
+</article>
 </div>
 </details>
 <details class="research-group" id="work-in-progress">
-<summary><h2 class="group-title" data-i18n="res.wip">Work in progress</h2><span class="group-meta">7 <span data-i18n="n.manuscripts">manuscripts</span></span></summary>
+<summary><h2 class="group-title" data-i18n="res.wip">Work in progress</h2><span class="group-meta">6 <span data-i18n="n.manuscripts">manuscripts</span></span></summary>
 <div class="group-content">
 <article class="publication">
 
@@ -262,17 +274,6 @@ description: "Publications by Igor B. Martins on African economic history, slave
     <h3>Wealth and adult mortality in a pre-industrial settler society: Evidence from Cape probate inventories</h3>
     <p>J. Cilliers <span data-i18n="w.and">and</span> I. Martins</p>
 
-  </div>
-</article>
-<article class="publication">
-
-  <div>
-    <h3>Held by the elite: Monopoly rights and family fortunes at the Cape of Good Hope, 1680–1794</h3>
-    <p>I. Martins, J. Schoots<span data-i18n="w.oxand">, and</span> E. Green <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-18" data-i18n="st.abstract">Abstract</button></p>
-
-
-    <p class="finding" data-i18n="find.pachten">The Dutch East India Company auctioned the right to sell alcohol at the Cape every year. The settlers who won these rights already owned enslaved people more often than others, and those who ran them as a business accumulated more, while their families lasted no longer than other settler families.</p>
-    <div class="abstract-text" id="abstract-18" lang="en" hidden><p>Many accounts of early modern elites hold that the privileges states sold made their holders rich and their families lasting. We test this for the alcohol retail rights (\textit{pachten}) that the Dutch East India Company auctioned each year at the Cape of Good Hope, 1680–1794, following every holder through auction records, an annual household census and a genealogical register, against settlers who never held a \textit{pacht}. A core of established operators kept their lots, paying at least as much as outsiders. Future holders already owned enslaved people more often than other settlers, and Cape-born ones had married into \textit{pachter} families three and a half times as often as other Cape-born men. Operators who held intensively from the start accumulated enslaved people, and one-year holders show no measurable change. \textit{Pachter} families lasted no longer than comparable settler families and married among themselves no more often. Sold every year at open auction, the privilege consolidated the position of slaveholding households and rewarded those who ran it as a business, without founding a lasting elite.</p></div>
   </div>
 </article>
 <article class="publication">
