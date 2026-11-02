@@ -203,7 +203,7 @@ A. Palacio and I. Martins
 
 ## Under review
 
-4 manuscripts
+5 manuscripts
 
 ### [Weather as a vector of inequality](https://www.researchsquare.com/article/rs-9859396/v1)
 
@@ -249,9 +249,19 @@ After emancipation, Stellenbosch farms whose compensation fell further short of 
 
 Slave emancipation reorganised labour and removed a legally protected form of wealth that had supported collateralised credit. Using a panel of farmers in Stellenbosch, Cape Colony, from 1824 to 1844, this study links annual tax censuses to slave valuations and compensation awards. The compensation gap is the difference between the local valuation and the cash award. It measures the portion of assessed slave value that compensation did not replace. The estimates compare each farm’s output before and after emancipation and ask whether output changed more on farms with larger compensation gaps, after accounting for changes shared by all farms and for recorded labour, household size, and livestock. After emancipation, grain and wine output declined more on farms with larger compensation gaps, especially among large mixed producers. Among these farms, every additional £10 in the compensation gap per enslaved person is associated with losses equal to 12 percent of earlier wine output and 20 percent of earlier grain output. This pattern, together with historical evidence on the use of slave property in lending, is consistent with a balance sheet channel operating alongside labour reorganisation.
 
+### Held by the elite: Monopoly rights and family fortunes at the Cape of Good Hope, 1680–1794
+
+I. Martins, J. Schoots, and E. Green
+
+*Journal of Economic History* · Submitted Abstract
+
+The Dutch East India Company auctioned the right to sell alcohol at the Cape every year. The settlers who won these rights already owned enslaved people more often than others, and those who ran them as a business accumulated more, while their families lasted no longer than other settler families.
+
+Many accounts of early modern elites hold that the privileges states sold made their holders rich and their families lasting. We test this for the alcohol retail rights (\textit{pachten}) that the Dutch East India Company auctioned each year at the Cape of Good Hope, 1680–1794, following every holder through auction records, an annual household census and a genealogical register, against settlers who never held a \textit{pacht}. A core of established operators kept their lots, paying at least as much as outsiders. Future holders already owned enslaved people more often than other settlers, and Cape-born ones had married into \textit{pachter} families three and a half times as often as other Cape-born men. Operators who held intensively from the start accumulated enslaved people, and one-year holders show no measurable change. \textit{Pachter} families lasted no longer than comparable settler families and married among themselves no more often. Sold every year at open auction, the privilege consolidated the position of slaveholding households and rewarded those who ran it as a business, without founding a lasting elite.
+
 ## Work in progress
 
-7 manuscripts
+6 manuscripts
 
 ### Income inequality in late colonial Angola, 1940–1970
 
@@ -260,14 +270,6 @@ I. Martins
 ### Wealth and adult mortality in a pre-industrial settler society: Evidence from Cape probate inventories
 
 J. Cilliers and I. Martins
-
-### Held by the elite: Monopoly rights and family fortunes at the Cape of Good Hope, 1680–1794
-
-I. Martins, J. Schoots, and E. Green Abstract
-
-The Dutch East India Company auctioned the right to sell alcohol at the Cape every year. The settlers who won these rights already owned enslaved people more often than others, and those who ran them as a business accumulated more, while their families lasted no longer than other settler families.
-
-Many accounts of early modern elites hold that the privileges states sold made their holders rich and their families lasting. We test this for the alcohol retail rights (\textit{pachten}) that the Dutch East India Company auctioned each year at the Cape of Good Hope, 1680–1794, following every holder through auction records, an annual household census and a genealogical register, against settlers who never held a \textit{pacht}. A core of established operators kept their lots, paying at least as much as outsiders. Future holders already owned enslaved people more often than other settlers, and Cape-born ones had married into \textit{pachter} families three and a half times as often as other Cape-born men. Operators who held intensively from the start accumulated enslaved people, and one-year holders show no measurable change. \textit{Pachter} families lasted no longer than comparable settler families and married among themselves no more often. Sold every year at open auction, the privilege consolidated the position of slaveholding households and rewarded those who ran it as a business, without founding a lasting elite.
 
 ### Catch-up and resilience to shrinking, 1890–2019
 
