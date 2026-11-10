@@ -33,7 +33,7 @@ I. Martins
 
 *Historical Methods: A Journal of Quantitative and Interdisciplinary History* Abstract
 
-I built a method that lets language models write literature reviews only from sources the researcher supplies; across 100 test reviews with 4,767 citations, 99 contained none of the five measured citation errors.
+I built a method that lets language models write literature reviews only from sources the researcher supplies; across 100 test reviews, all 4,186 citations led to a declared work and page, and no review contained an error.
 
 [Replication package ↗](https://www.icpsr.umich.edu/sites/icpsr/view/studies/246321)
 
