@@ -27,7 +27,7 @@ Universities increasingly organise doctoral supervision through study plans and 
 
 Accepted
 
-### Retrieval-restricted reasoning: Supporting scholarly synthesis with language models
+### [Retrieval-restricted reasoning: Supporting scholarly synthesis with language models](https://doi.org/10.1080/01615440.2026.2762836)
 
 I. Martins
 
