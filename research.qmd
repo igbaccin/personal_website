@@ -38,7 +38,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
   <div class="publication-year" data-i18n="st.accepted">Accepted</div>
   <div>
-    <h3>Retrieval-restricted reasoning: Supporting scholarly synthesis with language models</h3>
+    <h3><a href="https://doi.org/10.1080/01615440.2026.2762836">Retrieval-restricted reasoning: Supporting scholarly synthesis with language models</a></h3>
     <p>I. Martins</p>
     <p class="journal"><em>Historical Methods: A Journal of Quantitative and Interdisciplinary History</em> <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-14" data-i18n="st.abstract">Abstract</button></p>
     <p class="finding" data-i18n="find.rrr">I built a method that lets language models write literature reviews only from sources the researcher supplies; across 100 test reviews with 4,767 citations, 99 contained none of the five measured citation errors.</p>
