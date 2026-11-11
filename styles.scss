@@ -285,6 +285,7 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
 .project-funding { text-align: right; }
 .project-funding strong { display: block; font-size: 1.05rem; font-weight: 500; white-space: nowrap; }
 .project-funding span { display: block; font-size: .75rem; margin-top: 5px; }
+.project-funding .project-usd { margin-top: 2px; font-size: .8rem; }
 .project-funding-multiple { display: grid; gap: 13px; }
 .project-funding-multiple div + div { padding-top: 12px; border-top: 1px solid var(--rule); }
 .project-funding-multiple .project-total strong { font-size: 1.15rem; }
