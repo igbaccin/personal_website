@@ -16,7 +16,7 @@ Project researcher
 
 [Project website ↗](https://portal.research.lu.se/en/projects/causes-and-consequances-of-long-term-inequality-africas-levels-an/)
 
-**SEK 6,737,000**Project award
+**SEK 6,737,000**≈ USD 687,000Project award
 
 2021–2026
 
@@ -28,7 +28,7 @@ Project researcher
 
 [Project website ↗](https://www.capepanel.org/)
 
-**SEK 29,000,000**Project award
+**SEK 29,000,000**≈ USD 2,960,000Project award
 
 2022–2026
 
@@ -38,7 +38,7 @@ Handelsbanken Research Foundations
 
 Project researcher
 
-**SEK 1,725,000**Project award
+**SEK 1,725,000**≈ USD 176,000Project award
 
 ## Upcoming project
 
@@ -50,7 +50,7 @@ Handelsbanken Research Foundations
 
 Project researcher
 
-**SEK 1,500,000**Project award
+**SEK 1,500,000**≈ USD 153,000Project award
 
 ## Earlier projects and research funding
 
@@ -64,7 +64,7 @@ Postdoctoral Research Associate
 
 [Project website ↗](https://ghanalabourhistory.org/)
 
-**SEK 3,332,000**UK award, SEK equivalent
+**GBP 268,859**≈ USD 361,000UK award
 
 2017–2018
 
@@ -76,7 +76,7 @@ Visiting researcher · Stellenbosch University, South Africa
 
 Research training on the economic history of the Cape Colony.
 
-**SEK 157,000**Research mobility scholarship
+**SEK 157,000**≈ USD 16,000Research mobility scholarship
 
 2016–2020
 
@@ -88,7 +88,7 @@ Researcher
 
 [Project website ↗](https://portal.research.lu.se/en/projects/the-cape-of-the-good-hope-panel-long-term-studies-of-growth-inequ/)
 
-**SEK 6,400,000**Total project funding
+**SEK 6,400,000**≈ USD 653,000Total project funding
 
 **SEK 4,500,000**Wallenberg Foundation
 
