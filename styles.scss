@@ -403,3 +403,18 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
 .publication .abstract-text[hidden] { display: none; }
 .publication .abstract-text p { margin: 0 0 8px; font-size: .85rem; line-height: 1.7; color: var(--muted); }
 .publication .abstract-text strong { color: #c4cbd1; font-weight: 600; }
+
+/* About: the portrait is as tall as the text beside it, and the CV sits with the profile links. */
+.about-copy .social-links .link-label { color: inherit; margin-left: 0; }
+@media screen and (min-width: 768px) {
+  .about-layout { --photo-w: 320px; grid-template-columns: var(--photo-w) minmax(0,1fr); gap: 56px; align-items: stretch; }
+  .about-photo { position: relative; min-height: var(--photo-w); }
+  .about-photo .portrait { position: absolute; top: 0; left: 0; height: 100%; max-height: calc(var(--photo-w) * 1.6); object-fit: cover; object-position: 50% 30%; }
+  .about-copy { display: flex; flex-direction: column; }
+  .about-copy .social-links { grid-template-columns: repeat(4, auto); max-width: 620px; margin-top: auto; }
+  .about-copy .social-links a { white-space: nowrap; }
+}
+@media screen and (min-width: 768px) and (max-width: 950px) {
+  .about-layout { --photo-w: 250px; gap: 40px; }
+  .about-copy .social-links { grid-template-columns: repeat(2, auto); max-width: 380px; }
+}
