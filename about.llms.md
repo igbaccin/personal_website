@@ -6,15 +6,11 @@ About
 
 ![Portrait of Igor B. Martins.](images/me.jpg)
 
-[Curriculum vitae ↗](files/igor-b-martins-cv.pdf)
+I am an economic historian studying the origins and persistence of inequality, with a primary focus on Africa. Much of my work follows slaveholding households in the Cape Colony through tax censuses, slave valuations, and compensation records. I show that they held enslaved people as capital and as collateral for credit. I follow them through emancipation in 1834 to see what the loss of that wealth meant for their farms, their families, and how long they lived, and what freedom meant for the people they had enslaved.
 
-I am an economic historian studying the origins and persistence of inequality, with a primary focus on Africa. My research examines how ownership, labour markets, access to finance, and political power shape economic development and influence how well people and countries withstand periods of crisis and change.
+I am a postdoctoral researcher in the Department of Management and Engineering at Linköping University and am also affiliated with the Department of Economic History at Lund University. I hold an MSc and PhD in Economic History from Lund University and have previously worked as a postdoctoral researcher at Lund and the University of Cambridge.
 
-I build and analyse large datasets from historical records to study how major economic changes affect wealth, work, health, and living standards. Across this research, I ask how existing differences in wealth and power influence who bears the costs of a crisis, who benefits from recovery and growth, and whether inequality carries over to the next generation.
-
-I am a postdoctoral researcher in the Department of Management and Engineering at Linköping University and am also affiliated with the Department of Economic History at Lund University. I hold an MSc and PhD in Economic History from Lund University and have previously worked as a postdoctoral researcher at Lund and the University of Cambridge. My work contributes to research projects supported by the Swedish Research Council, Riksbankens Jubileumsfond, Handelsbanken Research Foundations, and the UK Arts and Humanities Research Council. I have also carried out research and consultancy for STINT and the United Nations Development Programme.
-
-[Google Scholar ↗](https://scholar.google.com/citations?user=VRHCkE0AAAAJ&hl=en) [Research portal ↗](https://liu.se/en/employee/igoma71) [ResearchGate ↗](https://www.researchgate.net/profile/Igor-Martins) [LinkedIn ↗](https://www.linkedin.com/in/ibmartins/) [Substack ↗](https://ibmartins.substack.com/) [ORCID ↗](https://orcid.org/0000-0002-6141-9273)
+[Curriculum vitae ↗](files/igor-b-martins-cv.pdf) [Google Scholar ↗](https://scholar.google.com/citations?user=VRHCkE0AAAAJ&hl=en) [Research portal ↗](https://liu.se/en/employee/igoma71) [ResearchGate ↗](https://www.researchgate.net/profile/Igor-Martins) [LinkedIn ↗](https://www.linkedin.com/in/ibmartins/) [Substack ↗](https://ibmartins.substack.com/) [ORCID ↗](https://orcid.org/0000-0002-6141-9273)
 
 ## Roles and service
 
