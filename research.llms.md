@@ -263,7 +263,7 @@ Many accounts of early modern elites hold that the privileges states sold made t
 
 6 manuscripts
 
-### Income inequality in late colonial Angola, 1940–1970
+### Income inequality in late colonial Angola, 1940–1970: A calibration exercise
 
 I. Martins
 
@@ -293,19 +293,13 @@ I. Martins, P. Aboagye, and G. Austin
 
 ## Essays & media
 
-11 contributions
+10 contributions
 
 ### [Assessing students’ academic writing when AI can produce a first draft](https://www.timeshighereducation.com/campus/assessing-students-academic-writing-when-ai-can-produce-first-draft)
 
 2026 · I. Martins
 
 *Times Higher Education*
-
-### [Using Portuguese sources to build an Angolan social table](https://aflit.net/blog/using-portuguese-sources-to-build-an-angolan-social-table/)
-
-2026 · I. Martins
-
-*African Long-Term Inequality Trends (AFLIT)*
 
 ### [Capital and coercion: Why slavery persisted after Britain banned the trade](https://ehes.org/2026/04/27/capital-and-coercion-why-slavery-persisted-after-britain-banned-the-trade/)
 
