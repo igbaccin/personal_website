@@ -25,7 +25,19 @@ Universities track doctoral students through study plans and progress reviews. I
 
 Universities increasingly organise doctoral supervision through study plans and progress reviews. These instruments protect students by making promised support verifiable. They also establish an early account of the research against which later progress is judged. In humanities research, new evidence may unsettle that account, and a change that improves the thesis can then look like a failure to keep to the plan. This conceptual article brings together research on doctoral supervision and research on how universities assess academic work to develop a typology of supervision. It distinguishes structure, which makes support reliable, from judgement, which helps students decide what a discovery means for their thesis. Their combination produces nominal, unstructured, bureaucratic, and artisanal supervision. Bureaucratic supervision combines reliable support with weak judgement and suits reviews that measure progress against the plan. Artisanal supervision uses reliable structure to make room for justified changes to the thesis within the time a doctorate allows. The article argues that formal records capture intellectual judgement poorly and can steer supervision towards what they record. It proposes revisable plans and brief, protected records of reasons, so that universities can hold supervision to account while leaving room for discovery.
 
-Accepted
+Forthcoming
+
+### Från arbetskraft till kapital: Slaveriets ekonomiska logik i globalt perspektiv
+
+I. Martins and E. Green
+
+*Statsvetenskaplig tidskrift* Abstract
+
+Enslaved people could serve as collateral as early as classical Athens and Rome, and in nineteenth-century Brazil and the Cape Colony courts and foreclosure made slave-backed lending routine, so emancipation also wiped out collateral that creditors relied on.
+
+Slavery is usually analysed as an extreme form of labour coercion. This article treats it instead as a property regime over persons that simultaneously organises labour and creates alienable assets that can be valued, transferred, and pledged. I distinguish feasible collateralisation from systemic collateralisation: the former requires enforceable remedies, the latter requires routinised instruments and repeatable enforcement channels that make slave property legible to third parties. Evidence from classical Athens and Rome shows that enslaved people could serve as collateral without modern registries, separating feasibility from systemic use. Comparative case studies of nineteenth-century Brazil and the Cape Colony trace when slave-backed lending became routine, highlighting the roles of creditor remedies, foreclosure, courts, and market liquidity. The findings reframe the slavery and capitalism debate and interpret emancipation as a shock to collateral and creditor protection, not only to labour relations.
+
+2026
 
 ### [Retrieval-restricted reasoning: Supporting scholarly synthesis with language models](https://doi.org/10.1080/01615440.2026.2762836)
 
@@ -38,18 +50,6 @@ I built a method that lets language models write literature reviews only from so
 [Replication package ↗](https://www.icpsr.umich.edu/sites/icpsr/view/studies/246321)
 
 Language models synthesize scholarship quickly, and readers often cannot tell how the prose relates to its sources. This paper introduces Retrieval-Restricted Reasoning (RRR), a workflow that keeps model-assisted synthesis inside a collection the researcher has chosen. Every citation points to a page in that collection, quotations are checked against it, and the system refuses to write when the collection cannot sustain the question. In 100 runs on a contested economic-history literature, all 4,186 citations resolved to a declared work and page, every quotation matched, and no review carried an error. Comparisons across models and workflows separate fluent writing from a checkable path to the sources. The researcher remains the judge of the corpus and of the history written from it.
-
-Forthcoming
-
-### Från arbetskraft till kapital: Slaveriets ekonomiska logik i globalt perspektiv
-
-I. Martins and E. Green
-
-*Statsvetenskaplig tidskrift* Abstract
-
-Enslaved people could serve as collateral as early as classical Athens and Rome, and in nineteenth-century Brazil and the Cape Colony courts and foreclosure made slave-backed lending routine, so emancipation also wiped out collateral that creditors relied on.
-
-Slavery is usually analysed as an extreme form of labour coercion. This article treats it instead as a property regime over persons that simultaneously organises labour and creates alienable assets that can be valued, transferred, and pledged. I distinguish feasible collateralisation from systemic collateralisation: the former requires enforceable remedies, the latter requires routinised instruments and repeatable enforcement channels that make slave property legible to third parties. Evidence from classical Athens and Rome shows that enslaved people could serve as collateral without modern registries, separating feasibility from systemic use. Comparative case studies of nineteenth-century Brazil and the Cape Colony trace when slave-backed lending became routine, highlighting the roles of creditor remedies, foreclosure, courts, and market liquidity. The findings reframe the slavery and capitalism debate and interpret emancipation as a shock to collateral and creditor protection, not only to labour relations.
 
 2026
 
