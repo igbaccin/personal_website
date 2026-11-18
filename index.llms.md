@@ -19,22 +19,3 @@ I am an economic historian studying the origins and persistence of inequality, w
 I am a postdoctoral researcher in the Department of Management and Engineering at Linköping University and am also affiliated with the Department of Economic History at Lund University. I hold an MSc and PhD in Economic History from Lund University and have previously worked as a postdoctoral researcher at Lund and the University of Cambridge. I am also one of the editors of Frontiers in African Economic History, the blog and newsletter of the African Economic History Network.
 
 [Google Scholar ↗](https://scholar.google.com/citations?user=VRHCkE0AAAAJ&hl=en) [Research portal ↗](https://liu.se/en/employee/igoma71) [ResearchGate ↗](https://www.researchgate.net/profile/Igor-Martins) [Academia.edu ↗](https://liu-se.academia.edu/IgorMartins) [LinkedIn ↗](https://www.linkedin.com/in/ibmartins/) [Substack ↗](https://ibmartins.substack.com/) [Frontiers blog ↗](https://aehnetwork.substack.com/) [ORCID ↗](https://orcid.org/0000-0002-6141-9273)
-
-## Get in touch
-
-<igor.martins@liu.se>
-
-<igor.martins@ekh.lu.se>
-
-### Postal address
-
-Department of Management and Engineering (IEI)\
-Economics (NEK)\
-Linköping University\
-SE-581 83 Linköping, Sweden
-
-### Visiting address
-
-Campus Valla, A-huset\
-Entrance 19C, Room 219:207\
-Linköping, Sweden

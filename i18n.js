@@ -29,7 +29,7 @@
   var D = {
     sv: {
       "nav.home": "Hem", "nav.research": "Forskning", "nav.projects": "Projekt", "nav.teaching": "Undervisning", "nav.about": "Om mig",
-      "footer.role": "Ekonomisk historiker",
+      "footer.role": "Ekonomisk historiker", "footer.email": "E-post",
       "lang.label": "Språk",
 
       "aff": "Postdoktor vid Linköpings universitet, även knuten till Lunds universitet",
@@ -118,7 +118,7 @@
     },
     pt: {
       "nav.home": "Início", "nav.research": "Pesquisa", "nav.projects": "Projetos", "nav.teaching": "Ensino", "nav.about": "Sobre mim",
-      "footer.role": "Historiador econômico",
+      "footer.role": "Historiador econômico", "footer.email": "E-mail",
       "lang.label": "Idioma",
 
       "aff": "Pesquisador na Universidade de Linköping, também vinculado à Universidade de Lund",
