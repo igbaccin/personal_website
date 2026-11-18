@@ -228,7 +228,6 @@
       "tz-day": ["It’s {t} in Sweden. Someone's handwriting from 1820 is testing my patience.", "It’s {t} in Sweden. I am turning a very small question into a very large spreadsheet."],
       "tz-evening": ["It’s {t} in Sweden. Dinner at the desk, again.", "It’s {t} in Sweden. I promised myself an early night. The draft has other plans."],
       "linkedin": ["Wait. You came from LinkedIn? Everyone, we found the LinkedIn user!", "From LinkedIn? I am delighted to announce that I am still revising the same paragraph.", "From LinkedIn? I’m thrilled to announce nothing."],
-      "substack": ["From Substack? I told you not to engage!", "From Substack? Was one academic oversharing insufficient?"],
       "scholar": ["From Google Scholar? A citation would be lovely.", "Scholar sent you? Cite responsibly. And often."],
       "colleague": ["Hello, colleague! This visit counts as research dissemination. I'll put it in the report.", "Hello, colleague. Shouldn’t you be writing?"],
       "student": ["Hello, student! Shouldn’t you be studying? I should be writing.", "Hello, student! The deadline still applies, even if you found my website.", "Hello, student. The answer is in the readings.", "Hello, student. Yes, it will be on the exam."],
@@ -285,7 +284,6 @@
     if (mon === 4 && date === 1) return { id: "aprilfools" };
     if (mon === 6 && date === 6) return { id: "nationalday" };
     if (mon === 6 && day === 5 && date >= 19 && date <= 25) return { id: "midsummer" };
-    if (/(^|\.)substack\.com$/.test(ref)) return { id: "substack" };
     if (/(^|\.)linkedin\.com$|^lnkd\.in$/.test(ref)) return { id: "linkedin" };
     if (/^scholar\.google\./.test(ref)) return { id: "scholar" };
     if (STUDENT_HOSTS.test(ref)) return { id: "student" };
