@@ -4,7 +4,7 @@ Hello.
 
 # Igor B. Martins
 
-Latest[Capital and coercion: Slavery after the 1807 import ban in the Cape Colony](https://doi.org/10.1093/ereh/heag012)*European Review of Economic History*, 2026
+Latest[Capital and coercion: Slavery after the 1807 import ban in the Cape Colony](https://doi.org/10.1093/ereh/heag012)*European Review of Economic History* · 30(4), 645–694 · 2026
 
 Turn the hourglass
 
