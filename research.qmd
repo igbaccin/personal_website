@@ -63,7 +63,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
   <div>
     <h3><a href="https://doi.org/10.1093/ereh/heag012">Capital and coercion: Slavery after the 1807 import ban in the Cape Colony</a></h3>
     <p>I. Martins</p>
-    <p class="journal"><em>European Review of Economic History</em> · heag012 <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-3" data-i18n="st.abstract">Abstract</button></p>
+    <p class="journal"><em>European Review of Economic History</em> · 30(4), 645–694 <button type="button" class="abstract-toggle" aria-expanded="false" aria-controls="abstract-3" data-i18n="st.abstract">Abstract</button></p>
     <p class="finding" data-i18n="find.capcoer">After Britain banned slave imports in 1807, wealthier households in Stellenbosch and Graaff-Reinet kept accumulating enslaved people, holding them as capital assets in a colony where capital was scarce.</p>
 
     <a class="paper-link" href="https://www.icpsr.umich.edu/sites/icpsr/view/studies/237703"><span data-i18n="st.replication">Replication package</span> ↗</a>
