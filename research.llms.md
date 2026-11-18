@@ -307,7 +307,7 @@ I. Martins, P. Aboagye, and G. Austin
 
 *European Historical Economics Society*
 
-### [Theoretical foundations of the economics of slavery: Enslaved people as capital investments in the Atlantic world](https://www.aehnetwork.org/blog/theoretical-foundations-of-the-economics-of-slavery-enslaved-people-as-capital-investments-in-the-atlantic-world/)
+### [Theoretical foundations of the economics of slavery: Enslaved people as capital investments in the Atlantic world](https://aehnetwork.substack.com/p/theoretical-foundations-of-the-economics-of-slavery-enslaved-people-as-capital-investments-in-the-atlantic-world)
 
 2026 · I. Martins and E. Green
 
@@ -349,7 +349,7 @@ I. Martins, P. Aboagye, and G. Austin
 
 *Our Long Walk*
 
-### [Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony](https://www.aehnetwork.org/blog/legacies-of-loss-the-health-outcomes-of-slaveholder-compensation-in-the-british-cape-colony/)
+### [Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony](https://aehnetwork.substack.com/p/legacies-of-loss-the-health-outcomes-of-slaveholder-compensation-in-the-british-cape-colony)
 
 2023 · I. Martins, J. Cilliers, and J. Fourie
 

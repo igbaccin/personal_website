@@ -8,11 +8,23 @@ About
 
 I am an economic historian studying the origins and persistence of inequality, with a primary focus on Africa. Much of my work follows slaveholding households in the Cape Colony through tax censuses, slave valuations, and compensation records. I show that they held enslaved people as capital and as collateral for credit. I follow them through emancipation in 1834 to see what the loss of that wealth meant for their farms, their families, and how long they lived, and what freedom meant for the people they had enslaved.
 
-I am a postdoctoral researcher in the Department of Management and Engineering at Linköping University and am also affiliated with the Department of Economic History at Lund University. I hold an MSc and PhD in Economic History from Lund University and have previously worked as a postdoctoral researcher at Lund and the University of Cambridge.
+I am a postdoctoral researcher in the Department of Management and Engineering at Linköping University and am also affiliated with the Department of Economic History at Lund University. I hold an MSc and PhD in Economic History from Lund University and have previously worked as a postdoctoral researcher at Lund and the University of Cambridge. I am also one of the editors of Frontiers in African Economic History, the blog and newsletter of the African Economic History Network.
 
-[Curriculum vitae ↗](files/igor-b-martins-cv.pdf) [Google Scholar ↗](https://scholar.google.com/citations?user=VRHCkE0AAAAJ&hl=en) [Research portal ↗](https://liu.se/en/employee/igoma71) [ResearchGate ↗](https://www.researchgate.net/profile/Igor-Martins) [LinkedIn ↗](https://www.linkedin.com/in/ibmartins/) [Substack ↗](https://ibmartins.substack.com/) [ORCID ↗](https://orcid.org/0000-0002-6141-9273)
+[Google Scholar ↗](https://scholar.google.com/citations?user=VRHCkE0AAAAJ&hl=en) [Research portal ↗](https://liu.se/en/employee/igoma71) [ResearchGate ↗](https://www.researchgate.net/profile/Igor-Martins) [Academia.edu ↗](https://liu-se.academia.edu/IgorMartins) [LinkedIn ↗](https://www.linkedin.com/in/ibmartins/) [Substack ↗](https://ibmartins.substack.com/) [Frontiers blog ↗](https://aehnetwork.substack.com/) [ORCID ↗](https://orcid.org/0000-0002-6141-9273)
 
 ## Roles and service
+
+Since 2026
+
+### Co-editor
+
+[*Frontiers in African Economic History*](https://aehnetwork.substack.com/), African Economic History Network
+
+Since 2026
+
+### Secretariat
+
+International Economic History Association
 
 2025–2026
 
