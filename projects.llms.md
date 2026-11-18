@@ -14,7 +14,7 @@ Swedish Research Council (Vetenskapsrådet)
 
 Project researcher
 
-[Project website ↗](https://portal.research.lu.se/en/projects/causes-and-consequances-of-long-term-inequality-africas-levels-an/)
+[Inequality in Africa (Lund portal) ↗](https://portal.research.lu.se/en/projects/causes-and-consequances-of-long-term-inequality-africas-levels-an/)
 
 **SEK 6,737,000**≈ USD 687,000Project award
 
@@ -26,7 +26,7 @@ Riksbankens Jubileumsfond
 
 Project researcher
 
-[Project website ↗](https://www.capepanel.org/)
+[Cape Panel website ↗](https://www.capepanel.org/)
 
 **SEK 29,000,000**≈ USD 2,960,000Project award
 
@@ -62,7 +62,7 @@ Arts and Humanities Research Council (UK) and German Research Foundation (DFG)
 
 Postdoctoral Research Associate
 
-[Project website ↗](https://ghanalabourhistory.org/)
+[Labour history in Ghana ↗](https://ghanalabourhistory.org/)
 
 **GBP 268,859**≈ USD 361,000UK award
 
@@ -86,7 +86,7 @@ Marianne and Marcus Wallenberg Foundation · Handelsbanken Research Foundations
 
 Researcher
 
-[Project website ↗](https://portal.research.lu.se/en/projects/the-cape-of-the-good-hope-panel-long-term-studies-of-growth-inequ/)
+[Cape of Good Hope Panel (Lund portal) ↗](https://portal.research.lu.se/en/projects/the-cape-of-the-good-hope-panel-long-term-studies-of-growth-inequ/)
 
 **SEK 6,400,000**≈ USD 653,000Total project funding
 

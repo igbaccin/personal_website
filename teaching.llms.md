@@ -6,7 +6,7 @@
 
 ## Current teaching
 
-[![](images/course-utvc23.jpg)](https://kursplaner.lu.se/pdf/kurs/en/UTVC21)
+[![](images/course-utvc21-600.webp)](https://kursplaner.lu.se/pdf/kurs/en/UTVC21)
 
 ### Development in a Historical Perspective
 
@@ -15,7 +15,7 @@ Course syllabus ↗
 Since 2025 · UTVC21\
 Course convener
 
-[![](images/course-eose02.jpg)](https://kursplaner.lu.se/pdf/kurs/sv/EOSE02)
+[![](images/course-eose02-600.webp)](https://kursplaner.lu.se/pdf/kurs/sv/EOSE02)
 
 ### Colonialism and Economic Change
 
@@ -80,11 +80,11 @@ Bachelor’s · UTVC26 · Lecturer & course convener
 
 ### Bachelor’s theses
 
-[Supervised theses in LUP ↗](https://lup.lub.lu.se/student-papers/search/publication?q=%26quot%3Bigor%26quot%3B%20and%20%26quot%3Bmartins%26quot%3B&q=supervisor%20exact%20%26quot%3Bmartins%2C%20igor%26quot%3B&q=studentpapertype%20exact%20M2)
+[Bachelor’s theses in LUP ↗](https://lup.lub.lu.se/student-papers/search/publication?q=%26quot%3Bigor%26quot%3B%20and%20%26quot%3Bmartins%26quot%3B&q=supervisor%20exact%20%26quot%3Bmartins%2C%20igor%26quot%3B&q=studentpapertype%20exact%20M2)
 
 ### Master’s theses
 
-[Supervised theses in LUP ↗](https://lup.lub.lu.se/student-papers/search/publication?q=%26quot%3Bigor%26quot%3B%20and%20%26quot%3Bmartins%26quot%3B&q=supervisor%20exact%20%26quot%3Bmartins%2C%20igor%26quot%3B&q=studentpapertype%20any%20%26quot%3BH1%20H2%26quot%3B)
+[Master’s theses in LUP ↗](https://lup.lub.lu.se/student-papers/search/publication?q=%26quot%3Bigor%26quot%3B%20and%20%26quot%3Bmartins%26quot%3B&q=supervisor%20exact%20%26quot%3Bmartins%2C%20igor%26quot%3B&q=studentpapertype%20any%20%26quot%3BH1%20H2%26quot%3B)
 
 ### Doctoral supervision
 
