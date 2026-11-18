@@ -10,7 +10,7 @@ from lxml import html
 from rjsmin import jsmin
 import tinycss2
 
-from asset_guards import CUSTOM_START, VENDOR_CSS, local_asset, reviewed_runtime, reviewed_vendor, warn
+from asset_guards import CUSTOM_START, VENDOR_CSS, local_asset, reviewed_runtime, reviewed_vendor, vendor_fingerprint, warn
 from language_pages import LANGUAGES, PAGES, serialize_document
 
 
@@ -76,7 +76,7 @@ def trimmed_css(source, used):
     vendor, boundary, custom = source.partition(CUSTOM_START)
     if not boundary or CUSTOM_START in custom:
         raise ValueError("missing or ambiguous custom CSS boundary")
-    if sha256(vendor.encode()).hexdigest() != VENDOR_CSS:
+    if vendor_fingerprint(vendor) != VENDOR_CSS:
         raise ValueError("Bootstrap vendor CSS differs from the reviewed Quarto build")
     return trim_rules(vendor, used) + boundary + custom
 

@@ -17,7 +17,7 @@ from lxml import html
 
 from language_pages import SWITCH_HANDLER, check_keys, dictionaries, local_css, local_srcset, local_url, translated_html
 from publication_records import publication_graph
-from asset_guards import CUSTOM_START, auxiliary_reasons, reviewed_runtime
+from asset_guards import CUSTOM_START, auxiliary_reasons, reviewed_runtime, vendor_fingerprint
 from optimize import JS_TYPES, choose_sheet, compact_script, minify_js, trimmed_css, trim_rules
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -142,6 +142,12 @@ class SpeedTest(unittest.TestCase):
                 reasons = auxiliary_reasons(doc, root, path, runtime)
                 self.assertEqual(set(reasons), {"icons"} if icons else set())
 
+    def test_vendor_css_fingerprint_ignores_rule_order(self):
+        # Quarto can write the same bslib blocks in another order between builds.
+        same = vendor_fingerprint(".a{x:1}/*! note */.b{y:2}@media print{.c{z:3}}")
+        self.assertEqual(same, vendor_fingerprint("@media print{.c{z:3}}.b{y:2}.a{x:1}"))
+        self.assertNotEqual(same, vendor_fingerprint(".a{x:1}.b{y:3}@media print{.c{z:3}}"))
+
     def test_theme_and_vendor_fallbacks(self):
         # A real upgrade must still be publishable with the full assets.
         # Use a fixed reviewed fixture independently of the site's current vendor.
@@ -171,7 +177,7 @@ class SpeedTest(unittest.TestCase):
                 reviewed = {"site_libs/bootstrap/bootstrap.min.js": {hashlib.sha256(script).hexdigest()}}
                 with (redirect_stdout(StringIO()) as log,
                       patch("asset_guards.VENDOR_SCRIPTS", reviewed),
-                      patch("optimize.VENDOR_CSS", hashlib.sha256(vendor.encode()).hexdigest())):
+                      patch("optimize.VENDOR_CSS", vendor_fingerprint(vendor))):
                     choose_sheet(root, {path: doc})
                 selected = root / doc.xpath('//link[@id="quarto-bootstrap"]/@href')[0]
                 if expected:

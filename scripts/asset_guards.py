@@ -4,6 +4,8 @@ from hashlib import sha256
 import re
 from urllib.parse import unquote, urlsplit
 
+import tinycss2
+
 # The original and production-minified copies of the reviewed Quarto 1.10.18 scripts.
 VENDOR_SCRIPTS = {
     "site_libs/bootstrap/bootstrap.min.js": {
@@ -19,7 +21,7 @@ VENDOR_SCRIPTS = {
         "88558602d6bc1066def016e996dc6deda351a9cf388a19484bd6eddb0329b539"},
 }
 CUSTOM_START = "/*! ibmartins custom rules */"
-VENDOR_CSS = "3a0a6aa88404161be5036eaa0a2d12e2d012cd80baef54ecf28cd6abda5d8369"
+VENDOR_CSS = "ab5d56a94c7c244d89af83cd7c8a7f34ccd802e8d9df9e7f95061aec0faa68b8"
 GUARDED_APPLY = re.compile(r"\bif\s*\(\s*window\.SiteI18n\s*\)\s*window\.SiteI18n\.apply\(\);")
 ICON = re.compile(r"""(?<![\w-])(?:bi-[\w-]+|bootstrap-icons)(?![\w-])|(?<=\.)bi(?![\w-])|(?<=["'`\s=])bi(?=["'`\s>])""")
 HIGHLIGHT = re.compile(r"(?<![\w-])(?:sourceCode|numberSource|sourceLine|code-with-filename|highlight|language-[\w-]+)(?![\w-])|--quarto-hl-")
@@ -40,6 +42,14 @@ def local_asset(site, page, url):
 def warn(page, reason):
     message = f"{page}: {reason}".replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
     print(f"::warning title=Speed fallback::{message}")
+
+
+def vendor_fingerprint(css):
+    """Hash the set of top-level rules. Quarto 1.10.18 sometimes writes the same
+    bslib blocks in a different order from one build to the next."""
+    rules = sorted(tinycss2.serialize([rule]) for rule in tinycss2.parse_stylesheet(css)
+                   if rule.type not in ("whitespace", "comment"))
+    return sha256("\n".join(rules).encode()).hexdigest()
 
 
 def reviewed_vendor(name, source):
@@ -144,7 +154,7 @@ def auxiliary_reasons(document, site, page, runtime):
             vendor, boundary, custom = css.partition(CUSTOM_START)
             # Our hashed derivative has the same vetted selectors, minus unused utilities.
             derivative = f"bootstrap-utilities-{sha256(css.encode()).hexdigest()[:32]}.min.css"
-            if boundary and (sha256(vendor.encode()).hexdigest() == VENDOR_CSS or asset.name == derivative):
+            if boundary and (asset.name == derivative or vendor_fingerprint(vendor) == VENDOR_CSS):
                 css = custom
         if "@import" in css:
             return dict.fromkeys(AUXILIARY, f"CSS import in {href}")
