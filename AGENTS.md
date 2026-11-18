@@ -16,11 +16,10 @@ Do not alter Porkbun DNS, GitHub Pages settings, or the custom domain unless the
 
 ## File routing
 
-- Homepage content: `index.qmd`
+- Homepage, biography and contact details: `index.qmd`
 - Publications and research output: `research.qmd`
 - Funded and active projects: `projects.qmd`
 - Teaching: `teaching.qmd`
-- Biography and contact details: `about.qmd`
 - Navigation, footer, site URL, and shared resources: `_quarto.yml`
 - Visual design: `styles.scss` and `site-v2.css`
 - Images: `images/`

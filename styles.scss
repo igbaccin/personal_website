@@ -418,3 +418,21 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
   .about-layout { --photo-w: 250px; gap: 40px; }
   .about-copy .social-links { grid-template-columns: repeat(2, auto); max-width: 380px; }
 }
+
+/* Home: the biography is the landing page. Greeting and name on top with the hourglass beside them, then the portrait and bio, then the latest publication. */
+.landing.landing-about { display: block; min-height: 0; padding: 44px 0 50px; }
+.landing-about .landing-head { margin-bottom: 28px; }
+.landing-about .landing-head h1 { margin-bottom: 0; }
+.landing-about .about-layout { padding: 0; }
+.landing-about .latest { margin: 34px 0 0; }
+.landing-about + .page-shell .contact-block { border-top: 0; }
+@media screen and (min-width: 768px) {
+  .landing-about .landing-head { position: relative; min-height: 92px; display: flex; flex-direction: column; justify-content: flex-end; }
+  .landing-about .hg-hero { top: auto; right: 0; bottom: -2px; width: 96px; height: 96px; }
+}
+@media (max-width: 767px) {
+  .landing.landing-about { padding: 36px 0 40px; }
+  .landing-about .landing-head { margin-bottom: 24px; }
+  .landing-about .about-layout { padding: 0; gap: 24px; }
+  .landing-about .latest { margin: 28px 0 0; }
+}

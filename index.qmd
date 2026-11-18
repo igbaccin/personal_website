@@ -7,39 +7,55 @@ canonical-url: https://ibmartins.com/
 
 ```{=html}
 <style>
-.landing-copy > * { animation: hc-up .9s cubic-bezier(.2,.7,.2,1) both; }
-.landing-copy > :nth-child(2) { animation-delay: .1s; }
-.landing-copy > :nth-child(3) { animation-delay: .2s; }
-.landing-copy > :nth-child(4) { animation-delay: .3s; }
-.landing-copy > :nth-child(5) { animation-delay: .4s; }
-.landing-copy > :nth-child(6) { animation-delay: .5s; }
-.landing-copy > :nth-child(7) { animation-delay: .6s; }
+.landing-head > *, .landing .about-layout, .landing .latest { animation: hc-up .9s cubic-bezier(.2,.7,.2,1) both; }
+.landing-head > h1 { animation-delay: .1s; }
+.landing .about-layout { animation-delay: .2s; }
+.landing .latest { animation-delay: .3s; }
+.landing .hg-hero { animation: none; }
 @keyframes hc-up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 .landing .hs-greeting { margin-bottom: 14px; }
 </style>
-<section class="landing" aria-labelledby="home-title">
+<section class="landing landing-about" aria-labelledby="home-title">
   <div class="page-shell">
-    <div class="landing-copy">
+    <div class="landing-head">
       <div class="hs-greeting" data-hs-greeting data-nosnippet>Hello.</div>
       <h1 id="home-title">Igor B. Martins</h1>
-      <p class="affiliation" data-i18n="aff">Postdoctoral researcher at Linköping University, also affiliated with Lund University</p>
-      <p class="intro" data-i18n="intro">I study how wealth and power shape who benefits from economic change, and why inequality can persist across generations.</p>
-      <div class="landing-actions">
-        <a class="primary-link" href="research.html"><span data-i18n="cta.research">Research &amp; publications</span> <span aria-hidden="true">→</span></a>
-        <a class="secondary-link" href="files/igor-b-martins-cv.pdf" target="_blank" rel="noopener"><span data-i18n="cta.cv">Curriculum vitae</span> <span aria-hidden="true">↗</span></a>
-      </div>
-      <p class="latest"><span class="latest-label" data-i18n="home.latest">Latest</span><a href="https://doi.org/10.1093/ereh/heag012">Capital and coercion: Slavery after the 1807 import ban in the Cape Colony</a><span class="latest-venue"><em>European Review of Economic History</em>, 2026</span></p>
-      <nav class="social-links" aria-label="Academic profiles, writing, and contact">
-        <a href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
-        <a href="https://liu.se/en/employee/igoma71" target="_blank" rel="noopener">Research portal <span aria-hidden="true">↗</span></a>
-        <a href="https://www.researchgate.net/profile/Igor-Martins" target="_blank" rel="noopener">ResearchGate <span aria-hidden="true">↗</span></a>
-        <a href="https://www.linkedin.com/in/ibmartins/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
-        <a href="https://ibmartins.substack.com/" target="_blank" rel="noopener">Substack <span aria-hidden="true">↗</span></a>
-        <a href="https://orcid.org/0000-0002-6141-9273" target="_blank" rel="noopener">ORCID <span aria-hidden="true">↗</span></a>
-      </nav>
+      <button class="hg-hero" type="button" data-hg-hero hidden><span class="visually-hidden" data-i18n="hg.turn">Turn the hourglass</span></button>
     </div>
-    <button class="hg-hero" type="button" data-hg-hero hidden><span class="visually-hidden" data-i18n="hg.turn">Turn the hourglass</span></button>
+    <div class="about-layout">
+      <div class="about-photo">
+        <img class="portrait" src="images/me.jpg" width="563" height="793" alt="Portrait of Igor B. Martins.">
+      </div>
+      <div class="about-copy">
+        <p data-i18n="about.p1">I am an economic historian studying the origins and persistence of inequality, with a primary focus on Africa. Much of my work follows slaveholding households in the Cape Colony through tax censuses, slave valuations, and compensation records. I show that they held enslaved people as capital and as collateral for credit. I follow them through emancipation in 1834 to see what the loss of that wealth meant for their farms, their families, and how long they lived, and what freedom meant for the people they had enslaved.</p>
+        <p data-i18n="about.p2">I am a postdoctoral researcher in the Department of Management and Engineering at Linköping University and am also affiliated with the Department of Economic History at Lund University. I hold an MSc and PhD in Economic History from Lund University and have previously worked as a postdoctoral researcher at Lund and the University of Cambridge. I am also one of the editors of Frontiers in African Economic History, the blog and newsletter of the African Economic History Network.</p>
+        <nav class="social-links" aria-label="Academic profiles, writing, and contact">
+          <a href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a>
+          <a href="https://liu.se/en/employee/igoma71" target="_blank" rel="noopener">Research portal <span aria-hidden="true">↗</span></a>
+          <a href="https://www.researchgate.net/profile/Igor-Martins" target="_blank" rel="noopener">ResearchGate <span aria-hidden="true">↗</span></a>
+          <a href="https://liu-se.academia.edu/IgorMartins" target="_blank" rel="noopener">Academia.edu <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/ibmartins/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://ibmartins.substack.com/" target="_blank" rel="noopener">Substack <span aria-hidden="true">↗</span></a>
+          <a href="https://aehnetwork.substack.com/" target="_blank" rel="noopener"><span class="link-label" data-i18n="link.frontiers">Frontiers blog</span> <span aria-hidden="true">↗</span></a>
+          <a href="https://orcid.org/0000-0002-6141-9273" target="_blank" rel="noopener">ORCID <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </div>
+    <p class="latest"><span class="latest-label" data-i18n="home.latest">Latest</span><a href="https://doi.org/10.1093/ereh/heag012">Capital and coercion: Slavery after the 1807 import ban in the Cape Colony</a><span class="latest-venue"><em>European Review of Economic History</em>, 2026</span></p>
   </div>
 </section>
+<div class="page-shell">
+<section class="contact-block" id="contact" aria-labelledby="contact-title">
+  <div><h2 id="contact-title" data-i18n="about.contact">Get in touch</h2></div>
+  <div>
+    <p><a href="mailto:igor.martins@liu.se">igor.martins@liu.se</a></p>
+    <p><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se</a></p>
+    <div class="contact-columns">
+      <div><h3 data-i18n="about.postal">Postal address</h3><p>Department of Management and Engineering (IEI)<br>Economics (NEK)<br>Linköping University<br>SE-581 83 Linköping, Sweden</p></div>
+      <div><h3 data-i18n="about.visiting">Visiting address</h3><p>Campus Valla, A-huset<br>Entrance 19C, Room 219:207<br>Linköping, Sweden</p></div>
+    </div>
+  </div>
+</section>
+</div>
 <script>if (window.SiteI18n) window.SiteI18n.apply();</script>
 ```

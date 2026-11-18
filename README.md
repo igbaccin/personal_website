@@ -16,11 +16,10 @@ The local folder and the GitHub repository contain the website inputs. GitHub Ac
 
 | File or folder | What it controls |
 | --- | --- |
-| `index.qmd` | Landing-page introduction, main links, academic profiles, and email |
+| `index.qmd` | Landing page: biography, portrait, academic profiles, latest publication, and contact details |
 | `research.qmd` | Publications, manuscripts, work in progress, essays, and media |
 | `projects.qmd` | Research projects and funding |
 | `teaching.qmd` | Courses, teaching history, supervision, and award |
-| `about.qmd` | Biography, affiliations, professional links, and contact details |
 | `_quarto.yml` | Navigation, footer, site address, CV link, and Quarto settings |
 | `styles.scss` and `site-v2.css` | Typography, layout, spacing, colours, and responsive design |
 | `images/` | Portraits, page photographs, and icons |
@@ -76,7 +75,7 @@ Before publishing a content update, check the following:
 
 The apex domain points to GitHub Pages, and `www.ibmartins.com` points to `igbaccin.github.io`. The repository's `CNAME` file preserves `ibmartins.com` during publication. DNS changes belong in Porkbun and should only be needed when the hosting arrangement changes.
 
-The `/home.html` redirect preserves the former Google Sites homepage path. GitHub Pages also serves the main pages at their `.html` URLs and extensionless paths.
+The `/home.html` redirect preserves the former Google Sites homepage path, and `/about.html` forwards to the homepage, which has carried the biography since November 2026. GitHub Pages also serves the main pages at their `.html` URLs and extensionless paths.
 
 ## Content conventions
 

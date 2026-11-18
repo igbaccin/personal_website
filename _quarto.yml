@@ -6,7 +6,6 @@ project:
     - research.qmd
     - projects.qmd
     - teaching.qmd
-    - about.qmd
     - 404.qmd
   resources:
     - images/
@@ -16,6 +15,7 @@ project:
     - i18n.js
     - hourglass.js
     - home.html
+    - about.html
 
 website:
   title: "Igor B. Martins"
@@ -45,8 +45,6 @@ website:
         text: Projects
       - href: teaching.qmd
         text: Teaching
-      - href: about.qmd
-        text: About
       - href: files/igor-b-martins-cv.pdf
         text: CV ↗
         target: _blank
