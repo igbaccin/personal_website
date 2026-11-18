@@ -36,7 +36,7 @@
       "intro": "Jag undersöker hur förmögenhet och makt påverkar vem som gynnas av ekonomiska förändringar och varför ojämlikhet kan bestå från en generation till nästa.",
       "cta.research": "Forskning och publikationer",
       "cta.cv": "Curriculum vitae",
-      "home.latest": "Senaste",
+      "home.latest": "Senaste", "home.next": "Nästa artikel", "w.with": "med",
 
       "w.and": "och", "w.oxand": " och",
 
@@ -125,7 +125,7 @@
       "intro": "Estudo como a riqueza e o poder determinam quem se beneficia das mudanças econômicas e por que a desigualdade pode persistir ao longo das gerações.",
       "cta.research": "Pesquisa e publicações",
       "cta.cv": "Currículo",
-      "home.latest": "Mais recente",
+      "home.latest": "Mais recente", "home.next": "Próximo artigo", "w.with": "com",
 
       "w.and": "e", "w.oxand": " e",
 

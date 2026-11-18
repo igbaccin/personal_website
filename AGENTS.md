@@ -22,6 +22,7 @@ Do not alter Porkbun DNS, GitHub Pages settings, or the custom domain unless the
 - Teaching: `teaching.qmd`
 - Navigation, footer, site URL, and shared resources: `_quarto.yml`
 - Visual design: `styles.scss` and `site-v2.css`
+- Typeface: EB Garamond, served from `fonts/` and declared in `site-v2.css`; the root size and the landing sizes are in the last blocks of `styles.scss`
 - Images: `images/`
 - CV and other downloads: `files/`
 - Deployment: `.github/workflows/render.yml`

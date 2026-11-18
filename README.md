@@ -23,6 +23,7 @@ The local folder and the GitHub repository contain the website inputs. GitHub Ac
 | `_quarto.yml` | Navigation, footer, site address, CV link, and Quarto settings |
 | `styles.scss` and `site-v2.css` | Typography, layout, spacing, colours, and responsive design |
 | `images/` | Portraits, page photographs, and icons |
+| `fonts/` | EB Garamond (SIL Open Font License), the site's typeface, served from the site itself |
 | `files/` | Downloadable files, including the CV |
 | `.github/workflows/render.yml` | Automated build and publication workflow |
 | `CNAME` | Permanent custom-domain setting for GitHub Pages |

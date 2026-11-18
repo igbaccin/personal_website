@@ -26,7 +26,7 @@ $code-bg: #1c2227;
   --muted: #acb4bb;
   --rule: #353c42;
   --paper: #121619;
-  --serif: Georgia, "Times New Roman", serif;
+  --serif: "EB Garamond", Georgia, "Times New Roman", serif;
   --measure: 1080px;
 }
 html { scroll-padding-top: 100px; }
@@ -423,14 +423,58 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
 .landing.landing-about { display: block; min-height: 0; padding: 44px 0 50px; }
 .landing-about .landing-head { margin-bottom: 28px; }
 .landing-about .landing-head .latest { margin: 0; }
+/* The Latest line holds several papers in one place: they share a grid cell, so the line keeps the height of the longest and nothing below it moves. */
+.latest-bar { display: flex; align-items: center; gap: 10px; margin: 0 0 4px; }
+.landing .latest .latest-bar .latest-label { display: inline; margin: 0; }
+.latest-count { font-size: .72rem; letter-spacing: .08em; color: #8f989f; font-variant-numeric: tabular-nums; }
+.latest-next { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 20px; margin-left: -4px; padding: 0; border: 0; background: none; color: #a9b3bc; font-size: .95rem; line-height: 1; cursor: pointer; transition: color .15s ease, transform .2s ease; }
+.latest-next:hover { color: #fff; transform: translateX(3px); }
+.latest-items { display: grid; margin: 0; padding: 0; list-style: none; }
+.latest-item { grid-area: 1 / 1; opacity: 0; visibility: hidden; transform: translateY(9px); transition: opacity .4s ease, transform .45s cubic-bezier(.2,.7,.2,1), visibility 0s .45s; }
+.latest-item.is-current { opacity: 1; visibility: visible; transform: none; transition-delay: .12s, .12s, 0s; }
+.latest-item.is-leaving { transform: translateY(-9px); }
+.landing .latest .latest-title { color: #e2e7eb; font-family: var(--serif); font-size: 1rem; }
 .landing-about .about-layout { padding: 0; }
 .landing-about + .page-shell .contact-block { border-top: 0; }
 @media screen and (min-width: 768px) {
   .landing-about .landing-head { position: relative; min-height: 92px; display: flex; flex-direction: column; justify-content: flex-end; }
   .landing-about .hg-hero { top: auto; right: 0; bottom: -2px; width: 96px; height: 96px; }
+  .landing-about .landing-head .latest { max-width: calc(100% - 130px); }
 }
 @media (max-width: 767px) {
   .landing.landing-about { padding: 36px 0 40px; }
   .landing-about .landing-head { margin-bottom: 24px; }
   .landing-about .about-layout { padding: 0; gap: 24px; }
+}
+
+/* Typeface: EB Garamond sets the whole site (files in fonts/, declared in site-v2.css). Its letters are small for their size, so the root size goes from 17 to 20 px. */
+:root { --serif: "EB Garamond", Georgia, "Times New Roman", serif; --bs-body-font-family: var(--serif); --bs-font-sans-serif: var(--serif); --bs-root-font-size: 20px; }
+.contact-columns h3 { font-family: inherit; }
+
+/* Home: a smaller portrait, and text at 92% of the site's size. */
+.landing-about .about-copy p { font-size: .92rem; }
+.landing-about .hs-greeting { font-size: .94rem; }
+.landing .latest a, .landing .latest .latest-title { font-size: .9rem; }
+.landing .latest .latest-venue { font-size: .77rem; }
+.landing-about .social-links a { font-size: .805rem; }
+@media screen and (min-width: 768px) {
+  .landing-about .about-layout { --photo-w: 260px; }
+  .landing-about .about-photo .portrait { max-height: calc(var(--photo-w) * 1.85); }
+  .landing-about .social-links a { font-size: .7475rem; }
+}
+@media screen and (min-width: 768px) and (max-width: 950px) {
+  .landing-about .about-layout { --photo-w: 205px; }
+}
+@media (max-width: 767px) {
+  .landing-about .about-photo { max-width: 200px; }
+  /* Without the greeting (Swedish, Portuguese) the Latest line is what sits beside the hourglass. */
+  .landing-about .hs-greeting[hidden] ~ .latest { padding-right: 64px; }
+}
+
+/* Tablet: the larger letters need a tighter menu to stay on one line. */
+@media (min-width: 768px) and (max-width: 899px) {
+  .navbar-brand { font-size: 1rem; white-space: nowrap; }
+  .navbar-nav { gap: 13px; }
+  .navbar .nav-link { font-size: .8rem; }
+  .navbar .hs-lang { margin-left: 4px; }
 }

@@ -9,6 +9,7 @@ project:
     - 404.qmd
   resources:
     - images/
+    - fonts/
     - files/
     - CNAME
     - .nojekyll
