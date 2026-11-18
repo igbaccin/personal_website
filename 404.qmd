@@ -1,6 +1,8 @@
 ---
 title: ""
 pagetitle: "Page not found"
+header-includes: |
+  <meta name="robots" content="noindex">
 ---
 
 ```{=html}

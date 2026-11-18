@@ -78,11 +78,12 @@ canonical-url: https://ibmartins.com/
       timer = setTimeout(tick, STEP);
     }, ms);
   }
-  next.hidden = false; count.hidden = false;
-  count.textContent = "1/" + items.length;
   next.addEventListener("click", function () { show(i + 1); wait(REST); });
   ["pointerenter", "focusin"].forEach(function (e) { box.addEventListener(e, function () { hold = true; }); });
   ["pointerleave", "focusout"].forEach(function (e) { box.addEventListener(e, function () { hold = false; }); });
+  box.classList.add("latest-carousel");
+  next.hidden = false; count.hidden = false;
+  count.textContent = "1/" + items.length;
   wait(STEP);
 })();
 </script>

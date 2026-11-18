@@ -15,16 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     link.setAttribute("title", "Opens in a new tab");
   });
 
-  document.querySelectorAll(".abstract-toggle").forEach(function (button) {
-    const text = document.getElementById(button.getAttribute("aria-controls"));
-    if (!text) return;
-    button.addEventListener("click", function () {
-      const open = button.getAttribute("aria-expanded") !== "true";
-      button.setAttribute("aria-expanded", open ? "true" : "false");
-      text.hidden = !open;
-    });
-  });
-
   const nav = document.querySelector(".section-nav");
   if (!nav) return;
   const root = document.documentElement;
@@ -43,7 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
     try { id = decodeURIComponent(location.hash.slice(1)); } catch (_) { return; }
     const el = document.getElementById(id);
     if (!el) return;
-    if (el.matches("details")) el.open = true;
+    for (let group = el.closest("details"); group; group = group.parentElement.closest("details")) {
+      group.open = true;
+    }
     nav.querySelectorAll("a").forEach(function (link) {
       if (link.hash === location.hash) link.setAttribute("aria-current", "location");
       else link.removeAttribute("aria-current");

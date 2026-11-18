@@ -1,6 +1,8 @@
 ---
 title: ""
 pagetitle: "Economic history teaching"
+image: images/social-card.jpg
+image-alt: "Igor B. Martins, economic historian at Linköping University and Lund University"
 description: "Teaching and supervision by Igor B. Martins at Lund University. Economic history, colonialism, emerging economies, and research methods."
 ---
 
@@ -17,7 +19,10 @@ description: "Teaching and supervision by Igor B. Martins at Lund University. Ec
     <div class="course-grid">
       <article class="course-card">
         <a class="course-link" href="https://kursplaner.lu.se/pdf/kurs/en/UTVC21">
-          <img src="images/course-utvc23.jpg" alt="" loading="lazy" width="600" height="320">
+          <img src="images/course-utvc21-600.webp"
+               srcset="images/course-utvc21-600.webp 600w, images/course-utvc21-750.webp 750w"
+               sizes="(min-width: 1160px) 527px, (min-width: 768px) calc(50vw - 53.5px), (min-width: 607px) calc(50vw - 33.5px), calc(100vw - 40px)"
+               alt="" loading="lazy" width="600" height="320">
           <h3>Development in a Historical Perspective</h3>
           <span class="syllabus-link"><span data-i18n="teach.syllabus">Course syllabus</span> <span aria-hidden="true">↗</span></span>
         </a>
@@ -27,7 +32,10 @@ description: "Teaching and supervision by Igor B. Martins at Lund University. Ec
 
       <article class="course-card">
         <a class="course-link" href="https://kursplaner.lu.se/pdf/kurs/sv/EOSE02">
-          <img src="images/course-eose02.jpg" alt="" loading="lazy" width="600" height="320">
+          <img src="images/course-eose02-600.webp"
+               srcset="images/course-eose02-600.webp 600w, images/course-eose02-960.webp 960w"
+               sizes="(min-width: 1160px) 527px, (min-width: 768px) calc(50vw - 53.5px), (min-width: 607px) calc(50vw - 33.5px), calc(100vw - 40px)"
+               alt="" loading="lazy" width="600" height="320">
           <h3>Colonialism and Economic Change</h3>
           <span class="syllabus-link"><span data-i18n="teach.syllabus.sv2">Syllabus (Swedish)</span> <span aria-hidden="true">↗</span></span>
         </a>
@@ -75,8 +83,8 @@ description: "Teaching and supervision by Igor B. Martins at Lund University. Ec
     <section class="supervision-section" id="supervision" aria-labelledby="supervision-title">
       <h2 id="supervision-title" data-i18n="teach.supervision">Supervision</h2>
       <div class="supervision-grid">
-        <article><h3 data-i18n="teach.ba.theses">Bachelor’s theses</h3><p><a href="https://lup.lub.lu.se/student-papers/search/publication?q=%26quot%3Bigor%26quot%3B%20and%20%26quot%3Bmartins%26quot%3B&amp;q=supervisor%20exact%20%26quot%3Bmartins%2C%20igor%26quot%3B&amp;q=studentpapertype%20exact%20M2"><span data-i18n="teach.lup">Supervised theses in LUP</span> <span aria-hidden="true">↗</span></a></p></article>
-        <article><h3 data-i18n="teach.ma.theses">Master’s theses</h3><p><a href="https://lup.lub.lu.se/student-papers/search/publication?q=%26quot%3Bigor%26quot%3B%20and%20%26quot%3Bmartins%26quot%3B&amp;q=supervisor%20exact%20%26quot%3Bmartins%2C%20igor%26quot%3B&amp;q=studentpapertype%20any%20%26quot%3BH1%20H2%26quot%3B"><span data-i18n="teach.lup">Supervised theses in LUP</span> <span aria-hidden="true">↗</span></a></p></article>
+        <article><h3 data-i18n="teach.ba.theses">Bachelor’s theses</h3><p><a href="https://lup.lub.lu.se/student-papers/search/publication?q=%26quot%3Bigor%26quot%3B%20and%20%26quot%3Bmartins%26quot%3B&amp;q=supervisor%20exact%20%26quot%3Bmartins%2C%20igor%26quot%3B&amp;q=studentpapertype%20exact%20M2"><span data-i18n="teach.lupBa">Bachelor’s theses in LUP</span> <span aria-hidden="true">↗</span></a></p></article>
+        <article><h3 data-i18n="teach.ma.theses">Master’s theses</h3><p><a href="https://lup.lub.lu.se/student-papers/search/publication?q=%26quot%3Bigor%26quot%3B%20and%20%26quot%3Bmartins%26quot%3B&amp;q=supervisor%20exact%20%26quot%3Bmartins%2C%20igor%26quot%3B&amp;q=studentpapertype%20any%20%26quot%3BH1%20H2%26quot%3B"><span data-i18n="teach.lupMa">Master’s theses in LUP</span> <span aria-hidden="true">↗</span></a></p></article>
         <article><h3 data-i18n="teach.phd">Doctoral supervision</h3><p><a href="https://portal.research.lu.se/en/persons/benjamin-chatterton/">Benjamin Chatterton <span aria-hidden="true">↗</span></a><br><span data-i18n="teach.cosup">Co-supervisor</span></p></article>
       </div>
     </section>

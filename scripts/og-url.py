@@ -1,31 +1,39 @@
-"""Give every built page an og:url tag that matches its canonical address.
-
-Runs in GitHub Actions after `quarto render`, because Quarto writes canonical
-links but no og:url. Sharing platforms (LinkedIn, Facebook, Slack) use og:url
-to treat every variant of a page's address as one page.
-"""
-import glob
-import os
+"""Finalize home links, sharing metadata and the sitemap after Quarto renders."""
+from pathlib import Path
 import re
 import sys
+from xml.etree import ElementTree as ET
 
-SITE = sys.argv[1] if len(sys.argv) > 1 else "_site"
-updated = 0
-for path in sorted(glob.glob(os.path.join(SITE, "*.html"))):
-    with open(path, encoding="utf-8") as f:
-        page = f.read()
-    if 'property="og:url"' in page or os.path.basename(path) == "404.html":
-        continue
-    canonical = None
-    for tag in re.findall(r"<link\b[^>]*>", page):
-        if re.search(r'\brel="canonical"', tag):
-            match = re.search(r'\bhref="([^"]+)"', tag)
-            canonical = match and match.group(1)
-            break
-    if not canonical:
-        continue
-    page = page.replace("</head>", f'<meta property="og:url" content="{canonical}">\n</head>', 1)
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(page)
-    updated += 1
-print(f"og:url added to {updated} pages")
+site = Path(sys.argv[1] if len(sys.argv) > 1 else "_site")
+home = "https://ibmartins.com/"
+content_pages = {"index.html", "research.html", "projects.html", "teaching.html"}
+
+for path in sorted(site.glob("*.html")):
+    original = path.read_text(encoding="utf-8")
+    page = re.sub(r'(<a\b[^>]*?\shref=")(?:\./|/)?index\.html"', r'\g<1>/"', original)
+    tags = []
+    if path.name in content_pages and 'property="og:type"' not in page:
+        tags.append('<meta property="og:type" content="website">')
+    if path.name != "404.html" and 'property="og:url"' not in page:
+        for tag in re.findall(r"<link\b[^>]*>", page):
+            if 'rel="canonical"' in tag:
+                href = re.search(r'\shref="([^"]+)"', tag)
+                if href:
+                    tags.append(f'<meta property="og:url" content="{href[1]}">')
+                break
+    if tags:
+        page = page.replace("</head>", "\n".join(tags) + "\n</head>", 1)
+    if page != original:
+        path.write_text(page, encoding="utf-8")
+
+path = site / "sitemap.xml"
+ns = "http://www.sitemaps.org/schemas/sitemap/0.9"
+ET.register_namespace("", ns)
+tree = ET.parse(path)
+for entry in tree.findall(f"{{{ns}}}url"):
+    loc = entry.find(f"{{{ns}}}loc")
+    if loc is not None and loc.text == home + "index.html":
+        loc.text = home
+    for stamp in entry.findall(f"{{{ns}}}lastmod"):
+        entry.remove(stamp)
+tree.write(path, encoding="utf-8", xml_declaration=True)
