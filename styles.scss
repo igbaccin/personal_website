@@ -409,7 +409,7 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
 @media screen and (min-width: 768px) {
   .about-layout { --photo-w: 320px; grid-template-columns: var(--photo-w) minmax(0,1fr); gap: 56px; align-items: stretch; }
   .about-photo { position: relative; min-height: var(--photo-w); }
-  .about-photo .portrait { position: absolute; top: 0; left: 0; height: 100%; max-height: calc(var(--photo-w) * 1.6); object-fit: cover; object-position: 50% 30%; }
+  .about-photo .portrait { position: absolute; top: 0; left: 0; height: 100%; max-height: calc(var(--photo-w) * 1.7); object-fit: cover; object-position: 50% 30%; }
   .about-copy { display: flex; flex-direction: column; }
   .about-copy .social-links { grid-template-columns: repeat(4, auto); max-width: 620px; margin-top: auto; }
   .about-copy .social-links a { white-space: nowrap; }

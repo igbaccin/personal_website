@@ -340,7 +340,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3><a href="https://www.aehnetwork.org/blog/theoretical-foundations-of-the-economics-of-slavery-enslaved-people-as-capital-investments-in-the-atlantic-world/">Theoretical foundations of the economics of slavery: Enslaved people as capital investments in the Atlantic world</a></h3>
+    <h3><a href="https://aehnetwork.substack.com/p/theoretical-foundations-of-the-economics-of-slavery-enslaved-people-as-capital-investments-in-the-atlantic-world">Theoretical foundations of the economics of slavery: Enslaved people as capital investments in the Atlantic world</a></h3>
     <p>2026 · I. Martins <span data-i18n="w.and">and</span> E. Green</p>
     <p class="journal"><em>Frontiers in African Economic History Blog</em></p>
 
@@ -403,7 +403,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3><a href="https://www.aehnetwork.org/blog/legacies-of-loss-the-health-outcomes-of-slaveholder-compensation-in-the-british-cape-colony/">Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony</a></h3>
+    <h3><a href="https://aehnetwork.substack.com/p/legacies-of-loss-the-health-outcomes-of-slaveholder-compensation-in-the-british-cape-colony">Legacies of loss: The health outcomes of slaveholder compensation in the British Cape Colony</a></h3>
     <p>2023 · I. Martins, J. Cilliers<span data-i18n="w.oxand">, and</span> J. Fourie</p>
     <p class="journal"><em>Frontiers in African Economic History Blog</em></p>
 
