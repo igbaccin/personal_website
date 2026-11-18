@@ -137,15 +137,15 @@ ul.task-list li input[type="checkbox"] {
 html.i18n-pending #quarto-header, html.i18n-pending #quarto-content, html.i18n-pending .nav-footer { visibility: hidden; }
 .hs-lang { display: flex; align-items: center; margin-left: 10px; }
 .hs-lang-group { display: flex; align-items: center; gap: 7px; }
-.hs-lang button { background: none; border: 0; padding: 4px 1px; font-size: .78rem; letter-spacing: .08em; color: #8f989f; cursor: pointer; }
-.hs-lang button:hover { color: #fff; }
-.hs-lang button[aria-pressed="true"] { color: #fff; text-decoration: underline; text-underline-offset: 7px; }
+.hs-lang a { text-decoration: none; background: none; border: 0; padding: 4px 1px; font-size: .78rem; letter-spacing: .08em; color: #8f989f; cursor: pointer; }
+.hs-lang a:hover { color: #fff; }
+.hs-lang a[aria-current="true"] { color: #fff; text-decoration: underline; text-underline-offset: 7px; }
 .hs-lang span { color: #4d565d; font-size: .78rem; }
 @media (max-width: 767px) { .hs-lang { margin: 8px 0 4px; } }
 .hs-greeting { font-family: var(--serif); font-style: italic; font-size: 1.05rem; letter-spacing: 0; text-transform: none; color: #cfd5da; margin: 0 0 16px; }
 </style>
 <!-- Refresh v when i18n.js changes so visitors receive the updated script. -->
-<script src="i18n.js?v=265dad2d30de"></script>
+<script src="i18n.js?v=eaf4929a323f"></script>
 
 
 <link rel="stylesheet" href="site-v2.css">
@@ -162,7 +162,7 @@ html.i18n-pending #quarto-header, html.i18n-pending #quarto-content, html.i18n-p
 <link rel="canonical" href="https://ibmartins.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ibmartins.com/">
-</head>
+<link rel="alternate" hreflang="en" href="https://ibmartins.com/"><link rel="alternate" hreflang="sv" href="https://ibmartins.com/sv/"><link rel="alternate" hreflang="pt" href="https://ibmartins.com/pt/"><link rel="alternate" hreflang="x-default" href="https://ibmartins.com/"></head>
 
 <body class="nav-fixed fullcontent quarto-light">
 
@@ -186,25 +186,25 @@ html.i18n-pending #quarto-header, html.i18n-pending #quarto-content, html.i18n-p
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link active" href="/" aria-current="page"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text" data-i18n="nav.home">Home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./research.html"> 
-<span class="menu-text">Research</span></a>
+<span class="menu-text" data-i18n="nav.research">Research</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./projects.html"> 
-<span class="menu-text">Projects</span></a>
+<span class="menu-text" data-i18n="nav.projects">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./teaching.html"> 
-<span class="menu-text">Teaching</span></a>
+<span class="menu-text" data-i18n="nav.teaching">Teaching</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./files/igor-b-martins-cv.pdf" target="_blank"> 
 <span class="menu-text">CV ↗</span></a>
   </li>  
-</ul>
+<li id="site-language-switcher" class="nav-item hs-lang"><div class="hs-lang-group" role="group" aria-label="Language"><a lang="en" hreflang="en" href="/" aria-current="true">EN</a><span aria-hidden="true">·</span><a lang="sv" hreflang="sv" href="/sv/">SV</a><span aria-hidden="true">·</span><a lang="pt" hreflang="pt" href="/pt/">PT</a></div></li></ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
@@ -773,7 +773,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 </div>   
     <div class="nav-footer-center">
-      &nbsp;
+       
     </div>
     <div class="nav-footer-right">
 <div id="contact" class="footer-contact">

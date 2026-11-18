@@ -1,22 +1,31 @@
-// Site languages: English is the page source; Swedish and Portuguese are applied
-// in the browser. Mark translatable text with data-i18n="key" (plain text) or
+// The build reads D to publish Swedish and Portuguese HTML. English pages
+// also support the existing in-place language preference. Mark translatable text with data-i18n="key" (plain text) or
 // data-i18n-html="key" (text with {a1}…{/a1} link placeholders, <em>, <br>,
 // <strong>). Never mark titles of publications, projects, or courses.
 (function () {
   var root = document.documentElement;
-  var SUPPORTED = { en: 1, sv: 1, pt: 1 };
+  var SUPPORTED = ["en", "sv", "pt"];
   var params = new URLSearchParams(location.search);
+  var pageLang = root.lang;
+  var localized = pageLang === "sv" || pageLang === "pt";
   var browser = (navigator.language || "en").slice(0, 2).toLowerCase();
-  var lang = (browser === "sv" || browser === "pt") ? browser : "en";
-  try {
-    var q = params.get("lang"), saved = localStorage.getItem("site-lang");
-    if (SUPPORTED[q]) { lang = q; localStorage.setItem("site-lang", q); }
-    else if (SUPPORTED[saved]) lang = saved;
-  } catch (e) {}
+  var lang = localized ? pageLang : (SUPPORTED.includes(browser) ? browser : "en");
+  if (!localized) {
+    var queryLang = params.get("lang");
+    if (SUPPORTED.includes(queryLang)) {
+      lang = queryLang;
+      try { localStorage.setItem("site-lang", lang); } catch (_) {}
+    } else {
+      try {
+        var saved = localStorage.getItem("site-lang");
+        if (SUPPORTED.includes(saved)) lang = saved;
+      } catch (_) {}
+    }
+  }
   root.setAttribute("data-lang", lang);
   root.lang = lang;
   root.setAttribute("xml:lang", lang);
-  if (lang !== "en") {
+  if (!localized && lang !== "en") {
     root.classList.add("i18n-pending");
     setTimeout(function () { root.classList.remove("i18n-pending"); }, 2500);
   }
@@ -26,8 +35,17 @@
     "lang.label": "Language"
   };
 
+  // Keep this object valid JSON so the post-render step can read it directly.
   var D = {
-    sv: {
+    "sv": {
+      "meta.index.title": "Igor B. Martins",
+      "meta.index.description": "Igor B. Martins är ekonomisk historiker vid Linköpings och Lunds universitet. Han forskar om ojämlikhet, slaveri, förmögenhet, arbete och ekonomisk motståndskraft i Afrika.",
+      "meta.research.title": "Forskning om Afrikas ekonomiska historia",
+      "meta.research.description": "Igor B. Martins publikationer om Afrikas ekonomiska historia, slaveri och emancipation, ojämlikhet, arbetsmarknader, klimat, förmögenhet och ekonomisk motståndskraft.",
+      "meta.projects.title": "Forskningsprojekt om Afrikas ekonomiska historia",
+      "meta.projects.description": "Forskningsprojekt där Igor B. Martins medverkar, om långsiktig ojämlikhet i Afrika, Kapkolonin, arbetets historia, klimat och motståndskraft mot ekonomiska kriser.",
+      "meta.teaching.title": "Undervisning i ekonomisk historia",
+      "meta.teaching.description": "Igor B. Martins undervisar och handleder vid Lunds universitet inom ekonomisk historia, kolonialism, tillväxtekonomier och forskningsmetoder.",
       "nav.home": "Hem", "nav.research": "Forskning", "nav.projects": "Projekt", "nav.teaching": "Undervisning", "nav.about": "Om mig",
       "footer.role": "Ekonomisk historiker", "footer.email": "E-post",
       "lang.label": "Språk",
@@ -122,7 +140,15 @@
       "e404.time": "Tiden har runnit ut för den här sidan.",
       "hg.turn": "Vänd timglaset"
     },
-    pt: {
+    "pt": {
+      "meta.index.title": "Igor B. Martins",
+      "meta.index.description": "Igor B. Martins é historiador econômico nas universidades de Linköping e Lund. Pesquisa desigualdade, escravidão, riqueza, trabalho e resiliência econômica na África.",
+      "meta.research.title": "Pesquisa em história econômica da África",
+      "meta.research.description": "Publicações de Igor B. Martins sobre a história econômica da África, escravidão e emancipação, desigualdade, mercados de trabalho, clima, riqueza e resiliência econômica.",
+      "meta.projects.title": "Projetos de pesquisa em história econômica da África",
+      "meta.projects.description": "Projetos de pesquisa com participação de Igor B. Martins sobre desigualdade de longo prazo na África, a Colônia do Cabo, história do trabalho, clima e resiliência a crises econômicas.",
+      "meta.teaching.title": "Ensino de história econômica",
+      "meta.teaching.description": "Ensino e orientação de Igor B. Martins na Universidade de Lund em história econômica, colonialismo, economias emergentes e métodos de pesquisa.",
       "nav.home": "Início", "nav.research": "Pesquisa", "nav.projects": "Projetos", "nav.teaching": "Ensino", "nav.about": "Sobre mim",
       "footer.role": "Historiador econômico", "footer.email": "E-mail",
       "lang.label": "Idioma",
@@ -261,7 +287,6 @@
 
   var ORIG = new WeakMap();
   var listeners = [];
-  var switcher = null;
   var greetSituation = null;
   var greetText = null;
 
@@ -356,31 +381,9 @@
     el.textContent = greetText;
   }
 
-  function buildSwitcher() {
-    var navs = document.querySelectorAll("#quarto-header .navbar-nav");
-    var nav = navs[navs.length - 1];
-    if (!nav) return;
-    var options = ["en", "sv", "pt"];
-    var item = document.createElement("li");
-    item.className = "nav-item hs-lang";
-    switcher = document.createElement("div");
-    switcher.className = "hs-lang-group";
-    switcher.setAttribute("role", "group");
-    switcher.innerHTML = options.map(function (l) {
-      return '<button type="button" data-set-lang="' + l + '" lang="' + l + '">' + l.toUpperCase() + "</button>";
-    }).join('<span aria-hidden="true">·</span>');
-    item.appendChild(switcher);
-    nav.appendChild(item);
-    switcher.addEventListener("click", function (e) {
-      var b = e.target.closest("[data-set-lang]");
-      if (!b) return;
-      lang = b.getAttribute("data-set-lang");
-      try { localStorage.setItem("site-lang", lang); } catch (err) {}
-      apply();
-    });
-  }
-
   function apply() {
+    // Translated pages arrive complete, including their navigation and greeting state.
+    if (localized) return;
     root.lang = lang;
     root.setAttribute("xml:lang", lang);
     root.setAttribute("data-lang", lang);
@@ -398,17 +401,20 @@
         return a.outerHTML;
       });
     });
-    each("#quarto-header .nav-link .menu-text", function (el) {
+    each("#quarto-header .nav-link .menu-text:not([data-i18n])", function (el) {
       var file = (el.closest("a").getAttribute("href") || "").split(/[?#]/)[0].split("/").pop() || "index.html";
       var key = NAV[file];
       if (!key) return;
       if (!ORIG.has(el)) ORIG.set(el, el.textContent);
       el.textContent = lookup(key) || ORIG.get(el);
     });
-    if (!switcher) buildSwitcher();
+    var switcher = document.querySelector(".hs-lang-group");
     if (switcher) {
       switcher.setAttribute("aria-label", t("lang.label"));
-      each(".hs-lang button", function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-set-lang") === lang ? "true" : "false"); });
+      each(".hs-lang a[hreflang]", function (link) {
+        if (link.hreflang === lang) link.setAttribute("aria-current", "true");
+        else link.removeAttribute("aria-current");
+      });
     }
     renderGreeting();
     listeners.forEach(function (fn) { try { fn(lang); } catch (e) {} });
@@ -422,6 +428,13 @@
   };
 
   document.addEventListener("DOMContentLoaded", function () {
+    var switcher = document.querySelector(".hs-lang-group");
+    if (switcher) switcher.addEventListener("click", function (event) {
+      var link = event.target.closest("a[hreflang]");
+      if (link) {
+        try { localStorage.setItem("site-lang", link.hreflang); } catch (_) {}
+      }
+    });
     apply();
     root.classList.remove("i18n-pending");
   });
