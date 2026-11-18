@@ -36,3 +36,8 @@ html.has-research-nav { scroll-padding-top: calc(var(--research-header-height, 9
 /* Scroll padding supplies the anchor offset without inserting a grid item. */
 html.has-research-nav #publications:target::before,
 html.has-research-nav details.research-group:target::before { content: none !important; display: none !important; }
+
+/* The home page carries the biography, so the photograph sits further back behind the text. */
+.landing-about::before {
+  background-image: linear-gradient(90deg, rgba(12,16,19,.95) 0%, rgba(12,16,19,.92) 45%, rgba(12,16,19,.84) 100%), linear-gradient(0deg, rgba(18,22,25,.7), transparent 45%), url("images/architecture.jpg");
+}

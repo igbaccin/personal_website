@@ -17,7 +17,7 @@ This site presents the research, publications, projects, and teaching of Igor B.
 
 - [Research and publications](https://ibmartins.com/research.llms.md): Published work, manuscripts under review, current research, essays, and media.
 - [Research projects](https://ibmartins.com/projects.llms.md): Funded work on inequality, colonial political economy, labour, climate, and economic resilience.
-- [Biography](https://ibmartins.com/about.llms.md): Research agenda, academic background, affiliations, and contact information.
+- [Biography](https://ibmartins.com/index.llms.md): Research agenda, academic background, affiliations, and contact information.
 - [Teaching and supervision](https://ibmartins.com/teaching.llms.md): Current and previous teaching, student supervision, and teaching recognition.
 - [Curriculum vitae](https://ibmartins.com/files/igor-b-martins-cv.pdf): Complete academic CV in PDF format.
 
