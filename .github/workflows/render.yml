@@ -28,8 +28,17 @@ jobs:
       - name: Render site
         run: quarto render
 
-      - name: Add og:url tags
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Finalize canonical home links and sitemap
         run: python3 scripts/og-url.py _site
+
+      - name: Generate publication records and language pages
+        run: |
+          python3 -m pip install -r scripts/requirements.txt
+          python3 scripts/language_pages.py _site
 
       - name: Add curated AI content index
         run: cp llms-index.txt _site/llms.txt

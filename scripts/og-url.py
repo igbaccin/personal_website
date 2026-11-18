@@ -30,10 +30,14 @@ path = site / "sitemap.xml"
 ns = "http://www.sitemaps.org/schemas/sitemap/0.9"
 ET.register_namespace("", ns)
 tree = ET.parse(path)
+changed = False
 for entry in tree.findall(f"{{{ns}}}url"):
     loc = entry.find(f"{{{ns}}}loc")
     if loc is not None and loc.text == home + "index.html":
         loc.text = home
+        changed = True
     for stamp in entry.findall(f"{{{ns}}}lastmod"):
         entry.remove(stamp)
-tree.write(path, encoding="utf-8", xml_declaration=True)
+        changed = True
+if changed:
+    tree.write(path, encoding="utf-8", xml_declaration=True)

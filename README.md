@@ -55,11 +55,19 @@ For a local preview, install [Quarto](https://quarto.org/docs/get-started/) and 
 quarto preview
 ```
 
-To render the complete site locally:
+To render the content and generate the publication records and language pages locally:
 
 ```sh
 quarto render
+python3 -m pip install -r scripts/requirements.txt
+python3 scripts/og-url.py _site
+python3 scripts/language_pages.py _site
+cp llms-index.txt _site/llms.txt
 ```
+
+The post-render step reads the English research page to identify publications with DOIs. It embeds the same records in the English, Swedish and Portuguese research pages. If a DOI entry cannot be read, the build prints its address and the reason for skipping it.
+
+The four content pages have dedicated Swedish and Portuguese URLs under `/sv/` and `/pt/`. Their text, page titles and descriptions come from the `D` dictionary in `i18n.js`. Add a Swedish and a Portuguese value for each new translation key used on a page, or the build fails and lists the missing values. The error page and machine-readable Markdown files stay in English.
 
 No application server, database, paid theme, external font service, or analytics service is required.
 

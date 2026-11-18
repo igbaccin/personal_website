@@ -31,16 +31,16 @@ Copy durable user-provided website assets into `images/` or `files/`, use descri
 
 ## Languages
 
-The site is written in English. Swedish and Portuguese are applied in the browser by `i18n.js`, which also adds the EN · SV · PT switcher to the navigation.
+Write the source pages in English. After rendering, `scripts/language_pages.py` reads the `D` dictionary in `i18n.js` and publishes the four content pages under `/sv/` and `/pt/`. Keep `D` valid JSON. Each page has language links to its counterparts. English URLs still support the existing in-place language preference.
 
 - Mark new translatable text with `data-i18n="key"` (plain text) or `data-i18n-html="key"` (text containing links: in the dictionary, `{a1}…{/a1}` stands for the element's first link, `{a2}…{/a2}` for the second; an empty `{a1}{/a1}` keeps the link's own text). Add every new key to both the `sv` and `pt` dictionaries in `i18n.js`.
 - Never translate titles of publications, projects, courses, journals, or other proper names.
 - Recurring words already have keys: `st.forthcoming`, `st.submitted`, `st.rr`, `st.preprint`, `st.report`, `st.phd`, `w.and`, `w.oxand`, `n.works`, `n.manuscripts`, `n.contributions`, `role.researcher`, `fund.award`, `proj.website`. A new publication or project normally needs no new keys.
-- Check changes with `?lang=sv` and `?lang=pt` added to a page address.
+- Check the dedicated language URLs and the legacy `?lang=` preference on English pages. The build fails if a page uses a key without both a Swedish and a Portuguese value.
 - The home-page greeting lines are in `GREET` in `i18n.js`. Keep the persona of an always-working, tired academic, and refer to Sweden rather than a city.
 ## Build step after rendering
 
-After `quarto render`, GitHub Actions runs `scripts/og-url.py`, which adds an `og:url` tag matching each page's canonical address. Local builds skip it.
+After `quarto render`, run `python3 scripts/og-url.py _site` followed by `python3 scripts/language_pages.py _site` (install `scripts/requirements.txt` first). The second step reads the rendered English Publications section, writes its DOI records to all three research pages, and adds the eight translated URLs to the sitemap. Inspect any warning about a skipped record before publishing.
 
 ## Completion evidence
 
