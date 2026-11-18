@@ -499,3 +499,14 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
   .nav-footer-right { justify-content: flex-start; }
   .footer-contact { grid-template-columns: 1fr; gap: 16px; }
 }
+
+/* Footer: the name lines up with the portrait above it, and the contact details span the width of the biography. */
+footer.footer .nav-footer { padding-left: 0; padding-right: 0; }
+@media (min-width: 768px) {
+  footer.footer .nav-footer { display: grid; grid-template-columns: 260px minmax(0, 1fr); column-gap: 56px; align-items: start; }
+  footer.footer .nav-footer-right { justify-content: stretch; }
+  .footer-contact { width: 100%; justify-content: space-between; }
+}
+@media (min-width: 768px) and (max-width: 950px) {
+  footer.footer .nav-footer { grid-template-columns: 205px minmax(0, 1fr); column-gap: 40px; }
+}
