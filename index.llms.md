@@ -4,6 +4,8 @@ Hello.
 
 # Igor B. Martins
 
+Latest[Capital and coercion: Slavery after the 1807 import ban in the Cape Colony](https://doi.org/10.1093/ereh/heag012)*European Review of Economic History*, 2026
+
 Turn the hourglass
 
 ![Portrait of Igor B. Martins.](images/me.jpg)
@@ -13,8 +15,6 @@ I am an economic historian studying the origins and persistence of inequality, w
 I am a postdoctoral researcher in the Department of Management and Engineering at Linköping University and am also affiliated with the Department of Economic History at Lund University. I hold an MSc and PhD in Economic History from Lund University and have previously worked as a postdoctoral researcher at Lund and the University of Cambridge. I am also one of the editors of Frontiers in African Economic History, the blog and newsletter of the African Economic History Network.
 
 [Google Scholar ↗](https://scholar.google.com/citations?user=VRHCkE0AAAAJ&hl=en) [Research portal ↗](https://liu.se/en/employee/igoma71) [ResearchGate ↗](https://www.researchgate.net/profile/Igor-Martins) [Academia.edu ↗](https://liu-se.academia.edu/IgorMartins) [LinkedIn ↗](https://www.linkedin.com/in/ibmartins/) [Substack ↗](https://ibmartins.substack.com/) [Frontiers blog ↗](https://aehnetwork.substack.com/) [ORCID ↗](https://orcid.org/0000-0002-6141-9273)
-
-Latest[Capital and coercion: Slavery after the 1807 import ban in the Cape Colony](https://doi.org/10.1093/ereh/heag012)*European Review of Economic History*, 2026
 
 ## Get in touch
 

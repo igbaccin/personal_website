@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b4822891b0b4ec5321f4fb13e4767e77.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-aa3639f12d52630ebc4d6b90c5acacfc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -233,10 +233,9 @@ html.i18n-pending #quarto-header, html.i18n-pending #quarto-content, html.i18n-p
 
 
 <style>
-.landing-head > *, .landing .about-layout, .landing .latest { animation: hc-up .9s cubic-bezier(.2,.7,.2,1) both; }
-.landing-head > h1 { animation-delay: .1s; }
+.landing-head > *, .landing .about-layout { animation: hc-up .9s cubic-bezier(.2,.7,.2,1) both; }
+.landing-head > .latest { animation-delay: .1s; }
 .landing .about-layout { animation-delay: .2s; }
-.landing .latest { animation-delay: .3s; }
 .landing .hg-hero { animation: none; }
 @keyframes hc-up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 .landing .hs-greeting { margin-bottom: 14px; }
@@ -245,7 +244,8 @@ html.i18n-pending #quarto-header, html.i18n-pending #quarto-content, html.i18n-p
   <div class="page-shell">
     <div class="landing-head">
       <div class="hs-greeting" data-hs-greeting="" data-nosnippet="">Hello.</div>
-      <h1 id="home-title">Igor B. Martins</h1>
+      <h1 id="home-title" class="visually-hidden">Igor B. Martins</h1>
+      <p class="latest"><span class="latest-label" data-i18n="home.latest">Latest</span><a href="https://doi.org/10.1093/ereh/heag012">Capital and coercion: Slavery after the 1807 import ban in the Cape Colony</a><span class="latest-venue"><em>European Review of Economic History</em>, 2026</span></p>
       <button class="hg-hero" type="button" data-hg-hero="" hidden=""><span class="visually-hidden" data-i18n="hg.turn">Turn the hourglass</span></button>
     </div>
     <div class="about-layout">
@@ -267,7 +267,6 @@ html.i18n-pending #quarto-header, html.i18n-pending #quarto-content, html.i18n-p
         </nav>
       </div>
     </div>
-    <p class="latest"><span class="latest-label" data-i18n="home.latest">Latest</span><a href="https://doi.org/10.1093/ereh/heag012">Capital and coercion: Slavery after the 1807 import ban in the Cape Colony</a><span class="latest-venue"><em>European Review of Economic History</em>, 2026</span></p>
   </div>
 </section>
 <div class="page-shell">
