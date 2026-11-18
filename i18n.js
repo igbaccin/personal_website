@@ -47,7 +47,7 @@
       "meta.teaching.title": "Undervisning i ekonomisk historia",
       "meta.teaching.description": "Igor B. Martins undervisar och handleder vid Lunds universitet inom ekonomisk historia, kolonialism, tillväxtekonomier och forskningsmetoder.",
       "nav.home": "Hem", "nav.research": "Forskning", "nav.projects": "Projekt", "nav.teaching": "Undervisning", "nav.about": "Om mig",
-      "footer.role": "Ekonomisk historiker", "footer.email": "E-post",
+      "footer.role": "Ekonomisk historiker", "skip": "Hoppa till huvudinnehållet", "footer.email": "E-post",
       "lang.label": "Språk",
 
       "aff": "Postdoktor vid Linköpings universitet, även knuten till Lunds universitet",
@@ -150,7 +150,7 @@
       "meta.teaching.title": "Ensino de história econômica",
       "meta.teaching.description": "Ensino e orientação de Igor B. Martins na Universidade de Lund em história econômica, colonialismo, economias emergentes e métodos de pesquisa.",
       "nav.home": "Início", "nav.research": "Pesquisa", "nav.projects": "Projetos", "nav.teaching": "Ensino", "nav.about": "Sobre mim",
-      "footer.role": "Historiador econômico", "footer.email": "E-mail",
+      "footer.role": "Historiador econômico", "skip": "Pular para o conteúdo principal", "footer.email": "E-mail",
       "lang.label": "Idioma",
 
       "aff": "Pesquisador na Universidade de Linköping, também vinculado à Universidade de Lund",
