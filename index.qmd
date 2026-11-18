@@ -19,7 +19,7 @@ canonical-url: https://ibmartins.com/
     <div class="landing-head">
       <div class="hs-greeting" data-hs-greeting data-nosnippet>Hello.</div>
       <h1 id="home-title" class="visually-hidden">Igor B. Martins</h1>
-      <p class="latest"><span class="latest-label" data-i18n="home.latest">Latest</span><a href="https://doi.org/10.1093/ereh/heag012">Capital and coercion: Slavery after the 1807 import ban in the Cape Colony</a><span class="latest-venue"><em>European Review of Economic History</em>, 2026</span></p>
+      <p class="latest"><span class="latest-label" data-i18n="home.latest">Latest</span><a href="https://doi.org/10.1093/ereh/heag012">Capital and coercion: Slavery after the 1807 import ban in the Cape Colony</a><span class="latest-venue"><em>European Review of Economic History</em> · 30(4), 645–694 · 2026</span></p>
       <button class="hg-hero" type="button" data-hg-hero hidden><span class="visually-hidden" data-i18n="hg.turn">Turn the hourglass</span></button>
     </div>
     <div class="about-layout">
