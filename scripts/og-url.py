@@ -19,10 +19,21 @@ def skip_link_first(page):
     return re.sub(r"(<body\b[^>]*>)", lambda m: m.group(1) + "\n" + SKIP_LINK, page, count=1)
 
 
+TOOLTIP_FILES = re.compile(r'\s*<(?:script src|link href)="[^"]*site_libs/quarto-html/(?:popper\.min\.js|tippy\.umd\.min\.js|tippy\.css)"[^>]*>(?:</script>)?')
+
+
+def drop_unused_tooltips(page):
+    """Quarto always ships its tooltip library; with every hover feature off, nothing on the page calls it."""
+    if page.count("tippyHover(") > 1:
+        return page
+    return TOOLTIP_FILES.sub("", page)
+
+
 for path in sorted(site.glob("*.html")):
     original = path.read_text(encoding="utf-8")
     page = re.sub(r'(<a\b[^>]*?\shref=")(?:\./|/)?index\.html"', r'\g<1>/"', original)
     page = skip_link_first(page)
+    page = drop_unused_tooltips(page)
     tags = []
     if path.name in content_pages and 'property="og:type"' not in page:
         tags.append('<meta property="og:type" content="website">')
