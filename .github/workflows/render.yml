@@ -32,13 +32,20 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install post-render tools
+        run: python3 -m pip install -r scripts/requirements.txt
+
       - name: Finalize canonical home links and sitemap
         run: python3 scripts/og-url.py _site
 
       - name: Generate publication records and language pages
-        run: |
-          python3 -m pip install -r scripts/requirements.txt
-          python3 scripts/language_pages.py _site
+        run: python3 scripts/language_pages.py _site
+
+      - name: Optimize final assets
+        run: python3 scripts/optimize.py _site
+
+      - name: Test final pages and JavaScript syntax
+        run: python3 scripts/test_postrender.py --site _site
 
       - name: Add curated AI content index
         run: cp llms-index.txt _site/llms.txt

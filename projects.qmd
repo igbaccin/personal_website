@@ -5,7 +5,9 @@ description: "Research projects involving Igor B. Martins on long-term inequalit
 ---
 
 ```{=html}
-<section class="page-banner research-banner projects-banner"><div class="page-shell">
+<section class="page-banner research-banner projects-banner">
+  <span class="banner-photo" aria-hidden="true"><span></span></span>
+  <div class="page-shell">
 <h1 data-i18n="proj.title">Projects</h1>
 <a class="project-link" href="https://portal.research.lu.se/en/persons/igor-martins/projects/"><span data-i18n="proj.lulink">All projects at Lund University</span> ↗</a>
 </div></section>

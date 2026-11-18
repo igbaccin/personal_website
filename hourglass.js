@@ -6,12 +6,10 @@
 // sand run out. Visitors who ask for reduced motion see the static mark.
 (function () {
   "use strict";
-  var NS = "http://www.w3.org/2000/svg";
-  var FRAME = '<g fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round">' +
-    '<path d="M18 8h28M18 56h28M20 8c0 14 10 18 12 24c-2 6-12 10-12 24M44 8c0 14-10 18-12 24c2 6 12 10 12 24"/></g>';
-  // Grains of the mark (images/mark.svg), nearest the neck first, and its bars.
-  var MARK_GRAINS = [[29, 25], [34, 22], [37, 19], [24, 19], [31, 17], [40, 15], [26, 13], [36, 12]];
-  var BARS = [[22.5, 50, 4], [26.5, 47, 7], [30.5, 43, 11], [34.5, 47, 7], [38.5, 50, 4]];
+  var mark = window.HourglassMark;
+  var FRAME = mark.frame, MARK_GRAINS = mark.grains, BARS = mark.bars;
+  var reduce = mark.reduce, clamp = mark.clamp, svgRoot = mark.svgRoot;
+  var markSvg = mark.markSvg, markDraw = mark.markDraw;
   // The live hourglass carries a ninth grain. Each grain lands on one of the
   // five bars of the mark, centre first, and melts into it: three grains make
   // the middle bar, two each shoulder, one each edge, so the finished pile is
@@ -32,54 +30,21 @@
   // Springs (stiffness, damping). The tilt and the bars are loose enough to
   // ring; the turn lands with a small overshoot; the bob is the thud after it.
   var TILT_K = 300, TILT_C = 11, TILT_MAX = 9, BAR_K = 420, BAR_C = 15, TURN_K = 230, TURN_C = 18, BOB_K = 600, BOB_C = 22;
-  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  function clamp(v, lo, hi) { return v < lo ? lo : v > hi ? hi : v; }
-
-  function svgRoot(className) {
-    var svg = document.createElementNS(NS, "svg");
-    svg.setAttribute("viewBox", "0 0 64 64");
-    svg.setAttribute("aria-hidden", "true");
-    svg.setAttribute("focusable", "false");
-    svg.setAttribute("class", className);
-    return svg;
-  }
-
-  // The static mark: grains above, bars below. p (0 to 1) drains the grains
-  // one after another into the bars; p = 0 is the mark as drawn.
-  function markSvg(className) {
-    var svg = svgRoot(className);
-    svg.innerHTML = FRAME + '<g fill="currentColor">' +
-      MARK_GRAINS.map(function (g) { return '<circle class="hg-grain" cx="' + g[0] + '" cy="' + g[1] + '" r="2"/>'; }).join("") +
-      '<circle class="hg-fall" cx="32" cy="37" r="2" opacity="0"/>' +
-      BARS.map(function (b) { return '<rect class="hg-bar" x="' + b[0] + '" y="' + b[1] + '" width="3" height="' + b[2] + '"/>'; }).join("") +
-      "</g>";
-    return svg;
-  }
-
-  function markDraw(svg, p, barsFull) {
-    var grains = svg.querySelectorAll(".hg-grain"), n = grains.length;
-    for (var i = 0; i < n; i++) grains[i].setAttribute("r", (2 * (1 - clamp(p * n - i, 0, 1))).toFixed(2));
-    svg.querySelector(".hg-fall").setAttribute("opacity", p > 0 && p < 1 ? "1" : "0");
-    var scale = barsFull ? 1 : Math.max(0.001, p);
-    Array.prototype.forEach.call(svg.querySelectorAll(".hg-bar"), function (bar) { bar.style.transform = "scaleY(" + scale + ")"; });
-  }
-
   // The live hourglass: nine grains that slide to the neck, fall and stack.
   function Sim(svg) {
     var self = this;
     this.svg = svg;
-    this.layer = document.createElementNS(NS, "g");
+    this.layer = document.createElementNS(svg.namespaceURI, "g");
     this.layer.setAttribute("fill", "currentColor");
     svg.appendChild(this.layer);
     this.bars = BARS.map(function (b) {
-      var r = document.createElementNS(NS, "rect");
+      var r = document.createElementNS(svg.namespaceURI, "rect");
       r.setAttribute("x", b[0]); r.setAttribute("width", "3");
       self.layer.appendChild(r);
       return { el: r, x: b[0], base: b[1] + b[2], full: b[2], count: 0, shown: 0, v: 0 };
     });
     this.grains = GRAINS.map(function (g) {
-      var c = document.createElementNS(NS, "circle");
+      var c = document.createElementNS(svg.namespaceURI, "circle");
       c.setAttribute("r", GRAIN_R);
       self.layer.appendChild(c);
       return { x: g[0], y: g[1], hx: g[0], hy: g[1], state: "rest", c: c, slot: -1, rank: 0, vy: 0, t0: 0, fx: 0, fy: 0, ctrl: null, landedAt: -1e9, hop: 0, hopV: 0 };
@@ -346,26 +311,6 @@
     this.raf = requestAnimationFrame(loop);
   };
 
-  function navLogo() {
-    var link = document.querySelector(".navbar-brand-logo");
-    if (!link || document.querySelector("[data-hg-hero]")) return;
-    var svg = markSvg("navbar-logo hg-logo");
-    link.setAttribute("aria-label", "Igor B. Martins, home");
-    link.appendChild(svg);
-    link.classList.add("hg-live");
-    function update() {
-      var room = document.documentElement.scrollHeight - window.innerHeight;
-      if (room < window.innerHeight * 0.5) { markDraw(svg, 0, true); return; }
-      var y = window.scrollY, p = clamp(y / room, 0, 1);
-      if (room - y < 2) p = 1;
-      markDraw(svg, p, false);
-    }
-    window.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update);
-    document.addEventListener("toggle", update, true);
-    update();
-  }
-
   function heroGlass() {
     var button = document.querySelector("[data-hg-hero]");
     if (!button) return;
@@ -463,7 +408,6 @@
       if (lost) { var b = markSvg("hg-svg"); markDraw(b, 1, true); lost.insertBefore(b, lost.firstChild); lost.hidden = false; }
       return;
     }
-    navLogo();
     heroGlass();
     lostGlass();
   }

@@ -23,7 +23,9 @@ Do not alter Porkbun DNS, GitHub Pages settings, or the custom domain unless the
 - Navigation, footer, site URL, and shared resources: `_quarto.yml`
 - Visual design: `styles.scss` and `site-v2.css`
 - Typeface: EB Garamond, served from `fonts/` and declared in `site-v2.css`; the root size and the landing sizes are in the last blocks of `styles.scss`
-- Images: `images/`
+- The shared navigation hourglass mark and scroll updates live in `hourglass-nav.js`. The home and 404 simulation lives in `hourglass.js`.
+- Images live in `images/`. After replacing `banner-research.webp`, `banner-projects.webp` or `me.jpg`, run `python3 scripts/image_variants.py` with Pillow installed. This manual command regenerates all six WebPs.
+- Post-render asset selection and warnings live in `scripts/asset_guards.py`, `scripts/og-url.py`, `scripts/language_pages.py` and `scripts/optimize.py`.
 - CV and other downloads: `files/`
 - Deployment: `.github/workflows/render.yml`
 
@@ -38,9 +40,12 @@ Write the source pages in English. After rendering, `scripts/language_pages.py` 
 - Recurring words already have keys: `st.forthcoming`, `st.submitted`, `st.rr`, `st.preprint`, `st.report`, `st.phd`, `w.and`, `w.oxand`, `n.works`, `n.manuscripts`, `n.contributions`, `role.researcher`, `fund.award`, `proj.website`. A new publication or project normally needs no new keys.
 - Check the dedicated language URLs and the legacy `?lang=` preference on English pages. The build fails if a page uses a key without both a Swedish and a Portuguese value.
 - The home-page greeting lines are in `GREET` in `i18n.js`. Keep the persona of an always-working, tired academic, and refer to Sweden rather than a city.
-## Build step after rendering
 
-After `quarto render`, run `python3 scripts/og-url.py _site` followed by `python3 scripts/language_pages.py _site` (install `scripts/requirements.txt` first). The second step reads the rendered English Publications section, writes its DOI records to all three research pages, and adds the eight translated URLs to the sitemap. Inspect any warning about a skipped record before publishing.
+## Build steps after rendering
+
+After `quarto render`, install `scripts/requirements.txt`. Run `scripts/og-url.py`, `scripts/language_pages.py`, then `scripts/optimize.py`, each with Python and the argument `_site`. Run `python3 scripts/test_postrender.py --site _site`. The language step writes DOI records to all three research pages and adds eight translated URLs to the sitemap. Review warnings about skipped records.
+
+The optimizer collects utility classes from the pages and scripts, trims reviewed Bootstrap utilities and minifies production scripts. In site scripts, write each class name as a whole literal such as `"d-flex"`. Keep the preserved custom-rules comment at the start of the rules in `styles.scss`. Edits after it keep the utility trim. Review **Speed fallback** warnings in Actions. Each names the page, the asset retained and the reason. A Quarto upgrade or a change to Sass defaults may require a new vendor review.
 
 ## Completion evidence
 

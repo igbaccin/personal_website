@@ -6,6 +6,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 
 ```{=html}
 <section class="page-banner research-banner" aria-labelledby="research-title">
+  <span class="banner-photo" aria-hidden="true"><span></span></span>
   <div class="page-shell">
     <h1 id="research-title" data-i18n="res.title">Research</h1>
   </div>

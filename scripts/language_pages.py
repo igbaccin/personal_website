@@ -10,6 +10,7 @@ from xml.etree import ElementTree as ET
 from lxml import etree, html
 
 from publication_records import one, publication_graph
+from asset_guards import reviewed_runtime, warn
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -17,6 +18,15 @@ ORIGIN = "https://ibmartins.com"
 PAGES = ("index", "research", "projects", "teaching")
 LANGUAGES = ("en", "sv", "pt")
 NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
+SWITCH_HANDLER = """document.addEventListener("DOMContentLoaded", function () {
+  var group = document.querySelector(".hs-lang-group");
+  if (group) group.addEventListener("click", function (event) {
+    var link = event.target.closest("a[hreflang]");
+    if (link) {
+      try { localStorage.setItem("site-lang", link.hreflang); } catch (_) {}
+    }
+  });
+});"""
 
 
 def page_path(page, lang):
@@ -189,6 +199,13 @@ def language_links(document, page, lang, label):
     etree.SubElement(document.head, "link", rel="alternate", hreflang="x-default", href=ORIGIN + page_path(page, "en"))
 
 
+def serialize_document(document):
+    # libxml's HTML4 serializer writes an end tag for the HTML5 void source.
+    # Self-closing syntax also keeps a second libxml parse from nesting the img.
+    data = html.tostring(document, encoding="utf-8", doctype="<!DOCTYPE html>")
+    return re.sub(rb"(<source\b[^<>]*?)></source>", rb"\1 />", data)
+
+
 def sitemap(site):
     ET.register_namespace("", NS)
     tree = ET.parse(site / "sitemap.xml")
@@ -208,6 +225,9 @@ def publish(site):
     pages = {}
     for page in PAGES:
         document = html.document_fromstring((site / f"{page}.html").read_bytes(), parser=html.HTMLParser(encoding="utf-8"))
+        for source in document.xpath("//picture/source[*]"):
+            for child in reversed(list(source)):
+                source.addnext(child)
         # Remove just the outputs owned by this step before building from English again.
         for old in document.xpath('//head/link[@rel="alternate"][@hreflang="en" or @hreflang="sv" or @hreflang="pt" or @hreflang="x-default"]'
                                   ' | //script[@id="publication-records"] | //*[@id="site-language-switcher"]'):
@@ -222,12 +242,20 @@ def publish(site):
     for page, english in pages.items():
         for lang in LANGUAGES:
             document = deepcopy(english)
+            output = site / ("" if lang == "en" else lang) / f"{page}.html"
             if lang != "en":
                 translate(document, page, lang, translations[lang])
+                reason = reviewed_runtime(document, site, output).language_reason()
+                if reason:
+                    warn(output.relative_to(site).as_posix(), f"keeping full i18n.js because {reason}")
+                else:
+                    for script in document.xpath("//script[@src]"):
+                        if urlsplit(script.get("src")).path == "/i18n.js":
+                            del script.attrib["src"]
+                            script.text = SWITCH_HANDLER
             label = "Language" if lang == "en" else translations[lang]["lang.label"]
             language_links(document, page, lang, label)
-            folder = site if lang == "en" else site / lang
-            outputs[folder / f"{page}.html"] = html.tostring(document, encoding="utf-8", doctype="<!DOCTYPE html>")
+            outputs[output] = serialize_document(document)
     outputs[site / "sitemap.xml"] = sitemap(site)
     for path, data in outputs.items():
         if not path.exists() or path.read_bytes() != data:

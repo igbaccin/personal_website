@@ -3,6 +3,10 @@ from pathlib import Path
 import re
 import sys
 from xml.etree import ElementTree as ET
+from lxml import html
+
+from asset_guards import auxiliary_reasons, reviewed_runtime, warn
+from language_pages import serialize_document
 
 site = Path(sys.argv[1] if len(sys.argv) > 1 else "_site")
 home = "https://ibmartins.com/"
@@ -22,18 +26,43 @@ def skip_link_first(page):
 TOOLTIP_FILES = re.compile(r'\s*<(?:script src|link href)="[^"]*site_libs/quarto-html/(?:popper\.min\.js|tippy\.umd\.min\.js|tippy\.css)"[^>]*>(?:</script>)?')
 
 
-def drop_unused_tooltips(page):
+def drop_unused_tooltips(page, path):
     """Quarto always ships its tooltip library; with every hover feature off, nothing on the page calls it."""
     if page.count("tippyHover(") > 1:
+        if TOOLTIP_FILES.search(page):
+            warn(path.name, "keeping tooltip assets because the page calls tippyHover")
         return page
     return TOOLTIP_FILES.sub("", page)
+
+
+def drop_unused_styles(page, path):
+    document = html.document_fromstring(page)
+    reasons = auxiliary_reasons(document, site, path, reviewed_runtime(document, site, path))
+    changed = False
+    for link in document.xpath('//head/link[@rel="stylesheet"]'):
+        if link.get("id") == "quarto-text-highlighting-styles":
+            kind = "highlighting"
+        elif link.get("href", "").split("?")[0].endswith("/bootstrap-icons.css"):
+            kind = "icons"
+        else:
+            continue
+        if kind in reasons:
+            pages = path.name
+            if path.name in content_pages:
+                pages += f", sv/{path.name}, pt/{path.name}"
+            warn(pages, f"keeping {kind} stylesheet because {reasons[kind]}")
+        else:
+            link.drop_tree()
+            changed = True
+    return serialize_document(document).decode() if changed else page
 
 
 for path in sorted(site.glob("*.html")):
     original = path.read_text(encoding="utf-8")
     page = re.sub(r'(<a\b[^>]*?\shref=")(?:\./|/)?index\.html"', r'\g<1>/"', original)
     page = skip_link_first(page)
-    page = drop_unused_tooltips(page)
+    page = drop_unused_tooltips(page, path)
+    page = drop_unused_styles(page, path)
     tags = []
     if path.name in content_pages and 'property="og:type"' not in page:
         tags.append('<meta property="og:type" content="website">')

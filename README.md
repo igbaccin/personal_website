@@ -23,6 +23,7 @@ The local folder and the GitHub repository contain the website inputs. GitHub Ac
 | `_quarto.yml` | Navigation, footer, site address, CV link, and Quarto settings |
 | `styles.scss` and `site-v2.css` | Typography, layout, spacing, colours, and responsive design |
 | `images/` | Portraits, page photographs, and icons |
+| `hourglass-nav.js` and `hourglass.js` | Shared navigation mark and scroll updates, and the home and 404 simulation, respectively |
 | `fonts/` | EB Garamond (SIL Open Font License), the site's typeface, served from the site itself |
 | `files/` | Downloadable files, including the CV |
 | `.github/workflows/render.yml` | Automated build and publication workflow |
@@ -62,10 +63,16 @@ quarto render
 python3 -m pip install -r scripts/requirements.txt
 python3 scripts/og-url.py _site
 python3 scripts/language_pages.py _site
+python3 scripts/optimize.py _site
+python3 scripts/test_postrender.py --site _site
 cp llms-index.txt _site/llms.txt
 ```
 
 The post-render step reads the English research page to identify publications with DOIs. It embeds the same records in the English, Swedish and Portuguese research pages. If a DOI entry cannot be read, the build prints its address and the reason for skipping it.
+
+The final optimizer trims unused Bootstrap utilities and minifies production JavaScript. Write class names as whole literals in site scripts so the optimizer can find them. The build checks pinned vendor scripts and the Bootstrap CSS before the custom-rules comment in `styles.scss`. A **Speed fallback** warning names the affected page and explains why it kept an asset, including scripts that need icons, highlighting or the full language API.
+
+After replacing `images/banner-research.webp`, `images/banner-projects.webp` or `images/me.jpg`, run `python3 scripts/image_variants.py` with Pillow installed. This manual step rebuilds the 960 and 1440 pixel banners and the 400 and 563 pixel portraits with Lanczos resizing, WebP quality 92 and the source colour profile.
 
 The four content pages have dedicated Swedish and Portuguese URLs under `/sv/` and `/pt/`. Their text, page titles and descriptions come from the `D` dictionary in `i18n.js`. Add a Swedish and a Portuguese value for each new translation key used on a page, or the build fails and lists the missing values. The error page and machine-readable Markdown files stay in English.
 

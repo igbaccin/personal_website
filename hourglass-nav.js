@@ -1,0 +1,82 @@
+// Shared hourglass drawing and the scroll-responsive navigation mark.
+(function () {
+  "use strict";
+  var NS = "http://www.w3.org/2000/svg";
+  var FRAME = '<g fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round">' +
+    '<path d="M18 8h28M18 56h28M20 8c0 14 10 18 12 24c-2 6-12 10-12 24M44 8c0 14-10 18-12 24c2 6 12 10 12 24"/></g>';
+  // Grains of the mark (images/mark.svg), nearest the neck first, and its bars.
+  var MARK_GRAINS = [[29, 25], [34, 22], [37, 19], [24, 19], [31, 17], [40, 15], [26, 13], [36, 12]];
+  var BARS = [[22.5, 50, 4], [26.5, 47, 7], [30.5, 43, 11], [34.5, 47, 7], [38.5, 50, 4]];
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function clamp(v, lo, hi) { return v < lo ? lo : v > hi ? hi : v; }
+
+  function svgRoot(className) {
+    var svg = document.createElementNS(NS, "svg");
+    svg.setAttribute("viewBox", "0 0 64 64");
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("focusable", "false");
+    svg.setAttribute("class", className);
+    return svg;
+  }
+
+  // The static mark: grains above, bars below. p (0 to 1) drains the grains
+  // one after another into the bars; p = 0 is the mark as drawn.
+  var nodes = new WeakMap();
+  function markSvg(className) {
+    var svg = svgRoot(className);
+    svg.innerHTML = FRAME + '<g fill="currentColor">' +
+      MARK_GRAINS.map(function (g) { return '<circle class="hg-grain" cx="' + g[0] + '" cy="' + g[1] + '" r="2"/>'; }).join("") +
+      '<circle class="hg-fall" cx="32" cy="37" r="2" opacity="0"/>' +
+      BARS.map(function (b) { return '<rect class="hg-bar" x="' + b[0] + '" y="' + b[1] + '" width="3" height="' + b[2] + '"/>'; }).join("") +
+      "</g>";
+    nodes.set(svg, { grains: svg.querySelectorAll(".hg-grain"), fall: svg.querySelector(".hg-fall"), bars: svg.querySelectorAll(".hg-bar") });
+    return svg;
+  }
+
+  function markDraw(svg, p, barsFull) {
+    var parts = nodes.get(svg), grains = parts.grains, n = grains.length;
+    for (var i = 0; i < n; i++) grains[i].setAttribute("r", (2 * (1 - clamp(p * n - i, 0, 1))).toFixed(2));
+    parts.fall.setAttribute("opacity", p > 0 && p < 1 ? "1" : "0");
+    var scale = barsFull ? 1 : Math.max(0.001, p);
+    Array.prototype.forEach.call(parts.bars, function (bar) { bar.style.transform = "scaleY(" + scale + ")"; });
+  }
+
+  function navLogo() {
+    var link = document.querySelector(".navbar-brand-logo");
+    if (!link || document.querySelector("[data-hg-hero]")) return;
+    var svg = markSvg("navbar-logo hg-logo");
+    link.setAttribute("aria-label", "Igor B. Martins, home");
+    link.appendChild(svg);
+    link.classList.add("hg-live");
+    var queued = false, previous = -1, previousFull;
+    function update() {
+      queued = false;
+      var room = document.documentElement.scrollHeight - window.innerHeight;
+      var full = room < window.innerHeight * 0.5;
+      var y = window.scrollY;
+      var progress = full ? 0 : room - y < 2 ? 1 : clamp(y / room, 0, 1);
+      if (progress === previous && full === previousFull) return;
+      previous = progress;
+      previousFull = full;
+      markDraw(svg, progress, full);
+    }
+    function schedule() {
+      if (!queued) {
+        queued = true;
+        requestAnimationFrame(update);
+      }
+    }
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    document.addEventListener("toggle", schedule, true);
+    update();
+  }
+
+  window.HourglassMark = { frame: FRAME, grains: MARK_GRAINS, bars: BARS, reduce: reduce,
+    clamp: clamp, svgRoot: svgRoot, markSvg: markSvg, markDraw: markDraw };
+  if (!reduce) {
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", navLogo);
+    else navLogo();
+  }
+})();

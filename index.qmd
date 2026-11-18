@@ -31,7 +31,10 @@ canonical-url: https://ibmartins.com/
     </div>
     <div class="about-layout">
       <div class="about-photo">
-        <img class="portrait" src="images/me.jpg" width="563" height="793" alt="Portrait of Igor B. Martins.">
+        <picture>
+          <source type="image/webp" srcset="images/me-400.webp 400w, images/me-563.webp 563w" sizes="(max-width: 767px) 200px, (max-width: 950px) 205px, 260px" />
+          <img class="portrait" src="images/me.jpg" width="563" height="793" alt="Portrait of Igor B. Martins.">
+        </picture>
       </div>
       <div class="about-copy">
         <p data-i18n="about.p1">I am an economic historian studying the origins and persistence of inequality, with a primary focus on Africa. Much of my work follows slaveholding households in the Cape Colony through tax censuses, slave valuations, and compensation records. I show that they held enslaved people as capital and as collateral for credit. I follow them through emancipation in 1834 to see what the loss of that wealth meant for their farms, their families, and how long they lived, and what freedom meant for the people they had enslaved.</p>
@@ -59,7 +62,7 @@ canonical-url: https://ibmartins.com/
   var items = box.querySelectorAll(".latest-item"), next = box.querySelector("[data-latest-next]"), count = box.querySelector("[data-latest-count]");
   if (items.length < 2) return;
   var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var i = 0, timer = 0, hold = false, STEP = 7000, REST = 20000;
+  var i = 0, timer = 0, deadline = 0, hovered = false, focused = false, STEP = 7000, REST = 20000;
   function show(n) {
     var old = items[i];
     i = (n + items.length) % items.length;
@@ -69,22 +72,40 @@ canonical-url: https://ibmartins.com/
     items[i].classList.add("is-current");
     count.textContent = (i + 1) + "/" + items.length;
   }
-  function wait(ms) {
-    clearTimeout(timer);
-    if (still) return;
-    timer = setTimeout(function tick() {
-      if (hold || document.hidden) { timer = setTimeout(tick, 1500); return; }
-      show(i + 1);
-      timer = setTimeout(tick, STEP);
-    }, ms);
+  var remaining = STEP;
+  function sync() {
+    if (still || hovered || focused || document.hidden) {
+      if (timer) {
+        remaining = Math.max(0, deadline - performance.now());
+        clearTimeout(timer);
+        timer = 0;
+      }
+    } else if (!timer) {
+      deadline = performance.now() + remaining;
+      timer = setTimeout(function () {
+        timer = 0;
+        show(i + 1);
+        remaining = STEP;
+        sync();
+      }, remaining);
+    }
   }
-  next.addEventListener("click", function () { show(i + 1); wait(REST); });
-  ["pointerenter", "focusin"].forEach(function (e) { box.addEventListener(e, function () { hold = true; }); });
-  ["pointerleave", "focusout"].forEach(function (e) { box.addEventListener(e, function () { hold = false; }); });
+  next.addEventListener("click", function () {
+    show(i + 1);
+    clearTimeout(timer);
+    timer = 0;
+    remaining = REST;
+    sync();
+  });
+  box.addEventListener("pointerenter", function () { hovered = true; sync(); });
+  box.addEventListener("pointerleave", function () { hovered = false; sync(); });
+  box.addEventListener("focusin", function () { focused = true; sync(); });
+  box.addEventListener("focusout", function (event) { focused = box.contains(event.relatedTarget); sync(); });
+  document.addEventListener("visibilitychange", sync);
   box.classList.add("latest-carousel");
   next.hidden = false; count.hidden = false;
   count.textContent = "1/" + items.length;
-  wait(STEP);
+  sync();
 })();
 </script>
 ```
