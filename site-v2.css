@@ -1,10 +1,12 @@
+.about-photo picture { display: contents; }
+
 /* Background photography is part of the page surface. */
 .research-banner h1 { margin-bottom: 0; }
 .section-nav { position: sticky; top: var(--research-header-height, 90px); z-index: 100; background: #121619; }
 html.has-research-nav { scroll-padding-top: calc(var(--research-header-height, 90px) + var(--research-nav-height, 76px) + 16px); }
 .section-nav a[aria-current="location"] { color: #fff; text-decoration: underline; }
 .landing::before,
-.research-banner::before,
+.banner-photo > span,
 .teaching-banner::before {
   content: "";
   position: absolute;
@@ -18,14 +20,44 @@ html.has-research-nav { scroll-padding-top: calc(var(--research-header-height, 9
   background-image: linear-gradient(90deg, rgba(12,16,19,.94) 0%, rgba(12,16,19,.86) 35%, rgba(12,16,19,.5) 65%, rgba(12,16,19,.22) 100%), linear-gradient(0deg, rgba(18,22,25,.7), transparent 45%), url("images/architecture.jpg");
   background-position: center, center, center 58%;
 }
-.research-banner::before {
-  background-image: linear-gradient(90deg, rgba(18,22,25,.96), rgba(18,22,25,.82) 60%, rgba(18,22,25,.55)), url("images/banner-research.webp");
+.research-banner {
+  --photo-full: url("images/banner-research.webp");
+  --photo-960: url("images/banner-research-960.webp");
+  --photo-1440: url("images/banner-research-1440.webp");
+}
+.projects-banner {
+  --photo-full: url("images/banner-projects.webp");
+  --photo-960: url("images/banner-projects-960.webp");
+  --photo-1440: url("images/banner-projects-1440.webp");
+}
+.banner-photo {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  container: banner / size;
+}
+.banner-photo > span {
+  background-image: linear-gradient(90deg, rgba(18,22,25,.96), rgba(18,22,25,.82) 60%, rgba(18,22,25,.55)), var(--banner-image, var(--photo-full));
   background-position: center, center 47%;
 }
-.projects-banner::before {
-  background-image: linear-gradient(90deg, rgba(18,22,25,.96), rgba(18,22,25,.82) 60%, rgba(18,22,25,.55)), url("images/banner-projects.webp");
-  background-position: center, center 47%;
+/* Budget both dimensions of the actual photo box, including wrapped text.
+   Each density descriptor fits the widest and tallest box in its tier. */
+@supports (background-image: image-set(url("") 1x)) {
+  @container banner (max-width: 1440px) and (max-height: 480px) {
+    .banner-photo > span { --banner-image: image-set(var(--photo-1440) 1x, var(--photo-full) 2x); }
+  }
+  @container banner (max-width: 960px) and (max-height: 320px) {
+    .banner-photo > span { --banner-image: image-set(var(--photo-960) 1x, var(--photo-1440) 1.5x, var(--photo-full) 2x); }
+  }
+  @container banner (max-width: 720px) and (max-height: 240px) {
+    .banner-photo > span { --banner-image: image-set(var(--photo-960) 1.333x, var(--photo-1440) 2x, var(--photo-full) 3x); }
+  }
+  @container banner (max-width: 480px) and (max-height: 160px) {
+    .banner-photo > span { --banner-image: image-set(var(--photo-960) 2x, var(--photo-1440) 3x, var(--photo-full) 4x); }
+  }
 }
+@media print { .banner-photo { display: none; } }
 .teaching-banner::before {
   background-image: linear-gradient(90deg, rgba(18,22,25,.96), rgba(18,22,25,.82) 60%, rgba(18,22,25,.55)), url("images/banner-teaching.webp");
   background-position: center, center 53%;
