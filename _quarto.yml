@@ -63,7 +63,11 @@ format:
     lang: en
     toc: false
     anchor-sections: false
-    smooth-scroll: true
+    smooth-scroll: false
+    code-copy: false
+    footnotes-hover: false
+    citations-hover: false
+    crossrefs-hover: false
     link-external-newwindow: false
     link-external-icon: false
     fig-responsive: true

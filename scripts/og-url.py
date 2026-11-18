@@ -1,4 +1,4 @@
-"""Finalize home links, sharing metadata and the sitemap after Quarto renders."""
+"""Finalize home links, the skip link, sharing metadata and the sitemap after Quarto renders."""
 from pathlib import Path
 import re
 import sys
@@ -7,10 +7,22 @@ from xml.etree import ElementTree as ET
 site = Path(sys.argv[1] if len(sys.argv) > 1 else "_site")
 home = "https://ibmartins.com/"
 content_pages = {"index.html", "research.html", "projects.html", "teaching.html"}
+SKIP = re.compile(r'\s*<a class="skip-link"[^>]*>.*?</a>', re.S)
+SKIP_LINK = '<a class="skip-link" href="#quarto-document-content" data-i18n="skip">Skip to main content</a>'
+
+
+def skip_link_first(page):
+    """Quarto places the skip link inside the page body; move it to the first place a keyboard reaches."""
+    if not SKIP.search(page):
+        return page
+    page = SKIP.sub("", page)
+    return re.sub(r"(<body\b[^>]*>)", lambda m: m.group(1) + "\n" + SKIP_LINK, page, count=1)
+
 
 for path in sorted(site.glob("*.html")):
     original = path.read_text(encoding="utf-8")
     page = re.sub(r'(<a\b[^>]*?\shref=")(?:\./|/)?index\.html"', r'\g<1>/"', original)
+    page = skip_link_first(page)
     tags = []
     if path.name in content_pages and 'property="og:type"' not in page:
         tags.append('<meta property="og:type" content="website">')
