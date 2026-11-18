@@ -4,7 +4,11 @@ Hello.
 
 # Igor B. Martins
 
-Latest[Capital and coercion: Slavery after the 1807 import ban in the Cape Colony](https://doi.org/10.1093/ereh/heag012)*European Review of Economic History* · 30(4), 645–694 · 2026
+LatestNext paper→
+
+- [Capital and coercion: Slavery after the 1807 import ban in the Cape Colony](https://doi.org/10.1093/ereh/heag012)*European Review of Economic History* · 30(4), 645–694 · 2026
+- [Theoretical foundations of the economics of slavery: Enslaved people as capital investments in the Atlantic world](https://doi.org/10.1017/S1740022825100296)*Journal of Global History* · 21(1), 22–40 · 2026 · with E. Green
+- [Retrieval-restricted reasoning: Supporting scholarly synthesis with language models](https://doi.org/10.1080/01615440.2026.2762836)*Historical Methods: A Journal of Quantitative and Interdisciplinary History* · 2026
 
 Turn the hourglass
 

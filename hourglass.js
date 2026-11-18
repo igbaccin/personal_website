@@ -1,8 +1,9 @@
 // The hourglass mark in motion. The navigation logo fills as a long page is
 // read. On the home page the hourglass is a small toy: the sand runs through
-// once per visit, hovering tilts it so the sand slides, a tap turns it over
-// and a drag spins it. The 404 page lets the sand run out. Visitors who ask
-// for reduced motion see the static mark.
+// once per visit, the glass twitches when the pointer arrives and leans after
+// it, a tap turns it over and a drag spins it. Everything that moves sits on
+// a spring, so it rings a little before it settles. The 404 page lets the
+// sand run out. Visitors who ask for reduced motion see the static mark.
 (function () {
   "use strict";
   var NS = "http://www.w3.org/2000/svg";
@@ -18,8 +19,19 @@
   var GRAINS = MARK_GRAINS.concat([[31, 11]]);
   var BAR_OF = [2, 1, 3, 2, 0, 4, 1, 3, 2];
   var BAR_GRAINS = [1, 2, 3, 2, 1];
+  // The live glass does not always pour the chart of the mark. Now and then
+  // a turn ends skewed, lopsided or twin-peaked: nine grains again, never
+  // more in a bar than its place under the glass can hold. HEIGHTS gives a
+  // bar's height by the number of grains in it.
+  var ODD = 0.35;
+  var SHAPES = [[1, 3, 3, 2, 0], [0, 2, 3, 3, 1], [1, 3, 4, 1, 0], [0, 1, 4, 3, 1], [1, 3, 1, 3, 1], [0, 3, 4, 2, 0], [0, 2, 4, 3, 0]];
+  var HEIGHTS = [0, 4, 7, 11, 14.5];
+  var GRAIN_R = 1.55;
   var MELT_MS = 260;
   var NECK_Y = 31.6, SLIDE_MS = 380, GAP_MS = 190, GRAVITY = 150;
+  // Springs (stiffness, damping). The tilt and the bars are loose enough to
+  // ring; the turn lands with a small overshoot; the bob is the thud after it.
+  var TILT_K = 300, TILT_C = 11, TILT_MAX = 9, BAR_K = 420, BAR_C = 15, TURN_K = 230, TURN_C = 18, BOB_K = 600, BOB_C = 22;
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function clamp(v, lo, hi) { return v < lo ? lo : v > hi ? hi : v; }
@@ -64,27 +76,45 @@
       var r = document.createElementNS(NS, "rect");
       r.setAttribute("x", b[0]); r.setAttribute("width", "3");
       self.layer.appendChild(r);
-      return { el: r, x: b[0], base: b[1] + b[2], full: b[2], count: 0, shown: 0 };
+      return { el: r, x: b[0], base: b[1] + b[2], full: b[2], count: 0, shown: 0, v: 0 };
     });
     this.grains = GRAINS.map(function (g) {
       var c = document.createElementNS(NS, "circle");
-      c.setAttribute("r", "2");
+      c.setAttribute("r", GRAIN_R);
       self.layer.appendChild(c);
-      return { x: g[0], y: g[1], hx: g[0], hy: g[1], state: "rest", c: c, slot: -1, rank: 0, vy: 0, t0: 0, fx: 0, fy: 0, ctrl: null, landedAt: -1e9 };
+      return { x: g[0], y: g[1], hx: g[0], hy: g[1], state: "rest", c: c, slot: -1, rank: 0, vy: 0, t0: 0, fx: 0, fy: 0, ctrl: null, landedAt: -1e9, hop: 0, hopV: 0 };
     });
-    this.taken = BAR_OF.map(function () { return false; });
+    this.plan(BAR_GRAINS);
+    this.taken = this.barOf.map(function () { return false; });
     this.angle = 0; this.target = 0; this.vel = 0; this.mode = "idle";
-    this.tilt = 0; this.tiltTarget = 0;
+    this.tilt = 0; this.tiltTarget = 0; this.tiltVel = 0;
+    this.bob = 0; this.bobVel = 0;
+    this.pouring = false; this.ripples = null; this.dizzy = false;
     this.nextRelease = Infinity;
     this.last = 0; this.raf = 0;
     this.render(0);
   }
 
+  // Plan a pour: how many grains each bar takes and the order they land in,
+  // the tallest bar first, then outwards, level by level.
+  Sim.prototype.plan = function (counts) {
+    var peak = counts.indexOf(Math.max.apply(null, counts)), order = [];
+    for (var level = 0; level < HEIGHTS.length; level++) {
+      [0, 1, -1, 2, -2, 3, -3, 4, -4].forEach(function (d) {
+        var i = peak + d;
+        if (i >= 0 && i < counts.length && counts[i] > level) order.push(i);
+      });
+    }
+    this.barGrains = counts;
+    this.barOf = counts === BAR_GRAINS ? BAR_OF : order;
+    this.bars.forEach(function (b, i) { b.full = HEIGHTS[counts[i]]; });
+  };
+
   // Where a falling grain is heading: the top of its bar as it will stand once
   // this grain has joined it.
   Sim.prototype.landing = function (slot) {
-    var bar = this.bars[BAR_OF[slot]];
-    return [bar.x + 1.5, bar.base - bar.full * (bar.count + 1) / BAR_GRAINS[BAR_OF[slot]]];
+    var bar = this.bars[this.barOf[slot]];
+    return [bar.x + 1.5, bar.base - bar.full * (bar.count + 1) / this.barGrains[this.barOf[slot]]];
   };
 
   Sim.prototype.settled = function () {
@@ -92,8 +122,8 @@
     this.grains.forEach(function (g, i) {
       g.state = "landed"; g.slot = i; g.landedAt = -1e9; self.taken[i] = true;
       var p = self.landing(i); g.x = p[0]; g.y = p[1];
-      g.rank = self.bars[BAR_OF[i]].count;
-      self.bars[BAR_OF[i]].count += 1;
+      g.rank = self.bars[self.barOf[i]].count;
+      self.bars[self.barOf[i]].count += 1;
     });
     this.bars.forEach(function (b) { b.shown = b.count; });
     this.render(0);
@@ -101,6 +131,16 @@
 
   Sim.prototype.pour = function (delay) {
     this.nextRelease = performance.now() + delay;
+    this.kick();
+  };
+
+  // A poke. The glass twitches on its tilt spring, loose grains hop and the
+  // bars jump like a startled chart, then everything rings back into place.
+  Sim.prototype.nudge = function (dir, strength) {
+    var s = strength || 1;
+    this.tiltVel += dir * 210 * s;
+    this.bars.forEach(function (b, i) { if (b.count) b.v += (i % 2 ? -1 : 1) * dir * 11 * s; });
+    this.grains.forEach(function (g) { if (g.state === "rest") g.hopV = 7 + 5 * Math.random(); });
     this.kick();
   };
 
@@ -120,8 +160,8 @@
   };
 
   Sim.prototype.freeSlot = function () {
-    for (var i = 0; i < BAR_OF.length; i++) if (!this.taken[i]) { this.taken[i] = true; return i; }
-    return BAR_OF.length - 1;
+    for (var i = 0; i < this.barOf.length; i++) if (!this.taken[i]) { this.taken[i] = true; return i; }
+    return this.barOf.length - 1;
   };
 
   // While the glass turns, the bars loosen into grains: whole bars up to 45
@@ -135,7 +175,7 @@
 
   // A landed grain's place inside its bar: stacked in the order it arrived.
   Sim.prototype.stackPos = function (g) {
-    var bar = this.bars[BAR_OF[g.slot]], n = BAR_GRAINS[BAR_OF[g.slot]];
+    var bar = this.bars[this.barOf[g.slot]], n = this.barGrains[this.barOf[g.slot]];
     return [bar.x + 1.5, bar.base - bar.full * (g.rank + 0.5) / n];
   };
 
@@ -147,11 +187,15 @@
     var self = this, turns = Math.round(this.angle / 180);
     this.angle = 0; this.target = 0; this.vel = 0;
     if (turns % 2 === 0) return;
-    this.taken = BAR_OF.map(function () { return false; });
-    this.bars.forEach(function (b) { b.count = 0; b.shown = 0; });
     this.grains.forEach(function (g) {
       if (g.state === "landed") { var p = self.stackPos(g); g.x = p[0]; g.y = p[1]; }
       g.x = 64 - g.x; g.y = 64 - g.y;
+    });
+    // A new pour, a new chart: usually the mark's, now and then an odd one.
+    this.plan(Math.random() < ODD ? SHAPES[Math.floor(Math.random() * SHAPES.length)] : BAR_GRAINS);
+    this.taken = this.barOf.map(function () { return false; });
+    this.bars.forEach(function (b) { b.count = 0; b.shown = 0; b.v = 0; });
+    this.grains.forEach(function (g) {
       if (g.y < 32) { g.state = "rest"; g.hx = g.x; g.hy = g.y; g.slot = -1; }
       else { g.state = "fall"; g.vy = 0; g.fx = g.x; g.fy = g.y; g.slot = self.freeSlot(); }
     });
@@ -174,23 +218,33 @@
     var busy = false, self = this;
 
     if (this.mode === "spring") {
-      this.vel += ((this.target - this.angle) * 140 - this.vel * 17) * dt;
+      this.vel += ((this.target - this.angle) * TURN_K - this.vel * TURN_C) * dt;
       this.angle += this.vel * dt;
-      if (Math.abs(this.target - this.angle) < 0.25 && Math.abs(this.vel) < 3) { this.angle = this.target; this.settleTurn(); this.mode = "idle"; }
+      if (Math.abs(this.target - this.angle) < 0.25 && Math.abs(this.vel) < 3) {
+        this.angle = this.target; this.settleTurn(); this.mode = "idle";
+        this.bobVel += 26;
+        // Turned too often in a row, the glass sways before it stands still.
+        if (this.dizzy) { this.dizzy = false; this.tiltVel += 420; }
+      }
       busy = true;
     } else if (this.mode === "drag") {
       busy = true;
     }
 
     var tt = this.mode === "idle" ? this.tiltTarget : 0;
-    this.tilt += (tt - this.tilt) * Math.min(1, dt * 9);
-    if (Math.abs(tt - this.tilt) > 0.02) busy = true; else this.tilt = tt;
+    this.tiltVel += ((tt - this.tilt) * TILT_K - this.tiltVel * TILT_C) * dt;
+    this.tilt += this.tiltVel * dt;
+    if (Math.abs(tt - this.tilt) > 0.02 || Math.abs(this.tiltVel) > 0.4) busy = true; else { this.tilt = tt; this.tiltVel = 0; }
+    this.bobVel += (-this.bob * BOB_K - this.bobVel * BOB_C) * dt;
+    this.bob += this.bobVel * dt;
+    if (Math.abs(this.bob) > 0.02 || Math.abs(this.bobVel) > 0.4) busy = true; else { this.bob = 0; this.bobVel = 0; }
 
     if (this.mode === "idle") {
       if (now >= this.nextRelease) {
         var next = this.nearestResting();
         if (next) {
-          next.state = "slide"; next.t0 = now; next.fx = next.x; next.fy = next.y;
+          next.state = "slide"; next.t0 = now; next.fx = next.x; next.fy = next.y; next.hop = 0; next.hopV = 0;
+          this.pouring = true;
           next.ctrl = [next.x + (32 - next.x) * 0.7, next.y + (NECK_Y - next.y) * 0.5];
           this.nextRelease = now + GAP_MS;
         } else {
@@ -200,8 +254,14 @@
       if (this.nextRelease < Infinity) busy = true;
       this.grains.forEach(function (g) {
         if (g.state === "rest") {
-          var tx = g.hx + self.tilt * 0.45;
-          g.x += (tx - g.x) * Math.min(1, dt * 8); g.y = g.hy;
+          var tx = g.hx + clamp(self.tilt, -TILT_MAX, TILT_MAX) * 0.3;
+          g.x += (tx - g.x) * Math.min(1, dt * 8);
+          if (g.hop > 0 || g.hopV > 0) {
+            g.hopV -= 90 * dt; g.hop += g.hopV * dt;
+            if (g.hop <= 0) { g.hop = 0; g.hopV = g.hopV < -5 ? -g.hopV * 0.35 : 0; }
+            busy = true;
+          }
+          g.y = g.hy - g.hop;
           if (Math.abs(tx - g.x) > 0.02) busy = true; else g.x = tx;
         } else if (g.state === "slide") {
           var u = (now - g.t0) / SLIDE_MS;
@@ -221,8 +281,8 @@
           g.x = g.fx + (s[0] - g.fx) * (1 - (1 - frac) * (1 - frac));
           if (g.y >= s[1]) {
             g.x = s[0]; g.y = s[1]; g.state = "landed"; g.landedAt = now;
-            g.rank = self.bars[BAR_OF[g.slot]].count;
-            self.bars[BAR_OF[g.slot]].count += 1;
+            g.rank = self.bars[self.barOf[g.slot]].count;
+            self.bars[self.barOf[g.slot]].count += 1;
           }
           busy = true;
         } else if (g.state === "landed" && now - g.landedAt < MELT_MS) {
@@ -230,12 +290,24 @@
         }
       });
       this.bars.forEach(function (b) {
-        if (b.shown !== b.count) {
-          b.shown += (b.count - b.shown) * Math.min(1, dt * 10);
-          if (Math.abs(b.count - b.shown) < 0.02) b.shown = b.count;
-          busy = true;
-        }
+        b.v += ((b.count - b.shown) * BAR_K - b.v * BAR_C) * dt;
+        b.shown += b.v * dt;
+        if (Math.abs(b.count - b.shown) > 0.01 || Math.abs(b.v) > 0.05) busy = true; else { b.shown = b.count; b.v = 0; }
       });
+      // The finished chart takes a bow: one ripple across the bars.
+      if (this.pouring && this.nextRelease === Infinity && this.grains.every(function (g) { return g.state === "landed" && now - g.landedAt > MELT_MS; })) {
+        this.pouring = false;
+        this.ripples = this.bars.map(function (b, i) { return now + 140 + i * 70; });
+      }
+      if (this.ripples) {
+        var waiting = 0;
+        this.ripples = this.ripples.map(function (at, i) {
+          if (at && now >= at) { self.bars[i].v += 6; return 0; }
+          if (at) waiting += 1;
+          return at;
+        });
+        if (waiting) busy = true; else this.ripples = null;
+      }
     }
     this.render(now);
     return busy;
@@ -244,22 +316,23 @@
   Sim.prototype.render = function (now) {
     var self = this, loose = this.looseness();
     this.grains.forEach(function (g) {
-      var r = 2, o = 1, x = g.x, y = g.y;
+      var r = GRAIN_R, o = 1, x = g.x, y = g.y;
       if (g.state === "landed") {
         // The grain melts into its bar as the bar rises to take it, and
         // reappears from inside the bar when the glass is turned.
         var u = clamp((now - g.landedAt) / MELT_MS, 0, 1), v = Math.max(1 - u, loose);
-        r = 2 * v; o = v;
+        r = GRAIN_R * v; o = v;
         if (loose > 0) { var p = self.stackPos(g); x = g.x + (p[0] - g.x) * loose; y = g.y + (p[1] - g.y) * loose; }
       }
       g.c.setAttribute("cx", x.toFixed(2)); g.c.setAttribute("cy", y.toFixed(2));
       g.c.setAttribute("r", r.toFixed(2)); g.c.setAttribute("opacity", o.toFixed(2));
     });
     this.bars.forEach(function (b, i) {
-      var h = b.full * b.shown / BAR_GRAINS[i] * (1 - loose);
+      var n = self.barGrains[i], h = n ? b.full * b.shown / n * (1 - loose) : 0;
       b.el.setAttribute("y", (b.base - h).toFixed(2)); b.el.setAttribute("height", Math.max(0, h).toFixed(2));
     });
-    this.svg.style.transform = "rotate(" + (this.angle + this.tilt).toFixed(2) + "deg)";
+    var stretch = clamp(Math.abs(this.vel) / 22000, 0, 0.05);
+    this.svg.style.transform = "translateY(" + (this.bob * 100 / 64).toFixed(2) + "%) rotate(" + (this.angle + this.tilt).toFixed(2) + "deg) scale(" + (1 - stretch).toFixed(3) + "," + (1 + stretch).toFixed(3) + ")";
   };
 
   Sim.prototype.kick = function () {
@@ -304,7 +377,7 @@
     try { seen = sessionStorage.getItem("hg-settled") === "1"; sessionStorage.setItem("hg-settled", "1"); } catch (e) {}
     if (seen) sim.settled(); else sim.pour(700);
 
-    var drag = null, suppressClick = false;
+    var drag = null, suppressClick = false, linger = 0, turns = [];
     function centre() {
       var r = button.getBoundingClientRect();
       return { x: r.left + r.width / 2, y: r.top + r.height / 2, w: r.width };
@@ -322,14 +395,26 @@
         if (Math.abs(e.clientX - drag.x) + Math.abs(e.clientY - drag.y) > 6) drag.moved = true;
         sim.kick();
       } else if (e.pointerType === "mouse") {
-        sim.tiltTarget = clamp((e.clientX - c.x) / (c.w / 2), -1, 1) * 5;
+        sim.tiltTarget = clamp((e.clientX - c.x) / (c.w / 2), -1, 1) * TILT_MAX;
         sim.kick();
       }
     });
-    button.addEventListener("pointerleave", function () { if (!drag) { sim.tiltTarget = 0; sim.kick(); } });
+    button.addEventListener("pointerenter", function (e) {
+      if (e.pointerType !== "mouse" || drag || sim.mode !== "idle") return;
+      sim.nudge(e.clientX < centre().x ? 1 : -1);
+      // Nothing happening? The glass shakes once, impatiently.
+      clearTimeout(linger);
+      linger = setTimeout(function () {
+        if (drag || sim.mode !== "idle") return;
+        sim.nudge(1, 0.8);
+        setTimeout(function () { if (!drag && sim.mode === "idle") sim.nudge(-1, 0.8); }, 130);
+      }, 2400);
+    });
+    button.addEventListener("pointerleave", function () { clearTimeout(linger); if (!drag) { sim.tiltTarget = 0; sim.kick(); } });
     button.addEventListener("pointerdown", function (e) {
       if (e.button !== 0) return;
       var c = centre();
+      clearTimeout(linger);
       drag = { pa: pointerAngle(e, c), x: e.clientX, y: e.clientY, moved: false, w: 0, t: performance.now() };
       sim.mode = "drag"; sim.vel = 0; sim.tiltTarget = 0;
       try { button.setPointerCapture(e.pointerId); } catch (err) {}
@@ -353,6 +438,10 @@
     button.addEventListener("pointercancel", release);
     button.addEventListener("click", function () {
       if (suppressClick) { suppressClick = false; return; }
+      var now = performance.now();
+      turns = turns.filter(function (at) { return now - at < 2600; });
+      turns.push(now);
+      if (turns.length >= 4) { sim.dizzy = true; turns = []; }
       sim.flip();
     });
   }
