@@ -19,11 +19,16 @@ html.has-research-nav { scroll-padding-top: calc(var(--research-header-height, 9
   background-position: center, center, center 58%;
 }
 .research-banner::before {
+  background-image: linear-gradient(90deg, rgba(18,22,25,.96), rgba(18,22,25,.82) 60%, rgba(18,22,25,.55)), url("images/banner-research.webp");
+  background-position: center, center 47%;
+}
+/* Projects keeps the archival document until its own banner is chosen. */
+.projects-banner::before {
   background-image: linear-gradient(90deg, rgba(18,22,25,.96), rgba(18,22,25,.82) 60%, rgba(18,22,25,.55)), url("images/archive.jpg");
   background-position: center, center 47%;
 }
 .teaching-banner::before {
-  background-image: linear-gradient(90deg, rgba(18,22,25,.96), rgba(18,22,25,.88) 60%, rgba(18,22,25,.7)), url("images/study.jpg");
+  background-image: linear-gradient(90deg, rgba(18,22,25,.96), rgba(18,22,25,.82) 60%, rgba(18,22,25,.55)), url("images/banner-teaching.webp");
   background-position: center, center 53%;
 }
 @media (max-width: 767px) {
