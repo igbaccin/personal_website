@@ -57,7 +57,7 @@ Slavery is usually analysed as an extreme form of labour coercion. This article 
 
 I. Martins
 
-*European Review of Economic History* · heag012 Abstract
+*European Review of Economic History* · 30(4), 645–694 Abstract
 
 After Britain banned slave imports in 1807, wealthier households in Stellenbosch and Graaff-Reinet kept accumulating enslaved people, holding them as capital assets in a colony where capital was scarce.
 
