@@ -229,7 +229,7 @@ A. Palacio and I. Martins
 
 ## Under review
 
-5 manuscripts
+4 manuscripts
 
 ### [Weather as a vector of inequality](https://www.researchsquare.com/article/rs-9859396/v1)
 
@@ -244,18 +244,6 @@ As climate change alters weather risk, wealth is often treated as a buffer after
 Linking weather to 25,000 household tax records, we show that wealthier households more often owned the commodities that seasonal weather favoured, and years when weather raised returns to those commodities were years of wider inequality in movable assets.
 
 [Read preprint ↗](https://www.researchsquare.com/article/rs-9859396/v1) [Replication package ↗](https://www.icpsr.umich.edu/sites/icpsr/view/studies/248487)
-
-### Democracy and rural inequality in Kenya, 1997–2010
-
-J. Makuei and I. Martins
-
-*African Affairs* · Revise and resubmit
-
-Abstract
-
-Democratic transitions can expand access to rural infrastructure and productive inputs. It remains unclear whether they can reduce entrenched inequalities in household wealth. We examine this issue in the context of Kenya’s first inter-party transfer of presidential power. We combine electoral outcomes in 31 constituencies with five rounds of rural household surveys from 1997 to 2010. Fertiliser use and road and market access improved over time. In contrast, the spatial distribution of household assets was far more stable: constituencies that were initially advantaged stayed so. Moreover, we find no subsequent economic or public programme benefits for constituencies that elected Mwai Kibaki as president in 2007. Kenya illustrates a key challenge facing Africa’s new democracies. While access can improve over a decade, entrenched inequality can persist.
-
-Across 31 Kenyan constituencies from 1997 to 2010, rural households gained better access to fertiliser, roads and markets after the first democratic transfer of power, while the gap in household wealth between constituencies barely changed.
 
 ### Living standards in Ghana, 1955–2005
 
@@ -297,7 +285,17 @@ The Dutch East India Company auctioned the right to sell alcohol at the Cape eve
 
 ## Work in progress
 
-6 manuscripts
+7 manuscripts
+
+### Democracy and rural inequality in Kenya, 1997–2010
+
+J. Makuei and I. Martins
+
+Abstract
+
+Democratic transitions can expand access to rural infrastructure and productive inputs. It remains unclear whether they can reduce entrenched inequalities in household wealth. We examine this issue in the context of Kenya’s first inter-party transfer of presidential power. We combine electoral outcomes in 31 constituencies with five rounds of rural household surveys from 1997 to 2010. Fertiliser use and road and market access improved over time. In contrast, the spatial distribution of household assets was far more stable: constituencies that were initially advantaged stayed so. Moreover, we find no subsequent economic or public programme benefits for constituencies that elected Mwai Kibaki as president in 2007. Kenya illustrates a key challenge facing Africa’s new democracies. While access can improve over a decade, entrenched inequality can persist.
+
+Across 31 Kenyan constituencies from 1997 to 2010, rural households gained better access to fertiliser, roads and markets after the first democratic transfer of power, while the gap in household wealth between constituencies barely changed.
 
 ### Income inequality in late colonial Angola, 1940–1970: A calibration exercise
 
