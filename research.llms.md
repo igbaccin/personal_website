@@ -261,7 +261,7 @@ Using consumption baskets matched to the diets of Ghana’s three ecological zon
 
 I. Martins
 
-*Cliometrica* · Submitted
+*Cliometrica* · Revise and resubmit
 
 Abstract
 
