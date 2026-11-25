@@ -482,6 +482,16 @@ details.research-group:last-child { border-bottom: 1px solid var(--rule); }
   .navbar .hs-lang { margin-left: 4px; }
 }
 
+/* Phone header: a smaller name and menu icon, and room for the whole name on a 320 px screen. */
+@media (max-width: 767px) {
+  .navbar { padding: 12px 0; }
+  .navbar-brand-container { max-width: calc(100% - 52px); }
+  .navbar-brand { font-size: .9rem; }
+  .navbar-logo { height: 26px; width: 26px; margin-right: 4px; }
+  .navbar-toggler { margin-right: 8px; padding: 0; }
+  .navbar-toggler-icon { width: 24px; height: 24px; }
+}
+
 /* Footer: the contact details sit in the footer of every page, in small type. */
 .nav-footer { padding: 30px 0 36px; gap: 48px; }
 .nav-footer-left { flex: 0 0 auto; }
