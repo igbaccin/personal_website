@@ -14,7 +14,13 @@ description: "Teaching and supervision by Igor B. Martins at Lund University. Ec
   </div>
 </section>
 <div class="page-shell">
-  <section class="teaching-content" aria-labelledby="courses-title">
+  <nav class="section-nav section-nav-short" aria-label="Teaching sections">
+    <a href="#current-teaching"><span data-i18n="idx.current">Current</span><span class="nav-count">2</span></a>
+    <a href="#earlier-teaching"><span data-i18n="idx.earlier">Earlier</span><span class="nav-count">8</span></a>
+    <a href="#supervision"><span data-i18n="teach.supervision">Supervision</span></a>
+  </nav>
+  <div class="teaching-content">
+    <section class="teaching-current" id="current-teaching" aria-labelledby="courses-title">
     <h2 id="courses-title" data-i18n="teach.current">Current teaching</h2>
     <div class="course-grid">
       <article class="course-card">
@@ -44,7 +50,8 @@ description: "Teaching and supervision by Igor B. Martins at Lund University. Ec
 
 
     </div>
-    <section class="teaching-history" aria-labelledby="earlier-teaching-title">
+    </section>
+    <section class="teaching-history" id="earlier-teaching" aria-labelledby="earlier-teaching-title">
       <h2 id="earlier-teaching-title" data-i18n="teach.earlier">Earlier teaching</h2>
       <p class="section-caption" data-i18n="inst.lu">Lund University</p>
       <article class="teaching-entry">
@@ -89,6 +96,6 @@ description: "Teaching and supervision by Igor B. Martins at Lund University. Ec
       </div>
     </section>
     <div class="teaching-contact"><p data-i18n="teach.contact">For course descriptions, supervision enquiries, or letters of recommendation, please get in touch.</p><div class="text-links"><a href="mailto:igor.martins@liu.se">igor.martins@liu.se <span aria-hidden="true">↗</span></a><a href="mailto:igor.martins@ekh.lu.se">igor.martins@ekh.lu.se <span aria-hidden="true">↗</span></a></div></div>
-  </section>
+  </div>
 </div>
 ```

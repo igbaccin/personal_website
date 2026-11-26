@@ -14,11 +14,13 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <div class="page-shell">
 
 <nav class="section-nav" aria-label="Research sections">
-  <a href="#publications" data-i18n="res.pub">Publications</a>
-  <a href="#under-review" data-i18n="res.review">Under review</a>
-  <a href="#work-in-progress" data-i18n="res.wip">Work in progress</a>
-  <a href="#essays-media" data-i18n="res.essays">Essays &amp; media</a>
+  <a href="#publications"><span data-i18n="res.pub">Publications</span><span class="nav-count">15</span></a>
+  <a href="#under-review"><span data-i18n="res.review">Under review</span><span class="nav-count">4</span></a>
+  <a href="#work-in-progress"><span data-i18n="res.wip">Work in progress</span><span class="nav-count">7</span></a>
+  <a href="#essays-media"><span data-i18n="res.essays">Essays &amp; media</span><span class="nav-count">10</span></a>
+  <button type="button" class="summary-switch" aria-pressed="false"><span data-i18n="res.summaries">Summaries</span></button>
 </nav>
+<p class="summary-line"><button type="button" class="summary-switch" aria-pressed="false"><span data-i18n="res.summaries">Summaries</span></button></p>
 
 <details class="research-group" id="publications" open>
 <summary><h2 class="group-title" data-i18n="res.pub">Publications</h2><span class="group-meta">15 <span data-i18n="n.works">works</span></span></summary>

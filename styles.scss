@@ -524,5 +524,108 @@ footer.footer .nav-footer { padding-left: 0; padding-right: 0; }
   footer.footer .nav-footer { grid-template-columns: 205px minmax(0, 1fr); column-gap: 40px; }
 }
 
+/* Research index: a slimmer bar that counts each section and marks the one in view (includes/interactions.html). */
+.section-nav a[aria-current="location"] { text-underline-offset: 8px; }
+.nav-count { display: inline-block; margin-left: 7px; font-size: .72rem; color: #8f989f; font-variant-numeric: tabular-nums; }
+.summary-switch, .summary-line { display: none; }
+.summary-switch { padding: 0; border: 0; background: none; color: #bfc6cc; font: inherit; cursor: pointer; }
+.summary-switch::after { content: " +"; }
+.show-summaries .summary-switch::after { content: " −"; }
+.summary-switch:hover { color: #fff; }
+@media screen and (min-width: 768px) {
+  .section-nav { padding: 13px 0; align-items: baseline; }
+  html.js .section-nav .summary-switch { display: inline-block; margin-left: auto; }
+}
+@media screen and (min-width: 768px) and (max-width: 950px) { .section-nav { gap: 14px 20px; } }
+@media screen and (max-width: 767px) {
+  html.js .summary-line { display: flex; justify-content: flex-end; margin: 0; padding: 9px 0 3px; font-size: .875rem; }
+  html.js .summary-line .summary-switch { display: inline-block; }
+}
+@media (max-width: 380px) { .nav-count { margin-left: 5px; } }
+
+/* Research list: tighter entries. With scripts on, each entry is a title and one line, and the Summaries switch brings the one-sentence summaries back. */
+.publication { padding: 11px 0; }
+.publication h3 { margin-bottom: 1px; font-size: 1.06rem; line-height: 1.35; }
+.publication > div:not(.publication-year), .publication p { font-size: .86rem; line-height: 1.6; }
+.publication .publication-year { padding-top: 3px; }
+.publication .finding { margin-top: 4px; font-size: .84rem; line-height: 1.55; }
+.publication .paper-link { margin-top: 4px; font-size: .82rem; }
+@media screen {
+  html.js:not(.show-summaries) .publication .finding { display: none; }
+  html.js:not(.show-summaries) .publication .paper-link { margin-top: 0; margin-left: 12px; margin-right: 0; }
+}
+/* On phones the year sits above the title, so the title has the full width. */
+@media (max-width: 767px) {
+  .publication { grid-template-columns: 1fr; gap: 0; }
+  .publication .publication-year { padding-top: 0; font-size: .72rem; letter-spacing: .04em; }
+}
+
+/* Projects and Teaching carry the same index. Their three short labels share one row on a phone. */
+@media (max-width: 767px) {
+  .section-nav-short { display: flex; flex-wrap: wrap; gap: 0 22px; }
+}
+
+/* Projects: each project is a title, one line of details and the award. */
+.projects-content { padding-top: 24px; }
+.projects-content h2 { margin: 0 0 8px; }
+.projects-content section + section { margin-top: 24px; }
+.project-entry { padding: 12px 0; }
+.project-entry h3 { margin: 0 0 1px; font-size: 1.06rem; line-height: 1.35; }
+.project-entry p, .project-entry > div:not(.project-funding) { margin: 0; font-size: .86rem; line-height: 1.6; }
+.project-entry > div:not(.project-funding) > p { display: inline; }
+.project-entry > div:not(.project-funding) > p + p::before { content: " · "; color: var(--muted); }
+.project-entry .project-link { margin: 0 0 0 12px; font-size: .82rem; }
+.project-entry .project-years { padding-top: 3px; font-size: .8rem; font-variant-numeric: tabular-nums; }
+.project-funding { line-height: 1.35; }
+.project-funding strong { font-size: 1rem; }
+.project-funding span, .project-funding .project-usd { margin: 0; font-size: .75rem; }
+.project-funding-multiple { gap: 2px; }
+.project-funding-multiple div + div { padding-top: 0; border-top: 0; }
+.project-funding-multiple div:not(.project-total) strong { display: inline; margin-right: 6px; font-size: .78rem; font-weight: 400; }
+.project-funding-multiple div:not(.project-total) span { display: inline; }
+.projects-note { margin: 12px 0 0; }
+@media (min-width: 768px) { .project-entry { grid-template-columns: 105px minmax(0,1fr) auto; } }
+@media (max-width: 767px) {
+  .projects-content { padding-top: 20px; }
+  .projects-content h2 { margin: 0 0 6px; }
+  .project-entry { gap: 2px; padding: 12px 0; }
+  .project-entry .project-years { padding-top: 0; font-size: .72rem; letter-spacing: .04em; }
+  .project-entry .project-link { display: block; margin: 2px 0 0; }
+  .project-funding { padding-top: 2px; border-top: 0; }
+  .project-funding strong { display: inline; margin-right: 8px; font-size: .9rem; }
+  .project-funding span, .project-funding .project-usd { display: inline; }
+  .project-funding span + span::before { content: " · "; }
+  .project-funding-multiple { display: block; }
+  .project-funding-multiple .project-total { padding-bottom: 0; border-bottom: 0; }
+}
+
+/* Teaching: a small picture beside each current course, and one line for each earlier course. */
+.teaching-content { padding-top: 24px; }
+.teaching-current > h2 { font-size: 1.45rem; margin-bottom: 14px; }
+.course-grid { gap: 18px 27px; margin-bottom: 26px; }
+.course-card { position: relative; min-height: 96px; padding-left: 188px; }
+.course-card img { position: absolute; left: 0; top: 0; width: 170px; height: 96px; margin: 0; }
+.course-card h3 { margin-bottom: 2px; font-size: 1.06rem; line-height: 1.35; }
+.course-card p { margin: 2px 0 0; line-height: 1.5; }
+.course-card p br { display: none; }
+.course-card p br + span::before { content: " · "; }
+.teaching-history { margin-top: 0; }
+.section-caption { margin: 4px 0 10px; }
+.teaching-entry { padding: 9px 0; }
+.teaching-entry > div { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 14px; }
+.teaching-entry h3 { margin: 0; font-size: 1.06rem; line-height: 1.35; }
+.teaching-entry p { font-size: .84rem; line-height: 1.5; }
+.teaching-entry .teaching-years { padding-top: 3px; font-size: .8rem; }
+.supervision-section { padding-top: 22px; margin-top: 18px; }
+.supervision-grid { gap: 20px 28px; margin: 14px 0 20px; }
+@media (min-width: 768px) and (max-width: 950px) { .course-grid { grid-template-columns: 1fr; } }
+@media (max-width: 767px) {
+  .teaching-content { padding-top: 20px; }
+  .course-card { min-height: 76px; padding-left: 116px; }
+  .course-card img { width: 100px; height: 76px; }
+  .teaching-entry { grid-template-columns: 1fr; gap: 0; }
+  .teaching-entry .teaching-years { padding-top: 0; font-size: .72rem; letter-spacing: .04em; }
+}
+
 /* Smooth in-page scrolling without a script; the reduced-motion rule above switches it off. */
 html { scroll-behavior: smooth; }

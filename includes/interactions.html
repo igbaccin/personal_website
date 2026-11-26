@@ -29,6 +29,63 @@ document.addEventListener("DOMContentLoaded", function () {
   const observer = new ResizeObserver(measure);
   observer.observe(nav);
   if (header) observer.observe(header);
+
+  // The index marks the section in view.
+  const links = Array.from(nav.querySelectorAll("a"));
+  const groups = links.map(function (link) { return document.getElementById(link.hash.slice(1)); });
+  function mark(current) {
+    links.forEach(function (link, i) {
+      if (i === current) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    });
+  }
+  let queued = false;
+  function spy() {
+    queued = false;
+    const line = nav.getBoundingClientRect().bottom + 24;
+    let current = 0;
+    groups.forEach(function (group, i) {
+      if (group && group.getBoundingClientRect().top <= line) current = i;
+    });
+    // A short last section cannot reach the index, so at the end of the page the section the visitor asked for stays marked.
+    if (window.innerHeight + window.scrollY >= root.scrollHeight - 2) {
+      const asked = links.findIndex(function (link) { return link.hash === location.hash; });
+      if (asked > current && groups[asked] && groups[asked].getBoundingClientRect().top < window.innerHeight) current = asked;
+    }
+    mark(current);
+  }
+  function schedule() {
+    if (!queued) {
+      queued = true;
+      requestAnimationFrame(spy);
+    }
+  }
+  window.addEventListener("scroll", schedule, {passive: true});
+  window.addEventListener("resize", schedule);
+  document.addEventListener("toggle", schedule, true);
+
+  // The Summaries switch shows or folds the one-sentence summaries and keeps the entry being read in place.
+  const switches = document.querySelectorAll(".summary-switch");
+  function show(on) {
+    root.classList.toggle("show-summaries", on);
+    switches.forEach(function (button) { button.setAttribute("aria-pressed", on ? "true" : "false"); });
+  }
+  show(root.classList.contains("show-summaries"));
+  switches.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const on = !root.classList.contains("show-summaries");
+      const line = nav.getBoundingClientRect().bottom;
+      const items = Array.from(document.querySelectorAll(".publication"));
+      const reading = items.find(function (item) { return item.getBoundingClientRect().top >= line - 8; }) ||
+        items.find(function (item) { return item.getBoundingClientRect().bottom > line; });
+      const before = reading && reading.getBoundingClientRect().top;
+      show(on);
+      if (reading) window.scrollBy({top: reading.getBoundingClientRect().top - before, behavior: "instant"});
+      try { localStorage.setItem("research-summaries", on ? "1" : "0"); } catch (_) {}
+      schedule();
+    });
+  });
+
   function reveal() {
     let id;
     try { id = decodeURIComponent(location.hash.slice(1)); } catch (_) { return; }
@@ -37,12 +94,11 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let group = el.closest("details"); group; group = group.parentElement.closest("details")) {
       group.open = true;
     }
-    nav.querySelectorAll("a").forEach(function (link) {
-      if (link.hash === location.hash) link.setAttribute("aria-current", "location");
-      else link.removeAttribute("aria-current");
-    });
+    const asked = links.findIndex(function (link) { return link.hash === location.hash; });
+    if (asked > -1) mark(asked);
     requestAnimationFrame(function () { el.scrollIntoView({block: "start"}); });
   }
+  spy();
   reveal();
   window.addEventListener("hashchange", reveal);
 });

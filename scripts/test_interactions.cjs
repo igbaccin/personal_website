@@ -128,6 +128,68 @@ assert.equal(language(english,{saved:"pt",browser:"sv"}).window.SiteI18n.lang(),
 assert.equal(language(english,{browser:"sv-SE"}).greeting.hidden,true);
 assert.match(language(english,{search:"?lang=en&greet=nobel"}).greeting.textContent,/Nobel/);
 
+// The page index (Research, Projects, Teaching): the section in view, and the Summaries switch on Research.
+function research({hash = "", saved, tops = [300, 2000, 2100, 2200], scrollY = 0} = {}) {
+  const classes = new Set(saved === "1" ? ["show-summaries"] : []);
+  const root = {scrollHeight: 4000, style: {setProperty() {}},
+    classList: {add: c => classes.add(c), contains: c => classes.has(c),
+                toggle(c, on) { if (on) classes.add(c); else classes.delete(c); }}};
+  const attributes = () => {
+    const attrs = {};
+    return {attrs, setAttribute(k, v) { attrs[k] = v; }, removeAttribute(k) { delete attrs[k]; }};
+  };
+  const ids = ["publications", "under-review", "work-in-progress", "essays-media"];
+  const groups = ids.map((id, i) => ({
+    id, top: tops[i], getBoundingClientRect() { return {top: this.top}; },
+    closest: () => null, scrollIntoView() {}
+  }));
+  const links = ids.map(id => Object.assign(attributes(), {hash: "#" + id}));
+  const nav = {querySelectorAll: () => links, getBoundingClientRect: () => ({bottom: 150, height: 58})};
+  const buttons = [Object.assign(target(), attributes()), Object.assign(target(), attributes())];
+  const entry = {getBoundingClientRect: () => classes.has("show-summaries") ? {top: 460, bottom: 600} : {top: 160, bottom: 240}};
+  const document = Object.assign(target(), {
+    documentElement: root,
+    querySelector: s => s === ".section-nav" ? nav : null,
+    querySelectorAll: s => s === ".summary-switch" ? buttons : s === ".publication" ? [entry] : [],
+    getElementById: id => id === "quarto-header" ? {getBoundingClientRect: () => ({height: 86})} : groups.find(g => g.id === id) || null
+  });
+  const frames = [], scrolls = [], values = new Map();
+  const window = Object.assign(target(), {innerHeight: 600, scrollY, scrollBy(to) { scrolls.push(to.top); }});
+  const code = [...source("includes/interactions.html").matchAll(/<script>([\s\S]*?)<\/script>/g)].at(-1)[1];
+  vm.runInNewContext(code, {
+    document, window, location: {hash}, ResizeObserver: class { observe() {} },
+    requestAnimationFrame(fn) { frames.push(fn); }, localStorage: {setItem(k, v) { values.set(k, v); }}
+  });
+  document.fire("DOMContentLoaded");
+  return {
+    window, groups, links, buttons, classes, scrolls, values, frames,
+    current: () => links.findIndex(link => link.attrs["aria-current"] === "location"),
+    run() { while (frames.length) frames.shift()(); }
+  };
+}
+const list = research();
+assert.equal(list.current(), 0);
+list.groups[0].top = -1500; list.groups[1].top = 120;
+list.window.fire("scroll"); list.window.fire("scroll");
+assert.equal(list.frames.length, 1); list.run();
+assert.equal(list.current(), 1);
+// The switch shows the summaries, tells both buttons, saves the choice and keeps the entry being read in place.
+list.buttons[1].fire("click");
+assert.ok(list.classes.has("show-summaries"));
+assert.deepEqual(list.buttons.map(button => button.attrs["aria-pressed"]), ["true", "true"]);
+assert.equal(list.values.get("research-summaries"), "1");
+assert.deepEqual(list.scrolls, [300]);
+list.buttons[0].fire("click");
+assert.equal(list.classes.has("show-summaries"), false);
+assert.equal(list.values.get("research-summaries"), "0");
+assert.equal(research({saved: "1"}).buttons[0].attrs["aria-pressed"], "true");
+// A short last section cannot reach the index, so at the end of the page the section asked for stays marked.
+const end = research({hash: "#essays-media", tops: [-3000, 100, 300, 420], scrollY: 3400});
+assert.equal(end.current(), 3);
+end.window.fire("scroll"); end.run();
+assert.equal(end.current(), 3);
+assert.equal(research({tops: [-3000, 100, 300, 420], scrollY: 3400}).current(), 1);
+
 // Exercise the exact static handler emitted by the generator, supplied by Python.
 if (process.env.STATIC_SWITCH_JS) {
   for (const deny of [false,true]) {

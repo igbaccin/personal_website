@@ -65,6 +65,8 @@
 
       "res.title": "Forskning",
       "res.pub": "Publikationer", "res.review": "Under granskning", "res.wip": "Pågående arbeten", "res.essays": "Texter och mediemedverkan",
+      "res.summaries": "I korthet",
+      "idx.current": "Pågående", "idx.upcoming": "Kommande", "idx.earlier": "Tidigare",
       "n.works": "publikationer", "n.manuscripts": "manus", "n.contributions": "bidrag",
       "res.label": "Artiklar, kapitel, <br>rapporter och avhandling",
       "st.replication": "Replikationspaket",
@@ -168,6 +170,8 @@
 
       "res.title": "Pesquisa",
       "res.pub": "Publicações", "res.review": "Em avaliação", "res.wip": "Trabalhos em andamento", "res.essays": "Textos e participações na mídia",
+      "res.summaries": "Em resumo",
+      "idx.current": "Atuais", "idx.upcoming": "Próximos", "idx.earlier": "Anteriores",
       "n.works": "trabalhos", "n.manuscripts": "manuscritos", "n.contributions": "contribuições",
       "res.label": "Artigos, capítulos, <br>relatórios e tese",
       "st.replication": "Pacote de replicação",

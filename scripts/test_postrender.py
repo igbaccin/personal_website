@@ -249,6 +249,28 @@ class SpeedTest(unittest.TestCase):
                                    input=code.encode(), check=True)
         print(f"Syntax checked {len(checked)} distinct executable scripts across {len(pages)} HTML files.")
 
+    @unittest.skipUnless(SITE, "pass --site to test built output")
+    def test_page_index_matches_the_lists(self):
+        # Each index link leads to a section, and a count beside it is the number of entries there.
+        def has(name):
+            return f'contains(concat(" ", @class, " "), " {name} ")'
+        sections = {"research": 4, "projects": 3, "teaching": 3}
+        for page, expected in sections.items():
+            for prefix in ("", "sv/", "pt/"):
+                name = f"{prefix}{page}.html"
+                doc = html.document_fromstring((SITE / name).read_bytes(), parser=html.HTMLParser(encoding="utf-8"))
+                links = doc.xpath(f'//nav[{has("section-nav")}]/a')
+                self.assertEqual(len(links), expected, name)
+                for link in links:
+                    target = doc.get_element_by_id(link.get("href").removeprefix("#"))
+                    entries = len(target.xpath(".//article"))
+                    for count in link.xpath(f'./span[{has("nav-count")}]'):
+                        self.assertEqual(int(count.text), entries, f"{name} {link.get('href')}")
+                    for stated in target.xpath(f'.//*[{has("group-meta")}]'):
+                        self.assertEqual(int(stated.text_content().split()[0]), entries, f"{name} {link.get('href')}")
+                switches = doc.xpath(f'//button[{has("summary-switch")}]')
+                self.assertEqual(len(switches), 2 if page == "research" else 0, name)
+
 
 if __name__ == "__main__":
     unittest.main()
