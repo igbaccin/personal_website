@@ -375,7 +375,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <article class="publication">
 
   <div>
-    <h3>The Ghanaian divergence: Prices, incomes and living standards after independence</h3>
+    <h3>Northerners and the North: The Ghanaian gap, 1890–2022</h3>
     <p>I. Martins, P. Aboagye<span data-i18n="w.oxand">, and</span> G. Austin</p>
 
 
