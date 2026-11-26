@@ -4,6 +4,8 @@
 
 **Teacher of the Year, 2020.** Lund University School of Economics and Management.
 
+[Current2](#current-teaching) [Earlier8](#earlier-teaching) [Supervision](#supervision)
+
 ## Current teaching
 
 [![](images/course-utvc21-600.webp)](https://kursplaner.lu.se/pdf/kurs/en/UTVC21)

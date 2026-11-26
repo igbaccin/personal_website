@@ -38,7 +38,7 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="/site_libs/bootstrap/bootstrap.min.js"></script>
 
-<link href="/site_libs/bootstrap/bootstrap-utilities-35c4081bee6be733374f34878a3f6543.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="/site_libs/bootstrap/bootstrap-utilities-f12609ebb44cf7530a7abfe7098d2d84.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{"language":{"search-no-results-text":"No results","search-matching-documents-text":"matching documents","search-copy-link-title":"Copy link to search","search-hide-matches-text":"Hide additional matches","search-more-match-text":"more match in this document","search-more-matches-text":"more matches in this document","search-clear-button-title":"Clear","search-text-placeholder":"","search-detached-cancel-button-title":"Cancel","search-submit-button-title":"Submit","search-label":"Search"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://ibmartins.com/#website","url":"https://ibmartins.com/","name":"Igor B. Martins","description":"Research website of Igor B. Martins, an economic historian studying inequality, slavery, labour markets, wealth, and economic resilience in Africa.","inLanguage":"en","author":{"@id":"https://ibmartins.com/#person"},"about":{"@id":"https://ibmartins.com/#person"}},{"@type":"Person","@id":"https://ibmartins.com/#person","name":"Igor B. Martins","url":"https://ibmartins.com/","mainEntityOfPage":"https://ibmartins.com/","image":"https://ibmartins.com/images/me.jpg","jobTitle":"Postdoctoral researcher","description":"Economic historian at Linköping University and Lund University studying the origins and persistence of inequality, with a primary focus on Africa.","worksFor":{"@type":"CollegeOrUniversity","name":"Linköping University","department":{"@type":"Organization","name":"Department of Management and Engineering"},"url":"https://liu.se/en"},"affiliation":{"@type":"CollegeOrUniversity","name":"Lund University","department":{"@type":"Organization","name":"Department of Economic History"},"url":"https://www.lunduniversity.lu.se/"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Lund University","url":"https://www.lunduniversity.lu.se/"},"identifier":{"@type":"PropertyValue","propertyID":"ORCID","value":"0000-0002-6141-9273"},"sameAs":["https://orcid.org/0000-0002-6141-9273","https://scholar.google.com/citations?user=VRHCkE0AAAAJ&hl=en","https://liu.se/en/employee/igoma71","https://portal.research.lu.se/en/persons/igor-martins","https://www.researchgate.net/profile/Igor-Martins","https://liu-se.academia.edu/IgorMartins","https://www.linkedin.com/in/ibmartins/"],"knowsAbout":["Economic history","African economic history","Long-term inequality in Africa","Slavery and emancipation","Cape Colony","Labour markets and living standards in Ghana","Economic resilience","Climate exposure and asset ownership","International scientific cooperation"]}]}</script>
 <link rel="preload" href="/fonts/eb-garamond-latin.woff2" as="font" type="font/woff2" crossorigin="">
@@ -53,6 +53,8 @@ html.i18n-pending #quarto-header, html.i18n-pending #quarto-content, html.i18n-p
 @media (max-width: 767px) { .hs-lang { margin: 8px 0 4px; } }
 .hs-greeting { font-family: var(--serif); font-style: italic; font-size: 1.05rem; letter-spacing: 0; text-transform: none; color: #cfd5da; margin: 0 0 16px; }
 </style>
+<!-- Runs before the first paint, so the research list opens in the state the visitor last chose. -->
+<script>(function(){var root=document.documentElement;root.classList.add("js");try{if(localStorage.getItem("research-summaries")==="1")root.classList.add("show-summaries");}catch(_){}})();</script>
 <!-- Refresh v when i18n.js changes so visitors receive the updated script. -->
 <script>document.addEventListener("DOMContentLoaded",function(){var group=document.querySelector(".hs-lang-group");if(group)group.addEventListener("click",function(event){var link=event.target.closest("a[hreflang]");if(link){try{localStorage.setItem("site-lang",link.hreflang);}catch(_){}}});});</script>
 
@@ -144,11 +146,13 @@ html.i18n-pending #quarto-header, html.i18n-pending #quarto-content, html.i18n-p
 <div class="page-shell">
 
 <nav class="section-nav" aria-label="Research sections">
-  <a href="#publications" data-i18n="res.pub">Publikationer</a>
-  <a href="#under-review" data-i18n="res.review">Under granskning</a>
-  <a href="#work-in-progress" data-i18n="res.wip">Pågående arbeten</a>
-  <a href="#essays-media" data-i18n="res.essays">Texter och mediemedverkan</a>
+  <a href="#publications"><span data-i18n="res.pub">Publikationer</span><span class="nav-count">15</span></a>
+  <a href="#under-review"><span data-i18n="res.review">Under granskning</span><span class="nav-count">4</span></a>
+  <a href="#work-in-progress"><span data-i18n="res.wip">Pågående arbeten</span><span class="nav-count">7</span></a>
+  <a href="#essays-media"><span data-i18n="res.essays">Texter och mediemedverkan</span><span class="nav-count">10</span></a>
+  <button type="button" class="summary-switch" aria-pressed="false"><span data-i18n="res.summaries">I korthet</span></button>
 </nav>
+<p class="summary-line"><button type="button" class="summary-switch" aria-pressed="false"><span data-i18n="res.summaries">I korthet</span></button></p>
 
 <details class="research-group" id="publications" open="">
 <summary><h2 class="group-title" data-i18n="res.pub">Publikationer</h2><span class="group-meta">15 <span data-i18n="n.works">publikationer</span></span></summary>
@@ -617,10 +621,16 @@ html.i18n-pending #quarto-header, html.i18n-pending #quarto-content, html.i18n-p
 <script src="/hourglass-nav.js?v=5555b9344e7b"></script>
 
 <script>document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll('a[target="_blank"][href$=".pdf"]').forEach(function(link){const label=link.textContent.replace(/↗/g,"").trim();link.setAttribute("aria-label",label+", PDF, opens in a new tab");link.setAttribute("title","Opens a PDF in a new tab");});document.querySelectorAll(".social-links a").forEach(function(link){link.setAttribute("target","_blank");link.setAttribute("rel","noopener");const label=link.textContent.replace(/↗/g,"").trim();link.setAttribute("aria-label",label+", opens in a new tab");link.setAttribute("title","Opens in a new tab");});const nav=document.querySelector(".section-nav");if(!nav)return;const root=document.documentElement;const header=document.getElementById("quarto-header");root.classList.add("has-research-nav");function measure(){root.style.setProperty("--research-header-height",(header?header.getBoundingClientRect().height:0)+"px");root.style.setProperty("--research-nav-height",nav.getBoundingClientRect().height+"px");}
-measure();const observer=new ResizeObserver(measure);observer.observe(nav);if(header)observer.observe(header);function reveal(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch(_){return;}
+measure();const observer=new ResizeObserver(measure);observer.observe(nav);if(header)observer.observe(header);const links=Array.from(nav.querySelectorAll("a"));const groups=links.map(function(link){return document.getElementById(link.hash.slice(1));});function mark(current){links.forEach(function(link,i){if(i===current)link.setAttribute("aria-current","location");else link.removeAttribute("aria-current");});}
+let queued=false;function spy(){queued=false;const line=nav.getBoundingClientRect().bottom+24;let current=0;groups.forEach(function(group,i){if(group&&group.getBoundingClientRect().top<=line)current=i;});if(window.innerHeight+window.scrollY>=root.scrollHeight-2){const asked=links.findIndex(function(link){return link.hash===location.hash;});if(asked>current&&groups[asked]&&groups[asked].getBoundingClientRect().top<window.innerHeight)current=asked;}
+mark(current);}
+function schedule(){if(!queued){queued=true;requestAnimationFrame(spy);}}
+window.addEventListener("scroll",schedule,{passive:true});window.addEventListener("resize",schedule);document.addEventListener("toggle",schedule,true);const switches=document.querySelectorAll(".summary-switch");function show(on){root.classList.toggle("show-summaries",on);switches.forEach(function(button){button.setAttribute("aria-pressed",on?"true":"false");});}
+show(root.classList.contains("show-summaries"));switches.forEach(function(button){button.addEventListener("click",function(){const on=!root.classList.contains("show-summaries");const line=nav.getBoundingClientRect().bottom;const items=Array.from(document.querySelectorAll(".publication"));const reading=items.find(function(item){return item.getBoundingClientRect().top>=line-8;})||items.find(function(item){return item.getBoundingClientRect().bottom>line;});const before=reading&&reading.getBoundingClientRect().top;show(on);if(reading)window.scrollBy({top:reading.getBoundingClientRect().top-before,behavior:"instant"});try{localStorage.setItem("research-summaries",on?"1":"0");}catch(_){}
+schedule();});});function reveal(){let id;try{id=decodeURIComponent(location.hash.slice(1));}catch(_){return;}
 const el=document.getElementById(id);if(!el)return;for(let group=el.closest("details");group;group=group.parentElement.closest("details")){group.open=true;}
-nav.querySelectorAll("a").forEach(function(link){if(link.hash===location.hash)link.setAttribute("aria-current","location");else link.removeAttribute("aria-current");});requestAnimationFrame(function(){el.scrollIntoView({block:"start"});});}
-reveal();window.addEventListener("hashchange",reveal);});</script>
+const asked=links.findIndex(function(link){return link.hash===location.hash;});if(asked>-1)mark(asked);requestAnimationFrame(function(){el.scrollIntoView({block:"start"});});}
+spy();reveal();window.addEventListener("hashchange",reveal);});</script>
 <script id="quarto-html-after-body" type="application/javascript">window.document.addEventListener("DOMContentLoaded",function(event){var localhostRegex=new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);var mailtoRegex=new RegExp(/^mailto:/);var filterRegex=new RegExp("https:\/\/ibmartins\.com\/");var isInternal=(href)=>{return filterRegex.test(href)||localhostRegex.test(href)||mailtoRegex.test(href);}
 var links=window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');for(var i=0;i<links.length;i++){const link=links[i];if(!isInternal(link.href)){if(link.dataset.originalHref!==undefined){link.href=link.dataset.originalHref;}}}
 function tippyHover(el,contentFn,onTriggerFn,onUntriggerFn){const config={allowHTML:true,maxWidth:500,delay:100,arrow:false,appendTo:function(el){return el.parentElement;},interactive:true,interactiveBorder:10,theme:'quarto',placement:'bottom-start',};if(contentFn){config.content=contentFn;}
