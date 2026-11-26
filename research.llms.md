@@ -323,7 +323,7 @@ J. Cilliers and I. Martins
 
 I. Martins and E. Green
 
-### The Ghanaian divergence: Prices, incomes and living standards after independence
+### Northerners and the North: The Ghanaian gap, 1890–2022
 
 I. Martins, P. Aboagye, and G. Austin
 
