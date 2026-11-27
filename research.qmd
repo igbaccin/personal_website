@@ -14,16 +14,16 @@ description: "Publications by Igor B. Martins on African economic history, slave
 <div class="page-shell">
 
 <nav class="section-nav" aria-label="Research sections">
-  <a href="#publications"><span data-i18n="res.pub">Publications</span><span class="nav-count">15</span></a>
-  <a href="#under-review"><span data-i18n="res.review">Under review</span><span class="nav-count">4</span></a>
-  <a href="#work-in-progress"><span data-i18n="res.wip">Work in progress</span><span class="nav-count">7</span></a>
-  <a href="#essays-media"><span data-i18n="res.essays">Essays &amp; media</span><span class="nav-count">10</span></a>
+  <a href="#publications"><span data-i18n="res.pub">Publications</span><span class="nav-count"></span></a>
+  <a href="#under-review"><span data-i18n="res.review">Under review</span><span class="nav-count"></span></a>
+  <a href="#work-in-progress"><span data-i18n="res.wip">Work in progress</span><span class="nav-count"></span></a>
+  <a href="#essays-media"><span data-i18n="res.essays">Essays &amp; media</span><span class="nav-count"></span></a>
   <button type="button" class="summary-switch" aria-pressed="false"><span data-i18n="res.summaries">Summaries</span></button>
 </nav>
 <p class="summary-line"><button type="button" class="summary-switch" aria-pressed="false"><span data-i18n="res.summaries">Summaries</span></button></p>
 
 <details class="research-group" id="publications" open>
-<summary><h2 class="group-title" data-i18n="res.pub">Publications</h2><span class="group-meta">15 <span data-i18n="n.works">works</span></span></summary>
+<summary><h2 class="group-title" data-i18n="res.pub">Publications</h2><span class="group-meta"><span data-i18n="n.works">works</span></span></summary>
 <div class="research-body">
   <div class="research-label"><p data-i18n-html="res.label">Articles, chapters, <br>reports &amp; thesis</p><a class="paper-link" href="https://scholar.google.com/citations?user=VRHCkE0AAAAJ&amp;hl=en">Google Scholar ↗</a></div>
   <div class="publication-list">
@@ -242,7 +242,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 </details>
 <div class="research-extra">
 <details class="research-group" id="under-review">
-<summary><h2 class="group-title" data-i18n="res.review">Under review</h2><span class="group-meta">4 <span data-i18n="n.manuscripts">manuscripts</span></span></summary>
+<summary><h2 class="group-title" data-i18n="res.review">Under review</h2><span class="group-meta"><span data-i18n="n.manuscripts">manuscripts</span></span></summary>
 <div class="group-content">
 <article class="publication">
 
@@ -309,7 +309,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 </div>
 </details>
 <details class="research-group" id="work-in-progress">
-<summary><h2 class="group-title" data-i18n="res.wip">Work in progress</h2><span class="group-meta">7 <span data-i18n="n.manuscripts">manuscripts</span></span></summary>
+<summary><h2 class="group-title" data-i18n="res.wip">Work in progress</h2><span class="group-meta"><span data-i18n="n.manuscripts">manuscripts</span></span></summary>
 <div class="group-content">
 <article class="publication">
 
@@ -386,7 +386,7 @@ description: "Publications by Igor B. Martins on African economic history, slave
 </div>
 </details>
 <details class="research-group" id="essays-media">
-<summary><h2 class="group-title" data-i18n="res.essays">Essays &amp; media</h2><span class="group-meta">10 <span data-i18n="n.contributions">contributions</span></span></summary>
+<summary><h2 class="group-title" data-i18n="res.essays">Essays &amp; media</h2><span class="group-meta"><span data-i18n="n.contributions">contributions</span></span></summary>
 <div class="group-content">
 <article class="publication">
 

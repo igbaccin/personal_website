@@ -65,6 +65,28 @@ def annotate_nav(document):
             label.set("data-i18n", "nav." + ("home" if page == "index" else page))
 
 
+def has_class(name):
+    return f'contains(concat(" ", normalize-space(@class), " "), " {name} ")'
+
+
+def count_entries(document):
+    """Write the number of entries in each indexed section beside its index link, and into the
+    section's header where it has one, so the numbers follow the lists without upkeep."""
+    for link in document.xpath(f'//nav[{has_class("section-nav")}]/a[starts-with(@href, "#")]'):
+        target = document.get_element_by_id(link.get("href")[1:], None)
+        if target is None:
+            raise ValueError(f"Index link {link.get('href')} has no section")
+        total = len(target.xpath(".//article"))
+        slots = link.xpath(f'./span[{has_class("nav-count")}]')
+        headers = target.xpath(f'.//*[{has_class("group-meta")}]')
+        if (slots or headers) and not total:
+            raise ValueError(f"Section {link.get('href')} is counted but has no entries")
+        for slot in slots:
+            set_text(slot, str(total))
+        for header in headers:
+            header.text = f"{total} "
+
+
 def check_keys(pages, translations):
     missing = []
     for page, document in pages.items():
@@ -233,6 +255,7 @@ def publish(site):
                                   ' | //script[@id="publication-records"] | //*[@id="site-language-switcher"]'):
             old.getparent().remove(old)
         annotate_nav(document)
+        count_entries(document)
         pages[page] = document
     check_keys(pages, translations)
     graph = publication_graph(pages["research"])

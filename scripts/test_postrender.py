@@ -15,7 +15,8 @@ from unittest.mock import patch
 
 from lxml import html
 
-from language_pages import SWITCH_HANDLER, check_keys, dictionaries, local_css, local_srcset, local_url, translated_html
+from language_pages import (SWITCH_HANDLER, check_keys, count_entries, dictionaries, local_css, local_srcset,
+                            local_url, translated_html)
 from publication_records import publication_graph
 from asset_guards import CUSTOM_START, auxiliary_reasons, reviewed_runtime, vendor_fingerprint
 from optimize import JS_TYPES, choose_sheet, compact_script, minify_js, trimmed_css, trim_rules
@@ -39,6 +40,23 @@ class LanguagePagesTest(unittest.TestCase):
             check_keys(pages, keys)
         self.assertIn("sv: teach.title (teaching.html)", str(raised.exception))
         self.assertIn("pt: res.label (research.html)", str(raised.exception))
+
+    def test_index_counts_follow_the_lists(self):
+        page = ('<html><body><nav class="section-nav"><a href="#a"><span>A</span><span class="nav-count"></span></a>'
+                '<a href="#b"><span>B</span></a></nav>'
+                '<details id="a"><summary><span class="group-meta"><span>works</span></span></summary>'
+                '<article></article><article></article><article></article></details>'
+                '<section id="b"><article></article></section></body></html>')
+        doc = html.document_fromstring(page)
+        count_entries(doc)
+        self.assertEqual(doc.xpath('//span[@class="nav-count"]/text()'), ["3"])
+        self.assertEqual(doc.xpath('string(//span[@class="group-meta"])'), "3 works")
+        # A link without a count slot gets no number.
+        self.assertEqual(doc.xpath('//a[@href="#b"]')[0].text_content(), "B")
+        for broken, message in [(page.replace('id="b"', 'id="c"'), "no section"),
+                                (page.replace("<article></article>" * 3, ""), "no entries")]:
+            with self.assertRaisesRegex(ValueError, message):
+                count_entries(html.document_fromstring(broken))
 
     def test_html_placeholders_can_reorder_and_keep_original_link_text(self):
         node = html.fromstring('<p><a href="/a" rel="author"><em>First</em></a> and <a href="/b">Second</a></p>')

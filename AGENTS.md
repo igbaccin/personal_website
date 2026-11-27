@@ -18,7 +18,7 @@ Do not alter Porkbun DNS, GitHub Pages settings, or the custom domain unless the
 
 - Homepage, biography and contact details: `index.qmd`
 - Publications and research output: `research.qmd`. Each entry's one-sentence summary (`finding`) is folded until the visitor turns on the Summaries switch; the script is in `includes/interactions.html`.
-- Research, Projects and Teaching open with the same index (`section-nav`), which marks the section in view. The number beside a link (`nav-count`) is the number of entries in that section, and on Research the section header repeats it (`group-meta`). Update these numbers when an entry is added, moved or removed. The build fails when a number and its list differ.
+- Research, Projects and Teaching open with the same index (`section-nav`), which marks the section in view. `scripts/language_pages.py` counts the entries (`article` elements) of each indexed section and writes the number into the empty `nav-count` span beside the link and into the section header's `group-meta` on Research. Leave those spans empty in the source; a link without a `nav-count` span shows no number. The build fails when an indexed section is missing or a counted section has no entries.
 - Funded and active projects: `projects.qmd`
 - Teaching: `teaching.qmd`
 - Navigation, footer, site URL, and shared resources: `_quarto.yml`
