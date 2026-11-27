@@ -4,7 +4,7 @@
 
 **Teacher of the Year, 2020.** Lund University School of Economics and Management.
 
-[Current2](#current-teaching) [Earlier8](#earlier-teaching) [Supervision](#supervision)
+[Current](#current-teaching) [Earlier](#earlier-teaching) [Supervision](#supervision)
 
 ## Current teaching
 

@@ -2,7 +2,7 @@
 
 # Research
 
-[Publications15](#publications) [Under review4](#under-review) [Work in progress7](#work-in-progress) [Essays & media10](#essays-media)
+[Publications](#publications) [Under review](#under-review) [Work in progress](#work-in-progress) [Essays & media](#essays-media)
 
 Summaries
 
@@ -10,7 +10,7 @@ Summaries
 
 ## Publications
 
-15 works
+works
 
 Articles, chapters,\
 reports & thesis
@@ -233,7 +233,7 @@ A. Palacio and I. Martins
 
 ## Under review
 
-4 manuscripts
+manuscripts
 
 ### [Weather as a vector of inequality](https://www.researchsquare.com/article/rs-9859396/v1)
 
@@ -289,7 +289,7 @@ The Dutch East India Company auctioned the right to sell alcohol at the Cape eve
 
 ## Work in progress
 
-7 manuscripts
+manuscripts
 
 ### Democracy and rural inequality in Kenya, 1997–2010
 
@@ -333,7 +333,7 @@ I. Martins, P. Aboagye, and G. Austin
 
 ## Essays & media
 
-10 contributions
+contributions
 
 ### [Assessing students’ academic writing when AI can produce a first draft](https://www.timeshighereducation.com/campus/assessing-students-academic-writing-when-ai-can-produce-first-draft)
 

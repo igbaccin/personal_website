@@ -4,7 +4,7 @@
 
 [All projects at Lund University ↗](https://portal.research.lu.se/en/persons/igor-martins/projects/)
 
-[Current3](#current-projects) [Upcoming1](#upcoming-projects) [Earlier3](#earlier-projects)
+[Current](#current-projects) [Upcoming](#upcoming-projects) [Earlier](#earlier-projects)
 
 ## Current projects
 
